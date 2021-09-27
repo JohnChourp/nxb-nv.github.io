@@ -31,7 +31,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-#myTable td:hover {
+.charName:hover {
   /* Add a underline on hover */
   text-decoration: underline;
   color: #4edcc4;
