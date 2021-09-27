@@ -17,24 +17,27 @@
 
 }
 
-#myTable th, #myTable td {
+#myTable th {
   text-align: left; /* Left-align text */
   padding: 5px; /* Add padding */
+  cursor: pointer;
 }
 
 #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 5px; /* Add padding */
   color: #80ccc6;
 }
 
 #myTable tr {
-  /* Add a bottom border to all table rows */
-  border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .charName:hover {
   /* Add a underline on hover */
   text-decoration: underline;
   color: #4edcc4;
+  cursor: pointer;
 }
 
 * {
