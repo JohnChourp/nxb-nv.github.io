@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.charName{
+  color: #80ccc6;
+}
+
+.charName:hover {
+  /* Add a underline on hover */
+  text-decoration: underline;
+  color: #4edcc4;
+}
+.pointerCursor:hover {
+    text-decoration: underline;
+}
+.pointerCursor {
+    cursor: pointer;
+}
+.dark-mode {
+    color: white;
+    background-color: #404040;
+}
+

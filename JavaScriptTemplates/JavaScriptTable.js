@@ -22,8 +22,23 @@ function darkMode() {
   element.classList.toggle("dark-mode");
 }
 
-function sortTable(n) {
+function sortTableAndImageChange(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var ImageId_Id = document.getElementById('getImageId');
+  var ImageName_Id = document.getElementById('getImageName');
+
+  if (ImageId_Id.src.match("Photos/sortDownIcon.png") && n==0) {
+        ImageId_Id.src = "Photos/sortUpIcon.png";
+    }else{
+        ImageId_Id.src = "Photos/sortDownIcon.png";
+    }
+
+  if (ImageName_Id.src.match("Photos/sortDownIcon.png")&& n==2) {
+          ImageName_Id.src = "Photos/sortUpIcon.png";
+      }else{
+          ImageName_Id.src = "Photos/sortDownIcon.png";
+      }
+
   table = document.getElementById("myTable");
   switching = true;
   //Set the sorting direction to ascending:
