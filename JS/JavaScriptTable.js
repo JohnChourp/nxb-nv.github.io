@@ -17,11 +17,6 @@ function myFunction() {
   }
 }
 
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
 function sortTableAndImageChange(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   var ImageId_Id = document.getElementById('getImageId');
