@@ -1,22 +1,12 @@
-:root {
-  /* Light mode */
-  --light-text: black;
-  --light-bg: white;
-
-  /* Dark mode */
-  --dark-text: white;
-  --dark-bg: #404040;
-
-  /* Default mode */
-  --text-color: var(--light-text);
-  --bg-color: var(--light-bg);
-}
-
 /* Start theme-switch */
+.theme-switch:unchecked ~ #page {
+  --text-color: black;
+  --bg-color: white;
+}
 /* Switched mode */
 .theme-switch:checked ~ #page {
-  --text-color: var(--dark-text);
-  --bg-color: var(--dark-bg);
+  --text-color: white;
+  --bg-color: #404040;
 }
 /* End theme-switch */
 
@@ -28,8 +18,8 @@ html, body {
 }
 
 #page {
-  background: var(--bg-color);
   color: var(--text-color);
+  background: var(--bg-color);
   font: normal 125%/1.4 Georgia, 'Times New Roman', Times, serif;
   min-height: 100%;
   transition: color .2s, background-color .2s;

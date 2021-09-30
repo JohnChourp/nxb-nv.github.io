@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
 
     <!-- JS Start -->
     <script type="text/javascript" src="JS/JavaScriptTable.js"></script>
     <script type="text/javascript" src="JS/sortTableAndImageChange.js"></script>
+    <script type="text/javascript" src="JS/darkMode.js"></script>
     <!-- JS End -->
 
     <!-- CSS Start -->
@@ -16,8 +17,10 @@
     <!-- CSS End -->
 </head>
 
-<body>
-<input type="checkbox" class="theme-switch"/> <big><b>Night Mode</b></big>
+<body onload="darkModeSave()">
+
+<input type="checkbox" class="theme-switch" /><big><b>Night Mode</b></big>
+
 <div id="page">
     <header>
         <h2>Toggle Dark/Light Mode</h2>
@@ -565,21 +568,5 @@
         </tbody>
     </table>
 </div>
-
-<script>
-      // This code is only used to remember theme selection between page loads
-      const themeSwitch = document.querySelector('.theme-switch');
-      themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
-
-      themeSwitch.addEventListener('change', function(e) {
-        if (e.currentTarget.checked === true) {
-          // Add item to localstorage
-          localStorage.setItem('switchedTheme', 'true');
-        } else {
-          // Remove item if theme is switched back to normal
-          localStorage.removeItem('switchedTheme');
-        }
-      });
-    </script>
 </body>
 </html>
