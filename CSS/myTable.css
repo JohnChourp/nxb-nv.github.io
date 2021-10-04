@@ -1,9 +1,8 @@
 #myTable {
-  border-collapse: collapse; /* Collapse borders */
-  width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
-  font-size: 18px; /* Increase font-size */
-
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 16px;
 }
 
 #myTable tr {
@@ -11,7 +10,58 @@
 }
 
 #myTable th, td {
-  text-align: left; /* Left-align text */
-  padding: 5px; /* Add padding */
+  text-align: left;
+  padding: 5px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
+#myTable th{
+    text-align: center;
+}
+
+td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:15px;
+}
+
+.sortIcon{
+    height:30px;
+    width:30px;
+    vertical-align:middle;
+}
+
+.charThumb{
+    height:100px;
+    width:100px;
+}
+
+.charID{
+    text-align:center;
+}
+
+.charAbilities{
+    text-align:center;
+}
+
+.charTrait1{
+    text-align:center;
+}
+
+.charTrait2{
+    text-align:center;
+}
+
+.charTrait3{
+    text-align:center;
+}
+
+.charTrait4{
+    text-align:center;
+}
+
+.charTrait5{
+    text-align:center;
+}

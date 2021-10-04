@@ -4,25 +4,24 @@
     <meta charset="utf-8">
 
     <!-- JS Start -->
-    <script type="text/javascript" src="JS/JavaScriptTable.js"></script>
-    <script type="text/javascript" src="JS/sortTableAndImageChange.js"></script>
-    <script type="text/javascript" src="JS/darkMode.js"></script>
+    <script src="JS/JavaScriptTable.js" type="text/javascript"></script>
+    <script src="JS/sortTableAndImageChange.js" type="text/javascript"></script>
+    <script src="JS/darkMode.js" type="text/javascript"></script>
     <!-- JS End -->
 
     <!-- CSS Start -->
-    <link rel="stylesheet" type="text/css" href="CSS/basic.css"/>
-    <link rel="stylesheet" type="text/css" href="CSS/myTable.css"/>
-    <link rel="stylesheet" type="text/css" href="CSS/myInput.css"/>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="CSS/basic.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/myTable.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/myInput.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/charType.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/darkMode.css" rel="stylesheet" type="text/css"/>
     <!-- CSS End -->
 </head>
-
 <body onload="darkModeSave()">
 
 <input class="theme-switch" id="night-mode" type="checkbox"/>
 
 <div id="page">
-    <big><b></b></big>
     <label for="night-mode">Night Mode</label>
     <header>
         <h2>Toggle Dark/Light Mode</h2>
@@ -36,542 +35,1661 @@
     <table id="myTable">
         <thead>
         <tr class="header">
-            <th class="pointerCursor" onclick="sortTableAndImageChange(0)" style="width:5%;">ID <img
-                    height="30" id="getImageId" src="Photos/sortDownIcon.png" style="vertical-align:middle"
-                    width="30"></th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(0)" style="width:5%;">ID <img class="sortIcon"
+                                                                                                     id="getImageId"
+                                                                                                     src="Photos/sortDownIcon.png"/>
+            </th>
             <th style="width:5%;">ThumbNail</th>
-            <th class="pointerCursor" onclick="sortTableAndImageChange(2)" style="width:90%;">Name <img
-                    height="30" id="getImageName" src="Photos/sortDownIcon.png" style="vertical-align:middle"
-                    width="30"></th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(2)" style="width:20%;">Name <img class="sortIcon"
+                                                                                                        id="getImageName"
+                                                                                                        src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(3)" style="width:5%;">Type <img class="sortIcon"
+                                                                                                       id="getImageType"
+                                                                                                       src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(4)" style="width:5%;">Abilities <img
+                    class="sortIcon"
+                    id="getImageAbilities"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(5)" style="width:10%;">Awakening Rank <img
+                    class="sortIcon"
+                    id="getImageAwakeningLevel"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(6)" style="width:10%;">Trait1 <img
+                    class="sortIcon"
+                    id="getImageTrait1"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(7)" style="width:10%;">Trait2 <img
+                    class="sortIcon"
+                    id="getImageTrait2"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(8)" style="width:10%;">Trait3 <img
+                    class="sortIcon"
+                    id="getImageTrait3"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(9)" style="width:10%;">Trait4 <img
+                    class="sortIcon"
+                    id="getImageTrait4"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(10)" style="width:10%;">Trait5 <img
+                    class="sortIcon"
+                    id="getImageTrait5"
+                    src="Photos/sortDownIcon.png"/>
+            </th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>001</td>
-            <td><img alt="" height=100 src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki.png" width=100/></td>
+            <td class="charID">001</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki.png"/></td>
             <td><span class="charName">Naruto Uzumaki</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Squad 7</td>
+            <td class="charTrait2">Forbidden Jutsu</td>
+            <td class="charTrait3">Tailed Beast Chakra</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
+
         </tr>
         <tr>
-            <td>002</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha.png" alt="" height=100 width=100 /></td>
+            <td class="charID">002</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha.png"/></td>
             <td><span class="charName">Sasuke Uchiha</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Rogue Shinobi</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>003</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sakura_Haruno.png" alt="" height=100 width=100 /></td>
+            <td class="charID">003</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sakura_Haruno.png"/></td>
             <td><span class="charName">Sakura Haruno</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Squad 7</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">School of Taijutsu</td>
+            <td class="charTrait4">Medical Ninjutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>004</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kakashi_Hatake.png" alt="" height=100 width=100 /></td>
+            <td class="charID">004</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kakashi_Hatake.png"/></td>
             <td><span class="charName">Kakashi Hatake</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Lightning Style</td>
+            <td class="charTrait2">Squad 7</td>
+            <td class="charTrait3">Kekkei Genkai</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>005</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hinata_Hyuga.png" alt="" height=100 width=100 /></td>
+            <td class="charID">005</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Hinata_Hyuga.png"/></td>
             <td><span class="charName">Hinata Hyuga</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Squad 8</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Kunoichi</td>
+            <td class="charTrait4">Byakugan</td>
+            <td class="charTrait5">Chakra Sensing</td>
         </tr>
         <tr>
-            <td>006</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Gaara.png" alt="" height=100 width=100 /></td>
+            <td class="charID">006</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Gaara.png"/></td>
             <td><span class="charName">Gaara</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">The Sand Siblings</td>
+            <td class="charTrait2">Tailed Beast Chakra</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">Vast Chakra</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>007</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kisame_Hoshigaki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">007</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kisame_Hoshigaki.png"/></td>
             <td><span class="charName">Kisame Hoshigaki</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Water Style</td>
+            <td class="charTrait3">Vast Chakra</td>
+            <td class="charTrait4">Slasher</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>008</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Rock_Lee.png" alt="" height=100 width=100 /></td>
+            <td class="charID">008</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Rock_Lee.png"/></td>
             <td><span class="charName">Rock Lee</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Squad 3</td>
+            <td class="charTrait2">School of Taijutsu</td>
+            <td class="charTrait3">Eight Inner Gates</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>009</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Boruto_Uzumaki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">009</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Boruto_Uzumaki.png"/></td>
             <td><span class="charName">Boruto Uzumaki</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Pranksters</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>010</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Konohamaru_Sarutobi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">010</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Konohamaru_Sarutobi.png"/></td>
             <td><span class="charName">Konohamaru Sarutobi</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">30</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Ninja Tool Adept</td>
+            <td class="charTrait2">Pranksters</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>011</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kankuro.png" alt="" height=100 width=100 /></td>
+            <td class="charID">011</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kankuro.png"/></td>
             <td><span class="charName">Kankuro</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">The Sand Siblings</td>
+            <td class="charTrait2">Artistic Talent</td>
+            <td class="charTrait3">Ninja Tool Adept</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-           <td>012</td>
-           <td><img src="CharacterPhotos/CharacterThumb/Ino_Yamanaka.png" alt="" height=100 width=100 /></td>
-           <td><span class="charName">Ino Yamanaka</span></td>
+            <td class="charID">012</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Ino_Yamanaka.png"/></td>
+            <td><span class="charName">Ino Yamanaka</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">30</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Squad 10</td>
+            <td class="charTrait2">Ino-Shika-Cho</td>
+            <td class="charTrait3">Kunoichi</td>
+            <td class="charTrait4">Medical Ninjutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>013</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Choji_Akimichi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">013</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Choji_Akimichi.png"/></td>
             <td><span class="charName">Choji Akimichi</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Secret Ninjutsu</td>
+            <td class="charTrait2">Squad 10</td>
+            <td class="charTrait3">Ino-Shika-Cho</td>
+            <td class="charTrait4">School of Taijutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>014</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kiba_Inuzuka.png" alt="" height=100 width=100 /></td>
+            <td class="charID">014</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kiba_Inuzuka.png"/></td>
             <td><span class="charName">Kiba Inuzuka</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Squad 8</td>
+            <td class="charTrait2">School of Taijutsu</td>
+            <td class="charTrait3">Chakra Sensing</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>015</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Shino_Aburame.png" alt="" height=100 width=100 /></td>
+            <td class="charID">015</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Shino_Aburame.png"/></td>
             <td><span class="charName">Shino Aburame</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Secret Ninjutsu</td>
+            <td class="charTrait2">Squad 8</td>
+            <td class="charTrait3">Chakra Sensing</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>016</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Tenten.png" alt="" height=100 width=100 /></td>
+            <td class="charID">016</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Tenten.png"/></td>
             <td><span class="charName">Tenten</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Squad 3</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Ninja Tool Adept</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>017</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Temari.png" alt="" height=100 width=100 /></td>
+            <td class="charID">017</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Temari.png"/></td>
             <td><span class="charName">Temari</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">The Sand Siblings</td>
+            <td class="charTrait3">Kunoichi</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>018</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Shizune.png" alt="" height=100 width=100 /></td>
+            <td class="charID">018</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Shizune.png"/></td>
             <td><span class="charName">Shizune</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Kunoichi</td>
+            <td class="charTrait2">Medical Ninjutsu</td>
+            <td class="charTrait3">Ninja Tool Adept</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>019</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Asuma_Sarutobi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">019</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Asuma_Sarutobi.png"/></td>
             <td><span class="charName">Asuma Sarutobi</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Wind Style</td>
+            <td class="charTrait3">Squad 10</td>
+            <td class="charTrait4">Slasher</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>020</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sarada_Uchiha.png" alt="" height=100 width=100 /></td>
+            <td class="charID">020</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sarada_Uchiha.png"/></td>
             <td><span class="charName">Sarada Uchiha</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Sharingan</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>021</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Might_Guy.png" alt="" height=100 width=100 /></td>
+            <td class="charID">021</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Might_Guy.png"/></td>
             <td><span class="charName">Might Guy</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Squad 3</td>
+            <td class="charTrait2">School of Taijutsu</td>
+            <td class="charTrait3">Eight Inner Gates</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>022</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Neji_Hyuga.png" alt="" height=100 width=100 /></td>
+            <td class="charID">022</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Neji_Hyuga.png"/></td>
             <td><span class="charName">Neji Hyuga</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Secret Ninjutsu</td>
+            <td class="charTrait2">Squad 3</td>
+            <td class="charTrait3">Kekkei Genkai</td>
+            <td class="charTrait4">Byakugan</td>
+            <td class="charTrait5">Chakra Sensing</td>
         </tr>
         <tr>
-            <td>023</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Deidara.png" alt="" height=100 width=100 /></td>
+            <td class="charID">023</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Deidara.png"/></td>
             <td><span class="charName">Deidara</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Secret Ninjutsu</td>
+            <td class="charTrait3">Forbidden Jutsu</td>
+            <td class="charTrait4">Artistic Talent</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>024</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Haku.png" alt="" height=100 width=100 /></td>
+            <td class="charID">024</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Haku.png"/></td>
             <td><span class="charName">Haku</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Rogue Shinobi</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>025</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Itachi_Uchiha.png" alt="" height=100 width=100 /></td>
+            <td class="charID">025</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Itachi_Uchiha.png"/></td>
             <td><span class="charName">Itachi Uchiha</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">Rogue Shinobi</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>026</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Orochimaru.png" alt="" height=100 width=100 /></td>
+            <td class="charID">026</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Orochimaru.png"/></td>
             <td><span class="charName">Orochimaru</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">The Legendary Sannin Lineage</td>
+            <td class="charTrait2">Snake Follower</td>
+            <td class="charTrait3">Forbidden Jutsu</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>027</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasori.png" alt="" height=100 width=100 /></td>
+            <td class="charID">027</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasori.png"/></td>
             <td><span class="charName">Sasori</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Rogue Shinobi</td>
+            <td class="charTrait3">Artistic Talent</td>
+            <td class="charTrait4">Ninja Tool Adept</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>028</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Tobi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">028</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Tobi.png"/></td>
             <td><span class="charName">Tobi</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">Secret Ninjutsu</td>
+            <td class="charTrait4">Ninja Tool Adept</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>029</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Shikamaru_Nara.png" alt="" height=100 width=100 /></td>
+            <td class="charID">029</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Shikamaru_Nara.png"/></td>
             <td><span class="charName">Shikamaru Nara</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Secret Ninjutsu</td>
+            <td class="charTrait2">Squad 10</td>
+            <td class="charTrait3">Ino-Shika-Cho</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>030</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Zabuza_Momochi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">030</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Zabuza_Momochi.png"/></td>
             <td><span class="charName">Zabuza Momochi</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Water Style</td>
+            <td class="charTrait2">Rogue Shinobi</td>
+            <td class="charTrait3">Slasher</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>031</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Tsunade.png" alt="" height=100 width=100 /></td>
+            <td class="charID">031</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Tsunade.png"/></td>
             <td><span class="charName">Tsunade</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">The Legendary Sannin Lineage</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">Medical Ninjutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>032</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sai.png" alt="" height=100 width=100 /></td>
+            <td class="charID">032</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sai.png"/></td>
             <td><span class="charName">Sai</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Squad 7</td>
+            <td class="charTrait2">Artistic Talent</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>033</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Minato_Namikaze.png" alt="" height=100 width=100 /></td>
+            <td class="charID">033</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Minato_Namikaze.png"/></td>
             <td><span class="charName">Minato Namikaze</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Divine Speed</td>
+            <td class="charTrait2">Kage</td>
+            <td class="charTrait3">Ninja Tool Adept</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>034</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hidan.png" alt="" height=100 width=100 /></td>
+            <td class="charID">034</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Hidan.png"/></td>
             <td><span class="charName">Hidan</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Secret Ninjutsu</td>
+            <td class="charTrait3">Forbidden Jutsu</td>
+            <td class="charTrait4">Slasher</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>035</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kakuzu.png" alt="" height=100 width=100 /></td>
+            <td class="charID">035</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kakuzu.png"/></td>
             <td><span class="charName">Kakuzu</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Secret Ninjutsu</td>
+            <td class="charTrait3">Forbidden Jutsu</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>036</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Jiraiya.png" alt="" height=100 width=100 /></td>
+            <td class="charID">036</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Jiraiya.png"/></td>
             <td><span class="charName">Jiraiya</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">The Legendary Sannin Lineage</td>
+            <td class="charTrait3">Sage Chakra</td>
+            <td class="charTrait4">Artistic Talent</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>037</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Mitsuki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">037</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Mitsuki.png"/></td>
             <td><span class="charName">Mitsuki</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Squad 7 Reborn</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>038</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Boruto_Uzumaki_(Genin).png" alt="" height=100 width=100 /></td>
+            <td class="charID">038</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Boruto_Uzumaki_(Genin).png"/></td>
             <td><span class="charName">Boruto Uzumaki (Genin)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Squad 7 Reborn</td>
+            <td class="charTrait2">Pranksters</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>039</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Yamato.png" alt="" height=100 width=100 /></td>
+            <td class="charID">039</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Yamato.png"/></td>
             <td><span class="charName">Yamato</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Water Style</td>
+            <td class="charTrait2">Wood Style</td>
+            <td class="charTrait3">Squad 7</td>
+            <td class="charTrait4">Kekkei Genkai</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>040</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sarada_Uchiha_(Genin).png" alt="" height=100 width=100 /></td>
+            <td class="charID">040</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sarada_Uchiha_(Genin).png"/></td>
             <td><span class="charName">Sarada Uchiha (Genin)</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Squad 7 Reborn</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>041</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Itachi_Uchiha_(VS_Sasuke).png" alt="" height=100 width=100 /></td>
+            <td class="charID">041</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Itachi_Uchiha_(VS_Sasuke).png"/></td>
             <td><span class="charName">Itachi Uchiha (VS Sasuke)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">Kekkei Genkai</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>042</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Suigetsu_Hozuki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">042</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Suigetsu_Hozuki.png"/></td>
             <td><span class="charName">Suigetsu Hozuki</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Water Style</td>
+            <td class="charTrait2">Secret Ninjutsu</td>
+            <td class="charTrait3">Snake Follower</td>
+            <td class="charTrait4">Slasher</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>043</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Jugo.png" alt="" height=100 width=100 /></td>
+            <td class="charID">043</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Jugo.png"/></td>
             <td><span class="charName">Jugo</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Secret Ninjutsu</td>
+            <td class="charTrait2">Snake Follower</td>
+            <td class="charTrait3">Sage Chakra</td>
+            <td class="charTrait4">School of Taijutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>044</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Karin.png" alt="" height=100 width=100 /></td>
+            <td class="charID">044</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Karin.png"/></td>
             <td><span class="charName">Karin</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">30</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Secret Ninjutsu</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Snake Follower</td>
+            <td class="charTrait4">Chakra Sensing</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>045</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(VS_Itachi).png" alt="" height=100 width=100 /></td>
+            <td class="charID">045</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(VS_Itachi).png"/></td>
             <td><span class="charName">Sasuke Uchiha (VS Itachi)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">Kekkei Genkai</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>046</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(7th_Hokage).png" alt="" height=100 width=100 /></td>
+            <td class="charID">046</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(7th_Hokage).png"/>
+            </td>
             <td><span class="charName">Naruto Uzumaki (7th Hokage)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">82</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">The Legendary Sannin Lineage</td>
+            <td class="charTrait3">Tailed Beast Chakra</td>
+            <td class="charTrait4">Kage</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>047</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hanabi_Hyuga.png" alt="" height=100 width=100 /></td>
+            <td class="charID">047</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Hanabi_Hyuga.png"/></td>
             <td><span class="charName">Hanabi Hyuga</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Kunoichi</td>
+            <td class="charTrait2">School of Taijutsu</td>
+            <td class="charTrait3">Byakugan</td>
+            <td class="charTrait4">Chakra Sensing</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>048</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Wandering_Ninja).png" alt="" height=100 width=100 /></td>
+            <td class="charID">048</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Wandering_Ninja).png"/>
+            </td>
             <td><span class="charName">Sasuke Uchiha (Wandering Ninja)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">82</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">The Legendary Sannin</td>
+            <td class="charTrait4">Rinnegan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>049</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Pain_(Tendo).png" alt="" height=100 width=100 /></td>
+            <td class="charID">049</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Pain_(Tendo).png"/></td>
             <td><span class="charName">Pain (Tendo)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Akatsuki</td>
+            <td class="charTrait3">Forbidden Jutsu</td>
+            <td class="charTrait4">Rinnegan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>050</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Konan.png" alt="" height=100 width=100 /></td>
+            <td class="charID">050</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Konan.png"/></td>
             <td><span class="charName">Konan</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Akatsuki</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Chakra Sensing</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>051</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Sage_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">051</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Sage_Mode).png"/></td>
             <td><span class="charName">Naruto Uzumaki (Sage Mode)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Sage Chakra</td>
+            <td class="charTrait3">School of Taijutsu</td>
+            <td class="charTrait4">Vast Chakra</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>052</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hiruzen_Sarutobi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">052</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Hiruzen_Sarutobi.png"/></td>
             <td><span class="charName">Hiruzen Sarutobi</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Earth Style</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">Forbidden Jutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>053</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Tobirama_Senju.png" alt="" height=100 width=100 /></td>
+            <td class="charID">053</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Tobirama_Senju.png"/></td>
             <td><span class="charName">Tobirama Senju</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Water Style</td>
+            <td class="charTrait2">Divine Speed</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>054</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hashirama_Senju.png" alt="" height=100 width=100 /></td>
+            <td class="charID">054</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Hashirama_Senju.png"/></td>
             <td><span class="charName">Hashirama Senju</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wood Style</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">Vast Chakra</td>
+            <td class="charTrait5">Fate</td>
         </tr>
         <tr>
-            <td>055</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Madara_Uchiha.png" alt="" height=100 width=100 /></td>
+            <td class="charID">055</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Madara_Uchiha.png"/></td>
             <td><span class="charName">Madara Uchiha</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Rogue Shinobi</td>
+            <td class="charTrait3">Fate</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>056</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Obito_Uchiha.png" alt="" height=100 width=100 /></td>
+            <td class="charID">056</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Obito_Uchiha.png"/></td>
             <td><span class="charName">Obito Uchiha</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Wood Style</td>
+            <td class="charTrait3">Kekkei Genkai</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>057</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kakashi_Hatake_(Double_Sharingan).png" alt="" height=100 width=100 /></td>
+            <td class="charID">057</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Kakashi_Hatake_(Double_Sharingan).png"/></td>
             <td><span class="charName">Kakashi Hatake (Double Sharingan)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Earth Style</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Kekkei Genkai</td>
+            <td class="charTrait4">Allied Shinobi Forces</td>
+            <td class="charTrait5">Sharingan</td>
         </tr>
         <tr>
-            <td>058</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Killer_Bee.png" alt="" height=100 width=100 /></td>
+            <td class="charID">058</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Killer_Bee.png"/></td>
             <td><span class="charName">Killer Bee</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Lightning Style</td>
+            <td class="charTrait2">Tailed Beast Chakra</td>
+            <td class="charTrait3">School of Taijutsu</td>
+            <td class="charTrait4">Artistic Talent</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>059</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Shisui_Uchiha.png" alt="" height=100 width=100 /></td>
+            <td class="charID">059</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Shisui_Uchiha.png"/></td>
             <td><span class="charName">Shisui Uchiha</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">82</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Divine Speed</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>060</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kabuto_Yakushi_(Snake_Cloak).png" alt="" height=100 width=100 /></td>
+            <td class="charID">060</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kabuto_Yakushi_(Snake_Cloak).png"/>
+            </td>
             <td><span class="charName">Kabuto Yakushi (Snake Cloak)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Snake Follower</td>
+            <td class="charTrait2">Rogue Shinobi</td>
+            <td class="charTrait3">School of Taijutsu</td>
+            <td class="charTrait4">Medical Ninjutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>061</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Eternal_Mangekyo_Sharingan).png" alt="" height=100 width=100 /></td>
+            <td class="charID">061</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Eternal_Mangekyo_Sharingan).png"/></td>
             <td><span class="charName">Sasuke Uchiha (Eternal Mangekyo Sharingan)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">82</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Rogue Shinobi</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>062</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Kurama_Link_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">062</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Kurama_Link_Mode).png"/></td>
             <td><span class="charName">Naruto Uzumaki (Kurama Link Mode)</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">82</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Tailed Beast Chakra</td>
+            <td class="charTrait3">Vast Chakra</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>063</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Ohnoki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">063</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Ohnoki.png"/></td>
             <td><span class="charName">Ohnoki</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Earth Style</td>
+            <td class="charTrait2">Allied Shinobi Forces</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>064</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Danzo_Shimura.png" alt="" height=100 width=100 /></td>
+            <td class="charID">064</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Danzo_Shimura.png"/></td>
             <td><span class="charName">Danzo Shimura</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Wood Style</td>
+            <td class="charTrait3">Sharingan</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>065</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Darui.png" alt="" height=100 width=100 /></td>
+            <td class="charID">065</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Darui.png"/></td>
             <td><span class="charName">Darui</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Lightning Style</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Allied Shinobi Forces</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>066</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Rin_Nohara.png" alt="" height=100 width=100 /></td>
+            <td class="charID">066</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Rin_Nohara.png"/></td>
             <td><span class="charName">Rin Nohara</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Kunoichi</td>
+            <td class="charTrait2">Medical Ninjutsu</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>067</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Minato_Namikaze_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">067</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Minato_Namikaze_(Reanimation).png"/>
+            </td>
             <td><span class="charName">Minato Namikaze (Reanimation)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Divine Speed</td>
+            <td class="charTrait2">Kage</td>
+            <td class="charTrait3">Reanimation</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>068</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Six_Paths_Sage_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">068</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Six_Paths_Sage_Mode).png"/></td>
             <td><span class="charName">Naruto Uzumaki (Six Paths Sage Mode)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Sage Chakra</td>
+            <td class="charTrait3">Vast Chakra</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>069</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Rinne_Sharingan).png" alt="" height=100 width=100 /></td>
+            <td class="charID">069</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Rinne_Sharingan).png"/>
+            </td>
             <td><span class="charName">Sasuke Uchiha (Rinne Sharingan)</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">Lightning Style</td>
+            <td class="charTrait4">Rinnegan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>070</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Obito_Uchiha_(Ten_Tails_Jinchuriki).png" alt="" height=100 width=100 /></td>
+            <td class="charID">070</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Obito_Uchiha_(Ten_Tails_Jinchuriki).png"/></td>
             <td><span class="charName">Obito Uchiha (Ten Tails Jinchuriki)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wood Style</td>
+            <td class="charTrait2">Vast Chakra</td>
+            <td class="charTrait3">Sharingan</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>071</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Gaara_(Allied_Shinobi_Forces_Commander).png" alt="" height=100 width=100 /></td>
+            <td class="charID">071</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Gaara_(Allied_Shinobi_Forces_Commander).png"/></td>
             <td><span class="charName">Gaara (Allied Shinobi Forces Commander)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">The Sand Siblings</td>
+            <td class="charTrait2">Allied Shinobi Forces</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>072</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Itachi_Uchiha_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">072</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Itachi_Uchiha_(Reanimation).png"/>
+            </td>
             <td><span class="charName">Itachi Uchiha (Reanimation)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">69</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Reanimation</td>
+            <td class="charTrait4">Sharingan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>073</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Nine_Tails_Chakra_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">073</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Nine_Tails_Chakra_Mode).png"/></td>
             <td><span class="charName">Naruto Uzumaki (Nine Tails Chakra Mode)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Tailed Beast Chakra</td>
+            <td class="charTrait3">Divine Speed</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>074</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Hebi).png" alt="" height=100 width=100 /></td>
+            <td class="charID">074</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Hebi).png"/></td>
             <td><span class="charName">Sasuke Uchiha (Hebi)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Snake Follower</td>
+            <td class="charTrait4">Rogue Shinobi</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>075</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Nagato_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">075</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Nagato_(Reanimation).png"/></td>
             <td><span class="charName">Nagato (Reanimation)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Akatsuki</td>
+            <td class="charTrait3">Reanimation</td>
+            <td class="charTrait4">Rinnegan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>076</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Tsunade_(Great_Ninja_War).png" alt="" height=100 width=100 /></td>
+            <td class="charID">076</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Tsunade_(Great_Ninja_War).png"/></td>
             <td><span class="charName">Tsunade (Great Ninja War)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Allied Shinobi Forces</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">Medical Ninjutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>077</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Indra_Otsutsuki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">077</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Indra_Otsutsuki.png"/></td>
             <td><span class="charName">Indra Otsutsuki</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Sage Chakra</td>
+            <td class="charTrait2">Vast Chakra</td>
+            <td class="charTrait3">Fate</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>078</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Raikage_Ay.png" alt="" height=100 width=100 /></td>
+            <td class="charID">078</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Raikage_Ay.png"/></td>
             <td><span class="charName">Raikage Ay</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Lightning Style</td>
+            <td class="charTrait2">Allied Shinobi Forces</td>
+            <td class="charTrait3">Divine Speed</td>
+            <td class="charTrait4">Kage</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>079</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Mei_Terumi.png" alt="" height=100 width=100 /></td>
+            <td class="charID">079</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Mei_Terumi.png"/></td>
             <td><span class="charName">Mei Terumi</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Water Style</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Allied Shinobi Forces</td>
+            <td class="charTrait4">Kunoichi</td>
+            <td class="charTrait5">Kage</td>
         </tr>
         <tr>
-            <td>080</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Ashura_Otsutsuki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">080</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Ashura_Otsutsuki.png"/></td>
             <td><span class="charName">Ashura Otsutsuki</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Wind Style</td>
+            <td class="charTrait2">Wood Style</td>
+            <td class="charTrait3">Sage Chakra</td>
+            <td class="charTrait4">Fate</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>081</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kimimaro_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">081</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kimimaro_(Reanimation).png"/></td>
             <td><span class="charName">Kimimaro (Reanimation)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Snake Follower</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">School of Taijutsu</td>
+            <td class="charTrait4">Reanimation</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>082</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Madara_Uchiha_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">082</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Madara_Uchiha_(Reanimation).png"/>
+            </td>
             <td><span class="charName">Madara Uchiha (Reanimation)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wood Style</td>
+            <td class="charTrait2">Reanimation</td>
+            <td class="charTrait3">Vast Chakra</td>
+            <td class="charTrait4">Rinnegan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>083</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hinata_Hyuga_(Summer_Break).png" alt="" height=100 width=100 /></td>
+            <td class="charID">083</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Hinata_Hyuga_(Summer_Break).png"/>
+            </td>
             <td><span class="charName">Hinata Hyuga (Summer Break)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Squad 8</td>
+            <td class="charTrait3">Kunoichi</td>
+            <td class="charTrait4">Byakugan</td>
+            <td class="charTrait5">Summer Break</td>
         </tr>
         <tr>
-            <td>084</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sakura_Haruno_(Summer_Break).png" alt="" height=100 width=100 /></td>
+            <td class="charID">084</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sakura_Haruno_(Summer_Break).png"/>
+            </td>
             <td><span class="charName">Sakura Haruno (Summer Break)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Summer Break</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>085</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Minato_Namikaze_(Reanimation_Kurama_Link_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">085</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Minato_Namikaze_(Reanimation_Kurama_Link_Mode).png"/></td>
             <td><span class="charName">Minato Namikaze (Reanimation Kurama Link Mode)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Tailed Beast Chakra</td>
+            <td class="charTrait2">Divine Speed</td>
+            <td class="charTrait3">Kage</td>
+            <td class="charTrait4">Reanimation</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>086</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kinkaku_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">086</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kinkaku_(Reanimation).png"/></td>
             <td><span class="charName">Kinkaku (Reanimation)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Tailed Beast Chakra</td>
+            <td class="charTrait2">Reanimation</td>
+            <td class="charTrait3">Vast Chakra</td>
+            <td class="charTrait4">Ninja Tool Adept</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>087</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Utakata_(Reanimation).png" alt="" height=100 width=100 /></td>
+            <td class="charID">087</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Utakata_(Reanimation).png"/></td>
             <td><span class="charName">Utakata (Reanimation)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Water Style</td>
+            <td class="charTrait2">Secret Ninjutsu</td>
+            <td class="charTrait3">Tailed Beast Chakra</td>
+            <td class="charTrait4">Reanimation</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>088</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Madara_Uchiha_(Six_Paths).png" alt="" height=100 width=100 /></td>
+            <td class="charID">088</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Madara_Uchiha_(Six_Paths).png"/></td>
             <td><span class="charName">Madara Uchiha (Six Paths)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Vast Chakra</td>
+            <td class="charTrait3">Rinnegan</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>089</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Madara_Uchiha_(White_Mask).png" alt="" height=100 width=100 /></td>
+            <td class="charID">089</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Madara_Uchiha_(White_Mask).png"/></td>
             <td><span class="charName">Madara Uchiha (White Mask)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Fire Style</td>
+            <td class="charTrait2">Sharingan</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>090</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Hashirama_Senju_(Reanimation_Sage_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">090</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Hashirama_Senju_(Reanimation_Sage_Mode).png"/></td>
             <td><span class="charName">Hashirama Senju (Reanimation Sage Mode)</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Wood Style</td>
+            <td class="charTrait2">Kekkei Genkai</td>
+            <td class="charTrait3">Sage Chakra</td>
+            <td class="charTrait4">Kage</td>
+            <td class="charTrait5">Reanimation</td>
         </tr>
         <tr>
-            <td>091</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sakura_Haruno_(Great_Ninja_War).png" alt="" height=100 width=100 /></td>
+            <td class="charID">091</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sakura_Haruno_(Great_Ninja_War).png"/>
+            </td>
             <td><span class="charName">Sakura Haruno (Great Ninja War)</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">The Legendary Sannin Lineage</td>
+            <td class="charTrait2">Allied Shinobi Forces</td>
+            <td class="charTrait3">Kunoichi</td>
+            <td class="charTrait4">Medical Ninjutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>092</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Rinne_Sharingan_Shadow).png" alt="" height=100 width=100 /></td>
+            <td class="charID">092</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Rinne_Sharingan_Shadow).png"/></td>
             <td><span class="charName">Sasuke Uchiha (Rinne Sharingan: Shadow)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">The Legendary Sannin Lineage</td>
+            <td class="charTrait4">Rinnegan</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>093</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Six_Paths_Sage_Mode_Light).png" alt="" height=100 width=100 /></td>
+            <td class="charID">093</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Six_Paths_Sage_Mode_Light).png"/></td>
             <td><span class="charName">Naruto Uzumaki (Six Paths Sage Mode: Light)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Six Paths Power</td>
+            <td class="charTrait2">The Legendary Sannin Lineage</td>
+            <td class="charTrait3">Sage Chakra</td>
+            <td class="charTrait4">Forbidden Jutsu</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>094</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kabuto_Yakushi_(Sage_Mode).png" alt="" height=100 width=100 /></td>
+            <td class="charID">094</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kabuto_Yakushi_(Sage_Mode).png"/></td>
             <td><span class="charName">Kabuto Yakushi (Sage Mode)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">56</td>
+            <td><img alt="" src="Photos/icon7Star.png"/></td>
+            <td class="charTrait1">Snake Follower</td>
+            <td class="charTrait2">Sage Chakra</td>
+            <td class="charTrait3">Medical Ninjutsu</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>095</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Might_Guy_(Eight_Inner_Gates).png" alt="" height=100 width=100 /></td>
+            <td class="charID">095</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Might_Guy_(Eight_Inner_Gates).png"/>
+            </td>
             <td><span class="charName">Might Guy (Eight Inner Gates)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Allied Shinobi Forces</td>
+            <td class="charTrait2">School of Taijutsu</td>
+            <td class="charTrait3">Eight Inner Gates</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>096</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Kaguya_Otsutsuki.png" alt="" height=100 width=100 /></td>
+            <td class="charID">096</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Kaguya_Otsutsuki.png"/></td>
             <td><span class="charName">Kaguya Otsutsuki</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Byakugan</td>
+            <td class="charTrait2">Rinnegan</td>
+            <td class="charTrait3">-</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>097</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sakura_Uchiha_(New_Year's_Games).png" alt="" height=100 width=100 /></td>
+            <td class="charID">097</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Sakura_Uchiha_(New_Year's_Games).png"/></td>
             <td><span class="charName">Sakura Uchiha (New Year's Games)</span></td>
+            <td>
+                <div class="charAttack">Attack</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Kunoichi</td>
+            <td class="charTrait3">Medical Ninjutsu</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>098</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Shikamaru_Nara_(Bestowed_Outfit).png" alt="" height=100 width=100 /></td>
+            <td class="charID">098</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Shikamaru_Nara_(Bestowed_Outfit).png"/></td>
             <td><span class="charName">Shikamaru Nara (Bestowed Outfit)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Secret Ninjutsu</td>
+            <td class="charTrait3">Squad 10</td>
+            <td class="charTrait4">Ino-Shika-Cho</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>099</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Warrior_Spirit).png" alt="" height=100 width=100 /></td>
+            <td class="charID">099</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki_(Warrior_Spirit).png"/>
+            </td>
             <td><span class="charName">Naruto Uzumaki (Warrior Spirit)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">School of Taijutsu</td>
+            <td class="charTrait3">Warrior Spirit</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>100</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Jiraiya_(Warrior_Spirit).png" alt="" height=100 width=100 /></td>
+            <td class="charID">100</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Jiraiya_(Warrior_Spirit).png"/></td>
             <td><span class="charName">Jiraiya (Warrior Spirit)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">The Legendary Sannin Lineage</td>
+            <td class="charTrait3">Warrior Spirit</td>
+            <td class="charTrait4">-</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>101</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Boruto_Uzumaki_(Warrior_Spirit).png" alt="" height=100 width=100 /></td>
+            <td class="charID">101</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Boruto_Uzumaki_(Warrior_Spirit).png"/>
+            </td>
             <td><span class="charName">Boruto Uzumaki (Warrior Spirit)</span></td>
+            <td>
+                <div class="charDefense">Defense</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Wind Style</td>
+            <td class="charTrait4">Warrior Spirit</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>102</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Warrior_Spirit).png" alt="" height=100 width=100 /></td>
+            <td class="charID">102</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Warrior_Spirit).png"/>
+            </td>
             <td><span class="charName">Sasuke Uchiha (Warrior Spirit)</span></td>
+            <td>
+                <div class="charSkill">Skill</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Sharingan</td>
+            <td class="charTrait4">Warrior Spirit</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>103</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Konan_(Summer_Break).png" alt="" height=100 width=100 /></td>
+            <td class="charID">103</td>
+            <td><img alt="" class="charThumb" src="CharacterPhotos/CharacterThumb/Konan_(Summer_Break).png"/></td>
             <td><span class="charName">Konan (Summer Break)</span></td>
+            <td>
+                <div class="charAssist">Assist</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Akatsuki</td>
+            <td class="charTrait3">Kunoichi</td>
+            <td class="charTrait4">Summer Break</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>104</td>
-            <td><img alt="" height=100 src="CharacterPhotos/CharacterThumb/Obito_Uchiha_(Illusionary_World_Outfit).png"
-                     width=100/></td>
+            <td class="charID">104</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Obito_Uchiha_(Illusionary_World_Outfit).png"/></td>
             <td><span class="charName">Obito Uchiha (Illusionary World Outfit)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Fire Style</td>
+            <td class="charTrait3">Sharingan</td>
+            <td class="charTrait4">Illusionary World Outfit</td>
+            <td class="charTrait5">-</td>
         </tr>
         <tr>
-            <td>105</td>
-            <td><img alt="" height=100 src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Illusionary_World_Outfit).png"
-                     width=100/></td>
+            <td class="charID">105</td>
+            <td><img alt="" class="charThumb"
+                     src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Illusionary_World_Outfit).png"/></td>
             <td><span class="charName">Sasuke Uchiha (Illusionary World Outfit)</span></td>
+            <td>
+                <div class="charUtility">Utility</div>
+            </td>
+            <td class="charAbilities">43</td>
+            <td><img alt="" src="Photos/icon6Star.png"/></td>
+            <td class="charTrait1">Special Outfit</td>
+            <td class="charTrait2">Lightning Style</td>
+            <td class="charTrait3">Sharingan</td>
+            <td class="charTrait4">Illusionary World Outfit</td>
+            <td class="charTrait5">-</td>
         </tr>
         </tbody>
     </table>
