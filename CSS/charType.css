@@ -1,0 +1,24 @@
+.charAttack{
+    color:#FF0000;
+    text-align:center;
+}
+
+.charAssist{
+    color:#00FF00;
+    text-align:center;
+}
+
+.charUtility{
+    color:#FF00FF;
+    text-align:center;
+}
+
+.charDefense{
+    color:#FFBF00;
+    text-align:center;
+}
+
+.charSkill{
+    color:#6495ED;
+    text-align:center;
+}
