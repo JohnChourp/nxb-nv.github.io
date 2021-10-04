@@ -1,20 +1,17 @@
-/* Start theme-switch */
-.theme-switch:unchecked ~ #page {
-  --text-color: black;
-  --bg-color: white;
-}
-/* Switched mode */
-.theme-switch:checked ~ #page {
-  --text-color: white;
-  --bg-color: #404040;
-}
-/* End theme-switch */
-
-/* Styling */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.theme-switch:unchecked ~ #page {
+  --text-color: black;
+  --bg-color: white;
+}
+
+.theme-switch:checked ~ #page {
+  --text-color: white;
+  --bg-color: #404040;
 }
 
 #page {

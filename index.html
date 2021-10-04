@@ -19,9 +19,11 @@
 
 <body onload="darkModeSave()">
 
-<input type="checkbox" class="theme-switch" /><big><b>Night Mode</b></big>
+<input class="theme-switch" id="night-mode" type="checkbox"/>
 
 <div id="page">
+    <big><b></b></big>
+    <label for="night-mode">Night Mode</label>
     <header>
         <h2>Toggle Dark/Light Mode</h2>
         <p>Click the button to toggle between dark and light mode for this page.</p>
@@ -29,20 +31,24 @@
 
     <h2>All Characters</h2>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <input id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" type="text">
 
     <table id="myTable">
         <thead>
         <tr class="header">
-            <th style="width:5%;" onclick="sortTableAndImageChange(0)" class="pointerCursor">ID <img src="Photos/sortDownIcon.png" id="getImageId" width="30" height="30" style="vertical-align:middle"></th>
-                <th style="width:5%;">ThumbNail</th>
-                <th style="width:90%;" onclick="sortTableAndImageChange(2)" class="pointerCursor">Name <img src="Photos/sortDownIcon.png" id="getImageName" width="30" height="30" style="vertical-align:middle"></th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(0)" style="width:5%;">ID <img
+                    height="30" id="getImageId" src="Photos/sortDownIcon.png" style="vertical-align:middle"
+                    width="30"></th>
+            <th style="width:5%;">ThumbNail</th>
+            <th class="pointerCursor" onclick="sortTableAndImageChange(2)" style="width:90%;">Name <img
+                    height="30" id="getImageName" src="Photos/sortDownIcon.png" style="vertical-align:middle"
+                    width="30"></th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td>001</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki.png" alt="" height=100 width=100 /></td>
+            <td><img alt="" height=100 src="CharacterPhotos/CharacterThumb/Naruto_Uzumaki.png" width=100/></td>
             <td><span class="charName">Naruto Uzumaki</span></td>
         </tr>
         <tr>
@@ -557,12 +563,14 @@
         </tr>
         <tr>
             <td>104</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Obito_Uchiha_(Illusionary_World_Outfit).png" alt="" height=100 width=100 /></td>
+            <td><img alt="" height=100 src="CharacterPhotos/CharacterThumb/Obito_Uchiha_(Illusionary_World_Outfit).png"
+                     width=100/></td>
             <td><span class="charName">Obito Uchiha (Illusionary World Outfit)</span></td>
         </tr>
         <tr>
             <td>105</td>
-            <td><img src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Illusionary_World_Outfit).png" alt="" height=100 width=100 /></td>
+            <td><img alt="" height=100 src="CharacterPhotos/CharacterThumb/Sasuke_Uchiha_(Illusionary_World_Outfit).png"
+                     width=100/></td>
             <td><span class="charName">Sasuke Uchiha (Illusionary World Outfit)</span></td>
         </tr>
         </tbody>
