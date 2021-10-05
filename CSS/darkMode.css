@@ -17,10 +17,7 @@ html, body {
 #page {
   color: var(--text-color);
   background: var(--bg-color);
-  font: normal 125%/1.4 Georgia, 'Times New Roman', Times, serif;
+  font: normal 14px Georgia, 'Times New Roman', Times, serif;
   min-height: 100%;
   transition: color .2s, background-color .2s;
 }
-
-
-
