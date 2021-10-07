@@ -4,7 +4,7 @@ html, body {
   height: 100%;
 }
 
-.theme-switch:unchecked ~ #page {
+.theme-switch ~ #page {
   --text-color: black;
   --bg-color: white;
 }
