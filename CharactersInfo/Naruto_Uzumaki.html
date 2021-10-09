@@ -5,17 +5,113 @@
 	
 	<!-- CSS Start -->
 	<link href="/CSS/darkMode.css" rel="stylesheet" type="text/css"/>
+	<link href="/CSS/CharactersInfo.css" rel="stylesheet" type="text/css"/>
+	<link href="/CSS/pointerCursor.css" rel="stylesheet" type="text/css"/>
+	<link href="/CSS/myInput.css" rel="stylesheet" type="text/css"/>
+	<link href="/CSS/myTable.css" rel="stylesheet" type="text/css"/>
+	<link href="/CSS/cardType.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
 	
 	<!-- JS Start -->
 	<script src="/JS/darkMode.js" type="text/javascript"></script>
-	<title>Naruto Uzumaki</title>
+	<script src="/JS/myInput.js" type="text/javascript"></script>
+	<script src="/JS/sortTableForCharactersInfo.js" type="text/javascript"></script>
 	<!-- JS End -->
-
+	
+	<title>Naruto Uzumaki</title>
 </head>
 <body>
 
-<p>Naruto Uzumaki Info</p>
+<h1>Naruto Uzumaki</h1>
 
+<h2>All Applicable Ultimate Jutsus, Jutsus for Naruto Uzumaki</h2>
+
+<input id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" type="text">
+
+<table id="myTable">
+	<thead>
+	<tr class="header">
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(0)" style="width:10%;">ID
+			<img class="sortIcon" id="getImageId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th style="width:10%;">CardArtwork</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(3)" style="width:10%;">Name
+			<img class="sortIcon" id="getImageNameId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(2)" style="width:10%;">Category
+			<img class="sortIcon" id="getImageCategoryId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(4)" style="width:10%;">Status
+			<img class="sortIcon" id="getImageStatusId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(5)" style="width:10%;">Nature
+			<img class="sortIcon" id="getImageJutsuNatureId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(6)" style="width:10%;">Rank
+			<img class="sortIcon" id="getImageAwakeningRankId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th style="width:10%;">CardJutsu</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(8)" style="width:5%;">CP Cost
+			<img class="sortIcon" id="getImageCPCostId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(9)" style="width:10%;">CRI
+			<img class="sortIcon" id="getImageCRIId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(10)" style="width:10%;">POW
+			<img class="sortIcon" id="getImagePOWId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+		<th class="pointerCursor" onclick="sortTableForCharactersInfo(11)" style="width:5%;">RT
+			<img class="sortIcon" id="getImageRTId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="cardID">001</td>
+		<td><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/Vh0Djr-u5IeJu3VL_M_T1qwReKTpHu36Ee-s0nn9Us1AD3LbQaeN3dWl9RFglOF1IkTXtcIfpWDbNLrQvl48KKbs-SZoURIaxW4xLAVoJsTtYQZv4CxRlFX-BBqdj1gJEtlDTG-KwQ=w1920-h1080"></td>
+		<td class="cardName">Naruto vs Pain</td>
+		<td>Has Ultimate Jutsu</td>
+		<td class="cardAttack">Attack</td>
+		<td class="cardRelease">Release</td>
+		<td><img alt="" class="cardAwaken"
+		         src="https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080"/></td>
+		<td><img alt="" class="cardJutsu" src="https://lh3.googleusercontent.com/YF5nRDrqHeA0H6d9pumVED6p7kQisGbKv7khMwf8PO9d-vwH9u83iE9sdIRzFreYF0-BU92Lgf99zE3_0hHTpTzb7rSMyfpngo2yVi6Ajwcx2C61S9jWT53ffKXxTdkyMfT1eF0EBQ=w1920-h1080"></td>
+		<td class="cardCPCost">300</td>
+		<td class="cardCRI">36.00%</td>
+		<td class="cardPOW">9320</td>
+		<td class="cardRT">60</td>
+	</tr>
+	<tr>
+		<td class="cardID">002</td>
+		<td><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/w-TQrBkCg6X1_M0F71tNziOCmdRdQXM_nqTD7EnUY6gGSNqCa9yMLuZXL_OsXegJoB7Em3U5ng-rqAFrH0KDMyRL6EBzlgwLwRXgj86ibKX_0mVy-CbvHMO4SpjFmZXkw7RaIkp5Kw=w1920-h1080"></td>
+		<td class="cardName">The Final Gamble!!</td>
+		<td>Has Ultimate Jutsu</td>
+		<td class="cardAttack">Attack</td>
+		<td class="cardImpact">Impact</td>
+		<td><img alt="" class="cardAwaken"
+		         src="https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080"/></td>
+		<td><img alt="" class="cardJutsu" src="https://lh3.googleusercontent.com/HV67JGSs1QWTBIP1IVPJtOoI1I0gRcFxl3bDX6nYIQmlZgTX7mjPdXGFFqkJtIh-7CCkZFHhyOh8p8TDQu_IYNo_wlmpiF5spV95FBbunONv4PPMUgHwuaTLRIAvuO2P2tnh7Su6mA=w1920-h1080"></td>
+		<td class="cardCPCost">350</td>
+		<td class="cardCRI">36.00%</td>
+		<td class="cardPOW">9820</td>
+		<td class="cardRT">53</td>
+	</tr>
+	<tr>
+		<td class="cardID">003</td>
+		<td><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/Mq4rPEuzcWMTUKBaTOlCY2uDlsHj_tQeuTvyPf8GSHRd3MRrgh57CqcEnYNPmR4UNaLkeDmgfWErxTfIw9SlRGJEXvxysgsj20JR0WZJBgfS3cR0VJWraN9a-tKH1kZkOQRJnUkD-Q=w1920-h1080"></td>
+		<td class="cardName">A Rampaging Power!</td>
+		<td>Has Ultimate Jutsu</td>
+		<td class="cardAttack">Attack</td>
+		<td class="cardImpact">Impact</td>
+		<td><img alt="" class="cardAwaken"
+		         src="https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080"/></td>
+		<td><img alt="" class="cardJutsu" src="https://lh3.googleusercontent.com/HhC7J5BaLBJDEIh8D0IDwkK-kFA4JW-qMGF1q_-7W0Cq-OoRomV8epOu0IcOeLUGgvPGLSDXPqixGyV_VLfjLMe2TD85vJyB11zgA7Gj-wEnMXm4u0lAWuxXdntByvtdsdLNuO0hiQ=w1920-h1080"></td>
+		<td class="cardCPCost">250</td>
+		<td class="cardCRI">36.00%</td>
+		<td class="cardPOW">5100</td>
+		<td class="cardRT">60</td>
+	</tr>
+	</tbody>
+</table>
 </body>
 </html>
