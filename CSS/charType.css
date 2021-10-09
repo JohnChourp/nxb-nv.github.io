@@ -1,100 +1,100 @@
 .charID{
-    text-align:center;
+	text-align:center;
 }
 
 .charThumb{
-    height:50px;
-    width:50px;
-    /* Center the Image */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* Center the Image */
+	height:50px;
+	width:50px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 .charName{
-    color: #80ccc6;
+	color: #80ccc6;
 }
 
 .charName:hover{
-    cursor: pointer;
-    text-decoration: underline;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 a:link {
-  color: #80ccc6;
-  text-decoration: none;
+	color: #80ccc6;
+	text-decoration: none;
 }
 
 a:visited {
-  color: #80ccc6;
-  text-decoration: none;
+	color: #80ccc6;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #4edcc4;
+	text-decoration: underline;
+	color: #4edcc4;
 }
 
 a:active {
-  color: #80ccc6;
-  text-decoration: none;
+	color: #80ccc6;
+	text-decoration: none;
 }
 
 .charAttack{
-    color:#FF0000;
-    text-align:center;
+	color:#FF0000;
+	text-align:center;
 }
 
 .charAssist{
-    color:#00FF00;
-    text-align:center;
+	color:#00FF00;
+	text-align:center;
 }
 
 .charUtility{
-    color:#FF00FF;
-    text-align:center;
+	color:#FF00FF;
+	text-align:center;
 }
 
 .charDefense{
-    color:#FFBF00;
-    text-align:center;
+	color:#FFBF00;
+	text-align:center;
 }
 
 .charSkill{
-    color:#6495ED;
-    text-align:center;
+	color:#6495ED;
+	text-align:center;
 }
 
 .charAwaken{
-    height:15px;
-    /* Center the Image */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* Center the Image */
+	height:15px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 .charAbilities{
-    text-align:center;
+	text-align:center;
 }
 
 .charTrait1{
-    text-align:center;
+	text-align:center;
 }
 
 .charTrait2{
-    text-align:center;
+	text-align:center;
 }
 
 .charTrait3{
-    text-align:center;
+	text-align:center;
 }
 
 .charTrait4{
-    text-align:center;
+	text-align:center;
 }
 
 .charTrait5{
-    text-align:center;
+	text-align:center;
 }

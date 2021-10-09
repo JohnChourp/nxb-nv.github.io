@@ -1,21 +1,21 @@
 #myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 14px;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 14px;
 }
 
 #myTable tr {
-    border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 }
 
 #myTable th, td {
-  text-align: left;
-  padding: 5px;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+	text-align: left;
+	padding: 5px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
 }
 
 #myTable th{
-    text-align: center;
+	text-align: center;
 }

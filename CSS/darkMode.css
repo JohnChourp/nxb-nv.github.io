@@ -1,8 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
-  color: black;
-  background: white;
-  font: normal 14px Georgia, 'Times New Roman', Times, serif;
-  transition: color .2s, background-color .2s;
+	margin: 0;
+	padding: 0;
+	color: black;
+	background: white;
+	font: normal 14px Georgia, 'Times New Roman', Times, serif;
+	transition: color .2s, background-color .2s;
 }
