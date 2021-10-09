@@ -15,7 +15,8 @@
 	<!-- JS Start -->
 	<script src="/JS/darkMode.js" type="text/javascript"></script>
 	<script src="/JS/myInput.js" type="text/javascript"></script>
-	<script src="/JS/sortTableForCharactersInfo.js" type="text/javascript"></script>
+	<script src="/JS/sortTable.js" type="text/javascript"></script>
+	<script src="/JS/sortCharactersInfo.js" type="text/javascript"></script>
 	<!-- JS End -->
 	
 	<title>Naruto Uzumaki</title>
@@ -28,39 +29,39 @@
 
 <input id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" type="text">
 
-<table id="myTable">
+<table id="sortTable">
 	<thead>
 	<tr class="header">
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(0)" style="width:10%;">ID
+		<th class="pointerCursor" onclick="sortCharactersInfo(0); sortTable(0)" style="width:10%;">ID
 			<img class="sortIcon" id="getImageId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
 		<th style="width:10%;">CardArtwork</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(3)" style="width:10%;">Name
+		<th class="pointerCursor" onclick="sortCharactersInfo(2); sortTable(2)" style="width:10%;">Name
 			<img class="sortIcon" id="getImageNameId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(2)" style="width:10%;">Category
+		<th class="pointerCursor" onclick="sortCharactersInfo(3); sortTable(3)" style="width:10%;">Category
 			<img class="sortIcon" id="getImageCategoryId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(4)" style="width:10%;">Status
+		<th class="pointerCursor" onclick="sortCharactersInfo(4); sortTable(4)" style="width:10%;">Status
 			<img class="sortIcon" id="getImageStatusId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(5)" style="width:10%;">Nature
+		<th class="pointerCursor" onclick="sortCharactersInfo(5); sortTable(5)" style="width:10%;">Nature
 			<img class="sortIcon" id="getImageJutsuNatureId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(6)" style="width:10%;">Rank
+		<th class="pointerCursor" onclick="sortCharactersInfo(6); sortTable(6)" style="width:10%;">Rank
 			<img class="sortIcon" id="getImageAwakeningRankId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
 		<th style="width:10%;">CardJutsu</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(8)" style="width:5%;">CP Cost
+		<th class="pointerCursor" onclick="sortCharactersInfo(8); sortTable(8)" style="width:5%;">CP Cost
 			<img class="sortIcon" id="getImageCPCostId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(9)" style="width:10%;">CRI
+		<th class="pointerCursor" onclick="sortCharactersInfo(9); sortTable(9)" style="width:10%;">CRI
 			<img class="sortIcon" id="getImageCRIId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(10)" style="width:10%;">POW
+		<th class="pointerCursor" onclick="sortCharactersInfo(10); sortTable(10)" style="width:10%;">POW
 			<img class="sortIcon" id="getImagePOWId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
-		<th class="pointerCursor" onclick="sortTableForCharactersInfo(11)" style="width:5%;">RT
+		<th class="pointerCursor" onclick="sortCharactersInfo(11); sortTable(11)" style="width:5%;">RT
 			<img class="sortIcon" id="getImageRTId" src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
 		</th>
 	</tr>
