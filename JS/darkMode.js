@@ -10,13 +10,13 @@ function darkModeSave() {
 			localStorage.setItem('switchedTheme', 'true');
 			localStorage.setItem("bgColor","#404040");
 			localStorage.setItem("textColor","white");
-			location.reload(true);
+			location.reload();
 		} else {
 			// Remove item if theme is switched back to normal
 			localStorage.removeItem('switchedTheme');
 			localStorage.setItem("bgColor","white");
 			localStorage.setItem("textColor","black");
-			location.reload(true);
+			location.reload();
 		}
 	});
 }
