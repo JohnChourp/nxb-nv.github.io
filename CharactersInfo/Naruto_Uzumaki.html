@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
 
     <!-- CSS Start -->
-    <link href="CSS/darkMode.css" rel="stylesheet" type="text/css"/>
+    <link href="/CSS/darkMode.css" rel="stylesheet" type="text/css"/>
     <!-- CSS End -->
 
     <!-- JS Start -->
-    <script src="JS/darkMode.js" type="text/javascript"></script>
+    <script src="/JS/darkMode.js" type="text/javascript"></script>
+    <title></title>
     <!-- JS End -->
 
 </head>
 <body onload="darkModeSave()">
 
-<input class="theme-switch" id="night-mode" style="display:none; visibility:hidden; opacity:0;"
-       type="checkbox"/>
+<p>Click the button to toggle between dark and light mode for this page.</p>
 
-<div id="page">
-    <header>
-        <h3><label class="pointerCursor" for="night-mode">Night Mode</label></h3>
-        <p>Click the button to toggle between dark and light mode for this page.</p>
-    </header>
-</div>
+<h3><input class="theme-switch" id="night-mode" type="checkbox"/><label class="pointerCursor" for="night-mode">Night Mode</label></h3>
+
 </body>
 </html>

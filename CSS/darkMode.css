@@ -1,23 +1,8 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-}
-
-.theme-switch ~ #page {
-  --text-color: black;
-  --bg-color: white;
-}
-
-.theme-switch:checked ~ #page {
-  --text-color: white;
-  --bg-color: #404040;
-}
-
-#page {
-  color: var(--text-color);
-  background: var(--bg-color);
+  color: black;
+  background: white;
   font: normal 14px Georgia, 'Times New Roman', Times, serif;
-  min-height: 100%;
   transition: color .2s, background-color .2s;
 }
