@@ -1,6 +1,6 @@
 .pointerCursor:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 .pointerCursor {
-    cursor: pointer;
+	cursor: pointer;
 }
