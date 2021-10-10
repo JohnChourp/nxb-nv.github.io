@@ -2,7 +2,7 @@ function myFunction() {
 	let input, filter, table, tr, td, i, txtValue;
 	input = document.getElementById("myInput");
 	filter = input.value.toUpperCase();
-	table = document.getElementById("myTable");
+	table = document.getElementById("sortTable");
 	tr = table.getElementsByTagName("tr");
 	for (i = 0; i < tr.length; i++) {
 		td = tr[i].getElementsByTagName("td")[2];
