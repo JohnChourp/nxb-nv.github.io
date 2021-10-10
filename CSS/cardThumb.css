@@ -1,0 +1,17 @@
+.cardThumb{
+	width: 200px;
+	height: 150px;
+}
+
+.grid-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+figcaption {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
