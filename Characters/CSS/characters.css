@@ -5,3 +5,14 @@ body {
 	background: #0E191A;
 	font: normal 14px  'Times New Roman', Times, serif;
 }
+
+.paragraph {
+	background: #2C5154;
+	color: white;
+	font: 700 2em/1 "Oswald", sans-serif;
+	letter-spacing: 0;
+	padding: .25em 0 .325em;
+	display: block;
+	margin: 0 auto;
+	text-shadow: 0 0 80px rgba(255,255,255,.5);
+}
