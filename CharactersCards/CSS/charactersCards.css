@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	background: #0E191A;
+	font: normal 14px  'Times New Roman', Times, serif;
+}
+
+p {
+	text-align: center;
+}
+
+table {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+}
+
+th,td {
+	border: 1px solid #333;
+	padding:5px;
+}
+
+th {
+	background: #EE3E19;
+}
+
+td {
+	background: #f49907;
+}
+
+td:hover,th:hover {
+	background-color: #A46A1F;
+}
+
+.cardType {
+	width:40px;
+}
+
+.iconStar {
+	height:30px;
+}
+
+.cardImage {
+	height:300px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.cardImageTd {
+	padding:0;
+}
+
+.jutsuNature {
+	width:40px;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.jutsuImage {
+	width:90px;
+}
+
+.rt {
+	width:40px;
+}
+
