@@ -10,13 +10,33 @@ p {
 	text-align: center;
 }
 
-table {
+#ultimateJutsu {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
 	text-align: center;
 	vertical-align: center;
 	font-size: 20px;
+	margin-top: 30px;
+}
+
+#ultimateJutsuCheckByLv {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+.grid-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 th,td {
@@ -41,6 +61,9 @@ td:hover,th:hover {
 }
 
 #iconStarImage {
+	height:30px;
+}
+.iconStarImage{
 	height:30px;
 }
 

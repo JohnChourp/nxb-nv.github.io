@@ -1,11 +1,9 @@
 function ultimateJutsu() {
-	let row1,row2,row3,row5,row6,row7;
+	let row1,row2,row3,row5;
 	row1 = document.getElementById ( "ultimateJutsu" ).rows[ 1 ].cells;
 	row2 = document.getElementById ( "ultimateJutsu" ).rows[ 2 ].cells;
 	row3 = document.getElementById ( "ultimateJutsu" ).rows[ 3 ].cells;
 	row5 = document.getElementById ( "ultimateJutsu" ).rows[ 5 ].cells;
-	row6 = document.getElementById ( "ultimateJutsu" ).rows[ 6 ].cells;
-	row7 = document.getElementById ( "ultimateJutsu" ).rows[ 7 ].cells;
 	
 	if(document.getElementsByClassName ( "cardLevel" ).item(0).innerHTML === "Lv 70/70"){
 		document.getElementById("iconStarImage").src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
