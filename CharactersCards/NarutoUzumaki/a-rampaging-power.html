@@ -6,51 +6,56 @@
 	<link href="../CSS/charactersCards.css" rel="stylesheet" type="text/css"/>
 	<link href="../../CSS/animation.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
+	
+	<!-- JS Start -->
+	<script src="../JS/ultimateJutsu.js" type="text/javascript"></script>
+	<script src="../JS/jutsuNature.js" type="text/javascript"></script>
+	<!-- JS End -->
 	<title>A Rampaging Power!</title>
 </head>
-<body>
+<body onload="ultimateJutsu(); jutsuNature();">
 
 <p><span class="headings">A Rampaging Power!</span></p>
-<table>
+<table id="ultimateJutsu">
 	<thead>
-	<tr class="header">
+	<tr>
 		<th colspan="4">Ultimate Jutsu</th>
 		<th colspan="4">Max Card Stats</th>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
-		<td class="name">Attack</td>
-		<td><img class="cardType" src="https://lh3.googleusercontent.com/YpVsn86SLRc9UoGMy0_EmJhAvh4Rn9qm9ImhI8YbDbyXAmc2osaEudSgCS0pcuDFPQbVkAuLCFfEaNHoL12VgwBl4HnBmKqm-ZdVXKTHjgozcK7D6ziJuPAmUbgdYmTPApa8U1beCQ=w1920-h1080" alt=""/></td>
-		<td>Card Level 70/70</td>
-		<td><img class="iconStar" src="https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080" alt=""/></td>
+		<td class="cardType">Attack</td>
+		<td><img id="cardTypeImage" src="" alt=""/></td>
+		<td class="cardLevel">Lv 70/70</td>
+		<td><img id="iconStarImage" src="" alt=""/></td>
 		<td>HP</td>
-		<td>1128</td>
+		<td></td>
 		<td>CP</td>
-		<td>102</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td colspan="4" rowspan="2" class="cardImageTd"><img class="cardImage" src="https://lh3.googleusercontent.com/Mq4rPEuzcWMTUKBaTOlCY2uDlsHj_tQeuTvyPf8GSHRd3MRrgh57CqcEnYNPmR4UNaLkeDmgfWErxTfIw9SlRGJEXvxysgsj20JR0WZJBgfS3cR0VJWraN9a-tKH1kZkOQRJnUkD-Q=w1920-h1080" alt=""/></td>
 		<td>ATK</td>
-		<td>829</td>
+		<td></td>
 		<td>DEF</td>
-		<td>534</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>CRI</td>
-		<td>1.30%</td>
+		<td></td>
 		<td>EVA</td>
-		<td>1.30%</td>
+		<td></td>
 	</tr>
 	<tr>
 		<th colspan="8">Max Jutsu Stats</th>
 	</tr>
 	<tr>
-		<td class="name">Impact</td>
-		<td><img class="jutsuNature" src="https://lh3.googleusercontent.com/uhbu5jvMWRkiCRMk4AYnVY0egUtA0HA1Dbr8_vx2jdDleHzOl6M-IYE25Wbkv0eFXSbNNuXxwQzA3Wei44-fOH6lQQumHqs7F2hEa7xGNp1z5v95C4wjD7TnrmtDTD0_qGGvDKEFYw=w1920-h1080" alt=""/></td>
-		<td colspan="4" class="name">Wild Rampaging Blast</td>
+		<td class="jutsuNature">Impact</td>
+		<td><img id="jutsuNatureImage" src="" alt=""/></td>
+		<td colspan="4" class="jutsuName">Wild Rampaging Blast</td>
 		<td>LVL</td>
-		<td>8/8</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td colspan="2"><img class="jutsuImage" src="https://lh3.googleusercontent.com/HhC7J5BaLBJDEIh8D0IDwkK-kFA4JW-qMGF1q_-7W0Cq-OoRomV8epOu0IcOeLUGgvPGLSDXPqixGyV_VLfjLMe2TD85vJyB11zgA7Gj-wEnMXm4u0lAWuxXdntByvtdsdLNuO0hiQ=w1920-h1080" alt=""/></td>
@@ -62,10 +67,10 @@
 		<td>5100</td>
 	</tr>
 	<tr>
-		<td><img class="rt" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+		<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
 		<td>60</td>
 		<td colspan="3">Equippable By</td>
-		<td colspan="3" class="name">Naruto Uzumaki</td>
+		<td colspan="3" class="equipableBy">Naruto Uzumaki</td>
 	</tr>
 	<tr>
 		<td colspan="2">Info</td>

@@ -36,16 +36,16 @@ td:hover,th:hover {
 	background-color: #A46A1F;
 }
 
-.cardType {
+#cardTypeImage {
 	width:40px;
 }
 
-.iconStar {
+#iconStarImage {
 	height:30px;
 }
 
 .cardImage {
-	height:300px;
+	height:330px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -57,19 +57,33 @@ td:hover,th:hover {
 	padding:0;
 }
 
-.jutsuNature {
+#jutsuNatureImage {
 	width:40px;
-}
-
-.name {
-	font-weight: bold;
 }
 
 .jutsuImage {
 	width:90px;
 }
 
-.rt {
+.rtImage {
 	width:40px;
 }
+
+.equipableBy {
+	font-weight: bold;
+}
+.cardType {
+	font-weight: bold;
+}
+
+.jutsuNature {
+	font-weight: bold;
+}
+
+.jutsuName {
+	font-weight: bold;
+}
+
+
+
 
