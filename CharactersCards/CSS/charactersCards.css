@@ -10,13 +10,33 @@ p {
 	text-align: center;
 }
 
-table {
+#ultimateJutsu {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
 	text-align: center;
 	vertical-align: center;
 	font-size: 20px;
+	margin-top: 30px;
+}
+
+#ultimateJutsuCheckByLv {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+.grid-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 th,td {
@@ -36,16 +56,19 @@ td:hover,th:hover {
 	background-color: #A46A1F;
 }
 
-.cardType {
+#cardTypeImage {
 	width:40px;
 }
 
-.iconStar {
+#iconStarImage {
+	height:30px;
+}
+.iconStarImage{
 	height:30px;
 }
 
 .cardImage {
-	height:300px;
+	height:330px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -57,19 +80,33 @@ td:hover,th:hover {
 	padding:0;
 }
 
-.jutsuNature {
+#jutsuNatureImage {
 	width:40px;
-}
-
-.name {
-	font-weight: bold;
 }
 
 .jutsuImage {
 	width:90px;
 }
 
-.rt {
+.rtImage {
 	width:40px;
 }
+
+.equipableBy {
+	font-weight: bold;
+}
+.cardType {
+	font-weight: bold;
+}
+
+.jutsuNature {
+	font-weight: bold;
+}
+
+.jutsuName {
+	font-weight: bold;
+}
+
+
+
 
