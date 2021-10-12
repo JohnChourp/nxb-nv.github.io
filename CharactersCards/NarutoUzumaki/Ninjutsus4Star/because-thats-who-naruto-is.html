@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<!-- CSS Start -->
+	<link href="../../CSS/charactersCards.css" rel="stylesheet" type="text/css"/>
+	<link href="../../../CSS/animation.css" rel="stylesheet" type="text/css"/>
+	<!-- CSS End -->
+	
+	<!-- JS Start -->
+	<script src="../../JS/ninjutsu.js" type="text/javascript"></script>
+	<script src="../../JS/ninjutsuCheckByLv.js" type="text/javascript"></script>
+	<script src="../../JS/jutsuNature.js" type="text/javascript"></script>
+	<!-- JS End -->
+	<title>Because That's Who Naruto Is!</title>
+</head>
+<body onload="ninjutsu(); jutsuNature(); ninjutsuCheckByLv();">
+
+<p><span class="headings">Because That's Who Naruto Is!</span></p>
+<div class="grid-container" >
+	<table id="ninjutsu">
+		<thead>
+		<tr>
+			<th colspan="4">Ninjutsu</th>
+			<th colspan="4">Max Card Stats</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="cardType">Skill</td>
+			<td><img id="cardTypeImage" src="" alt=""/></td>
+			<td class="cardLevel">Lv 70/70</td>
+			<td><img id="iconStarImage" src="" alt=""/></td>
+			<td>HP</td>
+			<td></td>
+			<td>CP</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="4" rowspan="2" class="cardImageTd"><img class="cardImage" src="https://lh3.googleusercontent.com/WoTDCuCN8Yo6LX2oAn5hie7GG6Znro4OV2gi0ZZOZCetmnGhQwlG6S-C7tVDYfD-VtnD2eTfJAjpWzFOED39qXy4785hbPtV0U4TchIFDpKdF6e0IIGmn2qTNZa_XKONVkQXc5CAAg=w1920-h1080" alt=""/></td>
+			<td>ATK</td>
+			<td></td>
+			<td>DEF</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>CRI</td>
+			<td></td>
+			<td>EVA</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th colspan="8">Max Jutsu Stats</th>
+		</tr>
+		<tr>
+			<td class="jutsuNature">Lunge</td>
+			<td><img id="jutsuNatureImage" src="" alt=""/></td>
+			<td colspan="4" class="jutsuName">Shadow Clone Jutsu</td>
+			<td>LVL</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2"><img class="jutsuImage" src="https://lh3.googleusercontent.com/x_A-L0bWB-WEoY6zYyZ5kEMluu2tW6dxo_CPybocEQDu9v9wwulLohL8kByWbORX5_cMVDUrL9bKwgIdmvUfFgXYBa7wX8mVJEtz-n-LD7iq2u_UNig64aQxKt3Hx8nK1sC9dx2MsQ=w1920-h1080" alt=""/></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td colspan="3">Equippable By</td>
+			<td colspan="3" class="equipableBy">Naruto Uzumaki</td>
+		</tr>
+		<tr>
+			<td colspan="2">Info</td>
+			<td colspan="6">Sends a shadow clone of Naruto speeding ahead, causing damage and setting off traps.</td>
+		</tr>
+		</tbody>
+	</table>
+	
+	<table id="ninjutsuCheckByLv">
+		<thead>
+		<tr>
+			<th colspan="8">Check By Lv</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td colspan="2">NJ Lv 1</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td class="RT1">3</td>
+			<td>CP Cost</td>
+			<td class="CPCost1">80</td>
+			<td>CRI</td>
+			<td class="CRI1">1.00%</td>
+			<td>POW</td>
+			<td class="POW1">2000</td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 2</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td class="RT2">3</td>
+			<td>CP Cost</td>
+			<td class="CPCost2">80</td>
+			<td>CRI</td>
+			<td class="CRI2">6.00%</td>
+			<td>POW</td>
+			<td class="POW2">2860</td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 3</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 4</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 5</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 6</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 7</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 8</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080" alt=""/></td>
+		</tr>
+		<tr>
+			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

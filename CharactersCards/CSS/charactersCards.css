@@ -10,32 +10,11 @@ p {
 	text-align: center;
 }
 
-#ultimateJutsu {
-	width: 25%;
-	border-radius: 4px;
-	border: 3px solid #333;
-	text-align: center;
-	vertical-align: center;
-	font-size: 20px;
-	margin-top: 30px;
-}
-
-#ultimateJutsuCheckByLv {
-	width: 25%;
-	border-radius: 4px;
-	border: 3px solid #333;
-	text-align: center;
-	vertical-align: center;
-	font-size: 20px;
-	margin-top: 30px;
-	margin-left: 100px;
-}
-
 .grid-container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	align-items: flex-start;
 }
 
@@ -54,6 +33,26 @@ td {
 
 td:hover,th:hover {
 	background-color: #A46A1F;
+}
+
+#ninjutsu, #ultimateJutsu {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
 }
 
 #cardTypeImage {

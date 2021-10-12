@@ -1,5 +1,5 @@
 function ultimateJutsuCheckByLv() {
-	let row6,row8,row10,row12,row14,row16,RT1,RT2,CPCost1,CPCost2,CRI1,CRI2,POW1,POW2,rowOther6,rowOther7;
+	let row6,row8,row10,row12,row14,row16,RT1,RT2,CPCost1,CPCost2,CRI1,CRI2,POW1,POW2,rowMax6,rowMax7;
 	
 	if(document.getElementsByClassName ( "cardLevel" ).item(0).innerHTML === "Lv 70/70") {
 		RT1 = document.getElementsByClassName ( "RT1" ).item ( 0 ).innerHTML;
@@ -21,8 +21,8 @@ function ultimateJutsuCheckByLv() {
 		row14 = document.getElementById ( "ultimateJutsuCheckByLv" ).rows[ 14 ].cells;
 		row16 = document.getElementById ( "ultimateJutsuCheckByLv" ).rows[ 16 ].cells;
 		
-		rowOther6 = document.getElementById ( "ultimateJutsu" ).rows[ 6 ].cells;
-		rowOther7 = document.getElementById ( "ultimateJutsu" ).rows[ 7 ].cells;
+		rowMax6 = document.getElementById ( "ultimateJutsu" ).rows[ 6 ].cells;
+		rowMax7 = document.getElementById ( "ultimateJutsu" ).rows[ 7 ].cells;
 		
 		row6[ 1 ].innerHTML = eval ( "parseInt(RT2) + ( parseInt(RT2) - parseInt(RT1) )" );
 		row6[ 3 ].innerHTML = eval ( "parseInt(CPCost2) + ( parseInt(CPCost2) - parseInt(CPCost1) )" );
@@ -54,9 +54,9 @@ function ultimateJutsuCheckByLv() {
 		row16[ 5 ].innerHTML = eval ( "parseInt(CRI2) + ( parseInt(CRI2) - parseInt(CRI1) ) * 6" ) + ".00%";
 		row16[ 7 ].innerHTML = eval ( "parseInt(POW2) + ( parseInt(POW2) - parseInt(POW1) ) * 6" );
 		
-		rowOther6[ 2 ].innerHTML = row16[ 3 ].innerHTML;
-		rowOther6[ 4 ].innerHTML = row16[ 5 ].innerHTML;
-		rowOther6[ 6 ].innerHTML = row16[ 7 ].innerHTML;
-		rowOther7[ 1 ].innerHTML = row16[ 1 ].innerHTML;
+		rowMax6[ 2 ].innerHTML = row16[ 3 ].innerHTML;
+		rowMax6[ 4 ].innerHTML = row16[ 5 ].innerHTML;
+		rowMax6[ 6 ].innerHTML = row16[ 7 ].innerHTML;
+		rowMax7[ 1 ].innerHTML = row16[ 1 ].innerHTML;
 	}
 }
