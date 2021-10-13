@@ -35,3 +35,16 @@ function sortCharacterTable(n) {
 		Rank_Id.src = "https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080";
 	}
 }
+
+function charRank() {
+	for ( let i=0; i<106; i++ ) {
+		switch ( document.getElementsByClassName ( "charAwaken" ).item ( i ).alt ) {
+			case "7 Star":
+				document.getElementsByClassName ( "charAwaken" ).item ( i ).src = "https://lh3.googleusercontent.com/6MnzcluW9C6CjFzGJ1L_JLVZB9wvEbyu3cfLMoLGOLDzM4kYSxyt9ourb9kqKTUgWyCBq_fOJ78MEyAxjTpiD2nunWBTHb62Wbfjdx5zQpSAIFhfq87HisKeH7SN_YM8GsEKQg0wkA=w1920-h1080";
+				break;
+			case "6 Star":
+				document.getElementsByClassName ( "charAwaken" ).item ( i ).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
+				break;
+		}
+	}
+}
