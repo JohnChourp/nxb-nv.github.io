@@ -35,7 +35,7 @@ td:hover,th:hover {
 	background-color: #A46A1F;
 }
 
-#ninjutsu, #ultimateJutsu {
+#ninjutsu, #ultimateJutsu, #tool {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
@@ -45,7 +45,7 @@ td:hover,th:hover {
 	margin-top: 30px;
 }
 
-#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
+#ninjutsuCheckByLv, #ultimateJutsuCheckByLv, #tool {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
@@ -56,6 +56,10 @@ td:hover,th:hover {
 }
 
 #cardTypeImage {
+	width:40px;
+}
+
+.StatStatus1 {
 	width:40px;
 }
 
@@ -75,7 +79,16 @@ td:hover,th:hover {
 	/* Center the Image */
 }
 
-.cardImageTd {
+.toolImage {
+	height:150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.cardImageId {
 	padding:0;
 }
 
