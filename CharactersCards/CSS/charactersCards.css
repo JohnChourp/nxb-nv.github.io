@@ -35,7 +35,7 @@ td:hover,th:hover {
 	background-color: #A46A1F;
 }
 
-#ninjutsu, #ultimateJutsu, #tool {
+#ninjutsu, #ultimateJutsu, #tool, #toolMaterials {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
@@ -45,7 +45,7 @@ td:hover,th:hover {
 	margin-top: 30px;
 }
 
-#ninjutsuCheckByLv, #ultimateJutsuCheckByLv, #tool {
+#ninjutsuCheckByLv, #ultimateJutsuCheckByLv, #tool, #toolMaterials {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
@@ -59,7 +59,7 @@ td:hover,th:hover {
 	width:40px;
 }
 
-.StatStatus1 {
+.statStatus1 {
 	width:40px;
 }
 
@@ -81,6 +81,15 @@ td:hover,th:hover {
 
 .toolImage {
 	height:150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.toolMaterialImage {
+	height:100px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
