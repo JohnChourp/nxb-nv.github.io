@@ -79,6 +79,9 @@ td:hover,th:hover {
 	/* Center the Image */
 }
 
+.costIcon{
+	width:40px;
+}
 .toolImage {
 	height:150px;
 	/* Center the Image */
