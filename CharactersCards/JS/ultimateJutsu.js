@@ -8,7 +8,7 @@ function ultimateJutsu() {
 	
 	switch ( document.getElementsByClassName ( "cardLevel" ).item(0).innerHTML ) {
 		case "Lv 70/70":
-			document.getElementById("rankImage").src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
+			document.getElementsByClassName ( "rankImage" ).item(0).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
 			row3[1].innerHTML = "1.30%";
 			row3[3].innerHTML = "1.30%";
 			row5[4].innerHTML = "8/8";
@@ -62,7 +62,7 @@ function ultimateJutsu() {
 			}
 			break;
 		case "Lv 100/100":
-			document.getElementById("rankImage").src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
+			document.getElementsByClassName ( "rankImage" ).item(0).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
 			row3[1].innerHTML = "1.50%";
 			row3[3].innerHTML = "1.50%";
 			row5[4].innerHTML = "15/15";
