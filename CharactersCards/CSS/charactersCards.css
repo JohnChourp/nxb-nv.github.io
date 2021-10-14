@@ -116,9 +116,31 @@ td:hover,th:hover {
 	width:40px;
 }
 
-.equipableBy {
+a:link {
+	color: #00A5A8;
+	background-color: transparent;
+	text-decoration: none;
 	font-weight: bold;
 }
+
+a:visited {
+	color: #00A5A8;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
 .cardType {
 	font-weight: bold;
 }
