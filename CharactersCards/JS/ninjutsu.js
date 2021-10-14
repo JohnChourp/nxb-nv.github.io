@@ -1,4 +1,5 @@
 function ninjutsu() {
+	document.getElementById("faviconIco").href = "../../../favicon.ico";
 	let row1,row2,row3,row5;
 	row1 = document.getElementById ( "ninjutsu" ).rows[ 1 ].cells;
 	row2 = document.getElementById ( "ninjutsu" ).rows[ 2 ].cells;

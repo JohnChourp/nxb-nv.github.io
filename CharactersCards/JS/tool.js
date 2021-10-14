@@ -1,4 +1,5 @@
 function toolRank() {
+	document.getElementById("faviconIco").href = "../../../favicon.ico";
 	switch ( document.getElementsByClassName ( "iconStarImage" ).item ( 0 ).alt ) {
 		case "6 Star":
 			document.getElementsByClassName ( "iconStarImage" ).item ( 0 ).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
