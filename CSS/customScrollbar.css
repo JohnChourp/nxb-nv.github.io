@@ -1,0 +1,27 @@
+/*  the scrollbar. */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* the track (progress bar) of the scrollbar. */
+::-webkit-scrollbar-track {
+	background: #323232;
+}
+
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	height: 135px;
+}
+
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-thumb:hover {
+	background: #696868;
+}
+
+/* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+::-webkit-scrollbar-corner {
+	background: #323232;
+}
+
