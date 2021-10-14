@@ -1,3 +1,8 @@
+.char{
+	height: 400px;
+	padding:0;
+}
+
 .cardThumb{
 	width: 200px;
 	height: 150px;
@@ -12,6 +17,12 @@
 .toolThumb{
 	width: 150px;
 	height: 150px;
+	margin: 0 auto;
+	transition: transform .2s; /* Animation */
+}
+
+.toolThumb:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .grid-container{
@@ -24,5 +35,6 @@
 figcaption {
 	font-family: 'Orienta', sans-serif;
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 20px;
+	margin-top: 10px;
 }

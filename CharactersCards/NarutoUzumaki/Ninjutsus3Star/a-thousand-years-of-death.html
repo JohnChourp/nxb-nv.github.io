@@ -8,7 +8,7 @@
 	<!-- Favicon End -->
 	
 	<!-- CSS Start -->
-	<link href="../../CSS/charactersCards.css" rel="stylesheet" type="text/css"/>
+	<link href="../../CSS/cardsAndTools.css" rel="stylesheet" type="text/css"/>
 	<link href="../../../CSS/animation.css" rel="stylesheet" type="text/css"/>
 	<link href="../../../CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
@@ -33,17 +33,17 @@
 		</thead>
 		<tbody>
 		<tr>
-			<td class="cardType">Attack</td>
+			<td id="cardType">Attack</td>
 			<td><img id="cardTypeImage" src="" alt=""/></td>
 			<td class="cardLevel">Lv 60/60</td>
-			<td><img id="iconStarImage" src="" alt=""/></td>
+			<td><img class="rankImage" src="" alt=""/></td>
 			<td>HP</td>
 			<td></td>
 			<td>CP</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td colspan="4" rowspan="2" class="cardImageId"><img class="cardImage" src="https://lh3.googleusercontent.com/35qywLC-5ebNNwUjPMsQAruDOba2UZ_s8wj9vux22PQlP62NvZaDB3ekSVBTh7TQB2TppT3elaMsI_7a9iwcFAb-N7_EJY_GCOLtgGpFg1UgMuiAIbiY98twoGRmDMUn-rYBfGY6CA=w1920-h1080" alt=""/></td>
+			<td colspan="4" rowspan="2" id="cardImage"><img class="cardImage" src="https://lh3.googleusercontent.com/35qywLC-5ebNNwUjPMsQAruDOba2UZ_s8wj9vux22PQlP62NvZaDB3ekSVBTh7TQB2TppT3elaMsI_7a9iwcFAb-N7_EJY_GCOLtgGpFg1UgMuiAIbiY98twoGRmDMUn-rYBfGY6CA=w1920-h1080" alt=""/></td>
 			<td>ATK</td>
 			<td></td>
 			<td>DEF</td>
@@ -59,14 +59,14 @@
 			<th colspan="8">Max Jutsu Stats</th>
 		</tr>
 		<tr>
-			<td class="jutsuNature">Manipulate</td>
+			<td id="jutsuNature">Manipulate</td>
 			<td><img id="jutsuNatureImage" src="" alt=""/></td>
-			<td colspan="4" class="jutsuName">Clone Arrow</td>
+			<td colspan="4" id="jutsuName">Clone Arrow</td>
 			<td>LVL</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td colspan="2"><img class="jutsuImage" src="https://lh3.googleusercontent.com/6Hzb3cLV9-XONn_ihVYIdqeWDHk5SOiLul4nhzasmSWNddke11DDA64d8XZvKSOFMDapKmiGz238CBPv6J5FMx_2O7EYuA_bjV__34O5FJ5KH7yZQ9K_IMif7hKz11P_1o8wyMkEKw=w1920-h1080" alt=""/></td>
+			<td colspan="2"><img id="jutsuImage" src="https://lh3.googleusercontent.com/6Hzb3cLV9-XONn_ihVYIdqeWDHk5SOiLul4nhzasmSWNddke11DDA64d8XZvKSOFMDapKmiGz238CBPv6J5FMx_2O7EYuA_bjV__34O5FJ5KH7yZQ9K_IMif7hKz11P_1o8wyMkEKw=w1920-h1080" alt=""/></td>
 			<td>CP Cost</td>
 			<td></td>
 			<td>CRI</td>
@@ -97,7 +97,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 1</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+			<td colspan="3"><img class="rankImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
 		</tr>
 		<tr>
 			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
@@ -112,7 +112,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 2</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+			<td colspan="3"><img class="rankImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
 		</tr>
 		<tr>
 			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
@@ -127,7 +127,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 3</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+			<td colspan="3"><img class="rankImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
 		</tr>
 		<tr>
 			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
@@ -142,7 +142,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 4</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+			<td colspan="3"><img class="rankImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
 		</tr>
 		<tr>
 			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
@@ -157,7 +157,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 5</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+			<td colspan="3"><img class="rankImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
 		</tr>
 		<tr>
 			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>
@@ -172,7 +172,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 6</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img class="iconStarImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
+			<td colspan="3"><img class="rankImage" src="https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080" alt=""/></td>
 		</tr>
 		<tr>
 			<td><img class="rtImage" src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080" alt=""/></td>

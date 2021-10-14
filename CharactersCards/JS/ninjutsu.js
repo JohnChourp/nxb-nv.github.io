@@ -8,12 +8,12 @@ function ninjutsu() {
 	
 	switch ( document.getElementsByClassName ( "cardLevel" ).item(0).innerHTML ) {
 		case "Lv 70/70":
-			document.getElementById("iconStarImage").src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
+			document.getElementsByClassName ( "rankImage" ).item(0).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
 			row3[1].innerHTML = "1.10%";
 			row3[3].innerHTML = "1.10%";
 			row5[4].innerHTML = "8/8";
 			
-			switch ( document.getElementsByClassName ( "cardType" ).item(0).innerHTML ){
+			switch ( document.getElementById( "cardType" ).innerHTML ){
 				case "Assist":
 					document.getElementById("cardTypeImage").src = "https://lh3.googleusercontent.com/BR61eSPgEHta1Bqu6XfV8hNtNq7fYP6VQdHCC6CBt-XodGNyxsfBOCgInPSLGmNA8i_G8OX6DCLOr1EzBYmJhJMFpCxFJZZnesU38zSmWBzYjRqmt1rMxA62BnmjbbU_Z3Zrt7w28g=w1920-h1080";
 					
@@ -62,12 +62,12 @@ function ninjutsu() {
 			}
 			break;
 		case "Lv 60/60":
-			document.getElementById("iconStarImage").src = "https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080";
+			document.getElementsByClassName ( "rankImage" ).item(0).src = "https://lh3.googleusercontent.com/BMguj359fpGE5nDJucj6h-Gkl3PMSbXxbjXU4fInp_MXGc7nCRt76WJ-NqD9M77nqcddxy4veQ4YPhTq7wA-ZOCiZPu23nBz831iLiVTgNScTZ1ShiY1Z1LgGsvkswKlAcEExEV9bg=w1920-h1080";
 			row3[1].innerHTML = "0.90%";
 			row3[3].innerHTML = "0.90%";
 			row5[4].innerHTML = "6/6";
 			
-			switch ( document.getElementsByClassName ( "cardType" ).item(0).innerHTML ){
+			switch ( document.getElementById( "cardType" ).innerHTML ){
 				case "Assist":
 					document.getElementById("cardTypeImage").src = "https://lh3.googleusercontent.com/BR61eSPgEHta1Bqu6XfV8hNtNq7fYP6VQdHCC6CBt-XodGNyxsfBOCgInPSLGmNA8i_G8OX6DCLOr1EzBYmJhJMFpCxFJZZnesU38zSmWBzYjRqmt1rMxA62BnmjbbU_Z3Zrt7w28g=w1920-h1080";
 					
@@ -116,12 +116,12 @@ function ninjutsu() {
 			}
 			break;
 		case "Lv 40/40":
-			document.getElementById("iconStarImage").src = "https://lh3.googleusercontent.com/nLGut0BJuyZyLF8-M7Jm3oxrZ08oCAXO5ckgLJBdQkzZfuYhvC73wWwQZAKc8u4NsVh_V2_arOnAMlILXxR4wVW7W6a2ZMvCLPvwIvfxv75kMMqlPT9I3gkeCYYYE7tV3DGkwcY0_g=w1920-h1080";
+			document.getElementsByClassName ( "rankImage" ).item(0).src = "https://lh3.googleusercontent.com/nLGut0BJuyZyLF8-M7Jm3oxrZ08oCAXO5ckgLJBdQkzZfuYhvC73wWwQZAKc8u4NsVh_V2_arOnAMlILXxR4wVW7W6a2ZMvCLPvwIvfxv75kMMqlPT9I3gkeCYYYE7tV3DGkwcY0_g=w1920-h1080";
 			row3[1].innerHTML = "0.50%";
 			row3[3].innerHTML = "0.50%";
 			row5[4].innerHTML = "2/2";
 			
-			switch ( document.getElementsByClassName ( "cardType" ).item(0).innerHTML ){
+			switch ( document.getElementById( "cardType" ).innerHTML ){
 				case "Assist":
 					document.getElementById("cardTypeImage").src = "https://lh3.googleusercontent.com/BR61eSPgEHta1Bqu6XfV8hNtNq7fYP6VQdHCC6CBt-XodGNyxsfBOCgInPSLGmNA8i_G8OX6DCLOr1EzBYmJhJMFpCxFJZZnesU38zSmWBzYjRqmt1rMxA62BnmjbbU_Z3Zrt7w28g=w1920-h1080";
 					
