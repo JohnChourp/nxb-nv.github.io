@@ -1,22 +1,3 @@
-body {
-	margin: 0;
-	padding: 0;
-	color: white;
-	background: #0E191A;
-	font: normal 14px  'Times New Roman', Times, serif;
-}
-
-.paragraph {
-	background: #2C5154;
-	color: white;
-	font: 700 2em/1 "Oswald", sans-serif;
-	letter-spacing: 0;
-	padding: .25em 0 .325em;
-	display: block;
-	margin: 0 auto;
-	text-shadow: 0 0 80px rgba(255,255,255,.5);
-}
-
 #charTable {
 	width: 25%;
 	border-radius: 4px;
@@ -26,7 +7,6 @@ body {
 	font-size: 20px;
 	margin-top: 30px;
 }
-
 
 th,td {
 	border: 1px solid #333;
@@ -44,6 +24,20 @@ td {
 td:hover,th:hover {
 	background-color: #A46A1F;
 }
+
+#char{
+	padding:0;
+}
+
+.char{
+	height: 410px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
 .charRank{
 	height:15px;
 	/* Center the Image */
