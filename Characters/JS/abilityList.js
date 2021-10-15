@@ -101,7 +101,7 @@ function abilityList() {
 			rows[25][1].innerHTML = "CD -0.7/+80 HP/+200 ATK";
 			rows[25][4].innerHTML = "4000";
 			
-			rows[26][1].innerHTML = "POW +60, CP -8, CD -1";
+			rows[26][1].innerHTML = "POW +60/CP -8/CD -1";
 			rows[26][4].innerHTML = "4000";
 			
 			rows[27][0].innerHTML = "5";
@@ -175,10 +175,10 @@ function abilityList() {
 			rows[49][1].innerHTML = "CD -1.2";
 			rows[49][4].innerHTML = "4000";
 			
-			rows[50][1].innerHTML = "POW +80, CP -12";
+			rows[50][1].innerHTML = "POW +80/CP -12";
 			rows[50][4].innerHTML = "6000";
 			
-			rows[51][1].innerHTML = "POW +90, CP -12, CD -1.2";
+			rows[51][1].innerHTML = "POW +90/CP -12/CD -1.2";
 			rows[51][4].innerHTML = "7000";
 			
 			rows[52][1].innerHTML = "POW +6%";
@@ -187,7 +187,7 @@ function abilityList() {
 			rows[53][1].innerHTML = "CP -6%";
 			rows[53][4].innerHTML = "10000";
 			
-			rows[54][1].innerHTML = "POW +70, CD -1.8";
+			rows[54][1].innerHTML = "POW +70/CD -1.8";
 			rows[54][4].innerHTML = "7000";
 			
 			rows[55][1].innerHTML = "POW +90";
@@ -214,10 +214,10 @@ function abilityList() {
 			rows[62][1].innerHTML = "CD -1.2";
 			rows[62][4].innerHTML = "4000";
 			
-			rows[63][1].innerHTML = "POW +80, CP -12";
+			rows[63][1].innerHTML = "POW +80/CP -12";
 			rows[63][4].innerHTML = "6000";
 			
-			rows[64][1].innerHTML = "POW +90, CP -12, CD -1.2";
+			rows[64][1].innerHTML = "POW +90/CP -12/CD -1.2";
 			rows[64][4].innerHTML = "7000";
 			
 			rows[65][1].innerHTML = "POW +6%";
@@ -226,7 +226,7 @@ function abilityList() {
 			rows[66][1].innerHTML = "CP -6%";
 			rows[66][4].innerHTML = "10000";
 			
-			rows[67][1].innerHTML = "POW +70, CD -1.8";
+			rows[67][1].innerHTML = "POW +70/CD -1.8";
 			rows[67][4].innerHTML = "7000";
 			
 			rows[68][1].innerHTML = "POW +90";
