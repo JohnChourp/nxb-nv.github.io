@@ -1,0 +1,193 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	background: #0E191A;
+	font: normal 14px  'Times New Roman', Times, serif;
+}
+
+p {
+	text-align: center;
+}
+
+a:link {
+	color: #00A5A8;
+	font-weight: bold;
+	transition: all .2s linear;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #00A5A8;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+
+th,td {
+	border: 1px solid #333;
+	padding:5px;
+}
+
+th {
+	background: #EE3E19;
+}
+
+td {
+	background: #f49907;
+}
+
+td:hover,th:hover {
+	background-color: #A46A1F;
+}
+
+#ninjutsu, #ultimateJutsu, #tool, #toolMaterials {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+#ninjutsuCheckByLv, #ultimateJutsuCheckByLv, #tool, #toolMaterials {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+#cardTypeImage {
+	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+#cardType {
+	font-weight: bold;
+}
+
+#jutsuNatureImage {
+	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+#jutsuImage {
+	width:90px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+#jutsuName {
+	font-weight: bold;
+}
+
+#jutsuNature {
+	font-weight: bold;
+}
+
+#cardImage {
+	padding: 0;
+}
+
+.cardImage {
+	height:330px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.rankImage{
+	height:30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.rtImage {
+	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+#toolImage {
+	height:150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.toolMaterialImage {
+	height:100px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+#productionCostRyoImage{
+	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.statTypeImage {
+	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+
+
+
