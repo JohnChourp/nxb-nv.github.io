@@ -1,0 +1,52 @@
+.increasePower {
+	width:30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.increaseUltimatePower {
+	width:30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.abilityPoints {
+	width:30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+a:link {
+	color: #00A5A8;
+	font-weight: bold;
+	transition: all .2s linear;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #00A5A8;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #0EFAFE;
+	background-color: transparent;
+	text-decoration: underline;
+}

@@ -10,21 +10,27 @@
 	<!-- CSS Start -->
 	<link href="../CSS/pointerCursor.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/characterTableInfo.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/abilityListTable.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/cardsAndToolsGrid.css" rel="stylesheet" type="text/css"/>
 	<link href="../CSS/animation.css" rel="stylesheet" type="text/css"/>
 	<link href="../CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
 	
+	<!-- JS Start -->
+	<script src="JS/characterTableInfo.js" type="text/javascript"></script>
+	<script src="JS/abilityList.js" type="text/javascript"></script>
+	<!-- JS End -->
+	
 	<title>Naruto Uzumaki</title>
 </head>
-<body>
+<body onload="characterTableInfo(); abilityList();">
 
 <p><span class="headings">Naruto Uzumaki</span></p>
 
 <h2>All Applicable Ultimate Jutsus, Jutsus and Tools for Naruto Uzumaki</h2>
 
 <p class="paragraph">Ultimate Jutsus 5 Star</p>
-<div class="grid-container" >
+<div class="flex-container" >
 	<figure>
 		<a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html"><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/Vh0Djr-u5IeJu3VL_M_T1qwReKTpHu36Ee-s0nn9Us1AD3LbQaeN3dWl9RFglOF1IkTXtcIfpWDbNLrQvl48KKbs-SZoURIaxW4xLAVoJsTtYQZv4CxRlFX-BBqdj1gJEtlDTG-KwQ=w1920-h1080"></a>
 		<figcaption>Naruto vs Pain</figcaption>
@@ -42,7 +48,7 @@
 </div>
 
 <p class="paragraph">Jutsus 4 Star</p>
-<div class="grid-container" >
+<div class="flex-container" >
 	<figure>
 		<a href="../CharactersCards/NarutoUzumaki/Ninjutsus4Star/because-you-re-me-too.html"><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/pWtshsG7at3Bv0b2dop0el_XiTQ77AKLQhFUlbgwaRYoNjdWwvkdQ7CUpXK29g-XjDKCgjCSQI6Th_eZ3gqVfHRgTFZ_qG7b7U5rik1Do8mT_1hN5pDcI4T3kbcBYiO-7wKD06HFlQ=w1920-h1080"></a>
 		<figcaption>Because You're Me, Too</figcaption>
@@ -65,7 +71,7 @@
 </div>
 
 <p class="paragraph">Jutsus 3 Star</p>
-<div class="grid-container" >
+<div class="flex-container" >
 	<figure>
 		<a href="../CharactersCards/NarutoUzumaki/Ninjutsus3Star/a-warm-hand.html"><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/GvEcK2tuJNbIgV2zccVWmfobSlGGDn7COCQ0KE3a6ZsSLWC5B8yuSyb-BhHKrUGKaNdfoCsZdFTSQrAgAxXhy4fy9U0mHowsfwc7sc6YMyo4hpglKKbcSXeYmsaQMH6YMs7Gd6wAWw=w1920-h1080"></a>
 		<figcaption>A Warm Hand</figcaption>
@@ -78,7 +84,7 @@
 </div>
 
 <p class="paragraph">Jutsus 1 Star</p>
-<div class="grid-container" >
+<div class="flex-container" >
 	<figure>
 		<a href="../CharactersCards/NarutoUzumaki/Ninjutsus1Star/its-kinda-like-bam.html"><img alt="" class="cardThumb" src="https://lh3.googleusercontent.com/VchjRsJWBPcfF17Jk00NXhZDt9gjjf2_YImIxWNKXYpqir6cXLMIewmkItxDP8os4JNtbKOJADxOafiWBbBx4gfM_G-VdIXBol1J3vtPplJ3uqRGoX1LSmMUmqCJvx2CMU7EFMVj2Q=w1920-h1080"></a>
 		<figcaption>It's kinda like, bam!</figcaption>
@@ -106,7 +112,7 @@
 </div>
 
 <p class="paragraph">Tools 5 Star</p>
-<div class="grid-container" >
+<div class="flex-container" >
 	<figure>
 		<a href="../CharactersCards/NarutoUzumaki/Tools5Star/ichiraku-ramen.html"><img alt="" class="toolThumb" src="https://lh3.googleusercontent.com/0_U7J8udf5_Rmbxd_DtgditMKod_-luWKOHcCK9rZWhzs_xy7-oeZ6SPhFHFYR1xY0NUKpwgx2lzH8Wx8YC9W3PlxeXvbn4F6naf2GmGOHrk_-iGii6xUkP9zXGpSWSJMQ1ifIYqIg=w1920-h1080"></a>
 		<figcaption>Ichiraku Ramen Tool</figcaption>
@@ -117,6 +123,7 @@
 		<figcaption>Miso & Pork Ichiraku<br> Ramen</figcaption>
 	</figure>
 </div>
+
 <table id="charTable">
 	<thead>
 	<tr>
@@ -125,58 +132,598 @@
 	</thead>
 	<tbody>
 	<tr>
-		<td colspan="2">Attack</td>
-		<td colspan="2"></td>
+		<td colspan="2" id="charType">Attack</td>
+		<td colspan="2"><img id="charTypeImage" src="" alt=""/></td>
 	</tr>
 	<tr>
 		<td colspan="4">Naruto Uzumaki Stat Cards</td>
 	</tr>
 	<tr>
-		<td colspan="2">Character Rank</td>
+		<td colspan="2">Rank</td>
 		<td colspan="2"><img alt="" class="charRank"
 		                     src="https://lh3.googleusercontent.com/6MnzcluW9C6CjFzGJ1L_JLVZB9wvEbyu3cfLMoLGOLDzM4kYSxyt9ourb9kqKTUgWyCBq_fOJ78MEyAxjTpiD2nunWBTHb62Wbfjdx5zQpSAIFhfq87HisKeH7SN_YM8GsEKQg0wkA=w1920-h1080"/></td>
 	</tr>
 	<tr>
-		<td colspan="4">Maximum Rarity Stats</td>
+		<th colspan="4">Maximum Rarity Stats</th>
 	</tr>
 	<tr>
 		<th>HP</th>
-		<td></td>
+		<td>7830</td>
 		<th>CP</th>
-		<td></td>
+		<td>840</td>
 	</tr>
 	<tr>
 		<th>ATK</th>
-		<td></td>
+		<td>2680</td>
 		<th>DEF</th>
-		<td></td>
+		<td>1140</td>
 	</tr>
 	<tr>
 		<th>CRI</th>
-		<td></td>
+		<td>5.00%</td>
 		<th>EVA</th>
-		<td></td>
+		<td>5.00%</td>
 	</tr>
 	<tr>
-		<td colspan="4">Maximum Rarity + Ability Stats</td>
+		<th colspan="4">Maximum Rarity + Ability Stats</th>
 	</tr>
 	<tr>
 		<th>HP</th>
-		<td></td>
+		<td>10116</td>
 		<th>CP</th>
-		<td></td>
+		<td>1075</td>
 	</tr>
 	<tr>
 		<th>ATK</th>
-		<td></td>
+		<td>8156</td>
 		<th>DEF</th>
-		<td></td>
+		<td>2115</td>
 	</tr>
 	<tr>
 		<th>CRI</th>
-		<td></td>
+		<td>7.85%</td>
 		<th>EVA</th>
+		<td>6.10%</td>
+	</tr>
+	</tbody>
+</table>
+
+
+<table id="abilityListTable">
+	<thead>
+	<tr>
+		<th colspan="3">Ability List</th>
+		<th colspan="2">Abilities</th>
+		<th id="abilitiesNumber">69</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th>Rank</th>
+		<th colspan="3">Benefit</th>
+		<th colspan="2">Cost</th>
+	</tr>
+	<tr>
 		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"></td>
+		<td><img class="increasePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="../CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+		<td><img class="increaseUltimatePower" src="" alt="" /></td>
+		<td></td>
+		<td><img class="abilityPoints" src="" alt="" /></td>
 	</tr>
 	</tbody>
 </table>

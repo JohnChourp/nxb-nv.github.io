@@ -1,4 +1,4 @@
-#charTable {
+#charTable, #abilityListTable {
 	width: 25%;
 	border-radius: 4px;
 	border: 3px solid #333;
@@ -6,6 +6,10 @@
 	vertical-align: center;
 	font-size: 20px;
 	margin-top: 30px;
+}
+
+#abilityListTable{
+	width: 40%;
 }
 
 th,td {
@@ -29,6 +33,10 @@ td:hover,th:hover {
 	padding:0;
 }
 
+#charType {
+	font-weight: bold;
+}
+
 .char{
 	height: 410px;
 	/* Center the Image */
@@ -39,7 +47,16 @@ td:hover,th:hover {
 }
 
 .charRank{
-	height:15px;
+	height:30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+#charTypeImage {
+	width:40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;

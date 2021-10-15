@@ -12,9 +12,10 @@ p {
 
 a:link {
 	color: #00A5A8;
+	font-weight: bold;
+	transition: all .2s linear;
 	background-color: transparent;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 a:visited {
@@ -35,7 +36,7 @@ a:active {
 	text-decoration: underline;
 }
 
-.grid-container{
+.flex-container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -83,6 +84,11 @@ td:hover,th:hover {
 
 #cardTypeImage {
 	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 #cardType {
@@ -91,13 +97,27 @@ td:hover,th:hover {
 
 #jutsuNatureImage {
 	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 #jutsuImage {
 	width:90px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 #jutsuName {
+	font-weight: bold;
+}
+
+#jutsuNature {
 	font-weight: bold;
 }
 
@@ -116,14 +136,20 @@ td:hover,th:hover {
 
 .rankImage{
 	height:30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 .rtImage {
 	width:40px;
-}
-
-#jutsuNature {
-	font-weight: bold;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 #toolImage {
@@ -146,10 +172,20 @@ td:hover,th:hover {
 
 #productionCostRyoImage{
 	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 .statTypeImage {
 	width:40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 
