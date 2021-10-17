@@ -1,5 +1,5 @@
-function toolRank() {
-	document.getElementById("faviconIco").href = "../../../favicon.ico";
+function toolRank () {
+	document.getElementById ( "faviconIco" ).href = "../../../favicon.ico";
 	switch ( document.getElementsByClassName ( "rankImage" ).item ( 0 ).alt ) {
 		case "6 Star":
 			document.getElementsByClassName ( "rankImage" ).item ( 0 ).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
@@ -21,8 +21,9 @@ function toolRank() {
 			break;
 	}
 }
-function toolNature() {
-	for ( let i=0; i<6; i++ ){
+
+function toolNature () {
+	for ( let i = 0; i < 6; i ++ ) {
 		switch ( document.getElementsByClassName ( "statTypeImage" ).item ( i ).alt ) {
 			case "HP":
 				document.getElementsByClassName ( "statTypeImage" ).item ( i ).src = "https://lh3.googleusercontent.com/GR8IHfhW2mK0g6vULqJ265ns-3VXAvgQ7uxvKoEqFdwd6MZvL-gatRP9kL2EzRrV7nDmLnitphhjIh_slj5Tz5brc34c3G9SjXprHvYZhXRiPkK4kL_wPMs4USRsThiFten_8c95uw=w1920-h1080";
@@ -106,7 +107,7 @@ function toolNature() {
 	}
 }
 
-function toolMaterials() {
+function toolMaterials () {
 	switch ( document.getElementsByClassName ( "rankImage" ).item ( 0 ).alt ) {
 		case "5 Star":
 			document.getElementById ( "productionCost" ).innerHTML = "600000";

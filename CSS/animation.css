@@ -1,12 +1,12 @@
 .headings {
-	background: #090d00;
-	color: rgba(255,255,255,.25);
+	background: #090D00;
+	color: rgba(255, 255, 255, .25);
 	font: 700 3em/1 "Oswald", sans-serif;
 	letter-spacing: 0;
 	padding: .25em 0 .325em;
 	display: block;
 	margin: 0 auto;
-	text-shadow: 0 0 80px rgba(255,255,255,.5);
+	text-shadow: 0 0 80px rgba(255, 255, 255, .5);
 	
 	/* Clip Background Image */
 	background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
@@ -29,6 +29,7 @@
 		background-position: 100% 50%;
 	}
 }
+
 /* Animate Background Image */
 
 

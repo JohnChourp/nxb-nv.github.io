@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	color: white;
 	background: #0E191A;
-	font: normal 14px  'Times New Roman', Times, serif;
+	font: normal 14px 'Times New Roman', Times, serif;
 }
 
 p {
@@ -36,7 +36,7 @@ a:active {
 	text-decoration: underline;
 }
 
-.flex-container{
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -45,9 +45,9 @@ a:active {
 }
 
 
-th,td {
+th, td {
 	border: 1px solid #333;
-	padding:5px;
+	padding: 5px;
 }
 
 th {
@@ -55,10 +55,10 @@ th {
 }
 
 td {
-	background: #f49907;
+	background: #F49907;
 }
 
-td:hover,th:hover {
+td:hover, th:hover {
 	background-color: #A46A1F;
 }
 
@@ -83,7 +83,7 @@ td:hover,th:hover {
 }
 
 #cardTypeImage {
-	width:40px;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -96,7 +96,7 @@ td:hover,th:hover {
 }
 
 #jutsuNatureImage {
-	width:40px;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -105,7 +105,7 @@ td:hover,th:hover {
 }
 
 #jutsuImage {
-	width:90px;
+	width: 90px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -126,7 +126,7 @@ td:hover,th:hover {
 }
 
 .cardImage {
-	height:330px;
+	height: 330px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -134,8 +134,8 @@ td:hover,th:hover {
 	/* Center the Image */
 }
 
-.rankImage{
-	height:30px;
+.rankImage {
+	height: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -144,7 +144,7 @@ td:hover,th:hover {
 }
 
 .rtImage {
-	width:40px;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -153,7 +153,7 @@ td:hover,th:hover {
 }
 
 #toolImage {
-	height:150px;
+	height: 150px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -162,7 +162,7 @@ td:hover,th:hover {
 }
 
 .toolMaterialImage {
-	height:100px;
+	height: 100px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -170,8 +170,8 @@ td:hover,th:hover {
 	/* Center the Image */
 }
 
-#productionCostRyoImage{
-	width:40px;
+#productionCostRyoImage {
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -180,7 +180,7 @@ td:hover,th:hover {
 }
 
 .statTypeImage {
-	width:40px;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;

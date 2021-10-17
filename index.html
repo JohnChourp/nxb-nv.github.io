@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	
 	<!-- Favicon Start -->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!-- Favicon End -->
 	
 	<link href="CSS/charType.css" rel="stylesheet" type="text/css"/>
@@ -28,37 +28,47 @@
 
 <h1>Naruto x Boruto Ninja Voltage Character Table</h1>
 
-<h3><input class="theme-switch" id="night-mode" type="checkbox"/><label class="pointerCursor" for="night-mode">Night Mode</label></h3>
+<h3><input class="theme-switch" id="night-mode" type="checkbox"/><label class="pointerCursor" for="night-mode">Night
+	Mode</label></h3>
 
 <h2>All Characters</h2>
 
-<input id="myInput" onkeyup="searchTable()" placeholder="Search for Name,Type,Abilities,Traits..." title="Type in a name" type="text">
+<input id="myInput" onkeyup="searchTable()" placeholder="Search for Name,Type,Abilities,Traits..."
+       title="Type in a name" type="text">
 
 <table id="sortTable">
 	<thead>
 	<tr>
-		<th class="pointerCursor" onclick="sortCharacterTable(0); sortTable(0)" style="width:5%;">ID <img class="sortIcon"
-		                                                                                                  id="getImageId"
-		                                                                                                  src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		<th class="pointerCursor" onclick="sortCharacterTable(0); sortTable(0)" style="width:5%;">ID <img
+				alt=""
+				class="sortIcon"
+				id="getImageId"
+				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
 		<th style="width:5%;">ThumbNail</th>
-		<th class="pointerCursor" onclick="sortCharacterTable(2); sortTable(2)" style="width:18%;">Name <img class="sortIcon"
-		                                                                                                     id="getImageName"
-		                                                                                                     src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		<th class="pointerCursor" onclick="sortCharacterTable(2); sortTable(2)" style="width:18%;">Name <img
+				alt=""
+				class="sortIcon"
+				id="getImageName"
+				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
-		<th class="pointerCursor" onclick="sortCharacterTable(3); sortTable(3)" style="width:5%;">Type <img class="sortIcon"
-		                                                                                                    id="getImageType"
-		                                                                                                    src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+		<th class="pointerCursor" onclick="sortCharacterTable(3); sortTable(3)" style="width:5%;">Type <img
+				alt=""
+				class="sortIcon"
+				id="getImageType"
+				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
 		<th class="pointerCursor" onclick="sortCharacterTable(4); sortTable(4)" style="width:7%;">Abilities <img
+				alt=""
 				class="sortIcon"
 				id="getImageAbilities"
-				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
 		<th class="pointerCursor" onclick="sortCharacterTable(5); sortTable(5)" style="width:10%;">Rank <img
+				alt=""
 				class="sortIcon"
 				id="getImageRank"
-				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080" alt=""/>
+				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
 		<th style="width:10%;">Trait1</th>
 		<th style="width:10%;">Trait2</th>

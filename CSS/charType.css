@@ -1,10 +1,10 @@
-.charID{
-	text-align:center;
+.charID {
+	text-align: center;
 }
 
-.charThumb{
-	height:50px;
-	width:50px;
+.charThumb {
+	height: 50px;
+	width: 50px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -17,62 +17,62 @@
 	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.charName{
-	color: #80ccc6;
+.charName {
+	color: #80CCC6;
 }
 
-.charName:hover{
+.charName:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
 
 a:link {
-	color: #80ccc6;
+	color: #80CCC6;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #80ccc6;
+	color: #80CCC6;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #4edcc4;
+	color: #4EDCC4;
 }
 
 a:active {
-	color: #80ccc6;
+	color: #80CCC6;
 	text-decoration: none;
 }
 
-.charAttack{
-	color:#FF0000;
-	text-align:center;
+.charAttack {
+	color: #F00;
+	text-align: center;
 }
 
-.charAssist{
-	color:#00FF00;
-	text-align:center;
+.charAssist {
+	color: #0F0;
+	text-align: center;
 }
 
-.charUtility{
-	color:#FF00FF;
-	text-align:center;
+.charUtility {
+	color: #F0F;
+	text-align: center;
 }
 
-.charDefense{
-	color:#FFBF00;
-	text-align:center;
+.charDefense {
+	color: #FFBF00;
+	text-align: center;
 }
 
-.charSkill{
-	color:#6495ED;
-	text-align:center;
+.charSkill {
+	color: #6495ED;
+	text-align: center;
 }
 
-.charAwaken{
-	height:15px;
+.charAwaken {
+	height: 15px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -80,26 +80,26 @@ a:active {
 	/* Center the Image */
 }
 
-.charAbilities{
-	text-align:center;
+.charAbilities {
+	text-align: center;
 }
 
-.charTrait1{
-	text-align:center;
+.charTrait1 {
+	text-align: center;
 }
 
-.charTrait2{
-	text-align:center;
+.charTrait2 {
+	text-align: center;
 }
 
-.charTrait3{
-	text-align:center;
+.charTrait3 {
+	text-align: center;
 }
 
-.charTrait4{
-	text-align:center;
+.charTrait4 {
+	text-align: center;
 }
 
-.charTrait5{
-	text-align:center;
+.charTrait5 {
+	text-align: center;
 }

@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	color: white;
 	background: #0E191A;
-	font: normal 14px  'Times New Roman', Times, serif;
+	font: normal 14px 'Times New Roman', Times, serif;
 }
 
 .paragraph {
@@ -14,10 +14,10 @@ body {
 	padding: .25em 0 .325em;
 	display: block;
 	margin: 0 auto;
-	text-shadow: 0 0 80px rgba(255,255,255,.5);
+	text-shadow: 0 0 80px rgba(255, 255, 255, .5);
 }
 
-.cardThumb{
+.cardThumb {
 	width: 200px;
 	height: 150px;
 	margin: 0 auto;
@@ -28,7 +28,7 @@ body {
 	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.toolThumb{
+.toolThumb {
 	width: 150px;
 	height: 150px;
 	margin: 0 auto;
@@ -39,7 +39,7 @@ body {
 	transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.flex-container{
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -60,12 +60,12 @@ figcaption {
 	justify-content: flex-start;
 }
 
-.flex1{
+.flex1 {
 	flex-basis: 400px;
 	height: 800px;
 	margin-right: 100px;
 }
 
-.flex2{
+.flex2 {
 	flex-basis: 800px;
 }
