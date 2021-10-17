@@ -1,12 +1,12 @@
 #sortTable {
 	border-collapse: collapse;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 1px solid #DDD;
 	font-size: 14px;
 }
 
 #sortTable tr {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #DDD;
 }
 
 #sortTable th, td {
@@ -16,6 +16,6 @@
 	border-right: 1px solid #000;
 }
 
-#sortTable th{
+#sortTable th {
 	text-align: center;
 }

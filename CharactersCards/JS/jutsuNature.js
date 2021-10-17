@@ -1,5 +1,5 @@
-function jutsuNature() {
-	switch ( document.getElementById( "jutsuNature" ).innerHTML ) {
+function jutsuNature () {
+	switch ( document.getElementById ( "jutsuNature" ).innerHTML ) {
 		case "Annihilation":
 			document.getElementById ( "jutsuNatureImage" ).src = "https://lh3.googleusercontent.com/NOLLDdLGy7hB1hMCMLNnJFlyvZLE0_XBwdC5zM6hURn5hmfwx_lUBQwhlmTDlUpLUPE8pnZjQl5-2zkPjHPf2yN8e071EregFby353BKSvilc3sHF7k-Bc3b2uxwHl1kOlqniy7V8g=w1920-h1080";
 			break;

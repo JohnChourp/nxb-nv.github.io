@@ -1,10 +1,10 @@
-.cardID{
-	text-align:center;
+.cardID {
+	text-align: center;
 }
 
-.cardThumb{
-	width:80px;
-	height:60px;
+.cardThumb {
+	width: 80px;
+	height: 60px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -12,92 +12,92 @@
 	/* Center the Image */
 }
 
-.cardName{
-	color: #80ccc6;
+.cardName {
+	color: #80CCC6;
 }
 
-.cardName:hover{
+.cardName:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
 
 a:link {
-	color: #80ccc6;
+	color: #80CCC6;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #80ccc6;
+	color: #80CCC6;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #4edcc4;
+	color: #4EDCC4;
 }
 
 a:active {
-	color: #80ccc6;
+	color: #80CCC6;
 	text-decoration: none;
 }
 
-.cardAttack{
-	color:#FF0000;
-	text-align:center;
+.cardAttack {
+	color: #F00;
+	text-align: center;
 }
 
-.cardAssist{
-	color:#00FF00;
-	text-align:center;
+.cardAssist {
+	color: #0F0;
+	text-align: center;
 }
 
-.cardUtility{
-	color:#FF00FF;
-	text-align:center;
+.cardUtility {
+	color: #F0F;
+	text-align: center;
 }
 
-.cardDefense{
-	color:#FFBF00;
-	text-align:center;
+.cardDefense {
+	color: #FFBF00;
+	text-align: center;
 }
 
-.cardSkill{
-	color:#6495ED;
-	text-align:center;
+.cardSkill {
+	color: #6495ED;
+	text-align: center;
 }
 
-.cardLunge{
+.cardLunge {
 	color: #FD4D4D;
-	text-align:center;
+	text-align: center;
 }
 
-.cardImpact{
+.cardImpact {
 	color: #F3EE3E;
-	text-align:center;
+	text-align: center;
 }
 
-.cardAnnihilation{
+.cardAnnihilation {
 	color: #7870D3;
-	text-align:center;
+	text-align: center;
 }
 
-.cardManipulate{
+.cardManipulate {
 	color: #A46A1F;
-	text-align:center;
+	text-align: center;
 }
 
-.cardRelease{
+.cardRelease {
 	color: #4BAF5C;
-	text-align:center;
+	text-align: center;
 }
 
-.cardNormal{
+.cardNormal {
 	color: #A2A2A2;
-	text-align:center;
+	text-align: center;
 }
 
-.cardAwaken{
-	height:15px;
+.cardAwaken {
+	height: 15px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -105,9 +105,9 @@ a:active {
 	/* Center the Image */
 }
 
-.cardJutsu{
-	height:50px;
-	width:50px;
+.cardJutsu {
+	height: 50px;
+	width: 50px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -115,18 +115,18 @@ a:active {
 	/* Center the Image */
 }
 
-.cardCPCost{
-	text-align:center;
+.cardCPCost {
+	text-align: center;
 }
 
-.cardCRI{
-	text-align:center;
+.cardCRI {
+	text-align: center;
 }
 
-.cardPOW{
-	text-align:center;
+.cardPOW {
+	text-align: center;
 }
 
-.cardRT{
-	text-align:center;
+.cardRT {
+	text-align: center;
 }

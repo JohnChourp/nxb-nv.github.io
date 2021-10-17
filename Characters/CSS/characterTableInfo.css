@@ -8,7 +8,7 @@
 	margin-top: 30px;
 }
 
-#abilityListTable{
+#abilityListTable {
 	width: 40%;
 	border-radius: 4px;
 	border: 3px solid #333;
@@ -18,9 +18,9 @@
 	margin-top: 30px;
 }
 
-th,td {
+th, td {
 	border: 1px solid #333;
-	padding:5px;
+	padding: 5px;
 }
 
 th {
@@ -28,22 +28,22 @@ th {
 }
 
 td {
-	background: #f49907;
+	background: #F49907;
 }
 
-td:hover,th:hover {
+td:hover, th:hover {
 	background-color: #A46A1F;
 }
 
-#char{
-	padding:0;
+#char {
+	padding: 0;
 }
 
 #charType {
 	font-weight: bold;
 }
 
-.char{
+.char {
 	height: 410px;
 	/* Center the Image */
 	display: block;
@@ -52,8 +52,8 @@ td:hover,th:hover {
 	/* Center the Image */
 }
 
-.charRank{
-	height:30px;
+.charRank {
+	height: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -62,7 +62,7 @@ td:hover,th:hover {
 }
 
 #charTypeImage {
-	width:40px;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
