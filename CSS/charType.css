@@ -103,3 +103,20 @@ a:active {
 .charTrait5 {
 	text-align: center;
 }
+
+.btnType {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+}
+
+.btnType:hover {
+	background-color: #B2B0B0;
+}
+
+.btnType.active {
+	background-color: #666;
+	color: white;
+}
