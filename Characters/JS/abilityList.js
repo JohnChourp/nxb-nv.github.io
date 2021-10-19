@@ -1,28 +1,28 @@
-function abilityList () {
-	let tableRows = [ [] ] , i;
-	tableRows[0] = document.getElementById ( "abilityListTable" ).rows[0].cells;
-	tableRows[1] = document.getElementById ( "abilityListTable" ).rows[1].cells;
+function abilityList(){
+	let tableRows = [[]] , i;
+	tableRows[0] = document.getElementById("abilityListTable").rows[0].cells;
+	tableRows[1] = document.getElementById("abilityListTable").rows[1].cells;
 	
-	switch ( tableRows[0][2].innerHTML ) {
+	switch(tableRows[0][2].innerHTML){
 		case "69":
-			for ( i = 2; i < 72; i ++ ) {
-				tableRows[i] = document.getElementById ( "abilityListTable" ).rows[i].cells;
+			for(i = 2; i < 72; i ++){
+				tableRows[i] = document.getElementById("abilityListTable").rows[i].cells;
 			}
 			
-			for ( i = 2; i < 71; i ++ ) {
-				tableRows[i][0].innerHTML = i-1;
+			for(i = 2; i < 71; i ++){
+				tableRows[i][0].innerHTML = i - 1;
 			}
 			
-			for ( i = 0; i < 70; i ++ ) {
-				document.getElementsByClassName ( "abilityPoints" ).item ( i ).src = "https://lh3.googleusercontent.com/pkaGH5QJyR0OerBecH4eYv3ZR4AeAdVThepkfPMMCzvIPk3GhwV9Ey9BUCf4Ca2lgI_bWGw82SNzayzNArjzAUkytFFgKyAl-e0ogPgsgl__9JtweOYhr_9ACqsVKF3pkLf9uxnUjQ=w1920-h1080";
+			for(i = 0; i < 70; i ++){
+				document.getElementsByClassName("abilityPoints").item(i).src = "https://lh3.googleusercontent.com/pkaGH5QJyR0OerBecH4eYv3ZR4AeAdVThepkfPMMCzvIPk3GhwV9Ey9BUCf4Ca2lgI_bWGw82SNzayzNArjzAUkytFFgKyAl-e0ogPgsgl__9JtweOYhr_9ACqsVKF3pkLf9uxnUjQ=w1920-h1080";
 			}
 			
-			for ( i = 0; i < 30; i ++ ) {
-				document.getElementsByClassName ( "increasePower" ).item ( i ).src = "https://lh3.googleusercontent.com/rRLz0dS5SPcbCMjjPKR0knr4vGXcVBC_5BSQhh2dCwCcbnctqKHWp2PSfy6An-7Vcw4XyFcICqcYlKeeQoyPr3NiyRiAw6bOxkTt2bouYmefHNUYy_nEFB0bvVGkJnx8FbIw-lG3nQ=w1920-h1080";
+			for(i = 0; i < 30; i ++){
+				document.getElementsByClassName("increasePower").item(i).src = "https://lh3.googleusercontent.com/rRLz0dS5SPcbCMjjPKR0knr4vGXcVBC_5BSQhh2dCwCcbnctqKHWp2PSfy6An-7Vcw4XyFcICqcYlKeeQoyPr3NiyRiAw6bOxkTt2bouYmefHNUYy_nEFB0bvVGkJnx8FbIw-lG3nQ=w1920-h1080";
 			}
 			
-			for ( i = 0; i < 39; i ++ ) {
-				document.getElementsByClassName ( "increaseUltimatePower" ).item ( i ).src = "https://lh3.googleusercontent.com/cBHO4JCxyfpAKvYvPAAWcNL7jVI_Kz7ijBLo_jMYTG_mrrlzxlO8eW6zQvwbGfrlrK--ucfPnTkkKklFfMpi19kAVBAj2mEZeT1Ofd0KCFs-jbuQISkSgPjJsn_QkyKQ3rw4NaX8nA=w1920-h1080";
+			for(i = 0; i < 39; i ++){
+				document.getElementsByClassName("increaseUltimatePower").item(i).src = "https://lh3.googleusercontent.com/cBHO4JCxyfpAKvYvPAAWcNL7jVI_Kz7ijBLo_jMYTG_mrrlzxlO8eW6zQvwbGfrlrK--ucfPnTkkKklFfMpi19kAVBAj2mEZeT1Ofd0KCFs-jbuQISkSgPjJsn_QkyKQ3rw4NaX8nA=w1920-h1080";
 			}
 			
 			tableRows[2][1].innerHTML = "1";
@@ -240,14 +240,14 @@ function abilityList () {
 			
 			tableRows[71][1].innerHTML = 0;
 			
-			 for (i=2;i<71;i++){
-				 if(i<21 || (i>21 && i<26) || (i>28 && i<33) || (i>37 && i<41)){
-					 tableRows[71][1].innerHTML = eval("parseInt(tableRows[71][1].innerHTML) + parseInt(tableRows[i][4].innerHTML)");
-				 }
-				 if(i === 21 || (i>25 && i<29) || (i>32 && i<38) || (i>40)){
-					 tableRows[71][1].innerHTML = eval("parseInt(tableRows[71][1].innerHTML) + parseInt(tableRows[i][5].innerHTML)");
-				 }
-			 }
+			for(i = 2; i < 71; i ++){
+				if(i < 21 || (i > 21 && i < 26) || (i > 28 && i < 33) || (i > 37 && i < 41)){
+					tableRows[71][1].innerHTML = eval("parseInt(tableRows[71][1].innerHTML) + parseInt(tableRows[i][4].innerHTML)");
+				}
+				if(i === 21 || (i > 25 && i < 29) || (i > 32 && i < 38) || (i > 40)){
+					tableRows[71][1].innerHTML = eval("parseInt(tableRows[71][1].innerHTML) + parseInt(tableRows[i][5].innerHTML)");
+				}
+			}
 			
 			break;
 	}
