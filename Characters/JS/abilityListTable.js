@@ -1,4 +1,4 @@
-function abilityList(){
+function abilityListTable(){
 	let tableRows = [[]] , i;
 	tableRows[0] = document.getElementById("abilityListTable").rows[0].cells;
 	tableRows[1] = document.getElementById("abilityListTable").rows[1].cells;

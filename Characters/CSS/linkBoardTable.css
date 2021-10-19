@@ -1,0 +1,29 @@
+#linkBoardTable {
+	width: 40%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.linkBoardPath{
+	width:50px;
+	height:50px;
+}
+
+.IncreaseCharStat{
+	width:30px;
+	height:34px;
+}
+
+.linkBoardRyo{
+	width:30px;
+	height:34px;
+}
+
+.linkBoardChakra{
+	width:30px;
+	height:33px;
+}

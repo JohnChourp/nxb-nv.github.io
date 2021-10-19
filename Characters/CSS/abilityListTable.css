@@ -1,3 +1,14 @@
+#abilityListTable {
+	width: 40%;
+	margin-right: 10%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
 .increasePower {
 	width: 30px;
 	/* Center the Image */

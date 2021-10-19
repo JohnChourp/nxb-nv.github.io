@@ -1,0 +1,23 @@
+th, td {
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+th {
+	background: #EE3E19;
+}
+
+td {
+	background: #F49907;
+}
+
+td:hover, th:hover {
+	background-color: #A46A1F;
+}
+
+.flex-container-table {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
