@@ -1,10 +1,15 @@
-$(window).on('load',function(){
-	const btnShowAllTypesClick = $("#btnShowAllTypes");
+$(window).on('load' , function(){
+	const btnShowAllTypes = $("#btnShowAllTypes");
+	const btnAttack = $("#btnAttack");
+	const btnAssist = $("#btnAssist");
+	const btnDefense = $("#btnDefense");
+	const btnSkill = $("#btnSkill");
+	const btnUtility = $("#btnUtility");
 	
-	$("#btnAttack").on('click',function(){
-		btnShowAllTypesClick.trigger( "click" );
-		btnShowAllTypesClick.removeClass("active");
-		$( "#btnAttack" ).addClass("active");
+	btnAttack.on('click' , function(){
+		btnShowAllTypes.trigger("click");
+		btnShowAllTypes.removeClass("active");
+		btnAttack.addClass("active");
 		
 		$(".trAssist").hide();
 		$(".trDefense").hide();
@@ -12,10 +17,10 @@ $(window).on('load',function(){
 		$(".trUtility").hide();
 	});
 	
-	$("#btnAssist").on('click',function(){
-		btnShowAllTypesClick.trigger( "click" );
-		btnShowAllTypesClick.removeClass("active");
-		$( "#btnAssist" ).addClass("active");
+	btnAssist.on('click' , function(){
+		btnShowAllTypes.trigger("click");
+		btnShowAllTypes.removeClass("active");
+		btnAssist.addClass("active");
 		
 		$(".trAttack").hide();
 		$(".trDefense").hide();
@@ -23,10 +28,10 @@ $(window).on('load',function(){
 		$(".trUtility").hide();
 	});
 	
-	$("#btnDefense").on('click',function(){
-		btnShowAllTypesClick.trigger( "click" );
-		btnShowAllTypesClick.removeClass("active");
-		$( "#btnDefense" ).addClass("active");
+	btnDefense.on('click' , function(){
+		btnShowAllTypes.trigger("click");
+		btnShowAllTypes.removeClass("active");
+		btnDefense.addClass("active");
 		
 		$(".trAttack").hide();
 		$(".trAssist").hide();
@@ -34,10 +39,10 @@ $(window).on('load',function(){
 		$(".trUtility").hide();
 	});
 	
-	$("#btnSkill").on('click',function(){
-		btnShowAllTypesClick.trigger( "click" );
-		btnShowAllTypesClick.removeClass("active");
-		$( "#btnSkill" ).addClass("active");
+	btnSkill.on('click' , function(){
+		btnShowAllTypes.trigger("click");
+		btnShowAllTypes.removeClass("active");
+		btnSkill.addClass("active");
 		
 		$(".trAttack").hide();
 		$(".trAssist").hide();
@@ -45,10 +50,10 @@ $(window).on('load',function(){
 		$(".trUtility").hide();
 	});
 	
-	$("#btnUtility").on('click',function(){
-		btnShowAllTypesClick.trigger( "click" );
-		btnShowAllTypesClick.removeClass("active");
-		$( "#btnUtility" ).addClass("active");
+	btnUtility.on('click' , function(){
+		btnShowAllTypes.trigger("click");
+		btnShowAllTypes.removeClass("active");
+		btnUtility.addClass("active");
 		
 		$(".trAttack").hide();
 		$(".trAssist").hide();
@@ -56,14 +61,14 @@ $(window).on('load',function(){
 		$(".trDefense").hide();
 	});
 	
-	btnShowAllTypesClick.on('click',function(){
-		btnShowAllTypesClick.addClass("active");
+	btnShowAllTypes.on('click' , function(){
+		btnShowAllTypes.addClass("active");
 		
-		$( "#btnAttack" ).removeClass("active");
-		$( "#btnAssist" ).removeClass("active");
-		$( "#btnDefense" ).removeClass("active");
-		$( "#btnSkill" ).removeClass("active");
-		$( "#btnUtility" ).removeClass("active");
+		btnAttack.removeClass("active");
+		btnAssist.removeClass("active");
+		btnDefense.removeClass("active");
+		btnSkill.removeClass("active");
+		btnUtility.removeClass("active");
 		
 		$(".trAttack").show();
 		$(".trAssist").show();
