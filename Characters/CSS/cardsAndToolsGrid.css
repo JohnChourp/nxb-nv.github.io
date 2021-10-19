@@ -68,4 +68,9 @@ figcaption {
 
 .flex2 {
 	flex-basis: 800px;
+	margin-right: 100px;
+}
+
+.flex3 {
+	flex-basis: 800px;
 }
