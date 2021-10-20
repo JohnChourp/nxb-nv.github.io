@@ -43,12 +43,12 @@
 	height:40px;
 }
 
-.IncreaseCharStat{
+.increaseCharStat{
 	width:30px;
 	height:34px;
 }
 
-.IncreaseCharStatCharType{
+.increaseCharStatCharType{
 	width:30px;
 	height:34px;
 }
@@ -58,6 +58,15 @@
 	height:34px;
 }
 
+.reduceResistancePoison{
+	width:30px;
+	height:34px;
+}
+
+.shinobiAmulet{
+	width:30px;
+	height:32px;
+}
 .linkBoardChakra{
 	width:30px;
 	height:33px;
