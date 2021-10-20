@@ -1,7 +1,7 @@
 /*  the scrollbar. */
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 15px;
+	height: 15px;
 }
 
 /* the track (progress bar) of the scrollbar. */
