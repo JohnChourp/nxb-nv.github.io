@@ -1,5 +1,6 @@
 #linkBoardTable {
 	width: 40%;
+	height: 100%;
 	border-radius: 4px;
 	border: 3px solid #333;
 	text-align: center;
@@ -47,6 +48,11 @@
 	height:34px;
 }
 
+.IncreaseCharStatCharType{
+	width:30px;
+	height:34px;
+}
+
 .linkBoardRyo{
 	width:30px;
 	height:34px;
@@ -55,4 +61,9 @@
 .linkBoardChakra{
 	width:30px;
 	height:33px;
+}
+
+.linkBoard5StarAttackGem{
+	width:30px;
+	height:30px;
 }
