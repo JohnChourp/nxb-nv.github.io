@@ -8,9 +8,38 @@
 	margin-top: 30px;
 }
 
+.linkBoardAbilityPoints {
+	width: 30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
 .linkBoardPath{
 	width:50px;
 	height:50px;
+}
+
+.linkBoardLocked{
+	width:30px;
+	height:35px;
+}
+
+.linkBoardFragment{
+	width:30px;
+	height:27px;
+}
+
+.linkBoardSuperFragment{
+	width:30px;
+	height:31px;
+}
+
+.linkBoardKeys{
+	width:20px;
+	height:40px;
 }
 
 .IncreaseCharStat{
