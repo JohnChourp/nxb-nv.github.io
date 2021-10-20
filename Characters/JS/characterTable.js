@@ -1,4 +1,4 @@
-function characterTableInfo(){
+function characterTable(){
 	switch(document.getElementById("charType").innerHTML){
 		case "Assist":
 			document.getElementById("charTypeImage").src = "https://lh3.googleusercontent.com/BR61eSPgEHta1Bqu6XfV8hNtNq7fYP6VQdHCC6CBt-XodGNyxsfBOCgInPSLGmNA8i_G8OX6DCLOr1EzBYmJhJMFpCxFJZZnesU38zSmWBzYjRqmt1rMxA62BnmjbbU_Z3Zrt7w28g=w1920-h1080";

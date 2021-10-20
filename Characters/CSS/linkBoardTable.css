@@ -1,0 +1,102 @@
+#linkBoardTable {
+	width: 60%;
+	height: 100%;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.linkBoardAbilityPoints {
+	width: 30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.linkBoardPath{
+	width:50px;
+	height:50px;
+}
+
+.linkBoardLocked{
+	width:30px;
+	height:35px;
+}
+
+.linkBoardFragment{
+	width:30px;
+	height:27px;
+}
+
+.linkBoardSuperFragment{
+	width:30px;
+	height:31px;
+}
+
+.linkBoardKeys{
+	width:20px;
+	height:40px;
+}
+
+.increaseCharStat{
+	width:30px;
+	height:34px;
+}
+
+.increaseCharStatCharType{
+	width:30px;
+	height:34px;
+}
+
+.linkBoardRyo{
+	width:30px;
+	height:34px;
+}
+
+.reduceResistancePoison{
+	width:30px;
+	height:34px;
+}
+
+.increaseCharCardsTools{
+	width:30px;
+	height:33px;
+}
+
+.increaseCharUltimateJutsu {
+	width:30px;
+	height:34px;
+}
+
+.gainCharImmunity{
+	width:30px;
+	height:34px;
+}
+.shinobiAmulet{
+	width:30px;
+	height:32px;
+}
+
+.expansionScroll{
+	width:21px;
+	height:40px;
+}
+
+.trainingScroll{
+	width:30px;
+	height:32px;
+}
+.linkBoardChakra{
+	width:30px;
+	height:33px;
+}
+
+.linkBoard5StarAttackGem{
+	width:30px;
+	height:30px;
+}
