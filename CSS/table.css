@@ -14,10 +14,3 @@ td {
 td:hover, th:hover {
 	background-color: #A46A1F;
 }
-
-.flex-container-table {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-}
