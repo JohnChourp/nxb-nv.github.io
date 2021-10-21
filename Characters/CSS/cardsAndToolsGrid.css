@@ -1,20 +1,3 @@
-body {
-	margin: 0;
-	padding: 0;
-	color: white;
-	background: #0E191A;
-	font: normal 14px 'Times New Roman', Times, serif;
-}
-
-.paragraph {
-	background: #2C5154;
-	color: white;
-	font: 700 2em/1 "Oswald", sans-serif;
-	letter-spacing: 1px;
-	padding: .25em 0 .25em;
-	margin: 0 auto;
-}
-
 .cardThumb {
 	width: 200px;
 	height: 150px;
@@ -23,6 +6,28 @@ body {
 }
 
 .cardThumb:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.abilitiesListBtn {
+	width: 120px;
+	height: 50px;
+	margin: 0 auto;
+	transition: transform .2s; /* Animation */
+}
+
+.abilitiesListBtn:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.linkBoardBtn {
+	width: 154px;
+	height: 40px;
+	margin: 0 auto;
+	transition: transform .2s; /* Animation */
+}
+
+.linkBoardBtn:hover {
 	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
