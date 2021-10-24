@@ -37,10 +37,11 @@ $(window).on('load' , function(){
 	
 	let pagination = document.getElementById("pagination").children;
 	
-	pagination[1].addEventListener('click' , function(){
-		if(pagination[1].className !== "active"){
-			pagination[1].className = "active";
+	pagination[0].addEventListener('click' , function(){
+		if(pagination[0].className !== "active"){
+			pagination[0].className = "active";
 			
+			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
 			pagination[4].className = "";
@@ -51,6 +52,34 @@ $(window).on('load' , function(){
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
+			
+			for(i = table.rows.length - 1; i > 0; i --){
+				tr[i].style.display = "none";
+			}
+			
+			for(i = 1; i < 11; i ++){
+				tr[i].style.display = "";
+			}
+		}
+	});
+	
+	pagination[1].addEventListener('click' , function(){
+		if(pagination[1].className !== "active"){
+			pagination[1].className = "active";
+			
+			pagination[0].className = "";
+			pagination[2].className = "";
+			pagination[3].className = "";
+			pagination[4].className = "";
+			pagination[5].className = "";
+			pagination[6].className = "";
+			pagination[7].className = "";
+			pagination[8].className = "";
+			pagination[9].className = "";
+			pagination[10].className = "";
+			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -66,8 +95,8 @@ $(window).on('load' , function(){
 		if(pagination[2].className !== "active"){
 			pagination[2].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
-			
 			pagination[3].className = "";
 			pagination[4].className = "";
 			pagination[5].className = "";
@@ -77,6 +106,7 @@ $(window).on('load' , function(){
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -92,9 +122,9 @@ $(window).on('load' , function(){
 		if(pagination[3].className !== "active"){
 			pagination[3].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
-			
 			pagination[4].className = "";
 			pagination[5].className = "";
 			pagination[6].className = "";
@@ -103,6 +133,7 @@ $(window).on('load' , function(){
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -118,6 +149,7 @@ $(window).on('load' , function(){
 		if(pagination[4].className !== "active"){
 			pagination[4].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
@@ -128,6 +160,7 @@ $(window).on('load' , function(){
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -143,17 +176,18 @@ $(window).on('load' , function(){
 		if(pagination[5].className !== "active"){
 			pagination[5].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
 			pagination[4].className = "";
-			
 			pagination[6].className = "";
 			pagination[7].className = "";
 			pagination[8].className = "";
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -169,17 +203,18 @@ $(window).on('load' , function(){
 		if(pagination[6].className !== "active"){
 			pagination[6].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
 			pagination[4].className = "";
 			pagination[5].className = "";
-			
 			pagination[7].className = "";
 			pagination[8].className = "";
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -195,17 +230,18 @@ $(window).on('load' , function(){
 		if(pagination[7].className !== "active"){
 			pagination[7].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
 			pagination[4].className = "";
 			pagination[5].className = "";
 			pagination[6].className = "";
-			
 			pagination[8].className = "";
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -221,6 +257,7 @@ $(window).on('load' , function(){
 		if(pagination[8].className !== "active"){
 			pagination[8].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
@@ -228,10 +265,10 @@ $(window).on('load' , function(){
 			pagination[5].className = "";
 			pagination[6].className = "";
 			pagination[7].className = "";
-			
 			pagination[9].className = "";
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -247,6 +284,7 @@ $(window).on('load' , function(){
 		if(pagination[9].className !== "active"){
 			pagination[9].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
@@ -255,9 +293,9 @@ $(window).on('load' , function(){
 			pagination[6].className = "";
 			pagination[7].className = "";
 			pagination[8].className = "";
-			
 			pagination[10].className = "";
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -273,6 +311,7 @@ $(window).on('load' , function(){
 		if(pagination[10].className !== "active"){
 			pagination[10].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
@@ -282,8 +321,8 @@ $(window).on('load' , function(){
 			pagination[7].className = "";
 			pagination[8].className = "";
 			pagination[9].className = "";
-			
 			pagination[11].className = "";
+			pagination[12].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
@@ -299,6 +338,7 @@ $(window).on('load' , function(){
 		if(pagination[11].className !== "active"){
 			pagination[11].className = "active";
 			
+			pagination[0].className = "";
 			pagination[1].className = "";
 			pagination[2].className = "";
 			pagination[3].className = "";
@@ -309,6 +349,34 @@ $(window).on('load' , function(){
 			pagination[8].className = "";
 			pagination[9].className = "";
 			pagination[10].className = "";
+			pagination[12].className = "";
+			
+			for(i = table.rows.length - 1; i > 0; i --){
+				tr[i].style.display = "none";
+			}
+			
+			for(i = 101; i < 106; i ++){
+				tr[i].style.display = "";
+			}
+		}
+	});
+	
+	pagination[12].addEventListener('click' , function(){
+		if(pagination[12].className !== "active"){
+			pagination[12].className = "active";
+			
+			pagination[0].className = "";
+			pagination[1].className = "";
+			pagination[2].className = "";
+			pagination[3].className = "";
+			pagination[4].className = "";
+			pagination[5].className = "";
+			pagination[6].className = "";
+			pagination[7].className = "";
+			pagination[8].className = "";
+			pagination[9].className = "";
+			pagination[10].className = "";
+			pagination[11].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
