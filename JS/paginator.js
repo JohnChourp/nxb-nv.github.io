@@ -37,13 +37,13 @@ $(window).on('load' , function(){
 	
 	let pagination = document.getElementById("pagination").children;
 	
-	for(let i = 0; i < 13; i ++){
+	for(let i = 0; i < paginatorLength+2; i ++){
 		pagination[i].addEventListener('click' , function(){
 			if(pagination[i].className !== "active"){
 				pagination[i].className = "active";
 			}
 			
-			for(let j = 0; j < 13; j ++){
+			for(let j = 0; j < paginatorLength+2; j ++){
 				if((pagination[j].className === pagination[i].className) && (j !== i)){
 					pagination[j].className = "";
 				}
@@ -53,12 +53,17 @@ $(window).on('load' , function(){
 				tr[i].style.display = "none";
 			}
 			
-			if(i === 11 || i === 12){
-				for(let i = 101; i < 106; i ++){
+			if(i === 0){
+				for(let i = 1; i < 11; i ++){
 					tr[i].style.display = "";
 				}
-			}else if(i < 11){
-				let sum = (i*10);
+			}else if(i === paginatorLength+1){
+				let sum = ((paginatorLength-1)*10);
+				for(let i = sum+1; i < sum+11; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i > 0 || i < paginatorLength+1){
+				let sum = ((i-1)*10);
 				for(let i = sum+1; i < sum+11; i ++){
 					tr[i].style.display = "";
 				}
