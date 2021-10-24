@@ -53,17 +53,13 @@ $(window).on('load' , function(){
 				tr[i].style.display = "none";
 			}
 			
-			if(i === 0 || i === 1){
-				for(let i = 1; i < 11; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 11 || i === 12){
+			if(i === 11 || i === 12){
 				for(let i = 101; i < 106; i ++){
 					tr[i].style.display = "";
 				}
-			}else if(i > 1 || i < 11){
-				let sum = ((i-2)*10);
-				for(let i = sum+11; i < sum+21; i ++){
+			}else if(i < 11){
+				let sum = (i*10);
+				for(let i = sum+1; i < sum+11; i ++){
 					tr[i].style.display = "";
 				}
 			}
