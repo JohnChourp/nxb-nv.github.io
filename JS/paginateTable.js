@@ -37,354 +37,67 @@ $(window).on('load' , function(){
 	
 	let pagination = document.getElementById("pagination").children;
 	
-	pagination[0].addEventListener('click' , function(){
-		if(pagination[0].className !== "active"){
-			pagination[0].className = "active";
+	for(let i = 0; i < 13; i ++){
+		pagination[i].addEventListener('click' , function(){
+			if(pagination[i].className !== "active"){
+				pagination[i].className = "active";
+			}
 			
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
+			for(let j = 0; j < 13; j ++){
+				if((pagination[j].className === pagination[i].className) && (j !== i)){
+					pagination[j].className = "";
+				}
+			}
 			
-			for(i = table.rows.length - 1; i > 0; i --){
+			for(let i = table.rows.length - 1; i > 0; i --){
 				tr[i].style.display = "none";
 			}
 			
-			for(i = 1; i < 11; i ++){
-				tr[i].style.display = "";
+			if(i === 0 || i === 1){
+				for(let i = 1; i < 11; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 2){
+				for(let i = 11; i < 21; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 3){
+				for(let i = 21; i < 31; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 4){
+				for(let i = 31; i < 41; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 5){
+				for(let i = 41; i < 51; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 6){
+				for(let i = 51; i < 61; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 7){
+				for(let i = 61; i < 71; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 8){
+				for(let i = 71; i < 81; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 9){
+				for(let i = 81; i < 91; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 10){
+				for(let i = 91; i < 101; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i === 11 || i === 12){
+				for(let i = 101; i < 106; i ++){
+					tr[i].style.display = "";
+				}
 			}
-		}
-	});
-	
-	pagination[1].addEventListener('click' , function(){
-		if(pagination[1].className !== "active"){
-			pagination[1].className = "active";
-			
-			pagination[0].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 1; i < 11; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[2].addEventListener('click' , function(){
-		if(pagination[2].className !== "active"){
-			pagination[2].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 11; i < 21; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[3].addEventListener('click' , function(){
-		if(pagination[3].className !== "active"){
-			pagination[3].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 21; i < 31; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[4].addEventListener('click' , function(){
-		if(pagination[4].className !== "active"){
-			pagination[4].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 31; i < 41; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[5].addEventListener('click' , function(){
-		if(pagination[5].className !== "active"){
-			pagination[5].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 41; i < 51; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[6].addEventListener('click' , function(){
-		if(pagination[6].className !== "active"){
-			pagination[6].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 51; i < 61; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[7].addEventListener('click' , function(){
-		if(pagination[7].className !== "active"){
-			pagination[7].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 61; i < 71; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[8].addEventListener('click' , function(){
-		if(pagination[8].className !== "active"){
-			pagination[8].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 71; i < 81; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[9].addEventListener('click' , function(){
-		if(pagination[9].className !== "active"){
-			pagination[9].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 81; i < 91; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[10].addEventListener('click' , function(){
-		if(pagination[10].className !== "active"){
-			pagination[10].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[11].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 91; i < 101; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[11].addEventListener('click' , function(){
-		if(pagination[11].className !== "active"){
-			pagination[11].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[12].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 101; i < 106; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
-	
-	pagination[12].addEventListener('click' , function(){
-		if(pagination[12].className !== "active"){
-			pagination[12].className = "active";
-			
-			pagination[0].className = "";
-			pagination[1].className = "";
-			pagination[2].className = "";
-			pagination[3].className = "";
-			pagination[4].className = "";
-			pagination[5].className = "";
-			pagination[6].className = "";
-			pagination[7].className = "";
-			pagination[8].className = "";
-			pagination[9].className = "";
-			pagination[10].className = "";
-			pagination[11].className = "";
-			
-			for(i = table.rows.length - 1; i > 0; i --){
-				tr[i].style.display = "none";
-			}
-			
-			for(i = 101; i < 106; i ++){
-				tr[i].style.display = "";
-			}
-		}
-	});
+		});
+	}
 });
