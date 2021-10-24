@@ -1,14 +1,41 @@
 $(window).on('load' , function(){
 	let i;
 	let table , tr;
-	let pagination = document.getElementById("pagination").children;
-	
+	const paginationDiv = document.getElementById("pagination");
 	table = document.getElementById("sortTable");
+	const paginatorLength = Math.ceil(table.rows.length / 10);
 	tr = table.getElementsByTagName("tr");
 	
 	for(i = table.rows.length - 1; i > 10; i --){
 		tr[i].style.display = "none";
 	}
+	
+	const aStart = document.createElement("a");
+	aStart.href = "#";
+	aStart.innerHTML = "&laquo;";
+	paginationDiv.appendChild(aStart);
+	
+	for(i = 0; i < paginatorLength; i ++){
+		if(i === 0){
+			const a = document.createElement("a");
+			a.href = "#";
+			a.innerHTML = "1";
+			a.className = "active";
+			paginationDiv.appendChild(a);
+		}else{
+			const a = document.createElement("a");
+			a.href = "#";
+			a.innerHTML = eval("i+1");
+			paginationDiv.appendChild(a);
+		}
+	}
+	
+	const aEnd = document.createElement("a");
+	aEnd.href = "#";
+	aEnd.innerHTML = "&raquo;";
+	paginationDiv.appendChild(aEnd);
+	
+	let pagination = document.getElementById("pagination").children;
 	
 	pagination[1].addEventListener('click' , function(){
 		if(pagination[1].className !== "active"){
@@ -120,7 +147,7 @@ $(window).on('load' , function(){
 			pagination[2].className = "";
 			pagination[3].className = "";
 			pagination[4].className = "";
-
+			
 			pagination[6].className = "";
 			pagination[7].className = "";
 			pagination[8].className = "";
@@ -147,7 +174,7 @@ $(window).on('load' , function(){
 			pagination[3].className = "";
 			pagination[4].className = "";
 			pagination[5].className = "";
-
+			
 			pagination[7].className = "";
 			pagination[8].className = "";
 			pagination[9].className = "";
@@ -174,7 +201,7 @@ $(window).on('load' , function(){
 			pagination[4].className = "";
 			pagination[5].className = "";
 			pagination[6].className = "";
-
+			
 			pagination[8].className = "";
 			pagination[9].className = "";
 			pagination[10].className = "";
@@ -228,7 +255,7 @@ $(window).on('load' , function(){
 			pagination[6].className = "";
 			pagination[7].className = "";
 			pagination[8].className = "";
-
+			
 			pagination[10].className = "";
 			pagination[11].className = "";
 			
@@ -255,7 +282,7 @@ $(window).on('load' , function(){
 			pagination[7].className = "";
 			pagination[8].className = "";
 			pagination[9].className = "";
-
+			
 			pagination[11].className = "";
 			
 			for(i = table.rows.length - 1; i > 0; i --){
