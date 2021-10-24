@@ -57,44 +57,13 @@ $(window).on('load' , function(){
 				for(let i = 1; i < 11; i ++){
 					tr[i].style.display = "";
 				}
-			}else if(i === 2){
-				for(let i = 11; i < 21; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 3){
-				for(let i = 21; i < 31; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 4){
-				for(let i = 31; i < 41; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 5){
-				for(let i = 41; i < 51; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 6){
-				for(let i = 51; i < 61; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 7){
-				for(let i = 61; i < 71; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 8){
-				for(let i = 71; i < 81; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 9){
-				for(let i = 81; i < 91; i ++){
-					tr[i].style.display = "";
-				}
-			}else if(i === 10){
-				for(let i = 91; i < 101; i ++){
-					tr[i].style.display = "";
-				}
 			}else if(i === 11 || i === 12){
 				for(let i = 101; i < 106; i ++){
+					tr[i].style.display = "";
+				}
+			}else if(i > 1 || i < 11){
+				let sum = ((i-2)*10);
+				for(let i = sum+11; i < sum+21; i ++){
 					tr[i].style.display = "";
 				}
 			}
