@@ -1,5 +1,5 @@
 :root {
-	--bg-color: #ddd;
+	--bg-color-paginator: #ddd;
 }
 
 #pagination {
@@ -22,5 +22,5 @@
 }
 
 #pagination a:hover:not(.active) {
-	background-color: var(--bg-color);
+	background-color: var(--bg-color-paginator);
 }

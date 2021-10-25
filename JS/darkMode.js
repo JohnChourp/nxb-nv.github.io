@@ -11,7 +11,7 @@ function darkModeSave(){
 	for(let i=0;i<13;i++){
 		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
 	}
-	root.style.setProperty('--bg-color', localStorage.getItem("paginationBgColor"));
+	root.style.setProperty('--bg-color-paginator', localStorage.getItem("paginationBgColor"));
 	
 	themeSwitch.addEventListener("change" , function(e){
 		if(e.currentTarget.checked === true){
