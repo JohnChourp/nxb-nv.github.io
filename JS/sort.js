@@ -1,4 +1,4 @@
-function sortTable(n){
+function sort(n){
 	let table , rows , switching , i , x , y , shouldSwitch , dir , switchCount = 0;
 	
 	table = document.getElementById("sortTable");

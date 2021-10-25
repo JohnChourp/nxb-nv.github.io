@@ -14,15 +14,17 @@
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/myInput.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/myTable.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/paginator.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
 	
 	<!-- JS Start -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="JS/darkMode.js" type="text/javascript"></script>
 	<script src="JS/myInput.js" type="text/javascript"></script>
-	<script src="JS/sortTable.js" type="text/javascript"></script>
-	<script src="JS/sortCharacterTable.js" type="text/javascript"></script>
-	<script src="JS/filterCharTypeTable.js" type="text/javascript"></script>
+	<script src="JS/sort.js" type="text/javascript"></script>
+	<script src="JS/sortImageChange.js" type="text/javascript"></script>
+	<script src="JS/filterCharType.js" type="text/javascript"></script>
+	<script src="JS/paginator.js" type="text/javascript"></script>
 	<!-- JS End -->
 	
 	<title>Naruto x Boruto Ninja Voltage Character Table</title>
@@ -35,8 +37,9 @@
 	Mode</label></h3>
 
 <h2>All Characters</h2>
-<hr>
+
 <h3>First Choose a "Character Type" and then Search</h3>
+
 <div>
 	<button class="btnType active" id="btnShowAllTypes"> Show all</button>
 	<button class="btnType" id="btnAttack"> Attack</button>
@@ -45,39 +48,41 @@
 	<button class="btnType" id="btnSkill"> Skill</button>
 	<button class="btnType" id="btnUtility"> Utility</button>
 </div>
-<hr>
+<br>
+<div id="pagination"></div>
+<br><br>
 <input id="myInput" onkeyup="searchTable()" placeholder="Search for Name,Type,Abilities,Traits..."
        title="Type in a name" type="text">
 
 <table id="sortTable">
 	<thead>
 	<tr>
-		<th class="pointerCursor" onclick="sortCharacterTable(0); sortTable(0)" style="width:5%;">ID <img
+		<th class="pointerCursor" onclick="sortImageChange(0); sort(0)" style="width:5%;">ID <img
 				alt=""
 				class="sortIcon"
 				id="getImageId"
 				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
 		<th style="width:5%;">ThumbNail</th>
-		<th class="pointerCursor" onclick="sortCharacterTable(2); sortTable(2)" style="width:18%;">Name <img
+		<th class="pointerCursor" onclick="sortImageChange(2); sort(2)" style="width:18%;">Name <img
 				alt=""
 				class="sortIcon"
 				id="getImageName"
 				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
-		<th class="pointerCursor" onclick="sortCharacterTable(3); sortTable(3)" style="width:5%;">Type <img
+		<th class="pointerCursor" onclick="sortImageChange(3); sort(3)" style="width:5%;">Type <img
 				alt=""
 				class="sortIcon"
 				id="getImageType"
 				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
-		<th class="pointerCursor" onclick="sortCharacterTable(4); sortTable(4)" style="width:7%;">Abilities <img
+		<th class="pointerCursor" onclick="sortImageChange(4); sort(4)" style="width:7%;">Abilities <img
 				alt=""
 				class="sortIcon"
 				id="getImageAbilities"
 				src="https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080"/>
 		</th>
-		<th class="pointerCursor" onclick="sortCharacterTable(5); sortTable(5)" style="width:10%;">Rank <img
+		<th class="pointerCursor" onclick="sortImageChange(5); sort(5)" style="width:10%;">Rank <img
 				alt=""
 				class="sortIcon"
 				id="getImageRank"
