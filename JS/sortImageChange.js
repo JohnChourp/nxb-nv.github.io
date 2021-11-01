@@ -5,34 +5,34 @@ function sortImageChange(n){
 	const ImageAbilities_Id = document.getElementById('getImageAbilities');
 	const Rank_Id = document.getElementById('getImageRank');
 	
-	if(ImageId_Id.src.match("https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080") && n === 0){
-		ImageId_Id.src = "https://lh3.googleusercontent.com/p9GFQ812NpxkSCylSu8crEjTrxfbKGQBHkMLQ2_9Eu-awzYzIovS7hxb9bmqkQ2OqiNyD-C9hxzgZ61NcI1RDSKT52D97Jw_QYOGDEyWXSES80xHS5qKe7zii5SKK0JyyLWr8BrE-Q=w1920-h1080";
+	if(ImageId_Id.src.match("https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0") && n === 0){
+		ImageId_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLXRCRgL1CibZL1HM-k9vfQt4vh33Gteo0aMduz5vKBJjjkyawW3zktOS6t2cffmYhJdew7Quazpm7OchbWecudNNDslVZZ7g7qdQKgetXOxiwkjBlbZN3R3HW2Xth9LLgNEPjKDBnmY5DihrUU8-oeZ=w58-h59-no?authuser=0";
 	}else{
-		ImageId_Id.src = "https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080";
+		ImageId_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0";
 	}
 	
-	if(ImageName_Id.src.match("https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080") && n === 2){
-		ImageName_Id.src = "https://lh3.googleusercontent.com/p9GFQ812NpxkSCylSu8crEjTrxfbKGQBHkMLQ2_9Eu-awzYzIovS7hxb9bmqkQ2OqiNyD-C9hxzgZ61NcI1RDSKT52D97Jw_QYOGDEyWXSES80xHS5qKe7zii5SKK0JyyLWr8BrE-Q=w1920-h1080";
+	if(ImageName_Id.src.match("https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0") && n === 2){
+		ImageName_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLXRCRgL1CibZL1HM-k9vfQt4vh33Gteo0aMduz5vKBJjjkyawW3zktOS6t2cffmYhJdew7Quazpm7OchbWecudNNDslVZZ7g7qdQKgetXOxiwkjBlbZN3R3HW2Xth9LLgNEPjKDBnmY5DihrUU8-oeZ=w58-h59-no?authuser=0";
 	}else{
-		ImageName_Id.src = "https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080";
+		ImageName_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0";
 	}
 	
-	if(ImageType_Id.src.match("https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080") && n === 3){
-		ImageType_Id.src = "https://lh3.googleusercontent.com/p9GFQ812NpxkSCylSu8crEjTrxfbKGQBHkMLQ2_9Eu-awzYzIovS7hxb9bmqkQ2OqiNyD-C9hxzgZ61NcI1RDSKT52D97Jw_QYOGDEyWXSES80xHS5qKe7zii5SKK0JyyLWr8BrE-Q=w1920-h1080";
+	if(ImageType_Id.src.match("https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0") && n === 3){
+		ImageType_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLXRCRgL1CibZL1HM-k9vfQt4vh33Gteo0aMduz5vKBJjjkyawW3zktOS6t2cffmYhJdew7Quazpm7OchbWecudNNDslVZZ7g7qdQKgetXOxiwkjBlbZN3R3HW2Xth9LLgNEPjKDBnmY5DihrUU8-oeZ=w58-h59-no?authuser=0";
 	}else{
-		ImageType_Id.src = "https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080";
+		ImageType_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0";
 	}
 	
-	if(ImageAbilities_Id.src.match("https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080") && n === 4){
-		ImageAbilities_Id.src = "https://lh3.googleusercontent.com/p9GFQ812NpxkSCylSu8crEjTrxfbKGQBHkMLQ2_9Eu-awzYzIovS7hxb9bmqkQ2OqiNyD-C9hxzgZ61NcI1RDSKT52D97Jw_QYOGDEyWXSES80xHS5qKe7zii5SKK0JyyLWr8BrE-Q=w1920-h1080";
+	if(ImageAbilities_Id.src.match("https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0") && n === 4){
+		ImageAbilities_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLXRCRgL1CibZL1HM-k9vfQt4vh33Gteo0aMduz5vKBJjjkyawW3zktOS6t2cffmYhJdew7Quazpm7OchbWecudNNDslVZZ7g7qdQKgetXOxiwkjBlbZN3R3HW2Xth9LLgNEPjKDBnmY5DihrUU8-oeZ=w58-h59-no?authuser=0";
 	}else{
-		ImageAbilities_Id.src = "https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080";
+		ImageAbilities_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0";
 	}
 	
-	if(Rank_Id.src.match("https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080") && n === 5){
-		Rank_Id.src = "https://lh3.googleusercontent.com/p9GFQ812NpxkSCylSu8crEjTrxfbKGQBHkMLQ2_9Eu-awzYzIovS7hxb9bmqkQ2OqiNyD-C9hxzgZ61NcI1RDSKT52D97Jw_QYOGDEyWXSES80xHS5qKe7zii5SKK0JyyLWr8BrE-Q=w1920-h1080";
+	if(Rank_Id.src.match("https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0") && n === 5){
+		Rank_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLXRCRgL1CibZL1HM-k9vfQt4vh33Gteo0aMduz5vKBJjjkyawW3zktOS6t2cffmYhJdew7Quazpm7OchbWecudNNDslVZZ7g7qdQKgetXOxiwkjBlbZN3R3HW2Xth9LLgNEPjKDBnmY5DihrUU8-oeZ=w58-h59-no?authuser=0";
 	}else{
-		Rank_Id.src = "https://lh3.googleusercontent.com/e9rxI7SLVSCYSrD1DhIbyZl2_8_CAsyg4-KniarzjEab3tVlmfKOcUQTAf3bclvLLFYjgx5XW-2bL06Xn2BxZuRH9JplNnYNJpup8SsHNRzIVzhgeqWGy_YBcBihpNHrexhUCMpF6g=w1920-h1080";
+		Rank_Id.src = "https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0";
 	}
 }
 
@@ -40,10 +40,10 @@ function charRank(){
 	for(let i = 0; i < 106; i ++){
 		switch(document.getElementsByClassName("charAwaken").item(i).alt){
 			case "7 Star":
-				document.getElementsByClassName("charAwaken").item(i).src = "https://lh3.googleusercontent.com/6MnzcluW9C6CjFzGJ1L_JLVZB9wvEbyu3cfLMoLGOLDzM4kYSxyt9ourb9kqKTUgWyCBq_fOJ78MEyAxjTpiD2nunWBTHb62Wbfjdx5zQpSAIFhfq87HisKeH7SN_YM8GsEKQg0wkA=w1920-h1080";
+				document.getElementsByClassName("charAwaken").item(i).src = "https://lh3.googleusercontent.com/pw/AM-JKLXfSU0Ql6Gm4kKA0E9I_3IoHD3OAGn8Lc4ngdrCFSpxzxnGIQcTnqTGsi9zIGenh7jXxFGp0Cuajca6Kn3iTCsn9yR5j7J_DHXSkjth9Sp-9srEK582O0WBxUyXBe7N2dNkuEWxT4yJzDGwwIc_pr5F=w336-h48-no?authuser=0";
 				break;
 			case "6 Star":
-				document.getElementsByClassName("charAwaken").item(i).src = "https://lh3.googleusercontent.com/s7P8ETCwxe43zzVBXUpiEmZLmUyiaOgRU9pJBcljYoVB6nMA1Woh21jnjus6nrQ1NKs5VouYtNJRZDrotPTp6JNHooJ7mUwhGF9mEHYXenQTU2eH9yy1Ao2QlDafLCr11U51dxedwQ=w1920-h1080";
+				document.getElementsByClassName("charAwaken").item(i).src = "https://lh3.googleusercontent.com/pw/AM-JKLWf4-Vxbiy4TQ1PTUiAY4GUVjvu1nWA--0_Ng0BgXsOoGByaNQrj0Sdx63xLNMY8c1Et9ExbhR_6Nmc8lbAfB8GYpY2Pl86zgFE-JBstVhrK84w41iipQzKGV0pacuM0LVuV58aPGXr_st8UgNBsUBe=w286-h47-no?authuser=0";
 				break;
 		}
 	}
