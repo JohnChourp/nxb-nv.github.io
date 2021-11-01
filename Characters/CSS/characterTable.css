@@ -9,7 +9,7 @@
 	font-size: 20px;
 }
 
-#charType {
+#cardType {
 	font-weight: bold;
 }
 
@@ -26,7 +26,7 @@
 	/* Center the Image */
 }
 
-.charRank {
+.rankImage {
 	height: 30px;
 	/* Center the Image */
 	display: block;
@@ -35,7 +35,7 @@
 	/* Center the Image */
 }
 
-#charTypeImage {
+#cardTypeImage {
 	width: 40px;
 	/* Center the Image */
 	display: block;

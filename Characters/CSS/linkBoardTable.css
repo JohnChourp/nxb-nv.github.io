@@ -20,9 +20,9 @@
 	/* Center the Image */
 }
 
-.linkBoardPath{
-	width:50px;
-	height:50px;
+.linkBoardPath {
+	width: 50px;
+	height: 50px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -30,9 +30,9 @@
 	/* Center the Image */
 }
 
-.linkBoardLocked{
-	width:30px;
-	height:35px;
+.linkBoardLocked {
+	width: 30px;
+	height: 35px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -40,9 +40,9 @@
 	/* Center the Image */
 }
 
-.linkBoardFragment{
-	width:30px;
-	height:27px;
+.linkBoardFragment {
+	width: 30px;
+	height: 27px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -50,9 +50,9 @@
 	/* Center the Image */
 }
 
-.linkBoardSuperFragment{
-	width:30px;
-	height:31px;
+.linkBoardSuperFragment {
+	width: 30px;
+	height: 31px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -60,9 +60,9 @@
 	/* Center the Image */
 }
 
-.linkBoardKeys{
-	width:20px;
-	height:40px;
+.linkBoardKeys {
+	width: 20px;
+	height: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -70,9 +70,9 @@
 	/* Center the Image */
 }
 
-.increaseCharStat{
-	width:30px;
-	height:34px;
+.increaseCharStat {
+	width: 30px;
+	height: 34px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -80,9 +80,9 @@
 	/* Center the Image */
 }
 
-.increaseCharStatCharType{
-	width:30px;
-	height:34px;
+.increaseCharStatCharType {
+	width: 30px;
+	height: 34px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -90,9 +90,9 @@
 	/* Center the Image */
 }
 
-.linkBoardRyo{
-	width:30px;
-	height:34px;
+.linkBoardRyo {
+	width: 30px;
+	height: 34px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -100,9 +100,9 @@
 	/* Center the Image */
 }
 
-.reduceResistancePoison{
-	width:30px;
-	height:34px;
+.reduceResistancePoison {
+	width: 30px;
+	height: 34px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -110,9 +110,9 @@
 	/* Center the Image */
 }
 
-.increaseCharCardsTools{
-	width:30px;
-	height:33px;
+.increaseCharCardsTools {
+	width: 30px;
+	height: 33px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -121,8 +121,8 @@
 }
 
 .increaseCharUltimateJutsu {
-	width:30px;
-	height:34px;
+	width: 30px;
+	height: 34px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -130,18 +130,9 @@
 	/* Center the Image */
 }
 
-.gainCharImmunity{
-	width:30px;
-	height:34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
-}
-.shinobiAmulet{
-	width:30px;
-	height:32px;
+.gainCharImmunity {
+	width: 30px;
+	height: 34px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -149,9 +140,9 @@
 	/* Center the Image */
 }
 
-.expansionScroll{
-	width:21px;
-	height:40px;
+.shinobiAmulet {
+	width: 30px;
+	height: 32px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -159,18 +150,9 @@
 	/* Center the Image */
 }
 
-.trainingScroll{
-	width:30px;
-	height:32px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
-}
-.linkBoardChakra{
-	width:30px;
-	height:33px;
+.expansionScroll {
+	width: 21px;
+	height: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -178,9 +160,29 @@
 	/* Center the Image */
 }
 
-.linkBoard5StarAttackGem{
-	width:30px;
-	height:30px;
+.trainingScroll {
+	width: 30px;
+	height: 32px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.linkBoardChakra {
+	width: 30px;
+	height: 33px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.linkBoard5StarAttackGem {
+	width: 30px;
+	height: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;

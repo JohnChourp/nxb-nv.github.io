@@ -1,5 +1,5 @@
 :root {
-	--bg-color-paginator: #ddd;
+	--bg-color-paginator: #DDD;
 }
 
 #pagination {
@@ -12,7 +12,7 @@
 	padding: 8px 16px;
 	text-decoration: none;
 	transition: background-color .3s;
-	border: 1px solid #ddd;
+	border: 1px solid #DDD;
 }
 
 #pagination a.active {

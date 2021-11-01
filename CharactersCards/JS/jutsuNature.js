@@ -18,7 +18,6 @@ function jutsuNature(){
 		case "Release":
 			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLUWBFLU0g5gFe_i0_RVUIZwq43V9G0wpdCZUTgZIrEi1afmA6z2MpVhbK_STWV9kYMubmoruL9CRiW8-kIVewDvpfpNiTeyzmqSQCItprL3xCLipzHhlLijW3O0Y7wXPtdWQ-r4eqwscqdMZ7JgTl0w=s71-no?authuser=0";
 			break;
-		
 		case "EX Annihilation":
 			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLWEtKf1IOnmHwQi4zpLBiGlW--nLAOF55nEGv-Ik2NysVi5LFtRn8-6O-SiDa3jUjC4aGXG5OxeNahqABd9zX6n9IChTTd7-1-TRUDiKTT4Ow51YdVA8uppn5QBp_KPJvjv6FEghSHJTKb6cohQ-Vv9=s88-no?authuser=0";
 			break;
