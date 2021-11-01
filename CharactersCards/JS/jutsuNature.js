@@ -1,38 +1,38 @@
 function jutsuNature(){
 	switch(document.getElementById("jutsuNature").innerHTML){
 		case "Annihilation":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/NOLLDdLGy7hB1hMCMLNnJFlyvZLE0_XBwdC5zM6hURn5hmfwx_lUBQwhlmTDlUpLUPE8pnZjQl5-2zkPjHPf2yN8e071EregFby353BKSvilc3sHF7k-Bc3b2uxwHl1kOlqniy7V8g=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLWmJSKRrMBoxVe97tPSjDxF_2hgc5npP1oOLB95bmFx5BGDcjnhlOShQ_3FnLuBKyigxS5_pUenwE0yveCicHgzWQQosGqJf6P6NeElVxavXLcrGmO38IDg2L37qotyBahQyOz0zftMb8vHWd-v5lxI=w71-h72-no?authuser=0";
 			break;
 		case "Impact":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/uhbu5jvMWRkiCRMk4AYnVY0egUtA0HA1Dbr8_vx2jdDleHzOl6M-IYE25Wbkv0eFXSbNNuXxwQzA3Wei44-fOH6lQQumHqs7F2hEa7xGNp1z5v95C4wjD7TnrmtDTD0_qGGvDKEFYw=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLWznlPlnQu0HJbnzZqMjCUT4tgj_9iw1oR2UohXOrnNP16bovpThcDTpdhp8kgQJSFXElh-h6EzjojKyq-5JeoudW4wUFf4H8VlGMBjcr_gIm7ui2THowBj_UD75x7mt2V6teuyOB2wgYUkRxd-hok-=w71-h72-no?authuser=0";
 			break;
 		case "Lunge":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/ZMVVAnAufW9GxDPY0mG-uOHwUpnaMmVuyL6KeDj9CTOsCMuce3OsKMA2HqCMZQ1-b_G0BKdeI0u6Lo7iK6hEt9H_wFiLKokqESN_DVrSjzU6RUNdx-JqLJrz5Ft2Qll3cUlaFSWFag=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLXZYvevr4WjVu8ahLZKn5R0CprN6n-TvRarKP9OMjNf1IVOsBsMPwuRUnk-r-PgczaZ2iBmSpFW0g8KpWeZOCzqm9J9LoeqMeLseZD0YGOZ4mLwacN5EXJx7k5q9vGrLz5425UdZeKltkXSSyeclVXz=w71-h70-no?authuser=0";
 			break;
 		case "Manipulate":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/mONwFde0kbFRJ65z4Xh6jxY1bIWKr-ofo45026e_Fo2CljebhRz8iZhSa1wxCziewqMTYUCIdDKYnCeNrp4pAFZ0NxGKJamL9VaWfgkEQwb_1PAQIX466T3XIlmA3F3jXDhyfo8HRA=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLUQxENiClqAty10E7swJeuevEHHvu6lziyc93woPeO7M-TDmk9MqVZYeZrr9uH60xDpNhl13_gtf-9KBnGJb7EcpmDdd9X4d1-uAo-u2kh4UculU0uLLj4J-FJf64tT5plBNXzG5bD8k1fCItI90I9U=w71-h72-no?authuser=0";
 			break;
 		case "Normal":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/633QSqfYrQxqlNKIr1oi8UOpkt7K2DgcEVfxumdU4My4a9I2hIZzd_8DIfT6ZEpBbXntkFi9MBOT682yhrwJVwKH6zn94tiMQ6VZmfi6zqGbCGnr-GcRrZAQ_-PwMlDI5sztuMKL2g=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLUha6py0kmhL3kUpocySGa5gHZGbzDLyaSoIWuiInOA8Kngfvr7YIIPuUqGL3FJ9GV7aT_6gV7Cg8V84kDx4cCDsPtC4D649qWI-k-x-S_0PmtroVJ5aQGYYT-kfoEO_wPTjv09E15Zbi97iVu-hm3Y=w71-h72-no?authuser=0";
 			break;
 		case "Release":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/sBGOzXlLcjUJvuSdmW7d75nrI7Qu7xlWSgiJxltfbDmJWZu1aqIncUg4RlBBs5szbb8u0GI5UMpgMwBVu9Ply5uAeDlao0A-ZuMgCboZ-Gd7auMZdbnvlvcVaRAMteUrsasVo0m5SQ=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLUWBFLU0g5gFe_i0_RVUIZwq43V9G0wpdCZUTgZIrEi1afmA6z2MpVhbK_STWV9kYMubmoruL9CRiW8-kIVewDvpfpNiTeyzmqSQCItprL3xCLipzHhlLijW3O0Y7wXPtdWQ-r4eqwscqdMZ7JgTl0w=s71-no?authuser=0";
 			break;
 		
 		case "EX Annihilation":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/MmGvgNyHAowQabb6cpW2cwhNuww2QmUS18a0Yp2GJJ7O4-kNJ9W8WUQNybLmojRrnnlXM5BVKk6NmYfQIoinvkAVJVLBlc82eFNCh693OM0fFznOFMNdaZC3IHkHUDRzpob4eTePUw=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLWEtKf1IOnmHwQi4zpLBiGlW--nLAOF55nEGv-Ik2NysVi5LFtRn8-6O-SiDa3jUjC4aGXG5OxeNahqABd9zX6n9IChTTd7-1-TRUDiKTT4Ow51YdVA8uppn5QBp_KPJvjv6FEghSHJTKb6cohQ-Vv9=s88-no?authuser=0";
 			break;
 		case "EX Impact":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/h7iZufidRjqZqLxHhPlhSr1xfLtxo7dVgGUGnwiuNzEnqDgYj3JarxkMYG4SGgnp5IpVc5pkQFpcb0cXU9r5GQnkMS0UvDkqq3vtiUoVpD8ImfQhwJICCaHK27eQpcZy2sZQlyW9WA=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLVfV_ajGTgdqdUGlyFiwSZR4Cms0E_itwx3jti5lRfbhIBfd-vK69G9a4144t-QdXFbM5qRq8ztuF1VJudVCbX0q66a5mV4m74PrXgKxWfthX0pojELNMbd14OElWPRbt8zv8p7A5GgFnjsztNMMOcN=s85-no?authuser=0";
 			break;
 		case "EX Lunge":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/K-qzte8UTuyYiCvWjh2n-0bXqGTosiyDKYoIRNgC-zsjt3yYQ9j4yDET_DBDV8UX1W1P4eswN1jb_kFqszuqrMmPD8-h9npZqpOQTXeNM_xKp2wEFSl6Mc-3XwtRWFPedK99zLWaOA=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLWHe_MPcY1oA-sSudXG3wjgAxhyblDGtUVjW96qOCY4XINiLGZvGQpMN-ZfgC13V7w4t9gqcTQzZsnUtzOctjXdKacoKjjMCRtzIoJXQ6ibfKY07fn3AquVqkP9eOXPph45_Uokcw30_NgQPCJmqoRg=w88-h85-no?authuser=0";
 			break;
 		case "EX Manipulate":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/lM0HmS2mTKV6mOx1JJanJsuYdPjEBTM2ziSN7qFjIp3F0TMg1QW23qlYfTjO8vYiDVxyMBCXv_QNvZE_l49mIOaAlh9vM-WGbx6j-U2R40Cb29iVCw7GiYS_GgMr7lUMnI2Y04iC2Q=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLVmGx7QjWr0WAY6pml5TnxcDP7_uiNeuavPgl9s9TpI2vHR3c9FTN-iATV9aQLiiphXw3-tapJlw2xQ4ia_hr3iRq_qfRvacsvh29K5AFvQRQ5Sw2F3kofh9wYR0nF0vNUKUWLZBwmHeOxR4EX9vpSS=w93-h86-no?authuser=0";
 			break;
 		case "EX Release":
-			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/hKYG2mituifWuUTmRDjX_rivKsaG9lD_1p8jl6UW5qNgBdlBx2mKwm_Ghe_CV7lCdG8z3_IjRJLP0q0Mk3dk7OEitWZwNv_KwelEGUsgvH_zaNS93-5Qipym_e7G6SOjaQrc65gVIw=w1920-h1080";
+			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLVcrPw39IQDtWnpkJyrkmelWfXw51SyEyJkDzl1CgSSG3Ek5Hu4qwG2fYTUG1-bv_PgfK6P4Drqlt8F9qRmaTm3MDxyGy_nMXJuiMpsiklTI5eNeLO4aFTr8uSi79gJ_Zp4ar1SFZYmYS8ufKAkar0T=w94-h87-no?authuser=0";
 			break;
 	}
 }
