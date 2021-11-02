@@ -1,5 +1,4 @@
 function darkModeSave(){
-	// This code is only used to remember theme selection between page loads
 	const themeSwitch = document.querySelector(".theme-switch");
 	const root = document.querySelector(':root');
 	themeSwitch.checked = localStorage.getItem("switchedTheme") === "true";
@@ -22,7 +21,6 @@ function darkModeSave(){
 	
 	themeSwitch.addEventListener("change" , function(e){
 		if(e.currentTarget.checked === true){
-			// Add item to localstorage
 			localStorage.setItem("switchedTheme" , "true");
 			localStorage.setItem("bgColor" , "#404040");
 			localStorage.setItem("textColor" , "white");
@@ -40,7 +38,6 @@ function darkModeSave(){
 			
 			location.reload();
 		}else{
-			// Remove item if theme is switched back to normal
 			localStorage.removeItem("switchedTheme");
 			localStorage.removeItem("bgColor");
 			localStorage.removeItem("textColor");
