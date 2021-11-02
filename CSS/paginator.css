@@ -4,7 +4,12 @@
 
 #pagination {
 	display: inline-block;
-	padding-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position:fixed;
+	bottom:0;
+	background-color:#404040;
+	width: 100%;
 }
 
 #pagination a {
