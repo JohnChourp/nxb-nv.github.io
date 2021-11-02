@@ -1,5 +1,4 @@
 function ultimateJutsu(){
-	document.getElementById("faviconIco").href = "../../../favicon.ico";
 	let rows = [[]];
 	rows[0] = document.getElementById("ultimateJutsu").rows[1].cells;
 	rows[1] = document.getElementById("ultimateJutsu").rows[2].cells;
@@ -12,7 +11,7 @@ function ultimateJutsu(){
 			rows[2][3].innerHTML = "1.30%";
 			rows[3][4].innerHTML = "8/8";
 			
-			switch(document.getElementById("cardType").innerHTML){
+			switch(document.getElementsByClassName("cardType").item(0).innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "1128";
 					rows[0][7].innerHTML = "143";
@@ -50,7 +49,7 @@ function ultimateJutsu(){
 			rows[2][3].innerHTML = "1.50%";
 			rows[3][4].innerHTML = "15/15";
 			
-			switch(document.getElementById("cardType").innerHTML){
+			switch(document.getElementsByClassName("cardType").item(0).innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "1730";
 					rows[0][7].innerHTML = "223";

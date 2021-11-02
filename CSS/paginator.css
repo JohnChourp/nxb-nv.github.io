@@ -4,6 +4,7 @@
 
 #pagination {
 	display: inline-block;
+	padding-top: 5px;
 }
 
 #pagination a {

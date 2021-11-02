@@ -1,9 +1,7 @@
-function toolRank(){
-	document.getElementById("faviconIco").href = "../../../favicon.ico";
-}
-
-function toolNature(){
-	for(let i = 0; i < 6; i ++){
+function statTypeImages(){
+	let statTypeImageItemLength = document.getElementsByClassName("statTypeImage");
+	
+	for(let i = 0; i < statTypeImageItemLength.length; i ++){
 		switch(document.getElementsByClassName("statTypeImage").item(i).alt){
 			case "HP":
 				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/GR8IHfhW2mK0g6vULqJ265ns-3VXAvgQ7uxvKoEqFdwd6MZvL-gatRP9kL2EzRrV7nDmLnitphhjIh_slj5Tz5brc34c3G9SjXprHvYZhXRiPkK4kL_wPMs4USRsThiFten_8c95uw=w1920-h1080";
@@ -84,25 +82,5 @@ function toolNature(){
 				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/hKYG2mituifWuUTmRDjX_rivKsaG9lD_1p8jl6UW5qNgBdlBx2mKwm_Ghe_CV7lCdG8z3_IjRJLP0q0Mk3dk7OEitWZwNv_KwelEGUsgvH_zaNS93-5Qipym_e7G6SOjaQrc65gVIw=w1920-h1080";
 				break;
 		}
-	}
-}
-
-function toolMaterials(){
-	switch(document.getElementsByClassName("rankImage").item(0).alt){
-		case "5 Star":
-			document.getElementById("productionCost").innerHTML = "600000";
-			break;
-		case "4 Star":
-			document.getElementById("productionCost").innerHTML = "300000";
-			break;
-		case "3 Star":
-			document.getElementById("productionCost").innerHTML = "150000";
-			break;
-		case "2 Star":
-			document.getElementById("productionCost").innerHTML = "15000";
-			break;
-		case "1 Star":
-			document.getElementById("productionCost").innerHTML = "3000";
-			break;
 	}
 }
