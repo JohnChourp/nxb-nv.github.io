@@ -8,8 +8,8 @@
 	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	position:fixed;
-	bottom:0;
+	position: fixed;
+	bottom: 0;
 	background-color: var(--bg-color-paginator);
 	width: 100%;
 }

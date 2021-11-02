@@ -12,7 +12,7 @@ function abilityListTable(){
 				rows[i] = document.getElementById("abilityListTable").rows[i].cells;
 			}
 			
-			for(i = 3; i < rowsLength-8; i ++){
+			for(i = 3; i < rowsLength - 8; i ++){
 				rows[i][0].innerHTML = i - 2;
 			}
 			
@@ -231,7 +231,7 @@ function abilityListTable(){
 			
 			rows[72][1].innerHTML = 0;
 			
-			for(i = 3; i < rowsLength-8; i ++){
+			for(i = 3; i < rowsLength - 8; i ++){
 				if(i < 22 || (i > 22 && i < 27) || (i > 29 && i < 34) || (i > 38 && i < 42)){
 					rows[72][1].innerHTML = eval("parseInt(rows[72][1].innerHTML) + parseInt(rows[i][4].innerHTML)");
 				}

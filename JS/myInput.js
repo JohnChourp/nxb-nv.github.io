@@ -42,9 +42,9 @@ function searchTable(){
 	table = document.getElementById("sortTable");
 	tr = table.getElementsByTagName("tr");
 	
-	input.addEventListener("keyup", function(event) {
+	input.addEventListener("keyup" , function(event){
 		// Number 13 is the "Enter" key on the keyboard
-		if (event.keyCode === 13) {
+		if(event.keyCode === 13){
 			// Cancel the default action, if needed
 			event.preventDefault();
 			for(i = 0; i < tr.length; i ++){

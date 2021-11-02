@@ -75,11 +75,13 @@ $(window).on('load' , function(){
 			
 			if(pagination[i].className === "active"){
 				if(i === 1){
-					pagination[paginatorLength + 2].innerHTML = "Showing 1 to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
-				}else if(i === (paginatorLength)){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
-				}else{
+					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i > 1 && i < paginatorLength){
 					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === paginatorLength){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 			
