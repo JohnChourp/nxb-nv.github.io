@@ -58,15 +58,37 @@ $(window).on('load' , function(){
 				}
 				
 				if(i === 2){
-					pagination[paginatorLength + 2].innerHTML = "Showing 1 to " + (10 * (i - 1)) + " of " + (tRowsLength - 1) + " entries";
-				}else if(i === paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 2)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
-				}else{
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 2)) + " to " + (10 * (i - 1)) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 3){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 4){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 5){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 6){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 7){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 8){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 9){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === 10){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (i * 10) + " of " + (tRowsLength - 1) + " entries";
+				}
+				if(i === paginatorLength){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 		}
-		
 	});
 	
 	for(let i = 1; i < paginatorLength + 1; i ++){
@@ -117,32 +139,7 @@ $(window).on('load' , function(){
 					for(let i = sum + 1; i < sum + 11; i ++){
 						tr[i].style.display = "";
 					}
-					
-					if(i === 9){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 8){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 7){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 6){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 5){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 4){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 3){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 2){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
-					}
-					if(i === 1){
+					if(i > 0 && i < paginatorLength - 1){
 						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 				}
