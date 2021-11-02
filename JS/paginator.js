@@ -119,38 +119,37 @@ $(window).on('load' , function(){
 					}
 					
 					if(i === 9){
-						pagination[paginatorLength + 2].innerHTML = "Showing 90 to 100 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 8){
-						pagination[paginatorLength + 2].innerHTML = "Showing 80 to 90 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 7){
-						pagination[paginatorLength + 2].innerHTML = "Showing 70 to 80 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 6){
-						pagination[paginatorLength + 2].innerHTML = "Showing 60 to 70 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 5){
-						pagination[paginatorLength + 2].innerHTML = "Showing 50 to 60 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 4){
-						pagination[paginatorLength + 2].innerHTML = "Showing 40 to 50 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 3){
-						pagination[paginatorLength + 2].innerHTML = "Showing 30 to 40 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 2){
-						pagination[paginatorLength + 2].innerHTML = "Showing 20 to 30 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 					if(i === 1){
-						pagination[paginatorLength + 2].innerHTML = "Showing 10 to 20 of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 				}
 			}
 			
 			if(i === paginatorLength){
-				pagination[paginatorLength + 2].innerHTML = "Showing 100 to 105 of " + (tRowsLength - 1) + " entries";
-				
+				pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 			}
 		}
 	});
