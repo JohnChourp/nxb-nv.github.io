@@ -11,7 +11,7 @@ function ninjutsu(){
 			rows[2][3].innerHTML = "1.10%";
 			rows[3][4].innerHTML = "8/8";
 			
-			switch(document.getElementById("cardType").innerHTML){
+			switch(document.getElementsByClassName("cardType").item(0).innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "936";
 					rows[0][7].innerHTML = "119";
@@ -49,7 +49,7 @@ function ninjutsu(){
 			rows[2][3].innerHTML = "0.90%";
 			rows[3][4].innerHTML = "6/6";
 			
-			switch(document.getElementById("cardType").innerHTML){
+			switch(document.getElementsByClassName("cardType").item(0).innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "695";
 					rows[0][7].innerHTML = "87";
@@ -87,7 +87,7 @@ function ninjutsu(){
 			rows[2][3].innerHTML = "0.50%";
 			rows[3][4].innerHTML = "2/2";
 			
-			switch(document.getElementById("cardType").innerHTML){
+			switch(document.getElementsByClassName("cardType").item(0).innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "408";
 					rows[0][7].innerHTML = "50";

@@ -1,5 +1,7 @@
-function toolNature(){
-	for(let i = 0; i < 6; i ++){
+function toolStats(){
+	let statTypeImageItemLength = document.getElementsByClassName("statTypeImage");
+	
+	for(let i = 0; i < statTypeImageItemLength.length; i ++){
 		switch(document.getElementsByClassName("statTypeImage").item(i).alt){
 			case "HP":
 				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/GR8IHfhW2mK0g6vULqJ265ns-3VXAvgQ7uxvKoEqFdwd6MZvL-gatRP9kL2EzRrV7nDmLnitphhjIh_slj5Tz5brc34c3G9SjXprHvYZhXRiPkK4kL_wPMs4USRsThiFten_8c95uw=w1920-h1080";

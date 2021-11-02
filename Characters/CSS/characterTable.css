@@ -9,8 +9,17 @@
 	font-size: 20px;
 }
 
-#cardType {
+.cardType {
 	font-weight: bold;
+}
+
+.cardTypeImage {
+	width: 40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 #char {
@@ -35,11 +44,3 @@
 	/* Center the Image */
 }
 
-#cardTypeImage {
-	width: 40px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
-}

@@ -1,12 +1,14 @@
 function linkBoardTable(){
-	let linkBoardTableRows = [[]] , i;
+	let linkBoardTableRows = [[]] , i , rowsLength;
 	
-	for(i = 1; i < 138; i ++){
+	rowsLength = document.getElementById("linkBoardTable").rows.length;
+	
+	for(i = 1; i < rowsLength; i ++){
 		linkBoardTableRows[i] = document.getElementById("linkBoardTable").rows[i].cells;
 		linkBoardTableRows[i][0].innerHTML = i;
 	}
 	
-	for(i = 1; i < 138; i ++){
+	for(i = 1; i < rowsLength; i ++){
 		if(i === 21 || i === 40 || i === 61 || i === 99 || i === 118){
 			linkBoardTableRows[i][3].innerHTML = "80";
 			linkBoardTableRows[i][5].innerHTML = "40";
