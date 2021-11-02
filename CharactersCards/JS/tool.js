@@ -1,7 +1,3 @@
-function toolRank(){
-	document.getElementById("faviconIco").href = "../../../favicon.ico";
-}
-
 function toolNature(){
 	for(let i = 0; i < 6; i ++){
 		switch(document.getElementsByClassName("statTypeImage").item(i).alt){

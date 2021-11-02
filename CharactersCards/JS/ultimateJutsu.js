@@ -1,5 +1,4 @@
 function ultimateJutsu(){
-	document.getElementById("faviconIco").href = "../../../favicon.ico";
 	let rows = [[]];
 	rows[0] = document.getElementById("ultimateJutsu").rows[1].cells;
 	rows[1] = document.getElementById("ultimateJutsu").rows[2].cells;
