@@ -1,4 +1,4 @@
-function jutsuNature(){
+function jutsuNatureImages(){
 	switch(document.getElementById("jutsuNature").innerHTML){
 		case "Annihilation":
 			document.getElementById("jutsuNatureImage").src = "https://lh3.googleusercontent.com/pw/AM-JKLWmJSKRrMBoxVe97tPSjDxF_2hgc5npP1oOLB95bmFx5BGDcjnhlOShQ_3FnLuBKyigxS5_pUenwE0yveCicHgzWQQosGqJf6P6NeElVxavXLcrGmO38IDg2L37qotyBahQyOz0zftMb8vHWd-v5lxI=w71-h72-no?authuser=0";

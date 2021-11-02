@@ -1,4 +1,4 @@
-function rankLevel(){
+function rankLevelImages(){
 	let rankImageItemLength = document.getElementsByClassName("rankImage");
 	
 	for(let i = 0; i < rankImageItemLength.length; i ++){

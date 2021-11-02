@@ -70,7 +70,7 @@
 	/* Center the Image */
 }
 
-.increaseCharStat {
+.linkBoardStat {
 	width: 30px;
 	height: 34px;
 	/* Center the Image */
@@ -80,7 +80,7 @@
 	/* Center the Image */
 }
 
-.increaseCharStatCharType {
+.linkBoardStatType {
 	width: 30px;
 	height: 34px;
 	/* Center the Image */
@@ -100,7 +100,7 @@
 	/* Center the Image */
 }
 
-.reduceResistancePoison {
+.reduceDamageReceive {
 	width: 30px;
 	height: 34px;
 	/* Center the Image */
@@ -110,7 +110,7 @@
 	/* Center the Image */
 }
 
-.increaseCharCardsTools {
+.linkBoardTool {
 	width: 30px;
 	height: 33px;
 	/* Center the Image */
@@ -120,7 +120,7 @@
 	/* Center the Image */
 }
 
-.increaseCharUltimateJutsu {
+.linkBoardUltimateJutsu {
 	width: 30px;
 	height: 34px;
 	/* Center the Image */
