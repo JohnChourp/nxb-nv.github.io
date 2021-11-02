@@ -32,10 +32,9 @@
 </head>
 <body onload="darkModeSave(); rankLevelImages();">
 
-<h3><input class="theme-switch" id="night-mode" type="checkbox"/><label class="pointerCursor" for="night-mode">Night
-	Mode</label></h3>
-
 <div>
+	<input class="theme-switch" id="night-mode" type="checkbox"/><label class="pointerCursor" for="night-mode">Night
+		Mode</label>
 	<button class="btnType active" id="btnShowAllTypes"> Show all</button>
 	<button class="btnType" id="btnAttack"> Attack</button>
 	<button class="btnType" id="btnAssist"> Assist</button>
@@ -43,9 +42,7 @@
 	<button class="btnType" id="btnSkill"> Skill</button>
 	<button class="btnType" id="btnUtility"> Utility</button>
 </div>
-<br>
-<div id="pagination"></div>
-<br><br>
+
 <input id="myInput" onkeyup="searchTable()" placeholder="Search for Name,Type,Abilities,Traits..."
        title="Type in a name" type="text">
 
@@ -83,11 +80,11 @@
 				id="getImageRank"
 				src="https://lh3.googleusercontent.com/pw/AM-JKLUKsUrOYR6fMKi7VeYr22a57KgdEw65eVU-i4TkYyevP-QaoXFySMuEZgsrlvtsUNKkqTROCqdkCia0S4KdE0zAi8nQ4sa1n47llhCpvn58shhyldWte29w5DXzHhYInVidZWaymieer9CNTrtemz1s=w57-h59-no?authuser=0"/>
 		</th>
-		<th style="width:10%;">Trait1</th>
-		<th style="width:10%;">Trait2</th>
-		<th style="width:10%;">Trait3</th>
-		<th style="width:10%;">Trait4</th>
-		<th style="width:10%;">Trait5</th>
+		<th>Trait1</th>
+		<th>Trait2</th>
+		<th>Trait3</th>
+		<th>Trait4</th>
+		<th>Trait5</th>
 	</tr>
 	</thead>
 	<tbody>
@@ -1669,5 +1666,6 @@
 	</tr>
 	</tbody>
 </table>
+<div id="pagination"></div>
 </body>
 </html>
