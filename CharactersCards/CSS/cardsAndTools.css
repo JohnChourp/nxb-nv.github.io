@@ -65,15 +65,6 @@ a:active {
 	/* Center the Image */
 }
 
-#jutsuNatureImage {
-	width: 40px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
-}
-
 #jutsuImage {
 	width: 90px;
 	/* Center the Image */
@@ -87,8 +78,17 @@ a:active {
 	font-weight: bold;
 }
 
-#jutsuNature {
+.jutsuNature {
 	font-weight: bold;
+}
+
+.jutsuNatureImage {
+	width: 40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 #cardImage {
@@ -156,6 +156,10 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
+}
+
+.productionCost {
+	font-weight: bold;
 }
 
 

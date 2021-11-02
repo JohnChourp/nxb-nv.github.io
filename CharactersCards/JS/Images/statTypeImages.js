@@ -1,4 +1,4 @@
-function toolStats(){
+function statTypeImages(){
 	let statTypeImageItemLength = document.getElementsByClassName("statTypeImage");
 	
 	for(let i = 0; i < statTypeImageItemLength.length; i ++){
@@ -82,25 +82,5 @@ function toolStats(){
 				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/hKYG2mituifWuUTmRDjX_rivKsaG9lD_1p8jl6UW5qNgBdlBx2mKwm_Ghe_CV7lCdG8z3_IjRJLP0q0Mk3dk7OEitWZwNv_KwelEGUsgvH_zaNS93-5Qipym_e7G6SOjaQrc65gVIw=w1920-h1080";
 				break;
 		}
-	}
-}
-
-function toolMaterials(){
-	switch(document.getElementsByClassName("rankImage").item(0).alt){
-		case "5 Star":
-			document.getElementById("productionCost").innerHTML = "600000";
-			break;
-		case "4 Star":
-			document.getElementById("productionCost").innerHTML = "300000";
-			break;
-		case "3 Star":
-			document.getElementById("productionCost").innerHTML = "150000";
-			break;
-		case "2 Star":
-			document.getElementById("productionCost").innerHTML = "15000";
-			break;
-		case "1 Star":
-			document.getElementById("productionCost").innerHTML = "3000";
-			break;
 	}
 }
