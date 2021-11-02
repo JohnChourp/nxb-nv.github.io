@@ -1,4 +1,4 @@
-function sortImageChange(n){
+function sortImages(n){
 	const ImageId_Id = document.getElementById('getImageId');
 	const ImageName_Id = document.getElementById('getImageName');
 	const ImageType_Id = document.getElementById('getImageType');
