@@ -1,10 +1,17 @@
 :root {
-	--bg-color-paginator: #DDD;
+	--bg-color-paginator: white;
+	--border-pagination-a: 1px solid black;
+	--bg-color-paginator-a-hover-not-active: #DDD;
 }
 
 #pagination {
 	display: inline-block;
-	padding-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--bg-color-paginator);
+	width: 100%;
 }
 
 #pagination a {
@@ -13,7 +20,7 @@
 	padding: 8px 16px;
 	text-decoration: none;
 	transition: background-color .3s;
-	border: 1px solid #DDD;
+	border: var(--border-pagination-a);
 }
 
 #pagination a.active {
@@ -23,5 +30,5 @@
 }
 
 #pagination a:hover:not(.active) {
-	background-color: var(--bg-color-paginator);
+	background-color: var(--bg-color-paginator-a-hover-not-active);
 }

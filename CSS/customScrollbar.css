@@ -1,3 +1,9 @@
+:root {
+	--background-webkit-scrollbar-track: #F0F0F0;
+	--background-webkit-scrollbar-thumb: #CECECE;
+	--background-webkit-scrollbar-thumb-hover: #A7A7A7;
+}
+
 /*  the scrollbar. */
 ::-webkit-scrollbar {
 	width: 15px;
@@ -6,22 +12,32 @@
 
 /* the track (progress bar) of the scrollbar. */
 ::-webkit-scrollbar-track {
-	background: #323232;
+	background-color: var(--background-webkit-scrollbar-track);
 }
 
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb {
-	background: #888;
+	background: var(--background-webkit-scrollbar-thumb);
 	height: 135px;
 }
 
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb:hover {
-	background: #696868;
+	background: var(--background-webkit-scrollbar-thumb-hover);
 }
 
 /* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
 ::-webkit-scrollbar-corner {
-	background: #323232;
+	background: var(--background-webkit-scrollbar-track);
+}
+
+.Container {
+	height: 560px;
+	overflow-x: auto;
+}
+
+.Content {
+	height: 100%;
+	overflow-y: auto;
 }
 

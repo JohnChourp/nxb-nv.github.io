@@ -103,14 +103,12 @@ function linkBoardTable(){
 	linkBoardTableRows[32][4].innerHTML = "+300 HP";
 	linkBoardTableRows[33][4].innerHTML = "+60 CP";
 	linkBoardTableRows[34][4].innerHTML = "+180 DEF";
-	linkBoardTableRows[35][10].innerHTML = "+5% to Stats of Ninja Cards with " +
-		"Attack Type Matching Bonus";
+	linkBoardTableRows[35][10].innerHTML = "+5% to Stats of Ninja Cards with " + "Attack Type Matching Bonus";
 	
 	linkBoardTableRows[36][4].innerHTML = "+400 HP";
 	linkBoardTableRows[37][4].innerHTML = "+100 CP";
 	linkBoardTableRows[38][4].innerHTML = "+240 DEF";
-	linkBoardTableRows[39][10].innerHTML = "+10% to Stats of Ninja Cards with " +
-		"Shinobi Matching Bonus";
+	linkBoardTableRows[39][10].innerHTML = "+10% to Stats of Ninja Cards with " + "Shinobi Matching Bonus";
 	
 	linkBoardTableRows[41][4].innerHTML = "-10% poison damage received";
 	linkBoardTableRows[42][4].innerHTML = "+300 ATK";
@@ -175,14 +173,12 @@ function linkBoardTable(){
 	linkBoardTableRows[91][4].innerHTML = "+600 ATK";
 	linkBoardTableRows[92][4].innerHTML = "+180 DEF";
 	linkBoardTableRows[93][4].innerHTML = "+800 ATK";
-	linkBoardTableRows[94][10].innerHTML = "+5% to Stats of Ninja Cards with " +
-		"Attack Type Matching Bonus";
+	linkBoardTableRows[94][10].innerHTML = "+5% to Stats of Ninja Cards with " + "Attack Type Matching Bonus";
 	
 	linkBoardTableRows[95][4].innerHTML = "+400 HP";
 	linkBoardTableRows[96][4].innerHTML = "+80 CP";
 	linkBoardTableRows[97][4].innerHTML = "+240 DEF";
-	linkBoardTableRows[98][10].innerHTML = "+10% to Stats of Ninja Cards with " +
-		"Shinobi Matching Bonus";
+	linkBoardTableRows[98][10].innerHTML = "+10% to Stats of Ninja Cards with " + "Shinobi Matching Bonus";
 	
 	linkBoardTableRows[100][4].innerHTML = "+300 ATK";
 	linkBoardTableRows[101][4].innerHTML = "+270 DEF";
@@ -200,12 +196,8 @@ function linkBoardTable(){
 	linkBoardTableRows[111][4].innerHTML = "+10% Ultimate Jutsu Resistance";
 	
 	linkBoardTableRows[112][4].innerHTML = "+750 ATK";
-	linkBoardTableRows[113][10].innerHTML = "Increases power of equipped Ultimate " +
-		"Jutsu by 5% for each Ultimate Jutsu Card at max Jutsu LVL that is not the " +
-		"same as the equipped Ultimate Jutsu (EX Ultimate Jutsu excluded).";
-	linkBoardTableRows[114][4].innerHTML = "Increases power of equipped Ultimate " +
-		"Jutsu by 10% for each Ultimate Jutsu Card at max Jutsu LVL that is the " +
-		"same as the equipped Ultimate Jutsu (EX Ultimate Jutsu excluded).";
+	linkBoardTableRows[113][10].innerHTML = "Increases power of equipped Ultimate " + "Jutsu by 5% for each Ultimate Jutsu Card at max Jutsu LVL that is not the " + "same as the equipped Ultimate Jutsu (EX Ultimate Jutsu excluded).";
+	linkBoardTableRows[114][4].innerHTML = "Increases power of equipped Ultimate " + "Jutsu by 10% for each Ultimate Jutsu Card at max Jutsu LVL that is the " + "same as the equipped Ultimate Jutsu (EX Ultimate Jutsu excluded).";
 	
 	linkBoardTableRows[115][4].innerHTML = "+900 ATK";
 	linkBoardTableRows[116][10].innerHTML = "+1 Ninja Card Equipment Slot(s)";
@@ -232,6 +224,5 @@ function linkBoardTable(){
 	linkBoardTableRows[134][4].innerHTML = "+1500 ATK";
 	linkBoardTableRows[135][4].innerHTML = "+1250 ATK";
 	linkBoardTableRows[136][4].innerHTML = "+10% Ultimate Jutsu Resistance";
-	linkBoardTableRows[137][10].innerHTML = "Gain immunity to seal when the user is" +
-		" inflicted with seal";
+	linkBoardTableRows[137][10].innerHTML = "Gain immunity to seal when the user is" + " inflicted with seal";
 }
