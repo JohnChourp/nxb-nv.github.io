@@ -7,7 +7,11 @@ function darkModeSave(){
 	document.getElementById("myInput").style.backgroundColor = localStorage.getItem("myInputBgColor");
 	document.getElementById("myInput").style.color = localStorage.getItem("myInputTextColor");
 	
-	for(let i = 0; i < 13; i ++){
+	let table = document.getElementById("sortTable");
+	let tRowsLength = table.rows.length;
+	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(105/10)= 11
+	
+	for(let i = 0; i < paginatorLength+3; i ++){
 		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
 	}
 	

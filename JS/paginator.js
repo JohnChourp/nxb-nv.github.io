@@ -3,7 +3,7 @@ $(window).on('load' , function(){
 	const paginationDiv = document.getElementById("pagination");
 	table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
-	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(105/10)= 11
+	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(106/10)= 11
 	tr = table.getElementsByTagName("tr");
 	
 	for(i = tRowsLength - 1; i > 10; i --){
@@ -35,12 +35,15 @@ $(window).on('load' , function(){
 	aNext.innerHTML = "Next";
 	paginationDiv.appendChild(aNext);
 	
+	const aResults = document.createElement("a");
+	aResults.href = "#";
+	aResults.innerHTML = "Showing 1 to 10 of " + ((tRowsLength - 1)) + " entries";
+	paginationDiv.appendChild(aResults);
+	
 	let pagination = document.getElementById("pagination").children;
 	
 	pagination[0].addEventListener('click' , function(){
-		
 		for(let i = 2; i < paginatorLength + 1; i ++){
-			
 			if(pagination[i].className === "active"){
 				pagination[i - 1].className = "active";
 				pagination[i].className = "";
@@ -49,11 +52,17 @@ $(window).on('load' , function(){
 					tr[i].style.display = "none";
 				}
 				
-				if((i - 1) < paginatorLength + 1){
-					let sum = (((i - 1) - 1) * 10);
-					for(let i = sum + 1; i < sum + 11; i ++){
-						tr[i].style.display = "";
-					}
+				let sum = ((i - 2) * 10);
+				for(let i = sum + 1; i < sum + 11; i ++){
+					tr[i].style.display = "";
+				}
+				
+				if(i === 2){
+					pagination[paginatorLength + 2].innerHTML = "Showing 1 to " + (10 * (i - 1)) + " of " + (tRowsLength - 1) + " entries";
+				}else if(i === paginatorLength){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 2)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+				}else{
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 2)) + " to " + (10 * (i - 1)) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 		}
@@ -66,6 +75,16 @@ $(window).on('load' , function(){
 				pagination[i].className = "active";
 			}
 			
+			if(pagination[i].className === "active"){
+				if(i === 1){
+					pagination[paginatorLength + 2].innerHTML = "Showing 1 to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+				}else if(i === (paginatorLength)){
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+				}else{
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+				}
+			}
+			
 			for(let j = 1; j < paginatorLength + 1; j ++){
 				if((pagination[j].className === pagination[i].className) && (j !== i)){
 					pagination[j].className = "";
@@ -76,35 +95,63 @@ $(window).on('load' , function(){
 				tr[i].style.display = "none";
 			}
 			
-			if(i < paginatorLength + 1){
-				let sum = ((i - 1) * 10);
-				for(let i = sum + 1; i < sum + 11; i ++){
-					tr[i].style.display = "";
-				}
+			let sum = ((i - 1) * 10);
+			for(let i = sum + 1; i < sum + 11; i ++){
+				tr[i].style.display = "";
 			}
 		});
 	}
 	
-	pagination[12].addEventListener('click' , function(){
-		
-		for(let i = paginatorLength - 1; i > 0; i --){
-			
+	pagination[paginatorLength + 1].addEventListener('click' , function(){
+		for(let i = paginatorLength; i > 0; i --){
 			if(pagination[i].className === "active"){
-				pagination[i + 1].className = "active";
-				pagination[i].className = "";
-				
-				for(let i = tRowsLength - 1; i > 0; i --){
-					tr[i].style.display = "none";
-				}
-				
-				if((i + 1) < paginatorLength + 1){
-					let sum = (((i + 1) - 1) * 10);
+				if(i < paginatorLength){
+					pagination[i + 1].className = "active";
+					pagination[i].className = "";
+					
+					for(let i = tRowsLength - 1; i > 0; i --){
+						tr[i].style.display = "none";
+					}
+					
+					let sum = i * 10;
 					for(let i = sum + 1; i < sum + 11; i ++){
 						tr[i].style.display = "";
 					}
+					
+					if(i === 9){
+						pagination[paginatorLength + 2].innerHTML = "Showing 90 to 100 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 8){
+						pagination[paginatorLength + 2].innerHTML = "Showing 80 to 90 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 7){
+						pagination[paginatorLength + 2].innerHTML = "Showing 70 to 80 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 6){
+						pagination[paginatorLength + 2].innerHTML = "Showing 60 to 70 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 5){
+						pagination[paginatorLength + 2].innerHTML = "Showing 50 to 60 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 4){
+						pagination[paginatorLength + 2].innerHTML = "Showing 40 to 50 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 3){
+						pagination[paginatorLength + 2].innerHTML = "Showing 30 to 40 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 2){
+						pagination[paginatorLength + 2].innerHTML = "Showing 20 to 30 of " + (tRowsLength - 1) + " entries";
+					}
+					if(i === 1){
+						pagination[paginatorLength + 2].innerHTML = "Showing 10 to 20 of " + (tRowsLength - 1) + " entries";
+					}
 				}
 			}
+			
+			if(i === paginatorLength){
+				pagination[paginatorLength + 2].innerHTML = "Showing 100 to 105 of " + (tRowsLength - 1) + " entries";
+				
+			}
 		}
-		
 	});
 });
