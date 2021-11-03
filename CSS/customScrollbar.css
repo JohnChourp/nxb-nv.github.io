@@ -32,13 +32,13 @@
 }
 
 .Container {
-	height: 560px;
+	height: 570px;
 	overflow-x: auto;
 	overflow-y: auto;
 }
 
 .Content {
-	height: 560px;
+	height: 700px;
 	overflow-x: auto;
 	overflow-y: auto;
 }
