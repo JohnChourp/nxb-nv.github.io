@@ -59,9 +59,8 @@ $(window).on('load' , function(){
 				if(i === 2){
 					pagination[paginatorLength + 2].innerHTML = "Showing " + (i - 1) + " to " + ((i - 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 				}
-				
 				if(i > 2 && i <= paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 2) * 10) + " to " + ((i - 1) * 10) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 2) * 10) + 1) + " to " + ((i - 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 		}
@@ -78,10 +77,10 @@ $(window).on('load' , function(){
 					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i > 1 && i < paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((10 * (i - 1))+1) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i === paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((10 * (i - 1))+1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 			
@@ -118,13 +117,13 @@ $(window).on('load' , function(){
 						tr[i].style.display = "";
 					}
 					if(i > 0 && i < paginatorLength - 1){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + ((i * 10) + 1) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
 					}
 				}
 			}
 			
 			if(i === paginatorLength){
-				pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+				pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 1) * 10) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 			}
 		}
 	});
