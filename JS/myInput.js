@@ -1,5 +1,5 @@
 function searchTable(){
-	let table , tr , i;
+	let i;
 	let inputCharName , filterCharName , tdCharName , txtValueCharName;
 	let inputCharType , filterCharType , tdCharType , txtValueCharType;
 	let inputCharAbilities , filterCharAbilities , tdCharAbilities , txtValueCharAbilities;
@@ -8,17 +8,8 @@ function searchTable(){
 	let inputCharTrait3 , filterCharTrait3 , tdCharTrait3 , txtValueCharTrait3;
 	let inputCharTrait4 , filterCharTrait4 , tdCharTrait4 , txtValueCharTrait4;
 	let inputCharTrait5 , filterCharTrait5 , tdCharTrait5 , txtValueCharTrait5;
-	const btnAttack = $("#btnAttack");
-	const btnAssist = $("#btnAssist");
-	const btnDefense = $("#btnDefense");
-	const btnSkill = $("#btnSkill");
-	const btnUtility = $("#btnUtility");
+	let filterCharTypeDiv = document.getElementById("filterCharType").children;
 	
-	const trAssist = $(".trAssist");
-	const trAttack = $(".trAttack");
-	const trDefense = $(".trDefense");
-	const trSkill = $(".trSkill");
-	const trUtility = $(".trUtility");
 	let input = document.getElementById("myInput");
 	
 	inputCharName = document.getElementById("myInput");
@@ -39,8 +30,8 @@ function searchTable(){
 	filterCharTrait4 = inputCharTrait4.value.toUpperCase();
 	filterCharTrait5 = inputCharTrait5.value.toUpperCase();
 	
-	table = document.getElementById("sortTable");
-	tr = table.getElementsByTagName("tr");
+	let table = document.getElementById("sortTable");
+	let tr = table.getElementsByTagName("tr");
 	
 	input.addEventListener("keyup" , function(event){
 		// Number 13 is the "Enter" key on the keyboard
@@ -70,48 +61,42 @@ function searchTable(){
 					
 					if(txtValueCharName.toUpperCase().indexOf(filterCharName) > - 1 || txtValueCharType.toUpperCase().indexOf(filterCharType) > - 1 || txtValueCharAbilities.toUpperCase().indexOf(filterCharAbilities) > - 1 || txtValueCharTrait1.toUpperCase().indexOf(filterCharTrait1) > - 1 || txtValueCharTrait2.toUpperCase().indexOf(filterCharTrait2) > - 1 || txtValueCharTrait3.toUpperCase().indexOf(filterCharTrait3) > - 1 || txtValueCharTrait4.toUpperCase().indexOf(filterCharTrait4) > - 1 || txtValueCharTrait5.toUpperCase().indexOf(filterCharTrait5) > - 1){
 						tr[i].style.display = "";
+						
+						if(filterCharTypeDiv[1].classList.contains("active")){
+							if(!tr[i].cells[3].classList.contains("attack")){
+								tr[i].style.display = "none";
+							}
+						}
+						
+						if(filterCharTypeDiv[2].classList.contains("active")){
+							if(!tr[i].cells[3].classList.contains("assist")){
+								tr[i].style.display = "none";
+							}
+						}
+						
+						if(filterCharTypeDiv[3].classList.contains("active")){
+							if(!tr[i].cells[3].classList.contains("defense")){
+								tr[i].style.display = "none";
+							}
+						}
+						
+						if(filterCharTypeDiv[4].classList.contains("active")){
+							if(!tr[i].cells[3].classList.contains("skill")){
+								tr[i].style.display = "none";
+							}
+						}
+						
+						if(filterCharTypeDiv[5].classList.contains("active")){
+							if(!tr[i].cells[3].classList.contains("utility")){
+								tr[i].style.display = "none";
+							}
+						}
 					}else{
 						tr[i].style.display = "none";
 					}
 				}
 			}
 		}
-		if(btnAttack.hasClass("active")){
-			trAssist.hide();
-			trDefense.hide();
-			trSkill.hide();
-			trUtility.hide();
-		}
-		
-		if(btnAssist.hasClass("active")){
-			trAttack.hide();
-			trDefense.hide();
-			trSkill.hide();
-			trUtility.hide();
-		}
-		
-		if(btnDefense.hasClass("active")){
-			trAttack.hide();
-			trAssist.hide();
-			trSkill.hide();
-			trUtility.hide();
-		}
-		
-		if(btnSkill.hasClass("active")){
-			trAttack.hide();
-			trAssist.hide();
-			trDefense.hide();
-			trUtility.hide();
-		}
-		
-		if(btnUtility.hasClass("active")){
-			trAttack.hide();
-			trAssist.hide();
-			trSkill.hide();
-			trDefense.hide();
-		}
 	});
-	
-	
 }
 

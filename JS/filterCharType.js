@@ -1,79 +1,111 @@
 $(window).on('load' , function(){
-	const btnShowAllTypes = $("#btnShowAllTypes");
-	const btnAttack = $("#btnAttack");
-	const btnAssist = $("#btnAssist");
-	const btnDefense = $("#btnDefense");
-	const btnSkill = $("#btnSkill");
-	const btnUtility = $("#btnUtility");
+	const filterCharTypeDiv = document.getElementById("filterCharType");
 	
-	btnAttack.on('click' , function(){
-		btnShowAllTypes.trigger("click");
-		btnShowAllTypes.removeClass("active");
-		btnAttack.addClass("active");
-		
-		$(".trAssist").hide();
-		$(".trDefense").hide();
-		$(".trSkill").hide();
-		$(".trUtility").hide();
+	const btnShowAll = document.createElement("button");
+	btnShowAll.className = "btnType";
+	btnShowAll.innerHTML = "Show all";
+	filterCharTypeDiv.appendChild(btnShowAll);
+	
+	const btnAttack = document.createElement("button");
+	btnAttack.className = "btnType";
+	btnAttack.innerHTML = "Attack";
+	filterCharTypeDiv.appendChild(btnAttack);
+	
+	const btnAssist = document.createElement("button");
+	btnAssist.className = "btnType";
+	btnAssist.innerHTML = "Assist";
+	filterCharTypeDiv.appendChild(btnAssist);
+	
+	const btnDefense = document.createElement("button");
+	btnDefense.className = "btnType";
+	btnDefense.innerHTML = "Defense";
+	filterCharTypeDiv.appendChild(btnDefense);
+	
+	const btnSkill = document.createElement("button");
+	btnSkill.className = "btnType";
+	btnSkill.innerHTML = "Skill";
+	filterCharTypeDiv.appendChild(btnSkill);
+	
+	const btnUtility = document.createElement("button");
+	btnUtility.className = "btnType";
+	btnUtility.innerHTML = "Utility";
+	filterCharTypeDiv.appendChild(btnUtility);
+	
+	let filterCharType = document.getElementById("filterCharType").children;
+	
+	let table = document.getElementById("sortTable");
+	let tRowsLength = table.rows.length;
+	let tr = table.getElementsByTagName("tr");
+	
+	for(let i = 0; i < 6; i ++){
+		filterCharType[i].addEventListener('click' , function(){
+			filterCharType[i].classList.add("active");
+			for(let j = 0; j < 6; j ++){
+				if((filterCharType[j].classList.contains("active") === filterCharType[i].classList.contains("active")) && (j !== i)){
+					filterCharType[j].classList.remove("active");
+				}
+			}
+		});
+	}
+	
+	filterCharType[0].addEventListener('click' , function(){
+		for(let i = 0; i < tRowsLength; i ++){
+			tr[i].style.display = "";
+		}
 	});
 	
-	btnAssist.on('click' , function(){
-		btnShowAllTypes.trigger("click");
-		btnShowAllTypes.removeClass("active");
-		btnAssist.addClass("active");
-		
-		$(".trAttack").hide();
-		$(".trDefense").hide();
-		$(".trSkill").hide();
-		$(".trUtility").hide();
+	filterCharType[1].addEventListener('click' , function(){
+		for(let i = 0; i < tRowsLength; i ++){
+			if(tr[i].cells[3].classList.contains("attack")){
+				tr[i].style.display = "";
+			}else{
+				tr[i].style.display = "none";
+			}
+		}
+		tr[0].style.display = "";
 	});
 	
-	btnDefense.on('click' , function(){
-		btnShowAllTypes.trigger("click");
-		btnShowAllTypes.removeClass("active");
-		btnDefense.addClass("active");
-		
-		$(".trAttack").hide();
-		$(".trAssist").hide();
-		$(".trSkill").hide();
-		$(".trUtility").hide();
+	filterCharType[2].addEventListener('click' , function(){
+		for(let i = 0; i < tRowsLength; i ++){
+			if(tr[i].cells[3].classList.contains("assist")){
+				tr[i].style.display = "";
+			}else{
+				tr[i].style.display = "none";
+			}
+		}
+		tr[0].style.display = "";
 	});
 	
-	btnSkill.on('click' , function(){
-		btnShowAllTypes.trigger("click");
-		btnShowAllTypes.removeClass("active");
-		btnSkill.addClass("active");
-		
-		$(".trAttack").hide();
-		$(".trAssist").hide();
-		$(".trDefense").hide();
-		$(".trUtility").hide();
+	filterCharType[3].addEventListener('click' , function(){
+		for(let i = 0; i < tRowsLength; i ++){
+			if(tr[i].cells[3].classList.contains("defense")){
+				tr[i].style.display = "";
+			}else{
+				tr[i].style.display = "none";
+			}
+		}
+		tr[0].style.display = "";
 	});
 	
-	btnUtility.on('click' , function(){
-		btnShowAllTypes.trigger("click");
-		btnShowAllTypes.removeClass("active");
-		btnUtility.addClass("active");
-		
-		$(".trAttack").hide();
-		$(".trAssist").hide();
-		$(".trSkill").hide();
-		$(".trDefense").hide();
+	filterCharType[4].addEventListener('click' , function(){
+		for(let i = 0; i < tRowsLength; i ++){
+			if(tr[i].cells[3].classList.contains("skill")){
+				tr[i].style.display = "";
+			}else{
+				tr[i].style.display = "none";
+			}
+		}
+		tr[0].style.display = "";
 	});
 	
-	btnShowAllTypes.on('click' , function(){
-		btnShowAllTypes.addClass("active");
-		
-		btnAttack.removeClass("active");
-		btnAssist.removeClass("active");
-		btnDefense.removeClass("active");
-		btnSkill.removeClass("active");
-		btnUtility.removeClass("active");
-		
-		$(".trAttack").show();
-		$(".trAssist").show();
-		$(".trDefense").show();
-		$(".trSkill").show();
-		$(".trUtility").show();
+	filterCharType[5].addEventListener('click' , function(){
+		for(let i = 0; i < tRowsLength; i ++){
+			if(tr[i].cells[3].classList.contains("utility")){
+				tr[i].style.display = "";
+			}else{
+				tr[i].style.display = "none";
+			}
+		}
+		tr[0].style.display = "";
 	});
 });
