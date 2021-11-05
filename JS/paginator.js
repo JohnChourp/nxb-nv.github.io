@@ -1,12 +1,11 @@
 $(window).on('load' , function(){
-	let i , table , tr;
 	const paginationDiv = document.getElementById("pagination");
-	table = document.getElementById("sortTable");
+	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;//106
 	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(106/10)= 11
-	tr = table.getElementsByTagName("tr");
+	let tr = table.getElementsByTagName("tr");
 	
-	for(i = tRowsLength - 1; i > 10; i --){
+	for(let i = tRowsLength - 1; i > 10; i --){
 		tr[i].style.display = "none";
 	}
 	
@@ -15,7 +14,7 @@ $(window).on('load' , function(){
 	aPrevious.innerHTML = "Previous";
 	paginationDiv.appendChild(aPrevious);
 	
-	for(i = 0; i < paginatorLength; i ++){
+	for(let i = 0; i < paginatorLength; i ++){
 		if(i === 0){
 			const a = document.createElement("a");
 			a.href = "#";
@@ -53,7 +52,7 @@ $(window).on('load' , function(){
 				}
 				
 				let sum = ((i - 2) * 10);
-				for(let i = sum + 1; i < sum + 11; i ++){
+				for(let i = sum + 1; i < sum + (10+1); i ++){
 					tr[i].style.display = "";
 				}
 				if(i === 2){
@@ -77,10 +76,10 @@ $(window).on('load' , function(){
 					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i > 1 && i < paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + ((10 * (i - 1))+1) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((10 * (i - 1)) + 1) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i === paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + ((10 * (i - 1))+1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((10 * (i - 1)) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 			
@@ -95,7 +94,7 @@ $(window).on('load' , function(){
 			}
 			
 			let sum = ((i - 1) * 10);
-			for(let i = sum + 1; i < sum + 11; i ++){
+			for(let i = sum + 1; i < sum + (10+1); i ++){
 				tr[i].style.display = "";
 			}
 		});
@@ -113,7 +112,7 @@ $(window).on('load' , function(){
 					}
 					
 					let sum = i * 10;
-					for(let i = sum + 1; i < sum + 11; i ++){
+					for(let i = sum + 1; i < sum + (10+1); i ++){
 						tr[i].style.display = "";
 					}
 					if(i > 0 && i < paginatorLength - 1){
@@ -121,7 +120,6 @@ $(window).on('load' , function(){
 					}
 				}
 			}
-			
 			if(i === paginatorLength){
 				pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 1) * 10) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 			}

@@ -14,6 +14,19 @@ window.onclick = function(event){
 
 function showSpecificEntries(){
 	document.getElementById("myDropdown").classList.toggle("show");
+	
+	let showSpecificEntries = document.getElementById("myDropdown").children;
+	
+	for(let i = 0; i < showSpecificEntries.length; i ++){
+		showSpecificEntries[i].addEventListener('click' , function(){
+			showSpecificEntries[i].classList.add("dropDownActive");
+			for(let j = 0; j < 6; j ++){
+				if((showSpecificEntries[j].classList.contains("dropDownActive") === showSpecificEntries[i].classList.contains("dropDownActive")) && (j !== i)){
+					showSpecificEntries[j].classList.remove("dropDownActive");
+				}
+			}
+		});
+	}
 }
 
 
