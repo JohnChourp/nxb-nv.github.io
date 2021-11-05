@@ -1,4 +1,36 @@
 $(window).on('load' , function(){
+	const filterCharTypeDiv = document.getElementById("filterCharType");
+	
+	const btnShowAll = document.createElement("button");
+	btnShowAll.className = "btnType";
+	btnShowAll.innerHTML = "Show all";
+	filterCharTypeDiv.appendChild(btnShowAll);
+	
+	const btnAttack = document.createElement("button");
+	btnAttack.className = "btnType";
+	btnAttack.innerHTML = "Attack";
+	filterCharTypeDiv.appendChild(btnAttack);
+	
+	const btnAssist = document.createElement("button");
+	btnAssist.className = "btnType";
+	btnAssist.innerHTML = "Assist";
+	filterCharTypeDiv.appendChild(btnAssist);
+	
+	const btnDefense = document.createElement("button");
+	btnDefense.className = "btnType";
+	btnDefense.innerHTML = "Defense";
+	filterCharTypeDiv.appendChild(btnDefense);
+	
+	const btnSkill = document.createElement("button");
+	btnSkill.className = "btnType";
+	btnSkill.innerHTML = "Skill";
+	filterCharTypeDiv.appendChild(btnSkill);
+	
+	const btnUtility = document.createElement("button");
+	btnUtility.className = "btnType";
+	btnUtility.innerHTML = "Utility";
+	filterCharTypeDiv.appendChild(btnUtility);
+	
 	let filterCharType = document.getElementById("filterCharType").children;
 	
 	let table = document.getElementById("sortTable");
@@ -24,7 +56,7 @@ $(window).on('load' , function(){
 	
 	filterCharType[1].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("charAttack")){
+			if(tr[i].cells[3].classList.contains("attack")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -35,7 +67,7 @@ $(window).on('load' , function(){
 	
 	filterCharType[2].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("charAssist")){
+			if(tr[i].cells[3].classList.contains("assist")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -46,7 +78,7 @@ $(window).on('load' , function(){
 	
 	filterCharType[3].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("charDefense")){
+			if(tr[i].cells[3].classList.contains("defense")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -57,7 +89,7 @@ $(window).on('load' , function(){
 	
 	filterCharType[4].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("charSkill")){
+			if(tr[i].cells[3].classList.contains("skill")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -68,7 +100,7 @@ $(window).on('load' , function(){
 	
 	filterCharType[5].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("charUtility")){
+			if(tr[i].cells[3].classList.contains("utility")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
