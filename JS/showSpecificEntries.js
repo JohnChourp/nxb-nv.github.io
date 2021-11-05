@@ -26,6 +26,26 @@ function showSpecificEntries(){
 				}
 			}
 		});
+		
+		showSpecificEntries[0].addEventListener('click' , function(){
+			localStorage.setItem("numberOfEntries" , "10");
+			location.reload();
+		});
+		
+		showSpecificEntries[1].addEventListener('click' , function(){
+			localStorage.setItem("numberOfEntries" , "25");
+			location.reload();
+		});
+		
+		showSpecificEntries[2].addEventListener('click' , function(){
+			localStorage.setItem("numberOfEntries" , "50");
+			location.reload();
+		});
+		
+		showSpecificEntries[3].addEventListener('click' , function(){
+			localStorage.setItem("numberOfEntries" , "100");
+			location.reload();
+		});
 	}
 }
 
