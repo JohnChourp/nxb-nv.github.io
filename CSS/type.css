@@ -103,26 +103,3 @@ a:active {
 .charTrait5 {
 	text-align: center;
 }
-
-#filterCharType {
-	display: inline-block;
-	width: 80%;
-}
-
-#filterCharType .btnType {
-	border: none;
-	outline: none;
-	padding: 6px 10px;
-	background-color: #F1F1F1;
-	cursor: pointer;
-	margin: 10px 2px;
-}
-
-#filterCharType .btnType:hover {
-	background-color: #B2B0B0;
-}
-
-#filterCharType .btnType.active {
-	background-color: #666;
-	color: white;
-}
