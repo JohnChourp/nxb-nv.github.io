@@ -1,4 +1,5 @@
 function darkModeSave(){
+	let paginatorLength;
 	const themeSwitch = document.querySelector(".theme-switch");
 	const root = document.querySelector(':root');
 	themeSwitch.checked = localStorage.getItem("switchedTheme") === "true";
@@ -9,7 +10,14 @@ function darkModeSave(){
 	
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
-	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(105/10)= 11
+	let numberOfEntries = localStorage.getItem("numberOfEntries");
+	
+	if(localStorage.getItem("numberOfEntries") === undefined){
+		numberOfEntries = 10;
+		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
+	}else{
+		paginatorLength = Math.ceil(tRowsLength / parseInt(numberOfEntries));
+	}
 	
 	for(let i = 0; i < paginatorLength + 3; i ++){
 		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");

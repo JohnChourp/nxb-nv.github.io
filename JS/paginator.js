@@ -1,12 +1,20 @@
 $(window).on('load' , function(){
-	let i , table , tr;
+	let paginatorLength;
 	const paginationDiv = document.getElementById("pagination");
-	table = document.getElementById("sortTable");
+	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;//106
-	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(106/10)= 11
-	tr = table.getElementsByTagName("tr");
 	
-	for(i = tRowsLength - 1; i > 10; i --){
+	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
+	if(localStorage.getItem("numberOfEntries") === undefined){
+		numberOfEntries = 10;
+		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
+	}else{
+		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
+	}
+	
+	let tr = table.getElementsByTagName("tr");
+	
+	for(let i = tRowsLength - 1; i > numberOfEntries; i --){
 		tr[i].style.display = "none";
 	}
 	
@@ -15,7 +23,7 @@ $(window).on('load' , function(){
 	aPrevious.innerHTML = "Previous";
 	paginationDiv.appendChild(aPrevious);
 	
-	for(i = 0; i < paginatorLength; i ++){
+	for(let i = 0; i < paginatorLength; i ++){
 		if(i === 0){
 			const a = document.createElement("a");
 			a.href = "#";
@@ -37,7 +45,7 @@ $(window).on('load' , function(){
 	
 	const aResults = document.createElement("a");
 	aResults.href = "#";
-	aResults.innerHTML = "Showing 1 to 10 of " + ((tRowsLength - 1)) + " entries";
+	aResults.innerHTML = "Showing 1 to " + numberOfEntries + " of " + ((tRowsLength - 1)) + " entries";
 	paginationDiv.appendChild(aResults);
 	
 	let pagination = document.getElementById("pagination").children;
@@ -52,16 +60,15 @@ $(window).on('load' , function(){
 					tr[i].style.display = "none";
 				}
 				
-				let sum = ((i - 2) * 10);
-				for(let i = sum + 1; i < sum + 11; i ++){
+				let sum = ((i - 2) * numberOfEntries);
+				for(let i = sum + 1; i < sum + (numberOfEntries + 1); i ++){
 					tr[i].style.display = "";
 				}
 				if(i === 2){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (i - 1) + " to " + ((i - 1) * 10) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (i - 1) + " to " + ((i - 1) * numberOfEntries) + " of " + (tRowsLength - 1) + " entries";
 				}
-				
 				if(i > 2 && i <= paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 2) * 10) + " to " + ((i - 1) * 10) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 2) * numberOfEntries) + 1) + " to " + ((i - 1) * numberOfEntries) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 		}
@@ -75,13 +82,13 @@ $(window).on('load' , function(){
 			
 			if(pagination[i].className === "active"){
 				if(i === 1){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (numberOfEntries * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i > 1 && i < paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (10 * i) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((numberOfEntries * (i - 1)) + 1) + " to " + (numberOfEntries * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i === paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (10 * (i - 1)) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((numberOfEntries * (i - 1)) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 			
@@ -95,8 +102,8 @@ $(window).on('load' , function(){
 				tr[i].style.display = "none";
 			}
 			
-			let sum = ((i - 1) * 10);
-			for(let i = sum + 1; i < sum + 11; i ++){
+			let sum = ((i - 1) * numberOfEntries);
+			for(let i = sum + 1; i < sum + (numberOfEntries + 1); i ++){
 				tr[i].style.display = "";
 			}
 		});
@@ -113,18 +120,17 @@ $(window).on('load' , function(){
 						tr[i].style.display = "none";
 					}
 					
-					let sum = i * 10;
-					for(let i = sum + 1; i < sum + 11; i ++){
+					let sum = i * numberOfEntries;
+					for(let i = sum + 1; i < sum + (numberOfEntries + 1); i ++){
 						tr[i].style.display = "";
 					}
 					if(i > 0 && i < paginatorLength - 1){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + (i * 10) + " to " + ((i + 1) * 10) + " of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + ((i * numberOfEntries) + 1) + " to " + ((i + 1) * numberOfEntries) + " of " + (tRowsLength - 1) + " entries";
 					}
 				}
 			}
-			
 			if(i === paginatorLength){
-				pagination[paginatorLength + 2].innerHTML = "Showing " + ((i - 1) * 10) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+				pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 1) * numberOfEntries) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 			}
 		}
 	});
