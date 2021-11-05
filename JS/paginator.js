@@ -2,7 +2,7 @@ $(window).on('load' , function(){
 	let i , table , tr;
 	const paginationDiv = document.getElementById("pagination");
 	table = document.getElementById("sortTable");
-	let tRowsLength = table.rows.length;
+	let tRowsLength = table.rows.length;//106
 	const paginatorLength = Math.ceil(tRowsLength / 10);//paginatorLength = roundup(106/10)= 11
 	tr = table.getElementsByTagName("tr");
 	
