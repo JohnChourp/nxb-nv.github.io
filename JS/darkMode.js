@@ -10,13 +10,13 @@ function darkModeSave(){
 	
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
-	let numberOfEntries = localStorage.getItem("numberOfEntries");
+	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
 	
-	if(localStorage.getItem("numberOfEntries") === undefined){
+	if(!Number.isInteger(numberOfEntries)){
 		numberOfEntries = 10;
 		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
 	}else{
-		paginatorLength = Math.ceil(tRowsLength / parseInt(numberOfEntries));
+		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
 	}
 	
 	for(let i = 0; i < paginatorLength + 3; i ++){

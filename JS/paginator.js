@@ -5,7 +5,7 @@ $(window).on('load' , function(){
 	let tRowsLength = table.rows.length;//106
 	
 	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	if(localStorage.getItem("numberOfEntries") === undefined){
+	if(!Number.isInteger(numberOfEntries)){
 		numberOfEntries = 10;
 		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
 	}else{
