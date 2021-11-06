@@ -10,5 +10,5 @@ if it's not present, don't show loader */
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: #FFF url("https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif") no-repeat center;
+	background: #BBB8B8 url("loading.gif") no-repeat center;
 }
