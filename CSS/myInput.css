@@ -1,3 +1,8 @@
+:root{
+	--bg-color-myInput: white;
+	--text-color-myInput: black;
+}
+
 #myInput {
 	background-image: url('https://lh3.googleusercontent.com/XB6AFM3PNF8Xy8zgYS8unFJWmEpVSUeKrJgFYbfcVTLpAKkowXISA5Nd0Gf_RpdeA-u8RaS4m3Ep30D6NGCr6_IcngFTZvPpJnM473tg3KOOnJ2HHBoaGNkGyhc6o0wveJ7EEyS_-w=w1920-h1080');
 	background-position: 5px 6px;
@@ -7,6 +12,8 @@
 	padding: 8px 6px 6px 30px;
 	border: 1px solid #DDD;
 	margin-bottom: 12px;
+	background-color: var(--bg-color-myInput);
+	color: var(--text-color-myInput);
 }
 
 .sortIcon {
