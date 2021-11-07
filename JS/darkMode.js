@@ -47,8 +47,6 @@ function darkModeSave(){
 			localStorage.setItem("bgColorWebkitScrollbarTrack" , "#323232");
 			localStorage.setItem("bgColorWebkitScrollbarThumb" , "#888");
 			localStorage.setItem("bgColorWebkitScrollbarThumbHover" , "#696868");
-			
-			location.reload();
 		}else{
 			localStorage.removeItem("switchedTheme");
 			localStorage.removeItem("bgColor");
@@ -63,8 +61,7 @@ function darkModeSave(){
 			localStorage.setItem("bgColorWebkitScrollbarTrack" , "#F0F0F0");
 			localStorage.setItem("bgColorWebkitScrollbarThumb" , "#CECECE");
 			localStorage.setItem("bgColorWebkitScrollbarThumbHover" , "#A7A7A7");
-			
-			location.reload();
 		}
+		location.reload();
 	});
 }
