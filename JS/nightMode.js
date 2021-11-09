@@ -38,14 +38,7 @@ function setModeValues(){
 	
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
-	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	
-	if(!Number.isInteger(numberOfEntries)){
-		numberOfEntries = 10;
-		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
-	}else{
-		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
-	}
+	paginatorLength = Math.ceil(tRowsLength / 10);
 	
 	for(let i = 0; i < paginatorLength + 3; i ++){
 		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
