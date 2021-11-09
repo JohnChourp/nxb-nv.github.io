@@ -135,70 +135,16 @@ function createPaginator(n){
 	localStorage.setItem("numberOfEntries" , n);
 }
 
-function deletePaginator10(){
+function deletePaginator(){
 	const paginationDiv = document.getElementById("pagination");
-	
-	const aResults = document.getElementsByTagName("a").item(18);
+	const length = document.getElementById("pagination").children.length;
+	const aResults = document.getElementsByTagName("a").item((length+4));
 	paginationDiv.removeChild(aResults);
 	
-	const aNext = document.getElementsByTagName("a").item(18 - 1);
+	const aNext = document.getElementsByTagName("a").item((length+4) - 1);
 	paginationDiv.removeChild(aNext);
 	
-	for(let i = 18 - 2; i > 5; i --){
-		const a = document.getElementsByTagName("a").item(i);
-		paginationDiv.removeChild(a);
-	}
-	
-	const aPrevious = document.getElementsByTagName("a").item(18 - 13);
-	paginationDiv.removeChild(aPrevious);
-}
-
-function deletePaginator25(){
-	const paginationDiv = document.getElementById("pagination");
-	
-	const aResults = document.getElementsByTagName("a").item(12);
-	paginationDiv.removeChild(aResults);
-	
-	const aNext = document.getElementsByTagName("a").item(12 - 1);
-	paginationDiv.removeChild(aNext);
-	
-	for(let i = 12 - 2; i > 5; i --){
-		const a = document.getElementsByTagName("a").item(i);
-		paginationDiv.removeChild(a);
-	}
-	
-	const aPrevious = document.getElementsByTagName("a").item(12 - 7);
-	paginationDiv.removeChild(aPrevious);
-}
-
-function deletePaginator50(){
-	const paginationDiv = document.getElementById("pagination");
-	
-	const aResults = document.getElementsByTagName("a").item(10);
-	paginationDiv.removeChild(aResults);
-	
-	const aNext = document.getElementsByTagName("a").item(10 - 1);
-	paginationDiv.removeChild(aNext);
-	
-	for(let i = 10 - 2; i > 5; i --){
-		const a = document.getElementsByTagName("a").item(i);
-		paginationDiv.removeChild(a);
-	}
-	
-	const aPrevious = document.getElementsByTagName("a").item(10 - 5);
-	paginationDiv.removeChild(aPrevious);
-}
-
-function deletePaginator100(){
-	const paginationDiv = document.getElementById("pagination");
-	
-	const aResults = document.getElementsByTagName("a").item(9);
-	paginationDiv.removeChild(aResults);
-	
-	const aNext = document.getElementsByTagName("a").item(9 - 1);
-	paginationDiv.removeChild(aNext);
-	
-	for(let i = 9 - 2; i > 5; i --){
+	for(let i = (length+4) - 2; i > 5; i --){
 		const a = document.getElementsByTagName("a").item(i);
 		paginationDiv.removeChild(a);
 	}

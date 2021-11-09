@@ -13,78 +13,22 @@ window.onclick = function(event){
 }
 
 function loadEntries10(){
-	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	
-	if(numberOfEntries === 10){
-		deletePaginator10();
-	}
-	if(numberOfEntries === 25){
-		deletePaginator25();
-	}
-	if(numberOfEntries === 50){
-		deletePaginator50();
-	}
-	if(numberOfEntries === 100){
-		deletePaginator100();
-	}
-	
+	deletePaginator();
 	createPaginator(10);
 }
 
 function loadEntries25(){
-	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	
-	if(numberOfEntries === 10){
-		deletePaginator10();
-	}
-	if(numberOfEntries === 25){
-		deletePaginator25();
-	}
-	if(numberOfEntries === 50){
-		deletePaginator50();
-	}
-	if(numberOfEntries === 100){
-		deletePaginator100();
-	}
-	
+	deletePaginator();
 	createPaginator(25);
 }
 
 function loadEntries50(){
-	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	
-	if(numberOfEntries === 10){
-		deletePaginator10();
-	}
-	if(numberOfEntries === 25){
-		deletePaginator25();
-	}
-	if(numberOfEntries === 50){
-		deletePaginator50();
-	}
-	if(numberOfEntries === 100){
-		deletePaginator100();
-	}
-	
+	deletePaginator();
 	createPaginator(50);
 }
 
 function loadEntries100(){
-	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	
-	if(numberOfEntries === 10){
-		deletePaginator10();
-	}
-	if(numberOfEntries === 25){
-		deletePaginator25();
-	}
-	if(numberOfEntries === 50){
-		deletePaginator50();
-	}
-	if(numberOfEntries === 100){
-		deletePaginator100();
-	}
-	
+	deletePaginator();
 	createPaginator(100);
 }
 
