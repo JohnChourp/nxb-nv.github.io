@@ -1,4 +1,4 @@
-$(window).on('load' , function(){
+function filterCharType(){
 	const filterCharTypeDiv = document.getElementById("filterCharType");
 	
 	const btnShowAll = document.createElement("button");
@@ -108,4 +108,4 @@ $(window).on('load' , function(){
 		}
 		tr[0].style.display = "";
 	});
-});
+}

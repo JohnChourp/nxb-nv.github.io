@@ -37,7 +37,7 @@
 	
 	<title>Naruto x Boruto Ninja Voltage Character Table</title>
 </head>
-<body onload="changeDarkMode(); rankLevelImages(); placeSortImages();">
+<body onload="createPaginator(10); filterCharType(); changeDarkMode(); rankLevelImages(); placeSortImages();">
 <div class="se-pre-con"></div>
 <div>
 	<div class="mode">
@@ -46,16 +46,17 @@
 	
 	<div id="filterCharType"></div>
 	
-	<div class="dropDownShowSpecificEntries">
-		<button onclick="showSpecificEntries();" class="btnShowSpecificEntries">Show Number of Entries</button>
-		<div id="myDropdown" class="dropdownContentEntries">
-			<a href="#">10</a>
-			<a href="#">25</a>
-			<a href="#">50</a>
-			<a href="#">100</a>
+	<div class="dropShowEntries">
+		<button class="btnShowEntries" onclick="showSpecificEntries();">Show Number of Entries</button>
+		<div class="dropContentEntries" id="IDDropContentEntries">
+			<a href="#" onclick="loadEntries10()">10</a>
+			<a href="#" onclick="loadEntries25()">25</a>
+			<a href="#" onclick="loadEntries50()">50</a>
+			<a href="#" onclick="loadEntries100()">100</a>
 		</div>
 	</div>
 </div>
+
 <input id="myInput" onkeyup="searchTable();" placeholder="Search for Name,Type,Abilities,Traits..."
        title="Type in a name" type="text">
 

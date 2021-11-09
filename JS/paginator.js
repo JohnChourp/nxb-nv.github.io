@@ -1,21 +1,16 @@
-$(window).on('load' , function(){
-	let paginatorLength;
+function createPaginator(n){
 	const paginationDiv = document.getElementById("pagination");
 	let table = document.getElementById("sortTable");
-	let tRowsLength = table.rows.length;//106
-	
-	let numberOfEntries = parseInt(localStorage.getItem("numberOfEntries"));
-	if(!Number.isInteger(numberOfEntries)){
-		numberOfEntries = 10;
-		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
-	}else{
-		paginatorLength = Math.ceil(tRowsLength / numberOfEntries);
-	}
-	
+	let tRowsLength = table.rows.length;
+	let paginatorLength = Math.ceil(tRowsLength / n);
 	let tr = table.getElementsByTagName("tr");
 	
-	for(let i = tRowsLength - 1; i > numberOfEntries; i --){
+	for(let i = tRowsLength - 1; i > n; i --){
 		tr[i].style.display = "none";
+	}
+	
+	for(let i = 1; i < (n + 1); i ++){
+		tr[i].style.display = "";
 	}
 	
 	const aPrevious = document.createElement("a");
@@ -45,7 +40,7 @@ $(window).on('load' , function(){
 	
 	const aResults = document.createElement("a");
 	aResults.href = "#";
-	aResults.innerHTML = "Showing 1 to " + numberOfEntries + " of " + ((tRowsLength - 1)) + " entries";
+	aResults.innerHTML = "Showing 1 to " + n + " of " + ((tRowsLength - 1)) + " entries";
 	paginationDiv.appendChild(aResults);
 	
 	let pagination = document.getElementById("pagination").children;
@@ -60,15 +55,15 @@ $(window).on('load' , function(){
 					tr[i].style.display = "none";
 				}
 				
-				let sum = ((i - 2) * numberOfEntries);
-				for(let i = sum + 1; i < sum + (numberOfEntries + 1); i ++){
+				let sum = ((i - 2) * n);
+				for(let i = sum + 1; i < sum + (n + 1); i ++){
 					tr[i].style.display = "";
 				}
 				if(i === 2){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (i - 1) + " to " + ((i - 1) * numberOfEntries) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (i - 1) + " to " + ((i - 1) * n) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i > 2 && i <= paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 2) * numberOfEntries) + 1) + " to " + ((i - 1) * numberOfEntries) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 2) * n) + 1) + " to " + ((i - 1) * n) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 		}
@@ -82,13 +77,13 @@ $(window).on('load' , function(){
 			
 			if(pagination[i].className === "active"){
 				if(i === 1){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (numberOfEntries * i) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + i + " to " + (n * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i > 1 && i < paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + ((numberOfEntries * (i - 1)) + 1) + " to " + (numberOfEntries * i) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((n * (i - 1)) + 1) + " to " + (n * i) + " of " + (tRowsLength - 1) + " entries";
 				}
 				if(i === paginatorLength){
-					pagination[paginatorLength + 2].innerHTML = "Showing " + ((numberOfEntries * (i - 1)) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+					pagination[paginatorLength + 2].innerHTML = "Showing " + ((n * (i - 1)) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 				}
 			}
 			
@@ -102,8 +97,8 @@ $(window).on('load' , function(){
 				tr[i].style.display = "none";
 			}
 			
-			let sum = ((i - 1) * numberOfEntries);
-			for(let i = sum + 1; i < sum + (numberOfEntries + 1); i ++){
+			let sum = ((i - 1) * n);
+			for(let i = sum + 1; i < sum + (n + 1); i ++){
 				tr[i].style.display = "";
 			}
 		});
@@ -120,18 +115,94 @@ $(window).on('load' , function(){
 						tr[i].style.display = "none";
 					}
 					
-					let sum = i * numberOfEntries;
-					for(let i = sum + 1; i < sum + (numberOfEntries + 1); i ++){
+					let sum = i * n;
+					for(let i = sum + 1; i < sum + (n + 1); i ++){
 						tr[i].style.display = "";
 					}
 					if(i > 0 && i < paginatorLength - 1){
-						pagination[paginatorLength + 2].innerHTML = "Showing " + ((i * numberOfEntries) + 1) + " to " + ((i + 1) * numberOfEntries) + " of " + (tRowsLength - 1) + " entries";
+						pagination[paginatorLength + 2].innerHTML = "Showing " + ((i * n) + 1) + " to " + ((i + 1) * n) + " of " + (tRowsLength - 1) + " entries";
 					}
 				}
 			}
 			if(i === paginatorLength){
-				pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 1) * numberOfEntries) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
+				pagination[paginatorLength + 2].innerHTML = "Showing " + (((i - 1) * n) + 1) + " to " + (tRowsLength - 1) + " of " + (tRowsLength - 1) + " entries";
 			}
 		}
 	});
-});
+	for(let i = 0; i < paginatorLength + 3; i ++){
+		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
+	}
+	localStorage.setItem("numberOfEntries" , n);
+}
+
+function deletePaginator10(){
+	const paginationDiv = document.getElementById("pagination");
+	
+	const aResults = document.getElementsByTagName("a").item(18);
+	paginationDiv.removeChild(aResults);
+	
+	const aNext = document.getElementsByTagName("a").item(18 - 1);
+	paginationDiv.removeChild(aNext);
+	
+	for(let i = 18 - 2; i > 5; i --){
+		const a = document.getElementsByTagName("a").item(i);
+		paginationDiv.removeChild(a);
+	}
+	
+	const aPrevious = document.getElementsByTagName("a").item(18 - 13);
+	paginationDiv.removeChild(aPrevious);
+}
+
+function deletePaginator25(){
+	const paginationDiv = document.getElementById("pagination");
+	
+	const aResults = document.getElementsByTagName("a").item(12);
+	paginationDiv.removeChild(aResults);
+	
+	const aNext = document.getElementsByTagName("a").item(12 - 1);
+	paginationDiv.removeChild(aNext);
+	
+	for(let i = 12 - 2; i > 5; i --){
+		const a = document.getElementsByTagName("a").item(i);
+		paginationDiv.removeChild(a);
+	}
+	
+	const aPrevious = document.getElementsByTagName("a").item(12 - 7);
+	paginationDiv.removeChild(aPrevious);
+}
+
+function deletePaginator50(){
+	const paginationDiv = document.getElementById("pagination");
+	
+	const aResults = document.getElementsByTagName("a").item(10);
+	paginationDiv.removeChild(aResults);
+	
+	const aNext = document.getElementsByTagName("a").item(10 - 1);
+	paginationDiv.removeChild(aNext);
+	
+	for(let i = 10 - 2; i > 5; i --){
+		const a = document.getElementsByTagName("a").item(i);
+		paginationDiv.removeChild(a);
+	}
+	
+	const aPrevious = document.getElementsByTagName("a").item(10 - 5);
+	paginationDiv.removeChild(aPrevious);
+}
+
+function deletePaginator100(){
+	const paginationDiv = document.getElementById("pagination");
+	
+	const aResults = document.getElementsByTagName("a").item(9);
+	paginationDiv.removeChild(aResults);
+	
+	const aNext = document.getElementsByTagName("a").item(9 - 1);
+	paginationDiv.removeChild(aNext);
+	
+	for(let i = 9 - 2; i > 5; i --){
+		const a = document.getElementsByTagName("a").item(i);
+		paginationDiv.removeChild(a);
+	}
+	
+	const aPrevious = document.getElementsByTagName("a").item(5);
+	paginationDiv.removeChild(aPrevious);
+}
