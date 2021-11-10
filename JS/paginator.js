@@ -138,13 +138,13 @@ function createPaginator(n){
 function deletePaginator(){
 	const paginationDiv = document.getElementById("pagination");
 	const length = document.getElementById("pagination").children.length;
-	const aResults = document.getElementsByTagName("a").item((length+4));
+	const aResults = document.getElementsByTagName("a").item((length + 4));
 	paginationDiv.removeChild(aResults);
 	
-	const aNext = document.getElementsByTagName("a").item((length+4) - 1);
+	const aNext = document.getElementsByTagName("a").item((length + 4) - 1);
 	paginationDiv.removeChild(aNext);
 	
-	for(let i = (length+4) - 2; i > 5; i --){
+	for(let i = (length + 4) - 2; i > 5; i --){
 		const a = document.getElementsByTagName("a").item(i);
 		paginationDiv.removeChild(a);
 	}

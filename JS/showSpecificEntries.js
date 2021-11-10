@@ -38,7 +38,7 @@ function showSpecificEntries(){
 	for(let i = 0; i < showEntries.length; i ++){
 		showEntries[i].addEventListener('click' , function(){
 			showEntries[i].classList.add("dropDownActive");
-			for(let j = 0; j < 6; j ++){
+			for(let j = 0; j < showEntries.length; j ++){
 				if((showEntries[j].classList.contains("dropDownActive") === showEntries[i].classList.contains("dropDownActive")) && (j !== i)){
 					showEntries[j].classList.remove("dropDownActive");
 				}
