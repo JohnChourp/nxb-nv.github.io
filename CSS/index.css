@@ -12,3 +12,26 @@ body {
 	background-color: var(--bg-color-body);
 	color: var(--text-color-body);
 }
+
+#sortTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #DDD;
+	font-size: 14px;
+	margin-bottom: 60px;
+}
+
+#sortTable tr {
+	border-bottom: 1px solid #DDD;
+}
+
+#sortTable th, td {
+	text-align: left;
+	padding: 5px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+#sortTable th {
+	text-align: center;
+}
