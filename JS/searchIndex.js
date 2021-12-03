@@ -1,4 +1,4 @@
-function searchTableIndex(){
+function searchIndex(){
 	let inputCharName = document.getElementById("myInput");
 	let inputCharType = document.getElementById("myInput");
 	let inputCharAbilities = document.getElementById("myInput");
