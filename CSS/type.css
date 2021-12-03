@@ -2,7 +2,7 @@
 	text-align: center;
 }
 
-.charImage {
+.thumb {
 	height: 40px;
 	width: 40px;
 	/* Center the Image */
@@ -13,7 +13,37 @@
 	transition: transform .2s; /* Animation */
 }
 
-.charImage:hover {
+.thumb:hover {
+	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.thumbCard {
+	width: 60px;
+	height: 45px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+	transition: transform .2s; /* Animation */
+}
+
+.thumbCard:hover {
+	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.jutsuImage {
+	height: 40px;
+	width: 40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+	transition: transform .2s; /* Animation */
+}
+
+.jutsuImage:hover {
 	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -51,6 +81,15 @@ a:active {
 	text-align: center;
 }
 
+.attackImage {
+	height: 30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
 .assist {
 	color: #0F0;
 	text-align: center;
@@ -71,6 +110,18 @@ a:active {
 	text-align: center;
 }
 
+.cardTypeImage {
+	width: 30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+.rankLv {
+	text-align: center;
+}
+
 .rankImage {
 	height: 15px;
 	/* Center the Image */
@@ -79,7 +130,10 @@ a:active {
 	margin-right: auto;
 	/* Center the Image */
 }
-
+.category {
+	text-align: center;
+	font-weight: bold;
+}
 .abilities {
 	text-align: center;
 }
@@ -134,14 +188,22 @@ a:active {
 	text-align: center;
 }
 
-.jutsu {
-	height: 50px;
-	width: 50px;
+.jutsuNatureImage {
+	width: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
+}
+
+.jutsuName {
+	text-align: center;
+	font-weight: bold;
+}
+
+.jutsuLv {
+	text-align: center;
 }
 
 .cpCost {
@@ -158,4 +220,13 @@ a:active {
 
 .rt {
 	text-align: center;
+}
+
+.rtImage {
+	width: 30px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }

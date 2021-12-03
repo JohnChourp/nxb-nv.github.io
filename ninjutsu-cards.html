@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Favicon Start -->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<!-- Favicon End -->
+	
+	<!-- CSS Start -->
+	<link href="CSS/pointerCursor.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/type.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/searchTable.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/paginator.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/filterCharType.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/showSpecificEntries.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/nightMode.css" rel="stylesheet" type="text/css"/>
+	<!-- CSS End -->
+	
+	<!-- JS Start -->
+	<script src="JS/Libraries/jquery3_6_0.js" type="text/javascript"></script>
+	<script src="JS/Libraries/modernizr2_8_3.js" type="text/javascript"></script>
+	
+	<script src="JS/Images/typeImages.js" type="text/javascript"></script>
+	<script src="JS/Images/natureImages.js" type="text/javascript"></script>
+	<script src="JS/Images/rankLevelImages.js" type="text/javascript"></script>
+	<script src="JS/Images/rtImages.js" type="text/javascript"></script>
+	<script src="JS/Images/sortImages.js" type="text/javascript"></script>
+	
+	<script src="JS/searchAllNinjutsuCards.js" type="text/javascript"></script>
+	<script src="JS/sortAllNinjutsuCards.js" type="text/javascript"></script>
+	<script src="JS/filterType.js" type="text/javascript"></script>
+	<script src="JS/paginator.js" type="text/javascript"></script>
+	<script src="JS/showSpecificEntries.js" type="text/javascript"></script>
+	<script src="JS/nightMode.js" type="text/javascript"></script>
+	<!-- JS End -->
+	
+	<title>NXB NV Ninjutsus Cards</title>
+</head>
+<body onload="createPaginator(14); filterType(); darkModeAllNinjutsuCards(); rankLevelImages(); placeSortImages(); natureImages(); typeImages(); rtImages();">
+<div>
+	<a href="index.html">Character Table</a>
+</div>
+<div>
+	<div class="mode">
+		Dark mode:<span class="change">OFF</span>
+	</div>
+	
+	<div id="filterCharType"></div>
+	
+	<div class="dropShowEntries">
+		<button class="btnShowEntries" onclick="showSpecificEntries();">Show Number of Entries</button>
+		<div class="dropContentEntries" id="IDDropContentEntries">
+			<a href="#" onclick="loadEntries10()">10</a>
+			<a href="#" onclick="loadEntries25()">25</a>
+			<a href="#" onclick="loadEntries50()">50</a>
+			<a href="#" onclick="loadEntries100()">100</a>
+		</div>
+	</div>
+</div>
+
+<input onkeyup="searchAllNinjutsuCards();" id="myInput" placeholder="Search for Name,Type,Abilities,Traits..."
+       title="Type in a name" type="text">
+
+<div class="ContentForAllNinjutsuCards">
+	<table id="sortTable">
+		<thead>
+		<tr>
+			<th class="pointerCursor" onclick="sortImages(0); sortAllNinjutsuCards(0)" style="width:1%;">ID <img alt="SortDown"
+			                                                                                          class="sortIcon"
+			                                                                                          src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(1); sortAllNinjutsuCards(1)" style="width:1%;">Category <img alt="SortDown"
+			                                                                                                class="sortIcon"
+			                                                                                                src=""/></th>
+			<th class="pointerCursor" colspan="2" onclick="sortImages(2); sortAllNinjutsuCards(3)" style="width:10%;">Card <img
+					alt="SortDown"
+					class="sortIcon"
+					src=""/></th>
+			<th class="pointerCursor" colspan="2" onclick="sortImages(3); sortAllNinjutsuCards(4)" style="width:1%;">Type <img
+					alt="SortDown"
+					class="sortIcon"
+					src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(4); sortAllNinjutsuCards(6)" colspan="2" style="width:10%;">Jutsu <img alt="SortDown"
+			                                                                                                          class="sortIcon"
+			                                                                                                          src=""/></th>
+			<th class="pointerCursor" colspan="2" onclick="sortImages(5); sortAllNinjutsuCards(8)" style="width:1%;">Nature <img
+					alt="SortDown"
+					class="sortIcon"
+					src=""/></th>
+			<th class="pointerCursor" colspan="2" onclick="sortImages(6); sortAllNinjutsuCards(11)" style="width:1%;">Rank Lv<img alt="SortDown"
+			                                                                                                           class="sortIcon"
+			                                                                                                           src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(7); sortAllNinjutsuCards(12)" style="width:1%;">Jutsu Lv <img alt="SortDown"
+			                                                                                                 class="sortIcon"
+			                                                                                                 src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(8); sortAllNinjutsuCards(13)" style="width:1%;">CP Cost <img alt="SortDown"
+			                                                                                                class="sortIcon"
+			                                                                                                src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(9); sortAllNinjutsuCards(14)" style="width:1%;">CRI <img alt="SortDown"
+			                                                                                            class="sortIcon"
+			                                                                                            src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(10); sortAllNinjutsuCards(15)" style="width:1%;">POW <img alt="SortDown"
+			                                                                                             class="sortIcon"
+			                                                                                             src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(11); sortAllNinjutsuCards(17)" colspan="2" style="width:1%;">RT <img
+					alt="SortDown"
+					class="sortIcon"
+					src=""/></th>
+			<th class="pointerCursor" onclick="sortImages(12); sortAllNinjutsuCards(18)" style="width:5%;">Equipable By <img
+					alt="SortDown"
+					class="sortIcon"
+					src=""/></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="ID">0001</td>
+			<td class="category">Ultimate</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLVSMf7aCbHtZ_7tCtV20vnjQpZ33vaN8JnYJXEpibrW_z_1sjcZXHzv5c5GFFmeqb4yHX7bARNvo0XV4Z5DhFik942Aiv60F_R00pGpKGUwCzIEb2esmNNHtkiD15r8FVEGorRs_Yc34qswZxgFWX0O=w725-h544-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/UltimateJutsus/a-rampaging-power.html">A Rampaging Power!</a></td>
+			<td class="attack">Attack</td>
+			<td><img alt="Attack" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Wild Rampaging Blast</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLVjyPOMOC0_UNj2Gf_VpXnmpS_DEYFFpsZII01m1XgURyWKKx6G75Rf5_GNPxuMO7wHuI2PNRmf8BymGa9wfLPwhPfbmGnCT4-G6LdR_4V8-HC2yc-uVqoYZD4-3tb317OaSCFKdh4vJvPkg-1wRYnj=w182-h181-no?authuser=0"/>
+			</td>
+			<td class="impact">Impact</td>
+			<td><img alt="Impact" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">250</td>
+			<td class="cri">36.00%</td>
+			<td class="pow">5100</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">60</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0002</td>
+			<td class="category">Ultimate</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLVwa5OrAFQOFvcDHN8kcNhE3r-vuer4GbsgMOeRJGZNU57F7IpwQ2_EnAy6NC4i65rcfro0l0lpw1XAtiLqXJFIOXSnqgmzA8i_A0jPHEm3W7TwNIYq8DY-OXEK-KXsh3f4-cK0iZwsEzK3fL1-yj9x=w824-h619-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/UltimateJutsus/the-final-gamble.html">The Final Gamble!!</a></td>
+			<td class="attack">Attack</td>
+			<td><img alt="Attack" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Naruto Uzumaki 2K Barrage</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUKfezEajWkFfkPw7RAqWfXNw7Yhj5Jxf0LGZknIPskVDQujZRtrzCfkNckeR_PSVE_TUzBDpDXFzYgUqT1IF9nZf3cEfNKN9MkIU3-xfwb7h3H38hYw7nvRnpPJD6_2m3kUNagjM21zAiRnpnsY-vA=w180-h182-no?authuser=0"/>
+			</td>
+			<td class="impact">Impact</td>
+			<td><img alt="Impact" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">350</td>
+			<td class="cri">36.00%</td>
+			<td class="pow">9820</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">53</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0003</td>
+			<td class="category">Ultimate</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUBZyHfS7DhQ04dCDTCPG5sYO8hzcEfjtfPQ_uF4UTw6_ba1bE7Wh6zAYuCgwAD_H1ddzDOzpDr5UnU-bIQxllq5_yXns1AK8Bg5aFy070N0BAP9St4HqGrA1RqO5qg9xahkei4ioOPXJxrVji_5mem=w824-h618-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html">Naruto vs Pain</a></td>
+			<td class="attack">Attack</td>
+			<td><img alt="Attack" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Rasengan</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUQktmgnjrkBpBrAdIizQnAtq4l7Ge43rB4j8zYYl4BNvJe6ZK_KdD7Ac3AiL6YXethJb0TSEpwYxaDkj4q_ROg0Pc5wBrcwuMLOxys1-VwJ6hfv7ovlP-xX0Hj0LFg7kLM5WKSUherv17r-9x7imWb=w135-h134-no?authuser=0"/>
+			</td>
+			<td class="release">Release</td>
+			<td><img alt="Release" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">300</td>
+			<td class="cri">36.00%</td>
+			<td class="pow">9320</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">60</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0004</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLWCB6wb3_eCX44NIl3eIPUSvm0SutYj8PsgRdsbC3wUrqg98I7MbJaoMb3hf1Ilzp_2doWVetyOVkDqI1pPhM6h2MkIookhD-OcJ03KLH-WxQiNSdKY6sSEvzM5qfcT8gl6NERnDy2ABhHxBoY9PBlZ=w1026-h768-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus4Star/because-you-re-me-too.html">Because You're Me, Too</a></td>
+			<td class="utility">Utility</td>
+			<td><img alt="Utility" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Clone Spin</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUfKfPGpwMOhwkj_wDQdGpdWVpnKbkc7PTXlA06Pcq9hKJW91ewySw4kHOvJRCOarDoSKCdL7iLbQhOKF7qBbKFieoZBlVQ-Px1Bz5HFnRdsu2_WKZ5gnC4o_h-XSRam0KXcqNkmHLdhlSmSk7tsOpE=w126-h128-no?authuser=0"/>
+			</td>
+			<td class="impact">Impact</td>
+			<td><img alt="Impact" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">100</td>
+			<td class="cri">36.00%</td>
+			<td class="pow">6920</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">7</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0005</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLX45uTFFOtfeteCh_LsrMBaKsyKeMMw0ZnffcORT1Ek_AkZvU_SsOWb8SM0pCfhgcaxd2o8FaHIheexlu_YIJXKWlwmxqkvSzUJdcLH2Qa8QgP7qkmWdAgvvnfkni1ZqJ40fVo4Wmw6AdI8gkcvMY43=w704-h528-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus4Star/harem-jutsu.html">Harem Jutsu!!</a></td>
+			<td class="defense">Defense</td>
+			<td><img alt="Defense" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Haren Jutsu</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLWkfncnNHc5s6CuKmHhVpa7wJgyL5omn6l9advIqHNpB1H5c-xoiYNvLmDuEMmUlDgZWXP4fylvt8hy7gIYBtJ1udOdgu8YGIJz0xRFWdKetg66s8Of9qcUdOd9C6tStLI07HOM8dJ5kD2Og_vyW9K2=w166-h167-no?authuser=0"/>
+			</td>
+			<td class="normal">Normal</td>
+			<td><img alt="Normal" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">33</td>
+			<td class="cri">0.00%</td>
+			<td class="pow">0</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">5</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0006</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXasuGbh-rA_jZlMsI3ppfYqsBiVEnW3WsnkMaYzbH_n24FLGVq3oBWgpT2IegV2o_IWZ_8Leh2U123YzeEVfyOE2L4-YUws1BGK0dIHz43S69KZ8xHQ4vgc2zO1G6ZpDiACfyLhI9juAeE1ZfyaZop=w1022-h766-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus4Star/because-thats-who-naruto-is.html">Because That's Who Naruto Is!</a></td>
+			<td class="skill">Skill</td>
+			<td><img alt="Skill" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Shadow Clone Jutsu</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLV7xD3DFRAr13MDiMrQh1cJ5etCuHporbLrQWETt7djhweT120i60VvUL8VU5LEVRus6VA0VVV8hZ17LWvuTAA_fd83e9bBkqIkwgL4ChXpHohFXUuhJ-Vzs4e5EXADqGZcxVYYTLLuEyUuArIg-Hjf=s122-no?authuser=0"/>
+			</td>
+			<td class="lunge">Lunge</td>
+			<td><img alt="Lunge" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">80</td>
+			<td class="cri">36.00%</td>
+			<td class="pow">8020</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">3</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0007</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUBBgR_E2gfU_KyK5x6k6KD05fFSrKi6MyHqyBu_WJsR26x2c9A_iDN5-4cdNtQnd2m6VM6t1NYEs-TjLzdzJdi01tBH86HO5S6EN51tfZe89viWzM9tJKomWVJlNbQgxl6ywvuV3ql0Dm-NzRXtNwt=w751-h564-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus4Star/letter-in-his-heart.html">Letter in His Heart</a></td>
+			<td class="skill">Skill</td>
+			<td><img alt="Skill" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Wild Claw</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUJ1Tri0GZyvnqwgzxz6-dYQwdAQv69UHW8H3bWHqe42jNHl-Sx5W9Y2cogxSPvL2RtjV-MtA380nj096X5KLzEZRHwZTsnsBxnO0ZYHWK3c14a0KhNTTcXkh-lkjeB4ck9y88FojM0uG8IjoJZQPJU=w174-h175-no?authuser=0"/>
+			</td>
+			<td class="lunge">Lunge</td>
+			<td><img alt="Lunge" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="6 Star" class="rankImage" src=""></td>
+			<td class="rankLv">70/70</td>
+			<td class="jutsuLv">8/8</td>
+			<td class="cpCost">100</td>
+			<td class="cri">36.00%</td>
+			<td class="pow">7820</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">5</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0008</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLVtaLvYQ0UslfKevOsSqbkvKZ9IUczUHrJZyl8jo2vY_yuxNo6evMx5WyCYcwRm5auljCGVls3oTXue-2vtJ-R6Ol1s3XZlqbnqTZMrP0YuRmIeBgFXvyDhnOeD0cOsQYRNtiitPqDiHBZ9NHCrZt8I=w1023-h764-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus3Star/a-warm-hand.html">A Warm Hand</a></td>
+			<td class="defense">Defense</td>
+			<td><img alt="Defense" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Clone Arrow</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXO7H9a6UItbvTcEZtu_NkqU7BgHTrSluh5VQbjgPtYpS_F_5DJecPs66VP7J4r2DqTeC3L77gReh3SRDmzLEWSCIg4jbkVvmuY06kkgNTgGuypeE-VJf7ivZAHhAaoaZgKTgI8RD4aRrCNeGnmMMtP=w122-h124-no?authuser=0"/>
+			</td>
+			<td class="manipulate">Manipulate</td>
+			<td><img alt="Manipulate" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="5 Star" class="rankImage" src=""></td>
+			<td class="rankLv">60/60</td>
+			<td class="jutsuLv">6/6</td>
+			<td class="cpCost">80</td>
+			<td class="cri">26.00%</td>
+			<td class="pow">5200</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">6</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0009</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLWuZ_KUr50tkJrKoauGc0tkdu5y-HihyLmVevdy3TKFt2ADzSafhpChzYtxUcleKY4dhNu1737bOTV0UxpeeeR2BTWXWrJkS5fborK-iQmjiUOVEGymHbOjfYJJ_iA-RLS3o55-leRzRhIX5S1Kr5S6=w708-h527-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus3Star/a-thousand-years-of-death.html">A Thousand Years of Death!</a></td>
+			<td class="attack">Attack</td>
+			<td><img alt="Attack" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Shadow Clone Uppercut</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLU7U0xCFvUlP9_UN3TeMkw0BTiDVB7uda9hwFujuIUlRy2qItBmZGm6ygjH1tgQbZWYBgI5MJVd4VrpdfyXTKRUvSfTQO1zHnAUpKM7a6AgzjCtmJ0uzn2bKfzEYZ-bllprVTAhV25dx8zlqAG4BGe5=w124-h121-no?authuser=0"/>
+			</td>
+			<td class="manipulate">Manipulate</td>
+			<td><img alt="Manipulate" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="5 Star" class="rankImage" src=""></td>
+			<td class="rankLv">60/60</td>
+			<td class="jutsuLv">6/6</td>
+			<td class="cpCost">100</td>
+			<td class="cri">26.00%</td>
+			<td class="pow">5400</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">7</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0010</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXzNDZ45LqAs_myupez6cos5zYYENx0yQ6PAM-ltfwUI0zaLds7g6I6PCcNZena6BCZiP4rTWx8LYvwSkbiqabZWhGG492VF2khpYWlhyfNLi9fUaHAxTK8LB06EuUvn4RGCgJp95jmFe2RE7upHhdw=w1019-h764-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus1Star/its-kinda-like-bam.html">It's kinda like, bam!</a></td>
+			<td class="attack">Attack</td>
+			<td><img alt="Attack" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Shadow Clone Uppercut</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLU7U0xCFvUlP9_UN3TeMkw0BTiDVB7uda9hwFujuIUlRy2qItBmZGm6ygjH1tgQbZWYBgI5MJVd4VrpdfyXTKRUvSfTQO1zHnAUpKM7a6AgzjCtmJ0uzn2bKfzEYZ-bllprVTAhV25dx8zlqAG4BGe5=w124-h121-no?authuser=0"/>
+			</td>
+			<td class="manipulate">Manipulate</td>
+			<td><img alt="Manipulate" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="3 Star" class="rankImage" src=""></td>
+			<td class="rankLv">40/40</td>
+			<td class="jutsuLv">2/2</td>
+			<td class="cpCost">100</td>
+			<td class="cri">6.00%</td>
+			<td class="pow">2360</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">7</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0011</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUVJpRNQuGaLg8Qyi5xSNANNnpNLQz3KpTfb_gpCaiV_-0BiLgG5DA-SbsY-HC7SafamKHFheVNgMpBpw_OqhNh-M85GzVuI5jJ4nVZHzWNKs17X6t6U-AsdQaVcpgbJTCW1f1MuHsTP_JnHd3pBoSd=w1021-h765-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus1Star/a-hint-to-the-cipher.html">A Hint to the Cipher</a></td>
+			<td class="defense">Defense</td>
+			<td><img alt="Defense" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Clone Arrow</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXO7H9a6UItbvTcEZtu_NkqU7BgHTrSluh5VQbjgPtYpS_F_5DJecPs66VP7J4r2DqTeC3L77gReh3SRDmzLEWSCIg4jbkVvmuY06kkgNTgGuypeE-VJf7ivZAHhAaoaZgKTgI8RD4aRrCNeGnmMMtP=w122-h124-no?authuser=0"/>
+			</td>
+			<td class="manipulate">Manipulate</td>
+			<td><img alt="Manipulate" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="3 Star" class="rankImage" src=""></td>
+			<td class="rankLv">40/40</td>
+			<td class="jutsuLv">2/2</td>
+			<td class="cpCost">80</td>
+			<td class="cri">6.00%</td>
+			<td class="pow">2160</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">6</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0012</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLWV2COiFrzmiv3kGUhm4dA1ZY9_KP2bU4KarDim451aqoLrNSeK9TeIE3zzmaxqnLulNb--m25hG78MLT60VKXuBC1gVWSsyCiKBygfyMkQJvqV70kDvKoiOedpkByYobtMMPRZzH799kfBpf62a4zO=w1022-h764-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus1Star/that-wasnt-a-compliment.html">That Wasn't a Compliment!</a></td>
+			<td class="utility">Utility</td>
+			<td><img alt="Utility" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Clone Arrow</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXO7H9a6UItbvTcEZtu_NkqU7BgHTrSluh5VQbjgPtYpS_F_5DJecPs66VP7J4r2DqTeC3L77gReh3SRDmzLEWSCIg4jbkVvmuY06kkgNTgGuypeE-VJf7ivZAHhAaoaZgKTgI8RD4aRrCNeGnmMMtP=w122-h124-no?authuser=0"/>
+			</td>
+			<td class="manipulate">Manipulate</td>
+			<td><img alt="Manipulate" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="3 Star" class="rankImage" src=""></td>
+			<td class="rankLv">40/40</td>
+			<td class="jutsuLv">2/2</td>
+			<td class="cpCost">80</td>
+			<td class="cri">6.00%</td>
+			<td class="pow">2160</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">6</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0013</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXSRgkM8AHezPAOdEVoqK_0SgxDSst7McgGp_s8K4vjABZN10g4zcDje-ZFyQtos65ypF8LjneWi54DdtmyGCi2O1EtMNf3C1WGBo3D-GpfxKWLnCV3xtnuoK_lcUghmPpY_g_1NA7WMF__sdoKP43d=w1022-h761-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus1Star/i-accept-that-challenge.html">I accept that challenge!</a></td>
+			<td class="skill">Skill</td>
+			<td><img alt="Skill" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Clone Spin</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUfKfPGpwMOhwkj_wDQdGpdWVpnKbkc7PTXlA06Pcq9hKJW91ewySw4kHOvJRCOarDoSKCdL7iLbQhOKF7qBbKFieoZBlVQ-Px1Bz5HFnRdsu2_WKZ5gnC4o_h-XSRam0KXcqNkmHLdhlSmSk7tsOpE=w126-h128-no?authuser=0"/>
+			</td>
+			<td class="impact">Impact</td>
+			<td><img alt="Impact" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="3 Star" class="rankImage" src=""></td>
+			<td class="rankLv">40/40</td>
+			<td class="jutsuLv">2/2</td>
+			<td class="cpCost">100</td>
+			<td class="cri">6.00%</td>
+			<td class="pow">2360</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">7</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		<tr>
+			<td class="ID">0014</td>
+			<td class="category">Ninjutsu</td>
+			<td><img alt="" class="thumbCard"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLXMDgwAfRYCY6LHBqrC2FFct2ny-gvUFj3k36LWXAjUBkrujuPcsUfBNoz-ySSoN6v2vVlqogi1zKJkX8Ea3xWg01AQeGVNwGTRKFV2vEuk8rwzVkrfYSbRPQz3kbgyC1pknLlxpW4X_QXY8_9zZ0ze=w1020-h767-no?authuser=0"/>
+			</td>
+			<td><a href="CharactersCards/NarutoUzumaki/Ninjutsus1Star/a-friends-outstretched-hand.html">A Friend's Outstretched Hand</a></td>
+			<td class="skill">Skill</td>
+			<td><img alt="Skill" class="cardTypeImage" src=""/></td>
+			<td class="jutsuName">Clone Spin</td>
+			<td><img alt="" class="jutsuImage"
+			         src="https://lh3.googleusercontent.com/pw/AM-JKLUfKfPGpwMOhwkj_wDQdGpdWVpnKbkc7PTXlA06Pcq9hKJW91ewySw4kHOvJRCOarDoSKCdL7iLbQhOKF7qBbKFieoZBlVQ-Px1Bz5HFnRdsu2_WKZ5gnC4o_h-XSRam0KXcqNkmHLdhlSmSk7tsOpE=w126-h128-no?authuser=0"/>
+			</td>
+			<td class="impact">Impact</td>
+			<td><img alt="Impact" class="jutsuNatureImage" src=""/></td>
+			<td><img alt="3 Star" class="rankImage" src=""></td>
+			<td class="rankLv">40/40</td>
+			<td class="jutsuLv">2/2</td>
+			<td class="cpCost">100</td>
+			<td class="cri">6.00%</td>
+			<td class="pow">2360</td>
+			<td><img alt="rt" class="rtImage" src=""/></td>
+			<td class="rt">7</td>
+			<td><a href="Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<div id="pagination"></div>
+</body>
+</html>

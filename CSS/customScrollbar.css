@@ -30,13 +30,12 @@
 ::-webkit-scrollbar-corner {
 	background: var(--background-webkit-scrollbar-track);
 }
-
-.Container {
-	height: 100%;
-	width: 100%;
+.ContentForIndex {
+	height: 620px;
+	overflow: auto;
 }
 
-.Content {
+.ContentForAllNinjutsuCards {
 	height: 560px;
 	overflow: auto;
 }
