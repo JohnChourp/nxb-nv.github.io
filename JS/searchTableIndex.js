@@ -1,5 +1,4 @@
-function searchTable(){
-	let filterCharTypeDiv = document.getElementById("filterCharType").children;
+function searchTableIndex(){
 	let inputCharName = document.getElementById("myInput");
 	let inputCharType = document.getElementById("myInput");
 	let inputCharAbilities = document.getElementById("myInput");
@@ -44,32 +43,6 @@ function searchTable(){
 			
 			if(txtValueCharName.toUpperCase().indexOf(filterCharName) > - 1 || txtValueCharType.toUpperCase().indexOf(filterCharType) > - 1 || txtValueCharAbilities.toUpperCase().indexOf(filterCharAbilities) > - 1 || txtValueCharTrait1.toUpperCase().indexOf(filterCharTrait1) > - 1 || txtValueCharTrait2.toUpperCase().indexOf(filterCharTrait2) > - 1 || txtValueCharTrait3.toUpperCase().indexOf(filterCharTrait3) > - 1 || txtValueCharTrait4.toUpperCase().indexOf(filterCharTrait4) > - 1 || txtValueCharTrait5.toUpperCase().indexOf(filterCharTrait5) > - 1){
 				tr[i].style.display = "";
-				
-				if(filterCharTypeDiv[1].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("attack")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[2].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("assist")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[3].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("defense")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[4].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("skill")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[5].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("utility")){
-						tr[i].style.display = "none";
-					}
-				}
 			}else{
 				tr[i].style.display = "none";
 			}
