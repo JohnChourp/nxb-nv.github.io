@@ -1,4 +1,4 @@
-function filterCharType(){
+function filterType(){
 	const filterCharTypeDiv = document.getElementById("filterCharType");
 	
 	const btnShowAll = document.createElement("button");
