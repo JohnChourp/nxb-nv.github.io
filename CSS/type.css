@@ -118,6 +118,9 @@ a:active {
 	margin-right: auto;
 	/* Center the Image */
 }
+.rankLv {
+	text-align: center;
+}
 
 .rankImage {
 	height: 15px;
