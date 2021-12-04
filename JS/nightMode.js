@@ -56,8 +56,8 @@ function myInputDarkModeOptions(){
 }
 
 function myInputLightModeOptions(){
-	localStorage.removeItem("myInputBgColor");
-	localStorage.removeItem("myInputTextColor");
+	localStorage.setItem("myInputBgColor" , "white");
+	localStorage.setItem("myInputTextColor" , "black");
 }
 
 function myInputSetModeValues(){
