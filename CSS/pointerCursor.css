@@ -1,8 +1,0 @@
-.pointerCursor:hover {
-	text-decoration: underline;
-	color: #807F7F;
-}
-
-.pointerCursor {
-	cursor: pointer;
-}
