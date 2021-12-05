@@ -1,8 +1,8 @@
-.ID {
+.id {
 	text-align: center;
 }
 
-.charImage {
+.indexCharImage {
 	height: 40px;
 	width: 40px;
 	/* Center the Image */
@@ -13,12 +13,12 @@
 	transition: transform .2s; /* Animation */
 }
 
-.charImage:hover {
+.indexCharImage:hover {
 	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .name {
-	color: #80CCC6;
+	color: DarkTurquoise;
 }
 
 .name:hover {
@@ -27,47 +27,47 @@
 }
 
 a:link {
-	color: #80CCC6;
+	color: DarkTurquoise;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #80CCC6;
+	color: DarkTurquoise;
 	text-decoration: none;
 }
 
 a:hover {
+	color: Turquoise;
 	text-decoration: underline;
-	color: #4EDCC4;
 }
 
 a:active {
-	color: #80CCC6;
+	color: Turquoise;
 	text-decoration: none;
 }
 
 .attack {
-	color: #F00;
+	color: red;
 	text-align: center;
 }
 
 .assist {
-	color: #0F0;
+	color: Lime;
 	text-align: center;
 }
 
 .defense {
-	color: #FFBF00;
+	color: Gold;
 	text-align: center;
 }
 
 .skill {
-	color: #6495ED;
+	color: DodgerBlue;
 	text-align: center;
 }
 
 .utility {
-	color: #F0F;
+	color: Magenta;
 	text-align: center;
 }
 

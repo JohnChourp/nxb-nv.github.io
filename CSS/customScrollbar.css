@@ -31,12 +31,7 @@
 	background: var(--background-webkit-scrollbar-track);
 }
 
-.Container {
-	height: 100%;
-	width: 100%;
-}
-
-.Content {
+.indexTable {
 	height: 560px;
 	overflow: auto;
 }

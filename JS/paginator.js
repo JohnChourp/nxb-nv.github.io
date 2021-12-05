@@ -138,17 +138,18 @@ function createPaginator(n){
 function deletePaginator(){
 	const paginationDiv = document.getElementById("pagination");
 	const length = document.getElementById("pagination").children.length;
-	const aResults = document.getElementsByTagName("a").item((length + 4));
-	paginationDiv.removeChild(aResults);
+	const lengthDiff = document.getElementsByTagName("a").length - document.getElementById("pagination").children.length;
 	
-	const aNext = document.getElementsByTagName("a").item((length + 4) - 1);
+	const aResults = document.getElementsByTagName("a").item((length - 1) + lengthDiff);
+	paginationDiv.removeChild(aResults);
+	const aNext = document.getElementsByTagName("a").item((length - 2) + lengthDiff);
 	paginationDiv.removeChild(aNext);
 	
-	for(let i = (length + 4) - 2; i > 5; i --){
+	for(let i = ((length - 3) + lengthDiff); i > lengthDiff; i --){
 		const a = document.getElementsByTagName("a").item(i);
 		paginationDiv.removeChild(a);
 	}
 	
-	const aPrevious = document.getElementsByTagName("a").item(5);
+	const aPrevious = document.getElementsByTagName("a").item(lengthDiff);
 	paginationDiv.removeChild(aPrevious);
 }
