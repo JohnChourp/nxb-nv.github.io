@@ -1,9 +1,9 @@
-#filterCharType {
+#filterType {
 	display: inline-block;
 	width: 380px;
 }
 
-#filterCharType .btnType {
+#filterType .btnType {
 	border: none;
 	outline: none;
 	padding: 6px 10px;
@@ -12,11 +12,11 @@
 	margin: 10px 2px;
 }
 
-#filterCharType .btnType:hover {
+#filterType .btnType:hover {
 	background-color: #B2B0B0;
 }
 
-#filterCharType .btnType.active {
+#filterType .btnType.active {
 	background-color: #666;
 	color: white;
 }

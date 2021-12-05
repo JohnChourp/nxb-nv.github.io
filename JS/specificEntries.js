@@ -1,7 +1,7 @@
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event){
-	if(!event.target.matches('.btnShowEntries')){
-		let dropdowns = document.getElementsByClassName("dropContentEntries");
+	if(!event.target.matches('.btnEntries')){
+		let dropdowns = document.getElementsByClassName("contentEntries");
 		let i;
 		for(i = 0; i < dropdowns.length; i ++){
 			let openDropdown = dropdowns[i];
@@ -14,27 +14,27 @@ window.onclick = function(event){
 
 function loadEntries10(){
 	deletePaginator();
-	createPaginator(10);
+	paginator(10);
 }
 
 function loadEntries25(){
 	deletePaginator();
-	createPaginator(25);
+	paginator(25);
 }
 
 function loadEntries50(){
 	deletePaginator();
-	createPaginator(50);
+	paginator(50);
 }
 
 function loadEntries100(){
 	deletePaginator();
-	createPaginator(100);
+	paginator(100);
 }
 
-function showSpecificEntries(){
-	document.getElementById("IDDropContentEntries").classList.toggle("show");
-	let showEntries = document.getElementById("IDDropContentEntries").children;
+function specificEntries(){
+	document.getElementById("IdContentEntries").classList.toggle("show");
+	let showEntries = document.getElementById("IdContentEntries").children;
 	for(let i = 0; i < showEntries.length; i ++){
 		showEntries[i].addEventListener('click' , function(){
 			showEntries[i].classList.add("dropDownActive");

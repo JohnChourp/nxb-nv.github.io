@@ -1,5 +1,5 @@
 function filterCharType(){
-	const filterCharTypeDiv = document.getElementById("filterCharType");
+	const filterCharTypeDiv = document.getElementById("filterType");
 	
 	const btnShowAll = document.createElement("button");
 	btnShowAll.className = "btnType";
@@ -31,7 +31,7 @@ function filterCharType(){
 	btnUtility.innerHTML = "Utility";
 	filterCharTypeDiv.appendChild(btnUtility);
 	
-	let filterCharType = document.getElementById("filterCharType").children;
+	let filterCharType = document.getElementById("filterType").children;
 	
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;

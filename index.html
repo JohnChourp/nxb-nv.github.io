@@ -14,8 +14,8 @@
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/searchTable.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/paginator.css" rel="stylesheet" type="text/css"/>
-	<link href="CSS/filterCharType.css" rel="stylesheet" type="text/css"/>
-	<link href="CSS/showSpecificEntries.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/filterType.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/specificEntries.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/nightMode.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
 	
@@ -27,23 +27,23 @@
 	<script src="JS/filterCharType.js" type="text/javascript"></script>
 	<script src="JS/paginator.js" type="text/javascript"></script>
 	<script src="JS/Images/rankLevelImages.js" type="text/javascript"></script>
-	<script src="JS/showSpecificEntries.js" type="text/javascript"></script>
+	<script src="JS/specificEntries.js" type="text/javascript"></script>
 	<script src="JS/nightMode.js" type="text/javascript"></script>
 	<!-- JS End -->
 	
 	<title>Naruto x Boruto Ninja Voltage Character Table</title>
 </head>
-<body onload="createPaginator(10); filterCharType(); changeDarkMode(); rankLevelImages(); placeSortImages();">
+<body onload="paginator(10); filterCharType(); changeDarkMode(); rankLevelImages(); placeSortImages();">
 <div>
 	<div class="mode">
 		Dark mode:<span class="change">OFF</span>
 	</div>
 	
-	<div id="filterCharType"></div>
+	<div id="filterType"></div>
 	
-	<div class="dropShowEntries">
-		<button class="btnShowEntries" onclick="showSpecificEntries();">Show Number of Entries</button>
-		<div class="dropContentEntries" id="IDDropContentEntries">
+	<div class="entries">
+		<button class="btnEntries" onclick="specificEntries();">Show Number of Entries</button>
+		<div class="contentEntries" id="IdContentEntries">
 			<a href="#" onclick="loadEntries10()">10</a>
 			<a href="#" onclick="loadEntries25()">25</a>
 			<a href="#" onclick="loadEntries50()">50</a>
