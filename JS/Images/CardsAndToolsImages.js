@@ -131,3 +131,55 @@ function typeImages(){
 	}
 }
 
+function statTypeImages(){
+	let statTypeImageItemLength = document.getElementsByClassName("statTypeImage");
+	
+	for(let i = 0; i < statTypeImageItemLength.length; i ++){
+		switch(document.getElementsByClassName("statTypeImage").item(i).alt){
+			case "HP":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/GR8IHfhW2mK0g6vULqJ265ns-3VXAvgQ7uxvKoEqFdwd6MZvL-gatRP9kL2EzRrV7nDmLnitphhjIh_slj5Tz5brc34c3G9SjXprHvYZhXRiPkK4kL_wPMs4USRsThiFten_8c95uw=w1920-h1080";
+				break;
+			case "CP":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/BFZIRmCNSX-S07zqUOv-4pVJehpE9Oy4duyTQxCeIGFOmns2tvOKUCBWPlcbNPwq5UsatUg6XYl0VQ2zJGnBE9gvdc-VQLWhFY2SmrLajgYX5tbOFkimorfbAOHdKFZZBgBaKoLTIA=w1920-h1080";
+				break;
+			case "ATK":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/_1lFj37QXDEjbRVVznCR0VT3Lew82UJe5uc-WkrmIUXGETjehzYnqd1-dyhtGpuAfwrdUcUrpaviCcISxSu6rsC4X1uYkfc39--Q8Xc_1DiAM-NpJDmsq9Qfu4T4ZszGF9la-6zDYw=w1920-h1080";
+				break;
+			case "DEF":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/MgdItgZPCuiMNFmorucIy7-Wl2w5Kp4_y56MXCXAsh6R2KcQu_2QVK9GHPA4OITV6gLsuFuBPRWtrerQLMwYIxkV91aknzKubtNPolNuwRiCFvgOu02sBtvhvRBi2j01NBH1ub-dmw=w1920-h1080";
+				break;
+			case "CRI":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/tjuVuc1HG1op7_7ZnKebnT3N4x8Zm1QqGoE-95Ys8FaiQTmeVKdOhKon3K73eUDZBVUUaGZfSPat4ky8XbceOSB2EwAH_t_L0HcHGZF7WKaqlOAej52760bI7DyWo0ko5wh7T589Tw=w1920-h1080";
+				break;
+			case "EVA":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/Tg3rAdy7LPTEQ-MJ1X45USXC2AsVxHbx55iXaGb1rblps-cYD0yj8Vxw1yOnujDCtCm1Y9YatG8IbepUfNmVGXnnPo0Tre0sq-QVCoAW_QSRy56fuEtFrnPusRWoI3CyLU9Snbyl-A=w1920-h1080";
+				break;
+			case "Empty":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/PZlSMdLwOAYlk2aSFDOCZjf73r22T34yOc4zYlueJiZOAIxobdY_I25tJnt9zozbiO-HXmKdyem1YQO-iXpwJmcurXWH6zoaoRmwTYU7X2waC7v8DEIIVY9MFrxEgO9t9oytxJm-7Q=w1920-h1080";
+				break;
+			
+			case "Poison":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/Tg3rAdy7LPTEQ-MJ1X45USXC2AsVxHbx55iXaGb1rblps-cYD0yj8Vxw1yOnujDCtCm1Y9YatG8IbepUfNmVGXnnPo0Tre0sq-QVCoAW_QSRy56fuEtFrnPusRWoI3CyLU9Snbyl-A=w1920-h1080";
+				break;
+			case "Darkness":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/RnmYfiGK17mlf5Izg03mqcJb3qgzyhvzGH-S18Fsrr2RaXU6ZHmlIrkLG64hG23NnaKnWt8anglpp1PvgCtHMkZiNEDTgrjdCY2mJzE3yZxyWuempSANJvl1yzQyER7I9sB2nJVQYw=w1920-h1080";
+				break;
+			case "Confusion":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/c5_usjwtvPDle-et1KvV3fV-QfCnp71aQTxZgoJMQQ6srFv25RGrQYzmUqpud33rbacUtaI2Hk0WTUpSm5ikUzZaXP92JH5rImkFZmePvTVzl3luru46EQV9S77ZqGrTi3E9mPUnKA=w1920-h1080";
+				break;
+			case "Paralysis":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/5Q6ayl1Q-88LaJJTjVxeCt0WYRW3LW228s3jJbOdZDHwMm5OJwEQ7VcwweljQrkUxKRaEzC2WQldu2Hq0C3zcGuXeGOBjM91e0zMHU33-e-7w3ZEyBKT_bxrg3lyicV4ZL-rgiCLGg=w1920-h1080";
+				break;
+			case "Seal":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/Kl-UJ8C6PUzA348Bng8paeWZgZ9OkKqvwvQpajiBePnpYLrdENNg2OQQKagooZfu5kixLleM_I-ZozNEu8RasI-r37hO5FmWV4eTsIek7uEGwfmUmEfzZxRZgA45_1iK_INfAPsDHg=w1920-h1080";
+				break;
+			case "Slowed Movement":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/ZIlFzYrCuvPslra2CaMwJKhgRm3rG7cXR6m5zV-SU8kxQG4m6RAprBsqyerhzPhzmVbXMWSodbXagHeYkfSGENfY9YaKXMsO426YrxSZIQxeln9eNU-IBN3wGLEVedNBaTrWZNcaSg=w1920-h1080";
+				break;
+			case "Protective":
+				document.getElementsByClassName("statTypeImage").item(i).src = "https://lh3.googleusercontent.com/FLBj_diMcM4iFiHMlFHWNfw8e54669PSt06ctaku5J2MIYX7k0mtMqrtM8IIm8o-0nCOtQuCW0ERhO4xkr7FPrnb_RDkWFq6rw0mqV__GJ7UFaznFXougtSLtoMT6gxyrpe1qaNz_Q=w1920-h1080";
+				break;
+		}
+	}
+}
+
