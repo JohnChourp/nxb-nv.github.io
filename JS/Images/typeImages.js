@@ -1,4 +1,4 @@
-function cardTypeImages(){
+function typeImages(){
 	let cardTypeImageItemLength = document.getElementsByClassName("cardTypeImage");
 	
 	for(let i = 0; i < cardTypeImageItemLength.length; i ++){
@@ -7,7 +7,7 @@ function cardTypeImages(){
 				document.getElementsByClassName("cardTypeImage").item(i).src = "https://lh3.googleusercontent.com/BR61eSPgEHta1Bqu6XfV8hNtNq7fYP6VQdHCC6CBt-XodGNyxsfBOCgInPSLGmNA8i_G8OX6DCLOr1EzBYmJhJMFpCxFJZZnesU38zSmWBzYjRqmt1rMxA62BnmjbbU_Z3Zrt7w28g=w1920-h1080";
 				break;
 			case "Attack":
-				document.getElementsByClassName("cardTypeImage").item(i).src = "https://lh3.googleusercontent.com/YpVsn86SLRc9UoGMy0_EmJhAvh4Rn9qm9ImhI8YbDbyXAmc2osaEudSgCS0pcuDFPQbVkAuLCFfEaNHoL12VgwBl4HnBmKqm-ZdVXKTHjgozcK7D6ziJuPAmUbgdYmTPApa8U1beCQ=w1920-h1080";
+				document.getElementsByClassName("cardTypeImage").item(i).src = "https://lh3.googleusercontent.com/pw/AM-JKLWSXZaWknPkJDShyEyaGbzSodlnbLpP5sG7B3jgzjlhbgIPNnOMrP_rsgYdTUyY82tmyqc3IhhsHeLVI6GJlFXOQjFibl1emU8yCK3_CgjbVqqnLmP9ksvKKPecCb1enrwaPZG_T-lZICBoEmLrkART=w71-h79-no?authuser=0";
 				break;
 			case "Defense":
 				document.getElementsByClassName("cardTypeImage").item(i).src = "https://lh3.googleusercontent.com/WqY-r_pyKeWGfkFmm3cwHTiC-8YLrx1732uuyxpHjyip4RNJk_PIbouXuNESfEYbWelb9Xpiy-LHh6zvb6vMYc1rD42a22X0diJYqXzBkgB1vvZDrZn-uwLdaJCS2iZx5PCdeU8nRg=w1920-h1080";

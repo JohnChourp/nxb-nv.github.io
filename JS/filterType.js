@@ -1,4 +1,4 @@
-function filterCharType(){
+function filterType(){
 	const filterCharTypeDiv = document.getElementById("filterCharType");
 	
 	const btnShowAll = document.createElement("button");
@@ -56,7 +56,7 @@ function filterCharType(){
 	
 	filterCharType[1].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("attack")){
+			if(tr[i].cells[4].classList.contains("attack")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -67,7 +67,7 @@ function filterCharType(){
 	
 	filterCharType[2].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("assist")){
+			if(tr[i].cells[4].classList.contains("assist")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -78,7 +78,7 @@ function filterCharType(){
 	
 	filterCharType[3].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("defense")){
+			if(tr[i].cells[4].classList.contains("defense")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -89,7 +89,7 @@ function filterCharType(){
 	
 	filterCharType[4].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("skill")){
+			if(tr[i].cells[4].classList.contains("skill")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
@@ -100,7 +100,7 @@ function filterCharType(){
 	
 	filterCharType[5].addEventListener('click' , function(){
 		for(let i = 0; i < tRowsLength; i ++){
-			if(tr[i].cells[3].classList.contains("utility")){
+			if(tr[i].cells[4].classList.contains("utility")){
 				tr[i].style.display = "";
 			}else{
 				tr[i].style.display = "none";
