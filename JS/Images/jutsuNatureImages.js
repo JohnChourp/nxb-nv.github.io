@@ -1,4 +1,4 @@
-function natureImages(){
+function jutsuNatureImages(){
 	let jutsuNatureImageItemLength = document.getElementsByClassName("jutsuNatureImage");
 	
 	for(let i = 0; i < jutsuNatureImageItemLength.length; i ++){

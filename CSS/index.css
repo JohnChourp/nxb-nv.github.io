@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	overflow: hidden;
 	font: normal 14px Georgia, 'Times New Roman', Times, serif;
+	transition: color .2s, background-color .2s;
 	background-color: var(--bg-color-body);
 	color: var(--text-color-body);
 }

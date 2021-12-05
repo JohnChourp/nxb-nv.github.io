@@ -1,4 +1,4 @@
-function sortAllNinjutsuCards(n){
+function sort(n){
 	let table , rows , switching , i , x , y , shouldSwitch , dir , switchCount = 0;
 	
 	table = document.getElementById("sortTable");
@@ -22,33 +22,17 @@ function sortAllNinjutsuCards(n){
 			y = rows[i + 1].getElementsByTagName("TD")[n];
 			/*check if the two rows should switch place,
 			 based on the direction, asc or desc:*/
-			if(n === 17 || n === 14 || n === 13){
-				if(dir === "asc"){
-					if(parseInt(x.innerHTML) > parseInt(y.innerHTML)){
-						//if so, mark as a switch and break the loop:
-						shouldSwitch = true;
-						break;
-					}
-				}else if(dir === "desc"){
-					if(parseInt(x.innerHTML) < parseInt(y.innerHTML)){
-						//if so, mark as a switch and break the loop:
-						shouldSwitch = true;
-						break;
-					}
+			if(dir === "asc"){
+				if(x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
+					//if so, mark as a switch and break the loop:
+					shouldSwitch = true;
+					break;
 				}
-			}else{
-				if(dir === "asc"){
-					if(x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
-						//if so, mark as a switch and break the loop:
-						shouldSwitch = true;
-						break;
-					}
-				}else if(dir === "desc"){
-					if(x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
-						//if so, mark as a switch and break the loop:
-						shouldSwitch = true;
-						break;
-					}
+			}else if(dir === "desc"){
+				if(x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
+					//if so, mark as a switch and break the loop:
+					shouldSwitch = true;
+					break;
 				}
 			}
 		}
