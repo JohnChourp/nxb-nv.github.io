@@ -33,14 +33,14 @@ function loadEntries100(){
 }
 
 function specificEntries(){
-	document.getElementById("IdContentEntries").classList.toggle("show");
-	let showEntries = document.getElementById("IdContentEntries").children;
+	document.getElementsByClassName("contentEntries").item(0).classList.toggle("show");
+	let showEntries = document.getElementsByClassName("contentEntries").item(0).children;
 	for(let i = 0; i < showEntries.length; i ++){
 		showEntries[i].addEventListener('click' , function(){
-			showEntries[i].classList.add("dropDownActive");
+			showEntries[i].classList.add("entriesActive");
 			for(let j = 0; j < showEntries.length; j ++){
-				if((showEntries[j].classList.contains("dropDownActive") === showEntries[i].classList.contains("dropDownActive")) && (j !== i)){
-					showEntries[j].classList.remove("dropDownActive");
+				if((showEntries[j].classList.contains("entriesActive") === showEntries[i].classList.contains("entriesActive")) && (j !== i)){
+					showEntries[j].classList.remove("entriesActive");
 				}
 			}
 		});

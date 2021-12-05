@@ -43,6 +43,7 @@ function createPaginator(n){
 	aResults.innerHTML = "Showing 1 to " + n + " of " + ((tRowsLength - 1)) + " entries";
 	paginationDiv.appendChild(aResults);
 }
+
 function paginator(n){
 	createPaginator(n);
 	let table = document.getElementById("sortTable");
