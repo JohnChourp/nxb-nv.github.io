@@ -1,0 +1,42 @@
+:root {
+	--background-webkit-scrollbar-track: #F0F0F0;
+	--background-webkit-scrollbar-thumb: #CECECE;
+	--background-webkit-scrollbar-thumb-hover: #A7A7A7;
+}
+
+/*  the scrollbar. */
+::-webkit-scrollbar {
+	width: 15px;
+	height: 15px;
+}
+
+/* the track (progress bar) of the scrollbar. */
+::-webkit-scrollbar-track {
+	background-color: var(--background-webkit-scrollbar-track);
+}
+
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-thumb {
+	background: var(--background-webkit-scrollbar-thumb);
+	height: 135px;
+}
+
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--background-webkit-scrollbar-thumb-hover);
+}
+
+/* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+::-webkit-scrollbar-corner {
+	background: var(--background-webkit-scrollbar-track);
+}
+.ContentForIndex {
+	height: 620px;
+	overflow: auto;
+}
+
+.ContentForAllNinjutsuCards {
+	height: 560px;
+	overflow: auto;
+}
+

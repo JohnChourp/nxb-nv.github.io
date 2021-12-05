@@ -1,0 +1,108 @@
+.cardThumb {
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.cardHover {
+	transition: transform .2s; /* Animation */
+}
+
+.cardHover:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.abilitiesListBtn {
+	width: 120px;
+	height: 50px;
+	margin: 0 auto;
+	transition: transform .2s; /* Animation */
+}
+
+.abilitiesListBtn:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.linkBoardBtn {
+	width: 154px;
+	height: 40px;
+	margin: 0 auto;
+	transition: transform .2s; /* Animation */
+}
+
+.linkBoardBtn:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.toolThumb {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+figcaption {
+	font-family: 'Orienta', sans-serif;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.wrapper-table {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 250px 0 250px 250px 250px 250px;
+}
+
+.one {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.two {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.two-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.three {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.three-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.four {
+	grid-column: 2;
+	grid-row: 4;
+}
+
+.four-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.five {
+	grid-column: 2;
+	grid-row: 5;
+}
+
+.five-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.six {
+	grid-column: 2;
+	grid-row: 6;
+}
+
+.six-flex {
+	display: flex;
+	flex-direction: row;
+}
