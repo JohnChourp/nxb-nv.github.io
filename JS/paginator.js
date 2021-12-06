@@ -42,10 +42,10 @@ function createPaginator(n){
 	aResults.href = "#";
 	aResults.innerHTML = "Showing 1 to " + n + " of " + ((tRowsLength - 1)) + " entries";
 	paginationDiv.appendChild(aResults);
+	paginator(n);
 }
 
 function paginator(n){
-	createPaginator(n);
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
 	let paginatorLength = Math.ceil(tRowsLength / n);

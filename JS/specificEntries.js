@@ -18,7 +18,8 @@ function createSpecificEntries(){
 	const a10 = document.createElement("a");
 	a10.href = "#";
 	a10.onclick = function(){
-		loadEntries10();
+		deletePaginator();
+		createPaginator(10);
 	}
 	a10.innerHTML = "10";
 	entriesContentDivDiv.appendChild(a10);
@@ -26,7 +27,8 @@ function createSpecificEntries(){
 	const a25 = document.createElement("a");
 	a25.href = "#";
 	a25.onclick = function(){
-		loadEntries25();
+		deletePaginator();
+		createPaginator(25);
 	}
 	a25.innerHTML = "25";
 	entriesContentDivDiv.appendChild(a25);
@@ -34,7 +36,8 @@ function createSpecificEntries(){
 	const a50 = document.createElement("a");
 	a50.href = "#";
 	a50.onclick = function(){
-		loadEntries50();
+		deletePaginator();
+		createPaginator(50);
 	}
 	a50.innerHTML = "50";
 	entriesContentDivDiv.appendChild(a50);
@@ -42,7 +45,8 @@ function createSpecificEntries(){
 	const a100 = document.createElement("a");
 	a100.href = "#";
 	a100.onclick = function(){
-		loadEntries100();
+		deletePaginator();
+		createPaginator(100);
 	}
 	a100.innerHTML = "100";
 	entriesContentDivDiv.appendChild(a100);
@@ -60,26 +64,6 @@ window.onclick = function(event){
 			}
 		}
 	}
-}
-
-function loadEntries10(){
-	deletePaginator();
-	paginator(10);
-}
-
-function loadEntries25(){
-	deletePaginator();
-	paginator(25);
-}
-
-function loadEntries50(){
-	deletePaginator();
-	paginator(50);
-}
-
-function loadEntries100(){
-	deletePaginator();
-	paginator(100);
 }
 
 function specificEntries(){
