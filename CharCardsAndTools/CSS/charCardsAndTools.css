@@ -6,6 +6,23 @@ body {
 	font: normal 14px 'Times New Roman', Times, serif;
 }
 
+th, td {
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+th {
+	background: #EE3E19;
+}
+
+td {
+	background: #F49907;
+}
+
+td:hover, th:hover {
+	background-color: #A46A1F;
+}
+
 a:link {
 	color: #00A5A8;
 	font-weight: bold;
