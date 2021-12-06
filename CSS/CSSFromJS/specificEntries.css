@@ -44,7 +44,7 @@
 }
 
 
-@media screen and (max-height: 2400px) {
+@media screen and (min-height: 1000px) {
 	#entries {
 		font: normal 50px Georgia, 'Times New Roman', Times, serif;
 		width: 380px;
@@ -59,10 +59,7 @@
 	.contentEntries {
 		min-width: 300px;
 	}
-}
-
-
-@media screen and (max-height: 2400px) {
+	
 	.rankImage {
 		height: 40px;
 	}

@@ -15,7 +15,7 @@
 
 .dark{}
 
-@media screen and (max-height: 2400px) {
+@media screen and (min-height: 1000px) {
 	.mode {
 		width:360px;
 		height: 60px;

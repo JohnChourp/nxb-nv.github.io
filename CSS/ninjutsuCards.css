@@ -65,7 +65,7 @@ body {
 	text-align: center;
 }
 
-@media screen and (max-height: 2400px) {
+@media screen and (min-height: 1000px) {
 	.thumbCard {
 		width:130px;
 		height:97px;

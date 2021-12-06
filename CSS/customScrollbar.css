@@ -41,7 +41,7 @@
 	overflow: auto;
 }
 
-@media screen and (max-height: 2400px) {
+@media screen and (min-height: 1000px) {
 	.indexTable {
 		height: 2000px;
 		width: 1200px;
