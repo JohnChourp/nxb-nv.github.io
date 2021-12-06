@@ -24,11 +24,9 @@
 	<!-- JS Start -->
 	<script src="JS/Libraries/jquery3_6_0.js" type="text/javascript"></script>
 	
-	<script src="JS/Images/sortImages.js" type="text/javascript"></script>
-	<script src="JS/Images/rankLevelImages.js" type="text/javascript"></script>
+	<script src="JS/Images/images.js" type="text/javascript"></script>
 	
 	<script src="JS/searchIndex.js" type="text/javascript"></script>
-	<script src="JS/sortIndex.js" type="text/javascript"></script>
 	
 	<script src="JS/filterType.js" type="text/javascript"></script>
 	<script src="JS/paginator.js" type="text/javascript"></script>
@@ -38,7 +36,7 @@
 	
 	<title>Naruto x Boruto Ninja Voltage Character Table</title>
 </head>
-<body onload="changeDarkMode(); createPaginator(10); filterType(); createSpecificEntries(); rankLevelImages(); placeSortImages();">
+<body onload="changeDarkMode(); createPaginator(10); filterType(); createSpecificEntries(); rankLvImages(); setSortImages();">
 
 <div>
 	<div class="mode">Dark mode:<span class="change pointerCursor">OFF</span></div>
@@ -54,19 +52,19 @@
 		<thead>
 		<tr>
 			<th class="pointerCursor" onclick="sortImages(0); sortIndex(0)" style="width:1%;">ID <img alt="SortDown"
-			                                                                                          class="sortIcon"
+			                                                                                          class="sortImage"
 			                                                                                          src=""/></th>
 			<th colspan="2" class="pointerCursor" onclick="sortImages(1); sortIndex(2)" style="width:15%;">Char <img
 					alt="SortDown"
-					class="sortIcon"
+					class="sortImage"
 					src=""/></th>
 			<th class="pointerCursor" onclick="sortImages(2); sortIndex(3)" style="width:1%;">Type <img alt="SortDown"
-			                                                                                            class="sortIcon"
+			                                                                                            class="sortImage"
 			                                                                                            src=""/></th>
 			<th class="pointerCursor" onclick="sortImages(3); sortIndex(4)" style="width:1%;">Abilities <img
-					alt="SortDown" class="sortIcon" id="getImageAbilities" src=""/></th>
+					alt="SortDown" class="sortImage" id="getImageAbilities" src=""/></th>
 			<th class="pointerCursor" onclick="sortImages(4); sortIndex(5)" style="width:1%;">Rank <img alt="SortDown"
-			                                                                                            class="sortIcon"
+			                                                                                            class="sortImage"
 			                                                                                            src=""/></th>
 			<th>Trait1</th>
 			<th>Trait2</th>

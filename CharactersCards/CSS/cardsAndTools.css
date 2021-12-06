@@ -56,7 +56,7 @@ a:active {
 	font-weight: bold;
 }
 
-.cardTypeImage {
+.typeImage {
 	width: 40px;
 	/* Center the Image */
 	display: block;
@@ -82,7 +82,7 @@ a:active {
 	font-weight: bold;
 }
 
-.jutsuNatureImage {
+.natureImage {
 	width: 40px;
 	/* Center the Image */
 	display: block;
