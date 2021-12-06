@@ -47,9 +47,9 @@
 @media screen and (min-height: 1000px) {
 	#entries {
 		font: normal 50px Georgia, 'Times New Roman', Times, serif;
-		width: 380px;
-		height:70px;
-		margin-bottom: 10px;
+		width: 700px;
+		height:50px;
+		margin-bottom: 50px;
 	}
 	
 	.btnEntries {
