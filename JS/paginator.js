@@ -137,9 +137,6 @@ function paginator(n){
 			}
 		}
 	});
-	for(let i = 0; i < paginatorLength + 3; i ++){
-		document.getElementById("paginator").children.item(i).style.color = localStorage.getItem("paginationTextColor");
-	}
 }
 
 function deletePaginator(){

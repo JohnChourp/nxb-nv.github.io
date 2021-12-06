@@ -1,4 +1,5 @@
 :root {
+	--text-color-paginator: black;
 	--bg-color-paginator: white;
 	--border-paginator-a: 1px solid black;
 	--bg-color-paginator-a-hover-not-active: #DDD;
@@ -11,7 +12,7 @@
 }
 
 #paginator a {
-	color: black;
+	color: var(--text-color-paginator);
 	float: left;
 	padding: 8px 16px;
 	text-decoration: none;
