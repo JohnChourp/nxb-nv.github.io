@@ -1,9 +1,26 @@
 function ninjutsu(){
-	let rows = [[]];
+	let rows = [[]],rowsNJByLvl = [[]] , rowsNinJutsu = [[]] , rowsLength;
+	
+	rowsLength = document.getElementById("ninjutsuCheckByLv").rows.length;
+	rowsNinJutsu[0] = document.getElementById("ninjutsu").rows[6].cells;
+	rowsNinJutsu[1] = document.getElementById("ninjutsu").rows[7].cells;
+	
+	for(let i = 0 , j = 0; i < (rowsLength - 1) / 2, j < (rowsLength - 1) / 2; i = i + 2, j ++){
+		rowsNJByLvl[j] = document.getElementById("ninjutsuCheckByLv").rows[2 + i].cells;
+	}
+	
+	for(let i = 2 , j = 1; i < (rowsLength - 1) / 2, j < ((rowsLength - 1) / 2) - 1; i ++, j ++){
+		rowsNJByLvl[i][1].innerHTML = eval("parseInt(rowsNJByLvl[1][1].innerHTML) + ( parseInt(rowsNJByLvl[1][1].innerHTML) - parseInt(rowsNJByLvl[0][1].innerHTML) ) * j");
+		rowsNJByLvl[i][3].innerHTML = eval("parseInt(rowsNJByLvl[1][3].innerHTML) + ( parseInt(rowsNJByLvl[1][3].innerHTML) - parseInt(rowsNJByLvl[0][3].innerHTML) ) * j");
+		rowsNJByLvl[i][5].innerHTML = eval("parseInt(rowsNJByLvl[1][5].innerHTML) + ( parseInt(rowsNJByLvl[1][5].innerHTML) - parseInt(rowsNJByLvl[0][5].innerHTML) ) * j") + ".00%";
+		rowsNJByLvl[i][7].innerHTML = eval("parseInt(rowsNJByLvl[1][7].innerHTML) + ( parseInt(rowsNJByLvl[1][7].innerHTML) - parseInt(rowsNJByLvl[0][7].innerHTML) ) * j");
+	}
+	
 	rows[0] = document.getElementById("ninjutsu").rows[1].cells;
 	rows[1] = document.getElementById("ninjutsu").rows[2].cells;
 	rows[2] = document.getElementById("ninjutsu").rows[3].cells;
 	rows[3] = document.getElementById("ninjutsu").rows[5].cells;
+	
 	
 	switch(document.getElementsByClassName("cardLevel").item(0).innerHTML){
 		case "Lv 70/70":
@@ -43,6 +60,10 @@ function ninjutsu(){
 					rows[1][4].innerHTML = "475";
 					break;
 			}
+			rowsNinJutsu[0][2].innerHTML = rowsNJByLvl[7][3].innerHTML;
+			rowsNinJutsu[0][4].innerHTML = rowsNJByLvl[7][5].innerHTML;
+			rowsNinJutsu[0][6].innerHTML = rowsNJByLvl[7][7].innerHTML;
+			rowsNinJutsu[1][1].innerHTML = rowsNJByLvl[7][1].innerHTML;
 			break;
 		case "Lv 60/60":
 			rows[2][1].innerHTML = "0.90%";
@@ -81,6 +102,10 @@ function ninjutsu(){
 					rows[1][4].innerHTML = "352";
 					break;
 			}
+			rowsNinJutsu[0][2].innerHTML = rowsNJByLvl[5][3].innerHTML;
+			rowsNinJutsu[0][4].innerHTML = rowsNJByLvl[5][5].innerHTML;
+			rowsNinJutsu[0][6].innerHTML = rowsNJByLvl[5][7].innerHTML;
+			rowsNinJutsu[1][1].innerHTML = rowsNJByLvl[5][1].innerHTML;
 			break;
 		case "Lv 40/40":
 			rows[2][1].innerHTML = "0.50%";
@@ -119,6 +144,10 @@ function ninjutsu(){
 					rows[1][4].innerHTML = "205";
 					break;
 			}
+			rowsNinJutsu[0][2].innerHTML = rowsNJByLvl[1][3].innerHTML;
+			rowsNinJutsu[0][4].innerHTML = rowsNJByLvl[1][5].innerHTML;
+			rowsNinJutsu[0][6].innerHTML = rowsNJByLvl[1][7].innerHTML;
+			rowsNinJutsu[1][1].innerHTML = rowsNJByLvl[1][1].innerHTML;
 			break;
 	}
 }

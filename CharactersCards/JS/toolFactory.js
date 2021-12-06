@@ -1,7 +1,7 @@
-function toolMaterials(){
-	let rankImageItemLength = document.getElementsByClassName("rankImage");
+function toolFactory(){
+	let toolImageLength = document.getElementsByClassName("rankImage");
 	
-	for(let i = 0; i < rankImageItemLength.length; i ++){
+	for(let i = 0; i < toolImageLength.length; i ++){
 		switch(document.getElementsByClassName("rankImage").item(i).alt){
 			case "5 Star":
 				document.getElementsByClassName("productionCost").item(i).innerHTML = "600000";
