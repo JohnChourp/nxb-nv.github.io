@@ -1,0 +1,66 @@
+:root{
+	--bg-color-body: white;
+	--text-color-body: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font: normal 14px Georgia, 'Times New Roman', Times, serif;
+	background-color: var(--bg-color-body);
+	color: var(--text-color-body);
+}
+
+.id {
+	text-align: center;
+}
+
+.category {
+	text-align: center;
+	font-weight: bold;
+}
+
+.thumbCard {
+	width:60px;
+	height:45px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.jutsuName {
+	text-align: center;
+	font-weight: bold;
+}
+
+.jutsuImage {
+	height: 50px;
+	width: 50px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.jutsuLv {
+	text-align: center;
+}
+.cpCost {
+	text-align: center;
+}
+
+.cri {
+	text-align: center;
+}
+
+.pow {
+	text-align: center;
+}
+
+.rt {
+	text-align: center;
+}

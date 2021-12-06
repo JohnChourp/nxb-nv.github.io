@@ -63,7 +63,7 @@
 }
 
 .natureImage {
-	height: 15px;
+	height: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -97,6 +97,15 @@ a:active {
 
 .rankImage {
 	height: 15px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.rtImage {
+	width: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
