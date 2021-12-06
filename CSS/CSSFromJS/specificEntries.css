@@ -1,0 +1,44 @@
+#entries {
+	display: inline-block;
+	width: 160px;
+}
+
+#entries a:hover {
+	background-color: #DDD;
+}
+
+.btnEntries {
+	background-color: #3498DB;
+	color: white;
+	padding: 6px;
+	border: none;
+	cursor: pointer;
+}
+
+.btnEntries:hover, .btnEntries:focus {
+	background-color: #2980B9;
+}
+
+.contentEntries {
+	display: none;
+	position: absolute;
+	min-width: 157px;
+	background-color: #F1F1F1;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.contentEntries a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.show {
+	display: block;
+}
+
+.entriesActive {
+	background-color: #4BAF5C;
+}

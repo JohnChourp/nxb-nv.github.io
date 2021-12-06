@@ -16,50 +16,51 @@ body {
 	text-align: center;
 }
 
-.indexCharImage {
-	height: 40px;
-	width: 40px;
+.category {
+	text-align: center;
+	font-weight: bold;
+}
+
+.thumbCard {
+	width:60px;
+	height:45px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
-	transition: transform .2s; /* Animation */
 }
 
-.indexCharImage:hover {
-	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.jutsuName {
+	text-align: center;
+	font-weight: bold;
 }
 
-.name {
-	color: DarkTurquoise;
+.jutsuImage {
+	height: 50px;
+	width: 50px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
-.name:hover {
-	cursor: pointer;
-	text-decoration: underline;
+.jutsuLv {
+	text-align: center;
 }
-
-.abilities {
+.cpCost {
 	text-align: center;
 }
 
-.trait1 {
+.cri {
 	text-align: center;
 }
 
-.trait2 {
+.pow {
 	text-align: center;
 }
 
-.trait3 {
-	text-align: center;
-}
-
-.trait4 {
-	text-align: center;
-}
-
-.trait5 {
+.rt {
 	text-align: center;
 }

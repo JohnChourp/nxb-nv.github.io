@@ -1,0 +1,30 @@
+:root {
+	--text-color-paginator: black;
+	--bg-color-paginator: white;
+	--border-paginator-a: 1px solid black;
+	--bg-color-paginator-a-hover-not-active: #DDD;
+}
+
+#paginator {
+	display: inline-block;
+	background-color: var(--bg-color-paginator);
+	width: 100%;
+}
+
+#paginator a {
+	color: var(--text-color-paginator);
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: var(--border-paginator-a);
+}
+
+#paginator a.active {
+	background-color: #4CAF50;
+	color: white;
+	border: 1px solid #4CAF50;
+}
+
+#paginator a:hover:not(.active) {
+	background-color: var(--bg-color-paginator-a-hover-not-active);
+}

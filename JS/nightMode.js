@@ -7,7 +7,7 @@ function darkModeOptions(){
 	
 	localStorage.setItem("paginationTextColor" , "white");
 	localStorage.setItem("bgColorPaginator" , "#404040");
-	localStorage.setItem("borderPaginationA" , "1px solid #DDD");
+	localStorage.setItem("borderPaginatorA" , "1px solid #DDD");
 	localStorage.setItem("bgColorPaginatorAHoverNotActive" , "#7C7A7A");
 	
 	localStorage.setItem("bgColorWebkitScrollbarTrack" , "#323232");
@@ -22,9 +22,9 @@ function lightModeOptions(){
 	localStorage.removeItem("myInputBgColor");
 	localStorage.removeItem("myInputTextColor");
 	
-	localStorage.removeItem("paginationTextColor");
+	localStorage.setItem("paginationTextColor" , "black");
 	localStorage.setItem("bgColorPaginator" , "white");
-	localStorage.setItem("borderPaginationA" , "1px solid black");
+	localStorage.setItem("borderPaginatorA" , "1px solid black");
 	localStorage.setItem("bgColorPaginatorAHoverNotActive" , "#989696");
 	
 	localStorage.setItem("bgColorWebkitScrollbarTrack" , "#F0F0F0");
@@ -34,15 +34,6 @@ function lightModeOptions(){
 
 function setModeValues(){
 	const root = document.querySelector(':root');
-	let paginatorLength;
-	
-	let table = document.getElementById("sortTable");
-	let tRowsLength = table.rows.length;
-	paginatorLength = Math.ceil(tRowsLength / 10);
-	
-	for(let i = 0; i < paginatorLength + 3; i ++){
-		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
-	}
 	
 	root.style.setProperty('--bg-color-body' , localStorage.getItem("bgColorBody"));
 	root.style.setProperty('--text-color-body' , localStorage.getItem("textColorBody"));
@@ -50,9 +41,12 @@ function setModeValues(){
 	root.style.setProperty('--bg-color-myInput' , localStorage.getItem("myInputBgColor"));
 	root.style.setProperty('--text-color-myInput' , localStorage.getItem("myInputTextColor"));
 	
+	
+	root.style.setProperty('--text-color-paginator' , localStorage.getItem("paginationTextColor"));
 	root.style.setProperty('--bg-color-paginator' , localStorage.getItem("bgColorPaginator"));
-	root.style.setProperty('--border-pagination-a' , localStorage.getItem("borderPaginationA"));
+	root.style.setProperty('--border-paginator-a' , localStorage.getItem("borderPaginatorA"));
 	root.style.setProperty('--bg-color-paginator-a-hover-not-active' , localStorage.getItem("bgColorPaginatorAHoverNotActive"));
+	
 	root.style.setProperty('--background-webkit-scrollbar-track' , localStorage.getItem("bgColorWebkitScrollbarTrack"));
 	root.style.setProperty('--background-webkit-scrollbar-thumb' , localStorage.getItem("bgColorWebkitScrollbarThumb"));
 	root.style.setProperty('--background-webkit-scrollbar-thumb-hover' , localStorage.getItem("bgColorWebkitScrollbarThumbHover"));
@@ -82,6 +76,5 @@ function changeDarkMode(){
 		}
 		setModeValues();
 	});
-	
 	setModeValues();
 }

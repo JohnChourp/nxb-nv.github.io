@@ -1,5 +1,5 @@
 function createPaginator(n){
-	const paginationDiv = document.getElementById("pagination");
+	const paginationDiv = document.getElementById("paginator");
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
 	let paginatorLength = Math.ceil(tRowsLength / n);
@@ -42,8 +42,16 @@ function createPaginator(n){
 	aResults.href = "#";
 	aResults.innerHTML = "Showing 1 to " + n + " of " + ((tRowsLength - 1)) + " entries";
 	paginationDiv.appendChild(aResults);
+	paginator(n);
+}
+
+function paginator(n){
+	let table = document.getElementById("sortTable");
+	let tRowsLength = table.rows.length;
+	let paginatorLength = Math.ceil(tRowsLength / n);
+	let tr = table.getElementsByTagName("tr");
 	
-	let pagination = document.getElementById("pagination").children;
+	let pagination = document.getElementById("paginator").children;
 	
 	pagination[0].addEventListener('click' , function(){
 		for(let i = 2; i < paginatorLength + 1; i ++){
@@ -129,26 +137,23 @@ function createPaginator(n){
 			}
 		}
 	});
-	for(let i = 0; i < paginatorLength + 3; i ++){
-		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
-	}
-	localStorage.setItem("numberOfEntries" , n);
 }
 
 function deletePaginator(){
-	const paginationDiv = document.getElementById("pagination");
-	const length = document.getElementById("pagination").children.length;
-	const aResults = document.getElementsByTagName("a").item((length + 4));
-	paginationDiv.removeChild(aResults);
+	const paginationDiv = document.getElementById("paginator");
+	const length = document.getElementById("paginator").children.length;
+	const lengthDiff = document.getElementsByTagName("a").length - document.getElementById("paginator").children.length;
 	
-	const aNext = document.getElementsByTagName("a").item((length + 4) - 1);
+	const aResults = document.getElementsByTagName("a").item((length - 1) + lengthDiff);
+	paginationDiv.removeChild(aResults);
+	const aNext = document.getElementsByTagName("a").item((length - 2) + lengthDiff);
 	paginationDiv.removeChild(aNext);
 	
-	for(let i = (length + 4) - 2; i > 5; i --){
+	for(let i = ((length - 3) + lengthDiff); i > lengthDiff; i --){
 		const a = document.getElementsByTagName("a").item(i);
 		paginationDiv.removeChild(a);
 	}
 	
-	const aPrevious = document.getElementsByTagName("a").item(5);
+	const aPrevious = document.getElementsByTagName("a").item(lengthDiff);
 	paginationDiv.removeChild(aPrevious);
 }

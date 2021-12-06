@@ -9,11 +9,11 @@
 	font-size: 20px;
 }
 
-.cardType {
+.type {
 	font-weight: bold;
 }
 
-.cardTypeImage {
+.typeImage {
 	width: 40px;
 	/* Center the Image */
 	display: block;

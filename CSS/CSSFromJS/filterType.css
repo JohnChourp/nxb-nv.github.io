@@ -1,0 +1,22 @@
+#filterType {
+	display: inline-block;
+	width: 380px;
+}
+
+#filterType .btnType {
+	border: none;
+	outline: none;
+	padding: 6px 10px;
+	background-color: #F1F1F1;
+	cursor: pointer;
+	margin: 10px 2px;
+}
+
+#filterType .btnType:hover {
+	background-color: #B2B0B0;
+}
+
+#filterType .btnType.active {
+	background-color: #666;
+	color: white;
+}
