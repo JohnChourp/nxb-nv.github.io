@@ -28,3 +28,10 @@
 #paginator a:hover:not(.active) {
 	background-color: var(--bg-color-paginator-a-hover-not-active);
 }
+
+@media screen and (max-height: 2400px) {
+	#paginator {
+		width: 1200px;
+		height:200px;
+	}
+}

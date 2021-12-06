@@ -112,3 +112,17 @@ a:active {
 	margin-right: auto;
 	/* Center the Image */
 }
+
+@media screen and (max-height: 2400px) {
+	.typeImage {
+		height: 100px;
+	}
+	
+	.natureImage {
+		height: 100px;
+	}
+	
+	.rtImage {
+		width: 60px;
+	}
+}

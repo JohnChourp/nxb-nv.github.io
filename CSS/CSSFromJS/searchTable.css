@@ -9,7 +9,7 @@
 	background-repeat: no-repeat;
 	width: 100%;
 	font-size: 14px;
-	padding: 8px 6px 6px 30px;
+	padding: 8px 6px 6px 80px;
 	border: 1px solid #DDD;
 	margin-bottom: 12px;
 	background-color: var(--bg-color-myInput);
@@ -43,4 +43,23 @@
 
 #sortTable th {
 	text-align: center;
+}
+
+@media screen and (max-height: 2400px) {
+	#sortTable {
+		height: 2000px;
+		font-size: 50px;
+		
+	}
+	
+	#myInput {
+		font-size: 50px;
+		background-size: 60px;
+		width: 1112px;
+	}
+	
+	.sortImage {
+		height: 100px;
+		width: 100px;
+	}
 }

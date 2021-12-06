@@ -36,3 +36,20 @@
 	overflow: auto;
 }
 
+.ninjutsuCardsTable {
+	height: 520px;
+	overflow: auto;
+}
+
+@media screen and (max-height: 2400px) {
+	.indexTable {
+		height: 2000px;
+		width: 1200px;
+	}
+	
+	.ninjutsuCardsTable {
+		height: 2000px;
+		width: 1200px;
+	}
+}
+

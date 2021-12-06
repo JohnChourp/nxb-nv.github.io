@@ -63,3 +63,18 @@ body {
 .trait5 {
 	text-align: center;
 }
+
+@media screen and (max-height: 2400px) {
+	.indexCharImage {
+		height: 110px;
+		width: 110px;
+	}
+	
+	body {
+		font: normal 50px Georgia, 'Times New Roman', Times, serif;
+	}
+	
+	.optionsTable {
+		width: 1200px;
+	}
+}

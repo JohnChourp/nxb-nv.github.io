@@ -6,7 +6,7 @@ function createSpecificEntries(){
 	btnEntries.onclick = function(){
 		specificEntries();
 	}
-	btnEntries.innerHTML = "Show Number of Entries";
+	btnEntries.innerHTML = "Number Entries";
 	entriesDiv.appendChild(btnEntries);
 	
 	const entriesContentDiv = document.createElement("div");
