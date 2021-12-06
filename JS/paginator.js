@@ -1,5 +1,5 @@
 function createPaginator(n){
-	const paginationDiv = document.getElementById("pagination");
+	const paginationDiv = document.getElementById("paginator");
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
 	let paginatorLength = Math.ceil(tRowsLength / n);
@@ -51,7 +51,7 @@ function paginator(n){
 	let paginatorLength = Math.ceil(tRowsLength / n);
 	let tr = table.getElementsByTagName("tr");
 	
-	let pagination = document.getElementById("pagination").children;
+	let pagination = document.getElementById("paginator").children;
 	
 	pagination[0].addEventListener('click' , function(){
 		for(let i = 2; i < paginatorLength + 1; i ++){
@@ -138,14 +138,14 @@ function paginator(n){
 		}
 	});
 	for(let i = 0; i < paginatorLength + 3; i ++){
-		document.getElementById("pagination").children.item(i).style.color = localStorage.getItem("paginationTextColor");
+		document.getElementById("paginator").children.item(i).style.color = localStorage.getItem("paginationTextColor");
 	}
 }
 
 function deletePaginator(){
-	const paginationDiv = document.getElementById("pagination");
-	const length = document.getElementById("pagination").children.length;
-	const lengthDiff = document.getElementsByTagName("a").length - document.getElementById("pagination").children.length;
+	const paginationDiv = document.getElementById("paginator");
+	const length = document.getElementById("paginator").children.length;
+	const lengthDiff = document.getElementsByTagName("a").length - document.getElementById("paginator").children.length;
 	
 	const aResults = document.getElementsByTagName("a").item((length - 1) + lengthDiff);
 	paginationDiv.removeChild(aResults);

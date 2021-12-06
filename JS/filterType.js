@@ -1,4 +1,4 @@
-function filterCharType(){
+function createFilterType(){
 	const filterCharTypeDiv = document.getElementById("filterType");
 	
 	const btnShowAll = document.createElement("button");
@@ -30,7 +30,9 @@ function filterCharType(){
 	btnUtility.className = "btnType";
 	btnUtility.innerHTML = "Utility";
 	filterCharTypeDiv.appendChild(btnUtility);
-	
+}
+function filterType(){
+	createFilterType();
 	let filterCharType = document.getElementById("filterType").children;
 	
 	let table = document.getElementById("sortTable");
