@@ -22,7 +22,7 @@
 .contentEntries {
 	display: none;
 	position: absolute;
-	min-width: 157px;
+	min-width: 160px;
 	background-color: #F1F1F1;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
@@ -41,4 +41,29 @@
 
 .entriesActive {
 	background-color: #4BAF5C;
+}
+
+
+@media screen and (max-height: 2400px) {
+	#entries {
+		font: normal 50px Georgia, 'Times New Roman', Times, serif;
+		width: 380px;
+		height:70px;
+		margin-bottom: 10px;
+	}
+	
+	.btnEntries {
+		font: normal 50px Georgia, 'Times New Roman', Times, serif;
+	}
+	
+	.contentEntries {
+		min-width: 300px;
+	}
+}
+
+
+@media screen and (max-height: 2400px) {
+	.rankImage {
+		height: 40px;
+	}
 }

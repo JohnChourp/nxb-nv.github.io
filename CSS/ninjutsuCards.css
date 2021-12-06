@@ -64,3 +64,28 @@ body {
 .rt {
 	text-align: center;
 }
+
+@media screen and (max-height: 2400px) {
+	.thumbCard {
+		width:130px;
+		height:97px;
+	}
+	
+	.jutsuImage {
+		height: 110px;
+		width: 110px;
+		/* Center the Image */
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/* Center the Image */
+	}
+	
+	body {
+		font: normal 50px Georgia, 'Times New Roman', Times, serif;
+	}
+	
+	.optionsTable {
+		width: 1200px;
+	}
+}

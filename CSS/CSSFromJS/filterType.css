@@ -20,3 +20,14 @@
 	background-color: #666;
 	color: white;
 }
+
+@media screen and (max-height: 2400px) {
+	#filterType {
+		width: 800px;
+		height: 200px;
+	}
+	
+	#filterType .btnType {
+		font: normal 50px Georgia, 'Times New Roman', Times, serif;
+	}
+}
