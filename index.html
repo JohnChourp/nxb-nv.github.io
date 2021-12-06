@@ -38,23 +38,11 @@
 	
 	<title>Naruto x Boruto Ninja Voltage Character Table</title>
 </head>
-<body onload="paginator(10); changeDarkMode(); filterType(); rankLevelImages(); placeSortImages();">
+<body onload="changeDarkMode(); paginator(10); filterType(); createSpecificEntries(); rankLevelImages(); placeSortImages();">
 <div>
-	<div class="mode">
-		Dark mode:<span class="change pointerCursor">OFF</span>
-	</div>
-	
+	<div class="mode">Dark mode:<span class="change pointerCursor">OFF</span></div>
 	<div id="filterType"></div>
-	
-	<div class="entries">
-		<button class="btnEntries" onclick="specificEntries();">Show Number of Entries</button>
-		<div class="contentEntries">
-			<a href="#" onclick="loadEntries10()">10</a>
-			<a href="#" onclick="loadEntries25()">25</a>
-			<a href="#" onclick="loadEntries50()">50</a>
-			<a href="#" onclick="loadEntries100()">100</a>
-		</div>
-	</div>
+	<div id="entries"></div>
 </div>
 
 <input onkeyup="searchIndex();" id="myInput" placeholder="Search for Name,Type,Abilities,Traits..."
@@ -67,9 +55,10 @@
 			<th class="pointerCursor" onclick="sortImages(0); sortIndex(0)" style="width:1%;">ID <img alt="SortDown"
 			                                                                                          class="sortIcon"
 			                                                                                          src=""/></th>
-			<th colspan="2" class="pointerCursor" onclick="sortImages(1); sortIndex(2)" style="width:15%;">Char <img alt="SortDown"
-			                                                                                                         class="sortIcon"
-			                                                                                                         src=""/></th>
+			<th colspan="2" class="pointerCursor" onclick="sortImages(1); sortIndex(2)" style="width:15%;">Char <img
+					alt="SortDown"
+					class="sortIcon"
+					src=""/></th>
 			<th class="pointerCursor" onclick="sortImages(2); sortIndex(3)" style="width:1%;">Type <img alt="SortDown"
 			                                                                                            class="sortIcon"
 			                                                                                            src=""/></th>

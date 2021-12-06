@@ -1,6 +1,53 @@
 function createSpecificEntries(){
-
+	const entriesDiv = document.getElementById("entries");
+	
+	const btnEntries = document.createElement("button");
+	btnEntries.className = "btnEntries";
+	btnEntries.onclick = function(){
+		specificEntries();
+	}
+	btnEntries.innerHTML = "Show Number of Entries";
+	entriesDiv.appendChild(btnEntries);
+	
+	const entriesContentDiv = document.createElement("div");
+	entriesContentDiv.className = "contentEntries";
+	entriesDiv.appendChild(entriesContentDiv);
+	
+	const entriesContentDivDiv = document.getElementsByClassName("contentEntries").item(0);
+	
+	const a10 = document.createElement("a");
+	a10.href = "#";
+	a10.onclick = function(){
+		loadEntries10();
+	}
+	a10.innerHTML = "10";
+	entriesContentDivDiv.appendChild(a10);
+	
+	const a25 = document.createElement("a");
+	a25.href = "#";
+	a25.onclick = function(){
+		loadEntries25();
+	}
+	a25.innerHTML = "25";
+	entriesContentDivDiv.appendChild(a25);
+	
+	const a50 = document.createElement("a");
+	a50.href = "#";
+	a50.onclick = function(){
+		loadEntries50();
+	}
+	a50.innerHTML = "50";
+	entriesContentDivDiv.appendChild(a50);
+	
+	const a100 = document.createElement("a");
+	a100.href = "#";
+	a100.onclick = function(){
+		loadEntries100();
+	}
+	a100.innerHTML = "100";
+	entriesContentDivDiv.appendChild(a100);
 }
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event){
 	if(!event.target.matches('.btnEntries')){

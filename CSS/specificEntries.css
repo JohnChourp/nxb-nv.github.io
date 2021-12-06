@@ -1,9 +1,9 @@
-.entries {
+#entries {
 	display: inline-block;
 	width: 160px;
 }
 
-.entries a:hover {
+#entries a:hover {
 	background-color: #DDD;
 }
 
