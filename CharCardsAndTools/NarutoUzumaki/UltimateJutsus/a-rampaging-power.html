@@ -2,45 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	
 	<!-- Favicon Start -->
 	<link href="../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!-- Favicon End -->
-	
 	<!-- CSS Start -->
-	<link href="../../../CSS/charactersCards.css" rel="stylesheet" type="text/css"/>
+	<link href="../../CSS/charCardsAndTools.css" rel="stylesheet" type="text/css"/>
+	
 	<link href="../../../CSS/table.css" rel="stylesheet" type="text/css"/>
 	<link href="../../../CSS/animation.css" rel="stylesheet" type="text/css"/>
 	<link href="../../../CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
-	
-	<!-- CSS Start -->
-	<link href="../../CSS/cardsAndTools.css" rel="stylesheet" type="text/css"/>
-	<!-- CSS End -->
-	
 	<!-- JS Start -->
 	<script src="../../../JS/Images/images.js" type="text/javascript"></script>
-	<script src="../../JS/ninjutsu.js" type="text/javascript"></script>
+	
+	<script src="../../JS/ultimateJutsu.js" type="text/javascript"></script>
 	<!-- JS End -->
-	<title>A Warm Hand</title>
+	<title>A Rampaging Power!</title>
 </head>
-<body onload="ninjutsu(); natureImages(); typeImages(); rankLvImages();">
+<body onload="ultimateJutsu(); natureImages(); typeImages(); rankLvImages();">
 
-<p><span class="headings">A Warm Hand</span></p>
+<p><span class="headings">A Rampaging Power!</span></p>
 <div class="flex-container-cards-tools">
-	<table id="ninjutsu">
+	<table id="ultimateJutsu">
 		<thead>
 		<tr>
-			<th colspan="4">Ninjutsu</th>
+			<th colspan="4">Ultimate Jutsu</th>
 			<th colspan="4">Max Card Stats</th>
 		</tr>
 		</thead>
 		<tbody>
 		<tr>
-			<td class="cardType">Defense</td>
-			<td><img alt="Defense" class="typeImage" src=""/></td>
-			<td class="cardLevel">Lv 60/60</td>
-			<td><img alt="5 Star" class="rankImage" src=""/></td>
+			<td class="cardType">Attack</td>
+			<td><img alt="Attack" class="typeImage" src=""/></td>
+			<td class="cardLevel">Lv 70/70</td>
+			<td><img alt="6 Star" class="rankImage" src=""/></td>
 			<td>HP</td>
 			<td></td>
 			<td>CP</td>
@@ -49,7 +44,7 @@
 		<tr>
 			<td colspan="4" id="cardImage" rowspan="2"><img alt=""
 			                                                class="cardImage"
-			                                                src="https://lh3.googleusercontent.com/pw/AM-JKLVtaLvYQ0UslfKevOsSqbkvKZ9IUczUHrJZyl8jo2vY_yuxNo6evMx5WyCYcwRm5auljCGVls3oTXue-2vtJ-R6Ol1s3XZlqbnqTZMrP0YuRmIeBgFXvyDhnOeD0cOsQYRNtiitPqDiHBZ9NHCrZt8I=w1023-h764-no?authuser=0"/>
+			                                                src="https://lh3.googleusercontent.com/pw/AM-JKLVSMf7aCbHtZ_7tCtV20vnjQpZ33vaN8JnYJXEpibrW_z_1sjcZXHzv5c5GFFmeqb4yHX7bARNvo0XV4Z5DhFik942Aiv60F_R00pGpKGUwCzIEb2esmNNHtkiD15r8FVEGorRs_Yc34qswZxgFWX0O=w1023-h767-no?authuser=0"/>
 			</td>
 			<td>ATK</td>
 			<td></td>
@@ -66,16 +61,16 @@
 			<th colspan="8">Max Jutsu Stats</th>
 		</tr>
 		<tr>
-			<td class="jutsuNature">Manipulate</td>
-			<td><img alt="Manipulate" class="natureImage" src=""/></td>
-			<td colspan="4" id="jutsuName">Clone Arrow</td>
+			<td class="jutsuNature">Impact</td>
+			<td><img alt="Impact" class="natureImage" src=""/></td>
+			<td colspan="4" id="jutsuName">Wild Rampaging Blast</td>
 			<td>LVL</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td colspan="2"><img alt=""
 			                     id="jutsuImage"
-			                     src="https://lh3.googleusercontent.com/pw/AM-JKLXO7H9a6UItbvTcEZtu_NkqU7BgHTrSluh5VQbjgPtYpS_F_5DJecPs66VP7J4r2DqTeC3L77gReh3SRDmzLEWSCIg4jbkVvmuY06kkgNTgGuypeE-VJf7ivZAHhAaoaZgKTgI8RD4aRrCNeGnmMMtP=w122-h124-no?authuser=0"/>
+			                     src="https://lh3.googleusercontent.com/pw/AM-JKLVjyPOMOC0_UNj2Gf_VpXnmpS_DEYFFpsZII01m1XgURyWKKx6G75Rf5_GNPxuMO7wHuI2PNRmf8BymGa9wfLPwhPfbmGnCT4-G6LdR_4V8-HC2yc-uVqoYZD4-3tb317OaSCFKdh4vJvPkg-1wRYnj=w182-h181-no?authuser=0"/>
 			</td>
 			<td>CP Cost</td>
 			<td></td>
@@ -95,12 +90,14 @@
 		</tr>
 		<tr>
 			<td colspan="2">Info</td>
-			<td colspan="6">Hurls a shadow clone ahead, causing damage.</td>
+			<td colspan="6">Sends out a shock wave, causing a medium amount of damage and inflicting damage over time
+				[Effect: Medium], Also increases user's attack power and critical hit rate [Effect: Large].
+			</td>
 		</tr>
 		</tbody>
 	</table>
 	
-	<table id="ninjutsuCheckByLv">
+	<table id="ultimateJutsuCheckByLv">
 		<thead>
 		<tr>
 			<th colspan="8">Check By Lv</th>
@@ -110,43 +107,43 @@
 		<tr>
 			<td colspan="2">NJ Lv 1</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img alt="3 Star" class="rankImage" src=""/></td>
+			<td colspan="3"><img alt="5 Star" class="rankImage" src=""/></td>
 		</tr>
 		<tr>
 			<td><img alt=""
 			         class="rtImage"
 			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
 			</td>
-			<td>6</td>
+			<td>60</td>
 			<td>CP Cost</td>
-			<td>80</td>
+			<td>250</td>
 			<td>CRI</td>
 			<td>1.00%</td>
 			<td>POW</td>
-			<td>1400</td>
+			<td>3000</td>
 		</tr>
 		<tr>
 			<td colspan="2">NJ Lv 2</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img alt="3 Star" class="rankImage" src=""/></td>
+			<td colspan="3"><img alt="5 Star" class="rankImage" src=""/></td>
 		</tr>
 		<tr>
 			<td><img alt=""
 			         class="rtImage"
 			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
 			</td>
-			<td>6</td>
+			<td>60</td>
 			<td>CP Cost</td>
-			<td>80</td>
+			<td>250</td>
 			<td>CRI</td>
 			<td>6.00%</td>
 			<td>POW</td>
-			<td>2160</td>
+			<td>3300</td>
 		</tr>
 		<tr>
 			<td colspan="2">NJ Lv 3</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img alt="4 Star" class="rankImage" src=""/></td>
+			<td colspan="3"><img alt="5 Star" class="rankImage" src=""/></td>
 		</tr>
 		<tr>
 			<td><img alt=""
@@ -164,7 +161,7 @@
 		<tr>
 			<td colspan="2">NJ Lv 4</td>
 			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img alt="4 Star" class="rankImage" src=""/></td>
+			<td colspan="3"><img alt="5 Star" class="rankImage" src=""/></td>
 		</tr>
 		<tr>
 			<td><img alt=""
@@ -201,6 +198,42 @@
 			<td colspan="2">NJ Lv 6</td>
 			<td colspan="3">Card Rank</td>
 			<td colspan="3"><img alt="5 Star" class="rankImage" src=""/></td>
+		</tr>
+		<tr>
+			<td><img alt=""
+			         class="rtImage"
+			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
+			</td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 7</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img alt="6 Star" class="rankImage" src=""/></td>
+		</tr>
+		<tr>
+			<td><img alt=""
+			         class="rtImage"
+			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
+			</td>
+			<td></td>
+			<td>CP Cost</td>
+			<td></td>
+			<td>CRI</td>
+			<td></td>
+			<td>POW</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">NJ Lv 8</td>
+			<td colspan="3">Card Rank</td>
+			<td colspan="3"><img alt="6 Star" class="rankImage" src=""/></td>
 		</tr>
 		<tr>
 			<td><img alt=""
