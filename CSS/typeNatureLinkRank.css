@@ -1,0 +1,105 @@
+.attack {
+	color: red;
+	text-align: center;
+}
+
+.assist {
+	color: Lime;
+	text-align: center;
+}
+
+.defense {
+	color: Gold;
+	text-align: center;
+}
+
+.skill {
+	color: DodgerBlue;
+	text-align: center;
+}
+
+.utility {
+	color: Magenta;
+	text-align: center;
+}
+
+.typeImage {
+	height: 15px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.lunge {
+	color: #FD4D4D;
+	text-align: center;
+}
+
+.impact {
+	color: #F3EE3E;
+	text-align: center;
+}
+
+.annihilation {
+	color: #7870D3;
+	text-align: center;
+}
+
+.manipulate {
+	color: #A46A1F;
+	text-align: center;
+}
+
+.release {
+	color: #4BAF5C;
+	text-align: center;
+}
+
+.normal {
+	color: #A2A2A2;
+	text-align: center;
+}
+
+.natureImage {
+	height: 15px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+a:link {
+	color: DarkTurquoise;
+	text-decoration: none;
+}
+
+a:visited {
+	color: DarkTurquoise;
+	text-decoration: none;
+}
+
+a:hover {
+	color: Turquoise;
+	text-decoration: underline;
+}
+
+a:active {
+	color: Turquoise;
+	text-decoration: none;
+}
+
+.rankLv {
+	text-align: center;
+}
+
+.rankImage {
+	height: 15px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}

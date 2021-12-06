@@ -12,25 +12,54 @@ body {
 	color: var(--text-color-body);
 }
 
-#sortTable {
-	border-collapse: collapse;
-	width: 100%;
-	border: 1px solid #DDD;
-	font-size: 14px;
-	margin-bottom: 60px;
+.id {
+	text-align: center;
 }
 
-#sortTable tr {
-	border-bottom: 1px solid #DDD;
+.indexCharImage {
+	height: 40px;
+	width: 40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+	transition: transform .2s; /* Animation */
 }
 
-#sortTable th, td {
-	text-align: left;
-	padding: 5px;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
+.indexCharImage:hover {
+	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-#sortTable th {
+.name {
+	color: DarkTurquoise;
+}
+
+.name:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.abilities {
+	text-align: center;
+}
+
+.trait1 {
+	text-align: center;
+}
+
+.trait2 {
+	text-align: center;
+}
+
+.trait3 {
+	text-align: center;
+}
+
+.trait4 {
+	text-align: center;
+}
+
+.trait5 {
 	text-align: center;
 }

@@ -1,0 +1,25 @@
+.jutsu {
+	height: 50px;
+	width: 50px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.cpCost {
+	text-align: center;
+}
+
+.cri {
+	text-align: center;
+}
+
+.pow {
+	text-align: center;
+}
+
+.rt {
+	text-align: center;
+}
