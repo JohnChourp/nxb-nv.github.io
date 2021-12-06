@@ -8,6 +8,7 @@
 	<!-- CSS Start -->
 	<link href="../../CSS/charCardsAndTools.css" rel="stylesheet" type="text/css"/>
 	
+	<link href="../../../CSS/topNav.css" rel="stylesheet" type="text/css"/>
 	<link href="../../../CSS/animation.css" rel="stylesheet" type="text/css"/>
 	<link href="../../../CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
@@ -15,11 +16,19 @@
 	<script src="../../../JS/Images/images.js" type="text/javascript"></script>
 	
 	<script src="../../JS/ninjutsu.js" type="text/javascript"></script>
+	
+	<script src="../../../JS/topNav.js" type="text/javascript"></script>
 	<!-- JS End -->
 	<title>A Friend's Outstretched Hand</title>
 </head>
 <body onload="ninjutsu(); natureImages(); typeImages(); rankLvImages();">
-
+<div class="topnav" id="myTopnav">
+	<a href="../../../index.html">Characters</a>
+	<a href="../../../ninjutsu-cards.html">Ninjutsu Cards</a>
+	<a class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"><img alt="" src="../../../CSS/icon.png"></i>
+	</a>
+</div>
 <p><span class="headings">A Friend's Outstretched Hand</span></p>
 <div class="flex-container-cards-tools">
 	<table id="ninjutsu">
