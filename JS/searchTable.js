@@ -1,75 +1,39 @@
 function searchTable(){
-	let filterCharTypeDiv = document.getElementById("filterType").children;
-	let inputCharName = document.getElementById("myInput");
-	let inputCharType = document.getElementById("myInput");
-	let inputCharAbilities = document.getElementById("myInput");
-	let inputCharTrait1 = document.getElementById("myInput");
-	let inputCharTrait2 = document.getElementById("myInput");
-	let inputCharTrait3 = document.getElementById("myInput");
-	let inputCharTrait4 = document.getElementById("myInput");
-	let inputCharTrait5 = document.getElementById("myInput");
+	let input = [] , filter = [] , td = [] , txt = [] , index = [];
 	
-	let filterCharName = inputCharName.value.toUpperCase();
-	let filterCharType = inputCharType.value.toUpperCase();
-	let filterCharAbilities = inputCharAbilities.value.toUpperCase();
-	let filterCharTrait1 = inputCharTrait1.value.toUpperCase();
-	let filterCharTrait2 = inputCharTrait2.value.toUpperCase();
-	let filterCharTrait3 = inputCharTrait3.value.toUpperCase();
-	let filterCharTrait4 = inputCharTrait4.value.toUpperCase();
-	let filterCharTrait5 = inputCharTrait5.value.toUpperCase();
+	for(let i = 0; i < 8; i ++){
+		input[i] = document.getElementById("myInput");
+	}
+	
+	for(let i = 0; i < 8; i ++){
+		filter[i] = input[i].value.toUpperCase();
+	}
 	
 	let table = document.getElementById("sortTable");
 	let tr = table.getElementsByTagName("tr");
 	
 	for(let i = 0; i < tr.length; i ++){
 		
-		let tdCharName = tr[i].getElementsByTagName("td")[2];
-		let tdCharType = tr[i].getElementsByTagName("td")[3];
-		let tdCharAbilities = tr[i].getElementsByTagName("td")[4];
-		let tdCharTrait1 = tr[i].getElementsByTagName("td")[6];
-		let tdCharTrait2 = tr[i].getElementsByTagName("td")[7];
-		let tdCharTrait3 = tr[i].getElementsByTagName("td")[8];
-		let tdCharTrait4 = tr[i].getElementsByTagName("td")[9];
-		let tdCharTrait5 = tr[i].getElementsByTagName("td")[10];
+		td[0] = tr[i].getElementsByTagName("td")[2];
+		td[1] = tr[i].getElementsByTagName("td")[3];
+		td[2] = tr[i].getElementsByTagName("td")[4];
+		td[3] = tr[i].getElementsByTagName("td")[6];
+		td[4] = tr[i].getElementsByTagName("td")[7];
+		td[5] = tr[i].getElementsByTagName("td")[8];
+		td[6] = tr[i].getElementsByTagName("td")[9];
+		td[7] = tr[i].getElementsByTagName("td")[10];
 		
-		if(tdCharName && tdCharType && tdCharAbilities && tdCharTrait1 && tdCharTrait2 && tdCharTrait3 && tdCharTrait4 && tdCharTrait5){
-			let txtValueCharName = tdCharName.textContent || tdCharName.innerText;
-			let txtValueCharType = tdCharType.textContent || tdCharType.innerText;
-			let txtValueCharAbilities = tdCharAbilities.textContent || tdCharAbilities.innerText;
-			let txtValueCharTrait1 = tdCharTrait1.textContent || tdCharTrait1.innerText;
-			let txtValueCharTrait2 = tdCharTrait2.textContent || tdCharTrait2.innerText;
-			let txtValueCharTrait3 = tdCharTrait3.textContent || tdCharTrait3.innerText;
-			let txtValueCharTrait4 = tdCharTrait4.textContent || tdCharTrait4.innerText;
-			let txtValueCharTrait5 = tdCharTrait5.textContent || tdCharTrait5.innerText;
+		if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7]){
+			for(let i = 0; i < 8; i ++){
+				txt[i] = td[i].textContent || td[i].innerText;
+			}
 			
-			if(txtValueCharName.toUpperCase().indexOf(filterCharName) > - 1 || txtValueCharType.toUpperCase().indexOf(filterCharType) > - 1 || txtValueCharAbilities.toUpperCase().indexOf(filterCharAbilities) > - 1 || txtValueCharTrait1.toUpperCase().indexOf(filterCharTrait1) > - 1 || txtValueCharTrait2.toUpperCase().indexOf(filterCharTrait2) > - 1 || txtValueCharTrait3.toUpperCase().indexOf(filterCharTrait3) > - 1 || txtValueCharTrait4.toUpperCase().indexOf(filterCharTrait4) > - 1 || txtValueCharTrait5.toUpperCase().indexOf(filterCharTrait5) > - 1){
+			for(let i = 0; i < 8; i ++){
+				index[i] = txt[i].toUpperCase().indexOf(filter[i]);
+			}
+			
+			if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1){
 				tr[i].style.display = "";
-				
-				if(filterCharTypeDiv[1].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("attack")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[2].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("assist")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[3].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("defense")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[4].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("skill")){
-						tr[i].style.display = "none";
-					}
-				}
-				if(filterCharTypeDiv[5].classList.contains("active")){
-					if(!tr[i].cells[3].classList.contains("utility")){
-						tr[i].style.display = "none";
-					}
-				}
 			}else{
 				tr[i].style.display = "none";
 			}
