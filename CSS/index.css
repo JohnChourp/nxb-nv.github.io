@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	font: normal 14px Georgia, 'Times New Roman', Times, serif;
+	font: normal 100% Georgia, 'Times New Roman', Times, serif;
 	background-color: var(--bg-color-body);
 	color: var(--text-color-body);
 }
@@ -17,8 +17,8 @@ body {
 }
 
 .indexCharImage {
-	height: 40px;
-	width: 40px;
+	height: 8vh;
+	width: 8vh;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -62,19 +62,4 @@ body {
 
 .trait5 {
 	text-align: center;
-}
-
-@media screen and (min-height: 1000px) {
-	.indexCharImage {
-		height: 110px;
-		width: 110px;
-	}
-	
-	body {
-		font: normal 50px Georgia, 'Times New Roman', Times, serif;
-	}
-	
-	.optionsTable {
-		width: 1200px;
-	}
 }

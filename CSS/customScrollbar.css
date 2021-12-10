@@ -6,8 +6,8 @@
 
 /*  the scrollbar. */
 ::-webkit-scrollbar {
-	width: 15px;
-	height: 15px;
+	width: 2.13vh;
+	height: 2.13vh;
 }
 
 /* the track (progress bar) of the scrollbar. */
@@ -18,7 +18,7 @@
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb {
 	background: var(--background-webkit-scrollbar-thumb);
-	height: 135px;
+	height: 19.17vh;
 }
 
 /* the draggable scrolling handle. */
@@ -32,24 +32,12 @@
 }
 
 .indexTable {
-	height: 520px;
+	height: 63vh;
 	overflow: auto;
 }
 
 .ninjutsuCardsTable {
-	height: 520px;
+	height: 63vh;
 	overflow: auto;
-}
-
-@media screen and (min-height: 1000px) {
-	.indexTable {
-		height: 1800px;
-		width: 1200px;
-	}
-	
-	.ninjutsuCardsTable {
-		height: 1800px;
-		width: 1200px;
-	}
 }
 

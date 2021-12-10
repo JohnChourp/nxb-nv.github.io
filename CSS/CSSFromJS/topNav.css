@@ -10,10 +10,9 @@
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 1% 1%;
 	text-decoration: none;
-	font-size: 17px;
-
+	font-size: 100%;
 }
 
 /* Change the color of links on hover */
@@ -34,7 +33,7 @@
 }
 
 .iconImage {
-	width:17px;
+	width:40%;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -63,14 +62,4 @@
 
 .fa {
 	display: inline-block;
-}
-
-@media screen and (min-height: 1000px) {
-	.topnav {
-		width:1200px;
-	}
-	
-	.topnav a {
-		font-size: 50px;
-	}
 }

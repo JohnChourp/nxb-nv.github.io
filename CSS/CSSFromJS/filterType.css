@@ -1,15 +1,15 @@
 #filterType {
 	display: inline-block;
-	width: 380px;
+	width: 40%;
 }
 
 #filterType .btnType {
 	border: none;
 	outline: none;
-	padding: 6px 10px;
+	padding: 0.85vh 0.85vh;
 	background-color: #F1F1F1;
 	cursor: pointer;
-	margin: 10px 2px;
+	margin: 0.42vh 0.28vh;
 }
 
 #filterType .btnType:hover {
@@ -19,15 +19,4 @@
 #filterType .btnType.active {
 	background-color: #666;
 	color: white;
-}
-
-@media screen and (min-height: 1000px) {
-	#filterType {
-		width: 750px;
-		height: 200px;
-	}
-	
-	#filterType .btnType {
-		font: normal 50px Georgia, 'Times New Roman', Times, serif;
-	}
 }
