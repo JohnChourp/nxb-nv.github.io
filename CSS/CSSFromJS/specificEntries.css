@@ -1,6 +1,7 @@
 #entries {
 	display: inline-block;
-	width: 160px;
+	width: 50%;
+	padding: 1vh 0 1vh 0;
 }
 
 #entries a:hover {
@@ -10,7 +11,7 @@
 .btnEntries {
 	background-color: #3498DB;
 	color: white;
-	padding: 6px;
+	padding: 0.85vh;
 	border: none;
 	cursor: pointer;
 }
@@ -22,7 +23,7 @@
 .contentEntries {
 	display: none;
 	position: absolute;
-	min-width: 160px;
+	width: 14.3vh;
 	background-color: #F1F1F1;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
@@ -30,7 +31,7 @@
 
 .contentEntries a {
 	color: black;
-	padding: 12px 16px;
+	padding: 1.70vh 2.27vh;
 	text-decoration: none;
 	display: block;
 }
@@ -41,26 +42,4 @@
 
 .entriesActive {
 	background-color: #4BAF5C;
-}
-
-
-@media screen and (min-height: 1000px) {
-	#entries {
-		font: normal 50px Georgia, 'Times New Roman', Times, serif;
-		width: 700px;
-		height:50px;
-		margin-bottom: 50px;
-	}
-	
-	.btnEntries {
-		font: normal 50px Georgia, 'Times New Roman', Times, serif;
-	}
-	
-	.contentEntries {
-		min-width: 300px;
-	}
-	
-	.rankImage {
-		height: 40px;
-	}
 }

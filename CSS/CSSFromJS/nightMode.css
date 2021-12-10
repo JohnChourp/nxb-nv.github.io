@@ -1,23 +1,13 @@
 .mode {
+	width: 15vh;
 	float:right;
-	margin-top: 10px;
-	margin-right: 5px;
+	margin: 1vh 0 1vh 0;
+	border: 1vh solid #5679F6;
+	border-radius: 1vh;
+	text-align: center;
+	padding: 1vh 0 1vh 0;
 }
 
-.change {
-	border: 1px solid #555;
-	border-radius: 100%;
-	width: 20px;
-	text-align: center;
-	padding: 5px;
-	margin-left: 5px;
-}
+.change {}
 
 .dark{}
-
-@media screen and (min-height: 1000px) {
-	.mode {
-		width:355px;
-		height: 50px;
-	}
-}
