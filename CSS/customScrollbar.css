@@ -1,7 +1,7 @@
 :root {
-	--background-webkit-scrollbar-track: #F0F0F0;
-	--background-webkit-scrollbar-thumb: #CECECE;
-	--background-webkit-scrollbar-thumb-hover: #A7A7A7;
+	--bg-color-webkit-scrollbar-track: #F0F0F0;
+	--bg-webkit-scrollbar-thumb: #CECECE;
+	--bg-webkit-scrollbar-thumb-hover: #A7A7A7;
 }
 
 /*  the scrollbar. */
@@ -12,23 +12,23 @@
 
 /* the track (progress bar) of the scrollbar. */
 ::-webkit-scrollbar-track {
-	background-color: var(--background-webkit-scrollbar-track);
+	background-color: var(--bg-color-webkit-scrollbar-track);
 }
 
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb {
-	background: var(--background-webkit-scrollbar-thumb);
+	background: var(--bg-webkit-scrollbar-thumb);
 	height: 19.17vh;
 }
 
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--background-webkit-scrollbar-thumb-hover);
+	background: var(--bg-webkit-scrollbar-thumb-hover);
 }
 
 /* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
 ::-webkit-scrollbar-corner {
-	background: var(--background-webkit-scrollbar-track);
+	background: var(--bg-color-webkit-scrollbar-track);
 }
 
 .indexTable {

@@ -1,8 +1,8 @@
 :root {
 	--text-color-paginator: black;
 	--bg-color-paginator: white;
-	--border-paginator-a: 1px solid black;
-	--bg-color-paginator-a-hover-not-active: #DDD;
+	--border-a-paginator: 1px solid black;
+	--bg-color-a-hover-not-active-paginator: #DDD;
 }
 
 #paginator {
@@ -18,7 +18,7 @@
 	float: left;
 	padding: 1vh 2vh;
 	text-decoration: none;
-	border: var(--border-paginator-a);
+	border: var(--border-a-paginator);
 }
 
 #paginator a.active {
@@ -28,5 +28,5 @@
 }
 
 #paginator a:hover:not(.active) {
-	background-color: var(--bg-color-paginator-a-hover-not-active);
+	background-color: var(--bg-color-a-hover-not-active-paginator);
 }
