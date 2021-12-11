@@ -1,4 +1,4 @@
-:root{
+:root {
 	--bg-color-body: white;
 	--text-color-body: black;
 }
@@ -22,8 +22,8 @@ body {
 }
 
 .thumbCard {
-	width:9vh;
-	height:6.7vh;
+	width: 9vh;
+	height: 6.7vh;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -59,6 +59,7 @@ body {
 .jutsuLv {
 	text-align: center;
 }
+
 .cpCost {
 	text-align: center;
 }

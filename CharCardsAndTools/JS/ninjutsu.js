@@ -1,5 +1,5 @@
 function ninjutsu(){
-	let rows = [[]],rowsNJByLvl = [[]] , rowsNinJutsu = [[]] , rowsLength;
+	let rows = [[]] , rowsNJByLvl = [[]] , rowsNinJutsu = [[]] , rowsLength;
 	
 	rowsLength = document.getElementById("ninjutsuCheckByLv").rows.length;
 	rowsNinJutsu[0] = document.getElementById("ninjutsu").rows[6].cells;

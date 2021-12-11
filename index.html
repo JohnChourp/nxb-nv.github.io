@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<!-- Favicon Start -->
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!-- Favicon End -->
@@ -35,10 +35,10 @@
 <body onload="changeDarkMode(); createPaginator(10); createFilterType(); createSpecificEntries(); rankLvImages(); setSortImages();">
 
 <div class="topnav" id="myTopnav">
-	<a href="index.html" class="active">Characters</a>
+	<a class="active" href="index.html">Characters</a>
 	<a href="ninjutsu-cards.html">Ninjutsu Cards</a>
 	<a class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"><img class="iconImage" alt="" src="CSS/icon.png"></i>
+		<i class="fa fa-bars"><img alt="" class="iconImage" src="CSS/icon.png"></i>
 	</a>
 </div>
 <br>
@@ -46,7 +46,7 @@
 <div id="entries"></div>
 <div id="mode">Dark mode:OFF</div>
 <br><br>
-<input onkeyup="searchIndex();" id="myInput" placeholder="Search for Name,Type,Abilities,Traits..."
+<input id="myInput" onkeyup="searchIndex();" placeholder="Search for Name,Type,Abilities,Traits..."
        title="Type in a name" type="text">
 
 <div class="indexTable">

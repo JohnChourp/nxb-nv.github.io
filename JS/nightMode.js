@@ -21,6 +21,7 @@ function darkModeScrollBar(){
 	localStorage.setItem("bg-webkit-scrollbar-thumb" , "#888");
 	localStorage.setItem("bg-webkit-scrollbar-thumb-hover" , "#696868");
 }
+
 /*dark mode*/
 
 /*light mode*/
@@ -46,6 +47,7 @@ function lightModeScrollBar(){
 	localStorage.setItem("bg-webkit-scrollbar-thumb" , "#CECECE");
 	localStorage.setItem("bg-webkit-scrollbar-thumb-hover" , "#A7A7A7");
 }
+
 /*light mode*/
 
 /*set mode*/
@@ -75,6 +77,7 @@ function setScrollBar(){
 	root.style.setProperty('--bg-webkit-scrollbar-thumb' , localStorage.getItem("bg-webkit-scrollbar-thumb"));
 	root.style.setProperty('--bg-webkit-scrollbar-thumb-hover' , localStorage.getItem("bg-webkit-scrollbar-thumb-hover"));
 }
+
 /*set mode*/
 
 function changeDarkMode(){
