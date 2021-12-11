@@ -71,15 +71,3 @@
 		text-align: left;
 	}
 }
-
-@media screen and (max-width: 138vh) {
-	.topnav {
-		width: 195%;
-	}
-}
-
-@media screen and (max-width: 85.22727272727273vh) and (max-height: 118vh) {
-	.topnav {
-		width: 100%;
-	}
-}

@@ -6,7 +6,7 @@
 #myInput {
 	width: 100%;
 	font-size: 2vh;
-	padding: 1.13vh 0.85vh 0.85vh;
+	padding: 0.85vh 0 0.85vh;
 	border: 0.28vh solid #DDD;
 	margin-bottom: 1.70vh;
 	background-color: var(--bg-color-myInput);
