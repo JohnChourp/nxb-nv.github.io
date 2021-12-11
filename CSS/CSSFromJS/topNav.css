@@ -1,6 +1,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -10,9 +11,9 @@
 	display: block;
 	color: #F2F2F2;
 	text-align: center;
-	padding: 2vh 2vh;
+	padding: 2.5vh 2.5vh;
 	text-decoration: none;
-	font-size: 2vh;
+	font-size: 2.5vh;
 }
 
 /* Change the color of links on hover */
@@ -33,7 +34,7 @@
 }
 
 .iconImage {
-	width: 2.84vh;
+	width: 2.5vh;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

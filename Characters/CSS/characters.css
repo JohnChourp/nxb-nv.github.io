@@ -3,12 +3,12 @@ body {
 	padding: 0;
 	color: white;
 	background: #0E191A;
-	font: normal 14px 'Times New Roman', Times, serif;
+	font: normal 1.98vh Georgia, 'Times New Roman', Times, serif;
 }
 
 th, td {
-	border: 1px solid #333;
-	padding: 5px;
+	border: 0.14vh solid #333;
+	padding: 0.71vh;
 }
 
 th {
@@ -24,8 +24,8 @@ td:hover, th:hover {
 }
 
 .cardThumb {
-	width: 200px;
-	height: 150px;
+	width: 28.40vh;
+	height: 21.30vh;
 	margin: 0 auto;
 }
 
@@ -38,8 +38,8 @@ td:hover, th:hover {
 }
 
 .abilitiesListBtn {
-	width: 120px;
-	height: 50px;
+	width: 17.04vh;
+	height: 7.10vh;
 	margin: 0 auto;
 	transition: transform .2s; /* Animation */
 }
@@ -49,8 +49,8 @@ td:hover, th:hover {
 }
 
 .linkBoardBtn {
-	width: 154px;
-	height: 40px;
+	width: 21.875vh;
+	height: 5.68vh;
 	margin: 0 auto;
 	transition: transform .2s; /* Animation */
 }
@@ -60,21 +60,21 @@ td:hover, th:hover {
 }
 
 .toolThumb {
-	width: 150px;
-	height: 150px;
+	width: 21.30vh;
+	height: 21.30vh;
 	margin: 0 auto;
 }
 
 figcaption {
 	font-family: 'Orienta', sans-serif;
-	font-size: 16px;
-	margin-top: 5px;
+	font-size: 2.27vh;
+	margin-top: 0.71vh;
 }
 
 .wrapper-table {
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 250px 0 250px 250px 250px 250px;
+	grid-template-rows: 35.51vh 0 35.51vh 35.51vh 35.51vh 35.51vh;
 }
 
 .one {
