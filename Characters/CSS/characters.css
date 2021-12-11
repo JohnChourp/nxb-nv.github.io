@@ -75,7 +75,7 @@ figcaption {
 .wrapper-table {
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 35.51vh 0 35.51vh 35.51vh 35.51vh 35.51vh;
+	grid-template-rows: 37vh 0 37vh 37vh 37vh 37vh;
 }
 
 .one {
