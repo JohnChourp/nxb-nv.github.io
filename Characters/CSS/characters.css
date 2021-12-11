@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: white;
+	overflow: auto;
 	background: #0E191A;
 	font: normal 1.98vh Georgia, 'Times New Roman', Times, serif;
 }
