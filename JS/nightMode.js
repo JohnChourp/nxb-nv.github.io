@@ -78,12 +78,12 @@ function setScrollBar(){
 /*set mode*/
 
 function changeDarkMode(){
-	let changeJquery = $(".change");
+	let changeJquery = $("#mode");
 	let bodyJquery = $("body");
 	
 	if(localStorage.getItem("switchedTheme") === "yes"){
 		bodyJquery.addClass("dark");
-		changeJquery.text("ON");
+		changeJquery.text("Dark mode:ON");
 		darkModeBody();
 		darkModeMyInput();
 		darkModePaginator();
@@ -93,7 +93,7 @@ function changeDarkMode(){
 	changeJquery.on("click" , function(){
 		if(bodyJquery.hasClass("dark")){
 			bodyJquery.removeClass("dark");
-			changeJquery.text("OFF");
+			changeJquery.text("Dark mode:OFF");
 			localStorage.setItem("switchedTheme" , "no");
 			lightModeBody();
 			lightModeMyInput();
@@ -101,7 +101,7 @@ function changeDarkMode(){
 			lightModeScrollBar();
 		}else{
 			bodyJquery.addClass("dark");
-			changeJquery.text("ON");
+			changeJquery.text("Dark mode:ON");
 			localStorage.setItem("switchedTheme" , "yes");
 			darkModeBody();
 			darkModeMyInput();
