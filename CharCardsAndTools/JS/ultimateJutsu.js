@@ -1,5 +1,5 @@
 function ultimateJutsu(){
-	let rows = [[]], rowsUJByLvl = [[]] , rowsUltimateJutsu = [[]] , rowsLength;
+	let rows = [[]] , rowsUJByLvl = [[]] , rowsUltimateJutsu = [[]] , rowsLength;
 	
 	rowsLength = document.getElementById("ultimateJutsuCheckByLv").rows.length;
 	rowsUltimateJutsu[0] = document.getElementById("ultimateJutsu").rows[6].cells;

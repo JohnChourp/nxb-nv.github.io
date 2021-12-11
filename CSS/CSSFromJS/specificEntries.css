@@ -1,7 +1,6 @@
 #entries {
 	display: inline-block;
-	width: 50%;
-	padding: 1vh 0 1vh 0;
+	width: 16vh;
 }
 
 #entries a:hover {
@@ -11,7 +10,8 @@
 .btnEntries {
 	background-color: #3498DB;
 	color: white;
-	padding: 0.85vh;
+	padding: 1vh 0 1vh 0;
+	width: 16vh;
 	border: none;
 	cursor: pointer;
 }
@@ -23,9 +23,9 @@
 .contentEntries {
 	display: none;
 	position: absolute;
-	width: 14.3vh;
+	width: 16vh;
 	background-color: #F1F1F1;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1.13vh 2.27vh 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 

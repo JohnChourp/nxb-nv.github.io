@@ -1,14 +1,14 @@
-:root{
+:root {
 	--bg-color-myInput: white;
 	--text-color-myInput: black;
 }
 
 #myInput {
 	width: 100%;
-	font-size: 100%;
+	font-size: 2vh;
 	padding: 1.13vh 0.85vh 0.85vh;
-	border: 2px solid #DDD;
-	margin-bottom: 1%;
+	border: 0.28vh solid #DDD;
+	margin-bottom: 1.70vh;
 	background-color: var(--bg-color-myInput);
 	color: var(--text-color-myInput);
 }
@@ -23,19 +23,19 @@
 	border-collapse: collapse;
 	width: 100%;
 	border: 1px solid #DDD;
-	font-size: 100%;
+	font-size: 2vh;
 	margin-bottom: 5vh;
 }
 
 #sortTable tr {
-	border-bottom: 1px solid #DDD;
+	border-bottom: 0.14vh solid #DDD;
 }
 
 #sortTable th, td {
 	text-align: left;
-	padding: 5px;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
+	padding: 0.71vh;
+	border-left: 0.14vh solid #000;
+	border-right: 0.14vh solid #000;
 }
 
 #sortTable th {
