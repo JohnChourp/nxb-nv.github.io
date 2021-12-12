@@ -1,11 +1,12 @@
 #charTable {
-	width: 59.81vh;
-	height: 126.75vh;
-	border-radius: 0.56vh;
-	border: 0.42vh solid #333;
+	width: 20%;
+	height: 100%;
+	margin-bottom: 2%;
+	border-radius: 4px;
+	border: 3px solid #333;
 	text-align: center;
 	vertical-align: center;
-	font-size: 2.84vh;
+	font-size: 20px;
 }
 
 .type {
@@ -13,7 +14,7 @@
 }
 
 .typeImage {
-	width: 5.68vh;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -26,7 +27,7 @@
 }
 
 .char {
-	height: 58.25vh;
+	height: 410px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -35,7 +36,7 @@
 }
 
 .rankImage {
-	height: 4.26vh;
+	height: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;

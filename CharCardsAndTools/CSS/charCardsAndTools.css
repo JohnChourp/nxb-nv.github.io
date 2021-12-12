@@ -4,12 +4,12 @@ body {
 	color: white;
 	overflow: auto;
 	background: #0E191A;
-	font: normal 1.98vh Georgia, 'Times New Roman', Times, serif;
+	font: normal 14px Georgia, 'Times New Roman', Times, serif;
 }
 
 th, td {
-	border: 0.14vh solid #333;
-	padding: 0.71vh;
+	border: 1px solid #333;
+	padding: 5px;
 }
 
 th {
@@ -58,34 +58,14 @@ a:active {
 	align-items: flex-start;
 }
 
-#ninjutsu, #ultimateJutsu {
-	width: 50%;
-	border-radius: 0.56vh;
-	border: 0.42vh solid #333;
+#ninjutsu, #ultimateJutsu,#tool, #toolMaterials,#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
+	width: 25%;
+	border-radius: 4px;
+	border: 3px solid #333;
 	text-align: center;
 	vertical-align: center;
-	font-size: 2.84vh;
-	margin-top: 4.26vh;
-}
-
-#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
-	width: 50%;
-	border-radius: 0.56vh;
-	border: 0.42vh solid #333;
-	text-align: center;
-	vertical-align: center;
-	font-size: 2.84vh;
-	margin-top: 4.26vh;
-}
-
-#tool, #toolMaterials {
-	width: 50%;
-	border-radius: 0.56vh;
-	border: 0.42vh solid #333;
-	text-align: center;
-	vertical-align: center;
-	font-size: 2.84vh;
-	margin-top: 4.26vh;
+	font-size: 20px;
+	margin-top: 30px;
 }
 
 .type {
@@ -93,7 +73,7 @@ a:active {
 }
 
 .typeImage {
-	width: 5.68vh;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -102,7 +82,7 @@ a:active {
 }
 
 #jutsuImage {
-	width: 12.78vh;
+	width: 90px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -119,7 +99,7 @@ a:active {
 }
 
 .natureImage {
-	width: 5.68vh;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -132,7 +112,7 @@ a:active {
 }
 
 .cardImage {
-	height: 46.875vh;
+	height: 330px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -141,7 +121,7 @@ a:active {
 }
 
 .rankImage {
-	height: 4.26vh;
+	height: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -150,7 +130,7 @@ a:active {
 }
 
 .rtImage {
-	width: 5.68vh;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -159,7 +139,7 @@ a:active {
 }
 
 #toolImage {
-	height: 21.30vh;
+	height: 150px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -168,7 +148,7 @@ a:active {
 }
 
 .toolMaterialImage {
-	height: 14.2vh;
+	height: 100px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -177,7 +157,7 @@ a:active {
 }
 
 #productionCostRyoImage {
-	width: 5.68vh;
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;

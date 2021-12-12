@@ -1,18 +1,18 @@
 #abilityListTable {
 	width: 50%;
 	height: 100%;
-	border-radius: 0.56vh;
-	border: 0.42vh solid #333;
+	border-radius: 4px;
+	border: 3px solid #333;
 	text-align: center;
 	vertical-align: center;
-	font-size: 2.84vh;
-	margin-top: 4.26vh;
+	font-size: 20px;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .abilityListImages {
-	width: 4.26vh;
+	width: 30px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;

@@ -6,8 +6,8 @@
 
 /*  the scrollbar. */
 ::-webkit-scrollbar {
-	width: 2.13vh;
-	height: 2.13vh;
+	width: 15px;
+	height: 15px;
 }
 
 /* the track (progress bar) of the scrollbar. */
@@ -18,7 +18,7 @@
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb {
 	background: var(--bg-webkit-scrollbar-thumb);
-	height: 19.17vh;
+	height: 135px;
 }
 
 /* the draggable scrolling handle. */
@@ -32,12 +32,12 @@
 }
 
 .indexTable {
-	height: 63vh;
+	height: 70vh;
 	overflow: auto;
 }
 
 .ninjutsuCardsTable {
-	height: 63vh;
+	height: 70vh;
 	overflow: auto;
 }
 
