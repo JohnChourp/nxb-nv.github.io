@@ -6,8 +6,8 @@
 }
 
 #paginator {
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
 	display: inline-block;
 	background-color: var(--bg-color-paginator);
 	width: 100%;
