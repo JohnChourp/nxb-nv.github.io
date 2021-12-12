@@ -1,6 +1,8 @@
 #filterType {
 	display: inline-block;
-	width: 16vh;
+	width: 110px;
+	border: none;
+	cursor: pointer;
 }
 
 #filterType a:hover {
@@ -10,10 +12,7 @@
 .btnFilterType {
 	background-color: #3498DB;
 	color: white;
-	padding: 1vh 0 1vh 0;
-	width: 16vh;
-	border: none;
-	cursor: pointer;
+	width: 110px;
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
@@ -23,15 +22,15 @@
 .contentFilterType {
 	display: none;
 	position: absolute;
-	width: 16vh;
+	width: 110px;
 	background-color: #F1F1F1;
-	box-shadow: 0 1.13vh 2.27vh 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
 .contentFilterType a {
 	color: black;
-	padding: 1.70vh 2.27vh;
+	padding: 10px 20px;
 	text-decoration: none;
 	display: block;
 }

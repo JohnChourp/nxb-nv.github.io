@@ -1,9 +1,9 @@
 .paragraph {
 	background: #2C5154;
 	color: white;
-	font: normal 7vh Georgia, 'Times New Roman', Times, serif;
-	letter-spacing: 0.14vh;
-	padding: 0.56vh 0 0.56vh;
+	font: 700 2em/1 "Oswald", sans-serif;
+	letter-spacing: 1px;
+	padding: .25em 0 .25em;
 	margin: 0 auto;
 }
 
@@ -14,12 +14,12 @@ p {
 .headings {
 	background: #090D00;
 	color: rgba(255, 255, 255, .25);
-	font: normal 7vh Georgia, 'Times New Roman', Times, serif;
+	font: 700 3em/1 "Oswald", sans-serif;
 	letter-spacing: 0;
-	padding: 0.56vh 0 0.73vh;
+	padding: .25em 0 .325em;
 	display: block;
 	margin: 0 auto;
-	text-shadow: 0 0 11.36vh rgba(255, 255, 255, .5);
+	text-shadow: 0 0 80px rgba(255, 255, 255, .5);
 	
 	/* Clip Background Image */
 	background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
