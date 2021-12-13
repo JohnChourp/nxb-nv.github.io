@@ -1,6 +1,6 @@
 #filterType {
 	display: inline-block;
-	width: 110px;
+	width: 5.48vw;
 	border: none;
 	cursor: pointer;
 }
@@ -12,7 +12,7 @@
 .btnFilterType {
 	background-color: #3498DB;
 	color: white;
-	width: 110px;
+	width: 5.48vw;
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
@@ -22,15 +22,15 @@
 .contentFilterType {
 	display: none;
 	position: absolute;
-	width: 110px;
+	width: 5.48vw;
 	background-color: #F1F1F1;
-	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5vw 2.8vw 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
 .contentFilterType a {
 	color: black;
-	padding: 10px 20px;
+	padding: 1.4vh 1vw;
 	text-decoration: none;
 	display: block;
 }
