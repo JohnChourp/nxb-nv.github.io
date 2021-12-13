@@ -16,7 +16,7 @@
 #paginator a {
 	color: var(--text-color-paginator);
 	float: left;
-	padding: 1.12vh 0.8vw;
+	padding: 1vh 1vw 1vh 1vw;
 	text-decoration: none;
 	border: var(--border-a-paginator);
 }
@@ -31,14 +31,23 @@
 	background-color: var(--bg-color-a-hover-not-active-paginator);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1600px) {
 	#paginator a {
-		padding: 1.12vh 1.6vw;
+		padding-right: 1.5vw;
+		padding-left: 1.5vw;
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
 	#paginator a {
-		padding: 1.12vh 2.4vw;
+		padding-right: 2vw;
+		padding-left: 2vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#paginator a {
+		padding-right: 2.5vw;
+		padding-left: 2.5vw;
 	}
 }

@@ -7,63 +7,12 @@ body {
 	font: normal 14px Georgia, 'Times New Roman', Times, serif;
 }
 
-th, td {
-	border: 1px solid #333;
-	padding: 5px;
-}
-
-th {
-	background: #EE3E19;
-}
-
-td {
-	background: #F49907;
-}
-
-td:hover, th:hover {
-	background-color: #A46A1F;
-}
-
-.cardThumb {
-	width: 200px;
-	height: 150px;
-	margin: 0 auto;
-}
-
 .cardHover {
 	transition: transform .2s; /* Animation */
 }
 
 .cardHover:hover {
-	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.abilitiesListBtn {
-	width: 120px;
-	height: 50px;
-	margin: 0 auto;
-	transition: transform .2s; /* Animation */
-}
-
-.abilitiesListBtn:hover {
-	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.linkBoardBtn {
-	width: 154px;
-	height: 40px;
-	margin: 0 auto;
-	transition: transform .2s; /* Animation */
-}
-
-.linkBoardBtn:hover {
-	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.toolThumb {
-	width: 150px;
-	height: 150px;
-	margin: 0 auto;
+	transform: scale(1.2);
 }
 
 figcaption {
@@ -131,4 +80,24 @@ figcaption {
 .six-flex {
 	display: flex;
 	flex-direction: row;
+}
+
+.cardThumb {
+	width: 200px;
+	height: 150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+}
+
+.toolThumb {
+	width: 150px;
+	height: 150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }

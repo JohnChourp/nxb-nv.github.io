@@ -72,6 +72,22 @@ a:active {
 	font-weight: bold;
 }
 
+#jutsuName {
+	font-weight: bold;
+}
+
+.jutsuNature {
+	font-weight: bold;
+}
+
+.productionCost {
+	font-weight: bold;
+}
+
+#cardImage {
+	padding: 0;
+}
+
 .typeImage {
 	width: 40px;
 	/* Center the Image */
@@ -90,14 +106,6 @@ a:active {
 	/* Center the Image */
 }
 
-#jutsuName {
-	font-weight: bold;
-}
-
-.jutsuNature {
-	font-weight: bold;
-}
-
 .natureImage {
 	width: 40px;
 	/* Center the Image */
@@ -105,10 +113,6 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
-}
-
-#cardImage {
-	padding: 0;
 }
 
 .cardImage {
@@ -172,10 +176,6 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
-}
-
-.productionCost {
-	font-weight: bold;
 }
 
 
