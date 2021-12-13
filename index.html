@@ -17,6 +17,7 @@
 	<link href="CSS/CSSFromJS/paginator.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/CSSFromJS/filterType.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/CSSFromJS/specificEntries.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/CSSFromJS/options.css" rel="stylesheet" type="text/css"/>
 	<!-- CSS End -->
 	<!-- JS Start -->
 	<script src="JS/Libraries/jquery3_6_0.js" type="text/javascript"></script>
@@ -41,9 +42,11 @@
 		<i class="fa fa-bars"><img alt="" class="iconImage" src="CSS/icon.png"></i>
 	</a>
 </div>
-<div id="filterType"></div>
-<div id="entries"></div>
-<div id="mode">Dark mode:OFF</div>
+<div class="options">
+	<div id="filterType"></div>
+	<div id="entries"></div>
+	<div id="mode"><button class="btnMode">Dark mode:OFF</button></div>
+</div>
 <input id="myInput" onkeyup="searchIndex();" placeholder="Search for Name,Type,Abilities,Traits..."
        title="Type in a name" type="text">
 

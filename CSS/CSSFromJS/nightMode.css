@@ -1,18 +1,16 @@
 #mode {
 	display: inline-block;
-	width: 150px;
-	color: white;
-	border: none;
-	text-align: center;
-	cursor: pointer;
-	background-color: #3498DB;
-	font-family: "Arial", serif;
-	font-size: 13.3333px;
-	padding: 3px 0 3px 0;
 }
 
-#mode:hover {
+.btnMode {
+	width: 10vw;
+	color: white;
+	background-color: #3498DB;
+}
+
+.btnMode:hover , .btnMode:focus {
 	background-color: #2980B9;
+	cursor: pointer;
 }
 
 .dark {

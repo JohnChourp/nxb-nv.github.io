@@ -81,7 +81,7 @@ function setScrollBar(){
 /*set mode*/
 
 function changeDarkMode(){
-	let changeJquery = $("#mode");
+	let changeJquery = $(".btnMode");
 	let bodyJquery = $("body");
 	
 	if(localStorage.getItem("switchedTheme") === "yes"){

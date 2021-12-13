@@ -1,8 +1,5 @@
 #filterType {
 	display: inline-block;
-	width: 5.48vw;
-	border: none;
-	cursor: pointer;
 }
 
 #filterType a:hover {
@@ -10,21 +7,22 @@
 }
 
 .btnFilterType {
+	width: 5vw;
 	background-color: #3498DB;
 	color: white;
-	width: 5.48vw;
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
 	background-color: #2980B9;
+	cursor: pointer;
 }
 
 .contentFilterType {
 	display: none;
 	position: absolute;
-	width: 5.48vw;
+	width: 5vw;
 	background-color: #F1F1F1;
-	box-shadow: 0 0.5vw 2.8vw 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
@@ -42,3 +40,4 @@
 .filterTypeActive {
 	background-color: #4BAF5C;
 }
+
