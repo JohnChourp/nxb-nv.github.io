@@ -42,14 +42,42 @@
 	background-color: #4BAF5C;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1275px) {
 	.btnEntries {
+		width: 15vw;
+	}
+	
+	.contentEntries {
 		width: 15vw;
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 850px) {
 	.btnEntries {
 		width: 20vw;
+	}
+	
+	.contentEntries {
+		width: 20vw;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.btnEntries {
+		width: 25vw;
+	}
+	
+	.contentEntries {
+		width: 25vw;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.btnEntries {
+		width: 30vw;
+	}
+	
+	.contentEntries {
+		width: 30vw;
 	}
 }

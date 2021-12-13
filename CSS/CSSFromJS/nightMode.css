@@ -17,14 +17,26 @@
 .dark {
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1230px) {
 	.btnMode {
 		width: 15vw;
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 820px) {
 	.btnMode {
 		width: 20vw;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.btnMode {
+		width: 25vw;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.btnMode {
+		width: 30vw;
 	}
 }

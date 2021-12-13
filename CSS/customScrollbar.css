@@ -6,8 +6,8 @@
 
 /*  the scrollbar. */
 ::-webkit-scrollbar {
-	width: 0.74vw;
-	height: 2.1vh;
+	width: 0.7vw;
+	height: 2vh;
 }
 
 /* the track (progress bar) of the scrollbar. */
@@ -39,5 +39,33 @@
 .ninjutsuCardsTable {
 	height: 72vh;
 	overflow: auto;
+}
+
+@media screen and (max-width: 1600px) {
+	::-webkit-scrollbar {
+		width: 1.05vw;
+		height: 2vh;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	::-webkit-scrollbar {
+		width: 1.4vw;
+		height: 2vh;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	::-webkit-scrollbar {
+		width: 1.75vw;
+		height: 2vh;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	::-webkit-scrollbar {
+		width: 2.1vw;
+		height: 2vh;
+	}
 }
 

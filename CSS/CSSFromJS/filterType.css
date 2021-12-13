@@ -7,7 +7,7 @@
 }
 
 .btnFilterType {
-	width: 5vw;
+	width: 7vw;
 	background-color: #3498DB;
 	color: white;
 	font-size: 16px;
@@ -21,7 +21,7 @@
 .contentFilterType {
 	display: none;
 	position: absolute;
-	width: 5vw;
+	width: 7vw;
 	background-color: #F1F1F1;
 	box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
@@ -42,14 +42,22 @@
 	background-color: #4BAF5C;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
 	.btnFilterType {
-		width: 10vw;
+		width: 14vw;
+	}
+	
+	.contentFilterType {
+		width: 14vw;
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
 	.btnFilterType {
-		width: 15vw;
+		width: 21vw;
+	}
+	
+	.contentFilterType {
+		width: 21vw;
 	}
 }

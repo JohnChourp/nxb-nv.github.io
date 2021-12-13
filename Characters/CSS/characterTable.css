@@ -9,12 +9,41 @@
 	font-size: 20px;
 }
 
+th, td {
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+th {
+	background: #EE3E19;
+}
+
+td {
+	background: #F49907;
+}
+
+td:hover, th:hover {
+	background-color: #A46A1F;
+}
+
 .type {
 	font-weight: bold;
 }
 
-.typeImage {
-	width: 40px;
+#char {
+	padding: 0;
+}
+
+.abilitiesListBtn:hover {
+	transform: scale(1.2);
+}
+
+.linkBoardBtn:hover {
+	transform: scale(1.2);
+}
+
+.char {
+	width: 410px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -22,12 +51,8 @@
 	/* Center the Image */
 }
 
-#char {
-	padding: 0;
-}
-
-.char {
-	height: 410px;
+.typeImage {
+	width: 40px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
@@ -44,3 +69,24 @@
 	/* Center the Image */
 }
 
+.abilitiesListBtn {
+	width: 120px;
+	height: 50px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+	transition: transform .2s; /* Animation */
+}
+
+.linkBoardBtn {
+	width: 154px;
+	height: 40px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
+	transition: transform .2s; /* Animation */
+}
