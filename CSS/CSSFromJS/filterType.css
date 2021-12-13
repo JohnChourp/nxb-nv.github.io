@@ -1,8 +1,5 @@
 #filterType {
 	display: inline-block;
-	width: 110px;
-	border: none;
-	cursor: pointer;
 }
 
 #filterType a:hover {
@@ -10,27 +7,29 @@
 }
 
 .btnFilterType {
+	width: 5vw;
 	background-color: #3498DB;
 	color: white;
-	width: 110px;
+	font-size: 16px;
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
 	background-color: #2980B9;
+	cursor: pointer;
 }
 
 .contentFilterType {
 	display: none;
 	position: absolute;
-	width: 110px;
+	width: 5vw;
 	background-color: #F1F1F1;
-	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
 .contentFilterType a {
 	color: black;
-	padding: 10px 20px;
+	padding: 1.4vh 1vw;
 	text-decoration: none;
 	display: block;
 }
@@ -41,4 +40,16 @@
 
 .filterTypeActive {
 	background-color: #4BAF5C;
+}
+
+@media screen and (max-width: 900px) {
+	.btnFilterType {
+		width: 10vw;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btnFilterType {
+		width: 15vw;
+	}
 }

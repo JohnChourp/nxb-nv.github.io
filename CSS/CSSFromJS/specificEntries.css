@@ -1,8 +1,5 @@
 #entries {
 	display: inline-block;
-	width: 200px;
-	border: none;
-	cursor: pointer;
 }
 
 #entries a:hover {
@@ -10,35 +7,49 @@
 }
 
 .btnEntries {
+	width: 10vw;
 	background-color: #3498DB;
 	color: white;
-	width: 200px;
+	font-size: 16px;
 }
 
 .btnEntries:hover, .btnEntries:focus {
 	background-color: #2980B9;
+	cursor: pointer;
 }
 
 .contentEntries {
 	display: none;
 	position: absolute;
-	width: 200px;
+	width: 10vw;
 	background-color: #F1F1F1;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
 .contentEntries a {
 	color: black;
-	padding: 10px 20px;
+	padding: 1.4vh 1vw;
 	text-decoration: none;
 	display: block;
 }
 
-.show {
+.showEntries {
 	display: block;
 }
 
 .entriesActive {
 	background-color: #4BAF5C;
+}
+
+@media screen and (max-width: 900px) {
+	.btnEntries {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btnEntries {
+		width: 20vw;
+	}
 }

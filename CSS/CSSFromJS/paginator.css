@@ -6,8 +6,8 @@
 }
 
 #paginator {
-	margin-top: 0.5%;
-	margin-bottom: 0.5%;
+	margin-top: 0.1%;
+	margin-bottom: 0.1%;
 	display: inline-block;
 	background-color: var(--bg-color-paginator);
 	width: 100%;
@@ -16,7 +16,7 @@
 #paginator a {
 	color: var(--text-color-paginator);
 	float: left;
-	padding: 8px 16px;
+	padding: 1.12vh 0.8vw;
 	text-decoration: none;
 	border: var(--border-a-paginator);
 }

@@ -1,19 +1,30 @@
 #mode {
 	display: inline-block;
-	width: 150px;
-	color: white;
-	border: none;
-	text-align: center;
-	cursor: pointer;
-	background-color: #3498DB;
-	font-family: "Arial", serif;
-	font-size: 13.3333px;
-	padding: 3px 0 3px 0;
 }
 
-#mode:hover {
+.btnMode {
+	width: 10vw;
+	color: white;
+	background-color: #3498DB;
+	font-size: 16px;
+}
+
+.btnMode:hover , .btnMode:focus {
 	background-color: #2980B9;
+	cursor: pointer;
 }
 
 .dark {
+}
+
+@media screen and (max-width: 900px) {
+	.btnMode {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btnMode {
+		width: 20vw;
+	}
 }

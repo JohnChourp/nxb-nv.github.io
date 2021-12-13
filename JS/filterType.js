@@ -1,3 +1,14 @@
+function hideContentFilterType(){
+	let contentFilterType = document.getElementsByClassName("contentFilterType");
+	for(let i = 0; i < contentFilterType.length; i ++){
+		if(contentFilterType[i].classList.contains('showFilterType')){
+			contentFilterType[i].classList.remove('showFilterType');
+		}else{
+			contentFilterType[i].classList.add('showFilterType');
+		}
+	}
+}
+
 function createFilterType(){
 	let table = document.getElementById("sortTable");
 	let tRowsLength = table.rows.length;
@@ -25,6 +36,7 @@ function createFilterType(){
 		for(let i = 0; i < tRowsLength; i ++){
 			tr[i].style.display = "";
 		}
+		hideContentFilterType();
 	}
 	aShowAll.innerHTML = "Show All";
 	filterTypeContentDivDiv.appendChild(aShowAll);
@@ -40,6 +52,7 @@ function createFilterType(){
 			}
 		}
 		tr[0].style.display = "";
+		hideContentFilterType();
 	}
 	aAttack.innerHTML = "Attack";
 	filterTypeContentDivDiv.appendChild(aAttack);
@@ -55,6 +68,7 @@ function createFilterType(){
 			}
 		}
 		tr[0].style.display = "";
+		hideContentFilterType();
 	}
 	aAssist.innerHTML = "Assist";
 	filterTypeContentDivDiv.appendChild(aAssist);
@@ -70,6 +84,7 @@ function createFilterType(){
 			}
 		}
 		tr[0].style.display = "";
+		hideContentFilterType();
 	}
 	aDefense.innerHTML = "Defense";
 	filterTypeContentDivDiv.appendChild(aDefense);
@@ -85,6 +100,7 @@ function createFilterType(){
 			}
 		}
 		tr[0].style.display = "";
+		hideContentFilterType();
 	}
 	aSkill.innerHTML = "Skill";
 	filterTypeContentDivDiv.appendChild(aSkill);
@@ -100,23 +116,10 @@ function createFilterType(){
 			}
 		}
 		tr[0].style.display = "";
+		hideContentFilterType();
 	}
 	aUtility.innerHTML = "Utility";
 	filterTypeContentDivDiv.appendChild(aUtility);
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event){
-	if(!event.target.matches('.btnFilterType')){
-		let dropdowns = document.getElementsByClassName("contentFilterType");
-		let i;
-		for(i = 0; i < dropdowns.length; i ++){
-			let openDropdown = dropdowns[i];
-			if(openDropdown.classList.contains('showFilterType')){
-				openDropdown.classList.remove('showFilterType');
-			}
-		}
-	}
 }
 
 function filterType(){

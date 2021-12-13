@@ -1,3 +1,14 @@
+function hideContentSpecificEntries(){
+	let contentEntries = document.getElementsByClassName("contentEntries");
+	for(let i = 0; i < contentEntries.length; i ++){
+		if(contentEntries[i].classList.contains('showEntries')){
+			contentEntries[i].classList.remove('showEntries');
+		}else{
+			contentEntries[i].classList.add('showEntries');
+		}
+	}
+}
+
 function createSpecificEntries(){
 	const entriesDiv = document.getElementById("entries");
 	
@@ -20,6 +31,7 @@ function createSpecificEntries(){
 	a10.onclick = function(){
 		deletePaginator();
 		createPaginator(10);
+		hideContentSpecificEntries();
 	}
 	a10.innerHTML = "10";
 	entriesContentDivDiv.appendChild(a10);
@@ -29,6 +41,7 @@ function createSpecificEntries(){
 	a25.onclick = function(){
 		deletePaginator();
 		createPaginator(25);
+		hideContentSpecificEntries();
 	}
 	a25.innerHTML = "25";
 	entriesContentDivDiv.appendChild(a25);
@@ -38,6 +51,7 @@ function createSpecificEntries(){
 	a50.onclick = function(){
 		deletePaginator();
 		createPaginator(50);
+		hideContentSpecificEntries();
 	}
 	a50.innerHTML = "50";
 	entriesContentDivDiv.appendChild(a50);
@@ -47,27 +61,14 @@ function createSpecificEntries(){
 	a100.onclick = function(){
 		deletePaginator();
 		createPaginator(100);
+		hideContentSpecificEntries();
 	}
 	a100.innerHTML = "100";
 	entriesContentDivDiv.appendChild(a100);
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event){
-	if(!event.target.matches('.btnEntries')){
-		let dropdowns = document.getElementsByClassName("contentEntries");
-		let i;
-		for(i = 0; i < dropdowns.length; i ++){
-			let openDropdown = dropdowns[i];
-			if(openDropdown.classList.contains('show')){
-				openDropdown.classList.remove('show');
-			}
-		}
-	}
-}
-
 function specificEntries(){
-	document.getElementsByClassName("contentEntries").item(0).classList.toggle("show");
+	document.getElementsByClassName("contentEntries").item(0).classList.toggle("showEntries");
 	let showEntries = document.getElementsByClassName("contentEntries").item(0).children;
 	for(let i = 0; i < showEntries.length; i ++){
 		showEntries[i].addEventListener('click' , function(){
