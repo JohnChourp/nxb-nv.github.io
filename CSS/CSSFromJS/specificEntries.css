@@ -10,6 +10,7 @@
 	width: 10vw;
 	background-color: #3498DB;
 	color: white;
+	font-size: 16px;
 }
 
 .btnEntries:hover, .btnEntries:focus {
@@ -39,4 +40,16 @@
 
 .entriesActive {
 	background-color: #4BAF5C;
+}
+
+@media screen and (max-width: 900px) {
+	.btnEntries {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btnEntries {
+		width: 20vw;
+	}
 }

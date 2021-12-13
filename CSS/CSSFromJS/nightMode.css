@@ -6,6 +6,7 @@
 	width: 10vw;
 	color: white;
 	background-color: #3498DB;
+	font-size: 16px;
 }
 
 .btnMode:hover , .btnMode:focus {
@@ -14,4 +15,16 @@
 }
 
 .dark {
+}
+
+@media screen and (max-width: 900px) {
+	.btnMode {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btnMode {
+		width: 20vw;
+	}
 }

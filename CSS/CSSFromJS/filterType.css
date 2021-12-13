@@ -10,6 +10,7 @@
 	width: 5vw;
 	background-color: #3498DB;
 	color: white;
+	font-size: 16px;
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
@@ -41,3 +42,14 @@
 	background-color: #4BAF5C;
 }
 
+@media screen and (max-width: 900px) {
+	.btnFilterType {
+		width: 10vw;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btnFilterType {
+		width: 15vw;
+	}
+}
