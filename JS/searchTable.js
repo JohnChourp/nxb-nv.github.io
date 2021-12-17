@@ -18,12 +18,12 @@ function searchIndex(){
 				td[0] = tr[i].getElementsByTagName("td")[2];
 				td[1] = tr[i].getElementsByTagName("td")[4];
 				td[2] = tr[i].getElementsByTagName("td")[5];
-				td[3] = tr[i].getElementsByTagName("td")[6];
-				td[4] = tr[i].getElementsByTagName("td")[7];
-				td[5] = tr[i].getElementsByTagName("td")[8];
-				td[6] = tr[i].getElementsByTagName("td")[9];
-				td[7] = tr[i].getElementsByTagName("td")[10];
-				td[8] = tr[i].getElementsByTagName("td")[11];
+				td[3] = tr[i].getElementsByTagName("td")[7];
+				td[4] = tr[i].getElementsByTagName("td")[8];
+				td[5] = tr[i].getElementsByTagName("td")[9];
+				td[6] = tr[i].getElementsByTagName("td")[10];
+				td[7] = tr[i].getElementsByTagName("td")[11];
+				td[8] = tr[i].getElementsByTagName("td")[12];
 				
 				if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8]){
 					for(let i = 0; i < tColumnsLength; i ++){
