@@ -140,15 +140,16 @@ function searchAllNinjutsuCards(){
 				td[2] = tr[i].getElementsByTagName("td")[4];
 				td[3] = tr[i].getElementsByTagName("td")[6];
 				td[4] = tr[i].getElementsByTagName("td")[8];
-				td[5] = tr[i].getElementsByTagName("td")[11];
-				td[6] = tr[i].getElementsByTagName("td")[12];
-				td[7] = tr[i].getElementsByTagName("td")[13];
-				td[8] = tr[i].getElementsByTagName("td")[14];
-				td[9] = tr[i].getElementsByTagName("td")[15];
-				td[10] = tr[i].getElementsByTagName("td")[17];
-				td[11] = tr[i].getElementsByTagName("td")[18];
+				td[5] = tr[i].getElementsByTagName("td")[10];
+				td[6] = tr[i].getElementsByTagName("td")[11];
+				td[7] = tr[i].getElementsByTagName("td")[12];
+				td[8] = tr[i].getElementsByTagName("td")[13];
+				td[9] = tr[i].getElementsByTagName("td")[14];
+				td[10] = tr[i].getElementsByTagName("td")[15];
+				td[11] = tr[i].getElementsByTagName("td")[17];
+				td[12] = tr[i].getElementsByTagName("td")[18];
 				
-				if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8] && td[9] && td[10] && td[11]){
+				if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8] && td[9] && td[10] && td[11] && td[12]){
 					for(let i = 0; i < tColumnsLength; i ++){
 						txt[i] = td[i].textContent || td[i].innerText;
 					}
@@ -157,7 +158,7 @@ function searchAllNinjutsuCards(){
 						index[i] = txt[i].toUpperCase().indexOf(filter[i]);
 					}
 					
-					if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1 || index[8] > - 1 || index[9] > - 1 || index[10] > - 1 || index[11] > - 1){
+					if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1 || index[8] > - 1 || index[9] > - 1 || index[10] > - 1 || index[11] > - 1 || index[12] > - 1){
 						tr[i].style.display = "";
 					}else{
 						tr[i].style.display = "none";
