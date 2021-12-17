@@ -95,6 +95,10 @@ a:active {
 	text-align: center;
 }
 
+.rank {
+	text-align: center;
+}
+
 .rankImage {
 	height: 2vh;
 	/* Center the Image */
