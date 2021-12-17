@@ -9,7 +9,7 @@
 	font-size: 16px;
 }
 
-.btnMode:hover , .btnMode:focus {
+.btnMode:hover, .btnMode:focus {
 	background-color: #2980B9;
 	cursor: pointer;
 }
