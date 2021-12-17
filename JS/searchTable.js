@@ -12,33 +12,37 @@ function searchIndex(){
 		filter[i] = input[i].value.toUpperCase();
 	}
 	
-	for(let i = 0; i < tr.length; i ++){
-		td[0] = tr[i].getElementsByTagName("td")[2];
-		td[1] = tr[i].getElementsByTagName("td")[4];
-		td[2] = tr[i].getElementsByTagName("td")[5];
-		td[3] = tr[i].getElementsByTagName("td")[6];
-		td[4] = tr[i].getElementsByTagName("td")[7];
-		td[5] = tr[i].getElementsByTagName("td")[8];
-		td[6] = tr[i].getElementsByTagName("td")[9];
-		td[7] = tr[i].getElementsByTagName("td")[10];
-		td[8] = tr[i].getElementsByTagName("td")[11];
-		
-		if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8]){
-			for(let i = 0; i < tColumnsLength; i ++){
-				txt[i] = td[i].textContent || td[i].innerText;
-			}
-			
-			for(let i = 0; i < tColumnsLength; i ++){
-				index[i] = txt[i].toUpperCase().indexOf(filter[i]);
-			}
-			
-			if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1 || index[8] > - 1){
-				tr[i].style.display = "";
-			}else{
-				tr[i].style.display = "none";
+	document.addEventListener("keyup" , function(event){
+		if(event.key === 'Enter'){
+			for(let i = 0; i < tr.length; i ++){
+				td[0] = tr[i].getElementsByTagName("td")[2];
+				td[1] = tr[i].getElementsByTagName("td")[4];
+				td[2] = tr[i].getElementsByTagName("td")[5];
+				td[3] = tr[i].getElementsByTagName("td")[6];
+				td[4] = tr[i].getElementsByTagName("td")[7];
+				td[5] = tr[i].getElementsByTagName("td")[8];
+				td[6] = tr[i].getElementsByTagName("td")[9];
+				td[7] = tr[i].getElementsByTagName("td")[10];
+				td[8] = tr[i].getElementsByTagName("td")[11];
+				
+				if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8]){
+					for(let i = 0; i < tColumnsLength; i ++){
+						txt[i] = td[i].textContent || td[i].innerText;
+					}
+					
+					for(let i = 0; i < tColumnsLength; i ++){
+						index[i] = txt[i].toUpperCase().indexOf(filter[i]);
+					}
+					
+					if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1 || index[8] > - 1){
+						tr[i].style.display = "";
+					}else{
+						tr[i].style.display = "none";
+					}
+				}
 			}
 		}
-	}
+	});
 }
 
 function sortIndex(n){
@@ -65,17 +69,33 @@ function sortIndex(n){
 			y = rows[i + 1].getElementsByTagName("TD")[n];
 			/*check if the two rows should switch place,
 			 based on the direction, asc or desc:*/
-			if(dir === "asc"){
-				if(x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
-					//if so, mark as a switch and break the loop:
-					shouldSwitch = true;
-					break;
+			if(n === 5){
+				if(dir === "asc"){
+					if(parseInt(x.innerHTML) > parseInt(y.innerHTML)){
+						//if so, mark as a switch and break the loop:
+						shouldSwitch = true;
+						break;
+					}
+				}else if(dir === "desc"){
+					if(parseInt(x.innerHTML) < parseInt(y.innerHTML)){
+						//if so, mark as a switch and break the loop:
+						shouldSwitch = true;
+						break;
+					}
 				}
-			}else if(dir === "desc"){
-				if(x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
-					//if so, mark as a switch and break the loop:
-					shouldSwitch = true;
-					break;
+			}else{
+				if(dir === "asc"){
+					if(x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
+						//if so, mark as a switch and break the loop:
+						shouldSwitch = true;
+						break;
+					}
+				}else if(dir === "desc"){
+					if(x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
+						//if so, mark as a switch and break the loop:
+						shouldSwitch = true;
+						break;
+					}
 				}
 			}
 		}
@@ -99,49 +119,53 @@ function sortIndex(n){
 
 function searchAllNinjutsuCards(){
 	let input = [] , filter = [] , td = [] , txt = [] , index = [];
+	let table = document.getElementById("sortTable");
+	let tr = table.getElementsByTagName("tr");
+	let tColumnsLength = table.rows[0].cells.length - 1;
 	
-	for(let i = 0; i < 12; i ++){
+	for(let i = 0; i < tColumnsLength; i ++){
 		input[i] = document.getElementById("myInput");
 	}
 	
-	for(let i = 0; i < 12; i ++){
+	for(let i = 0; i < tColumnsLength; i ++){
 		filter[i] = input[i].value.toUpperCase();
 	}
 	
-	let table = document.getElementById("sortTable");
-	let tr = table.getElementsByTagName("tr");
-	
-	for(let i = 0; i < tr.length; i ++){
-		
-		td[0] = tr[i].getElementsByTagName("td")[1];
-		td[1] = tr[i].getElementsByTagName("td")[3];
-		td[2] = tr[i].getElementsByTagName("td")[4];
-		td[3] = tr[i].getElementsByTagName("td")[6];
-		td[4] = tr[i].getElementsByTagName("td")[8];
-		td[5] = tr[i].getElementsByTagName("td")[11];
-		td[6] = tr[i].getElementsByTagName("td")[12];
-		td[7] = tr[i].getElementsByTagName("td")[13];
-		td[8] = tr[i].getElementsByTagName("td")[14];
-		td[9] = tr[i].getElementsByTagName("td")[15];
-		td[10] = tr[i].getElementsByTagName("td")[17];
-		td[11] = tr[i].getElementsByTagName("td")[18];
-		
-		if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8] && td[9] && td[10] && td[11]){
-			for(let i = 0; i < 12; i ++){
-				txt[i] = td[i].textContent || td[i].innerText;
-			}
-			
-			for(let i = 0; i < 12; i ++){
-				index[i] = txt[i].toUpperCase().indexOf(filter[i]);
-			}
-			
-			if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1 || index[8] > - 1 || index[9] > - 1 || index[10] > - 1 || index[11] > - 1){
-				tr[i].style.display = "";
-			}else{
-				tr[i].style.display = "none";
+	document.addEventListener("keyup" , function(event){
+		if(event.key === 'Enter'){
+			for(let i = 0; i < tr.length; i ++){
+				
+				td[0] = tr[i].getElementsByTagName("td")[1];
+				td[1] = tr[i].getElementsByTagName("td")[3];
+				td[2] = tr[i].getElementsByTagName("td")[4];
+				td[3] = tr[i].getElementsByTagName("td")[6];
+				td[4] = tr[i].getElementsByTagName("td")[8];
+				td[5] = tr[i].getElementsByTagName("td")[11];
+				td[6] = tr[i].getElementsByTagName("td")[12];
+				td[7] = tr[i].getElementsByTagName("td")[13];
+				td[8] = tr[i].getElementsByTagName("td")[14];
+				td[9] = tr[i].getElementsByTagName("td")[15];
+				td[10] = tr[i].getElementsByTagName("td")[17];
+				td[11] = tr[i].getElementsByTagName("td")[18];
+				
+				if(td[0] && td[1] && td[2] && td[3] && td[4] && td[5] && td[6] && td[7] && td[8] && td[9] && td[10] && td[11]){
+					for(let i = 0; i < tColumnsLength; i ++){
+						txt[i] = td[i].textContent || td[i].innerText;
+					}
+					
+					for(let i = 0; i < tColumnsLength; i ++){
+						index[i] = txt[i].toUpperCase().indexOf(filter[i]);
+					}
+					
+					if(index[0] > - 1 || index[1] > - 1 || index[2] > - 1 || index[3] > - 1 || index[4] > - 1 || index[5] > - 1 || index[6] > - 1 || index[7] > - 1 || index[8] > - 1 || index[9] > - 1 || index[10] > - 1 || index[11] > - 1){
+						tr[i].style.display = "";
+					}else{
+						tr[i].style.display = "none";
+					}
+				}
 			}
 		}
-	}
+	});
 }
 
 function sortAllNinjutsuCards(n){
@@ -168,7 +192,7 @@ function sortAllNinjutsuCards(n){
 			y = rows[i + 1].getElementsByTagName("TD")[n];
 			/*check if the two rows should switch place,
 			 based on the direction, asc or desc:*/
-			if(n === 17 || n === 14 || n === 13){
+			if(n === 17 || n === 15 || n === 14 || n === 13){
 				if(dir === "asc"){
 					if(parseInt(x.innerHTML) > parseInt(y.innerHTML)){
 						//if so, mark as a switch and break the loop:
