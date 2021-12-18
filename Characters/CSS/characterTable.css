@@ -1,7 +1,6 @@
 #charTable {
-	width: 20%;
-	height: 10%;
-	margin-bottom: 2%;
+	width: 1%;
+	height: 1%;
 	border-radius: 4px;
 	border: 3px solid #333;
 	text-align: center;
@@ -81,12 +80,40 @@ td:hover, th:hover {
 }
 
 .linkBoardBtn {
-	width: 154px;
-	height: 40px;
+	width: 160px;
+	height: 41px;
 	/* Center the Image */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
 	transition: transform .2s; /* Animation */
+}
+
+@media screen and (max-width: 1825px) {
+	#charTable {
+		font-size: 16px;
+	}
+	
+	.char {
+		width: 230px;
+	}
+	
+	.typeImage {
+		width: 20px;
+	}
+	
+	.rankImage {
+		height: 15px;
+	}
+	
+	.abilitiesListBtn {
+		width: 60px;
+		height: 25px;
+	}
+	
+	.linkBoardBtn {
+		width: 80px;
+		height: 20px;
+	}
 }

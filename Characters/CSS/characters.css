@@ -21,15 +21,20 @@ figcaption {
 	margin-top: 5px;
 }
 
-.wrapper-table {
+.wrapper {
 	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 250px 0 250px 250px 250px 250px;
+	grid-template-columns: 430px auto;
 }
 
 .one {
 	grid-column: 1;
 	grid-row: 1;
+}
+
+.superFlex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .two {
@@ -40,6 +45,7 @@ figcaption {
 .two-flex {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .three {
@@ -50,6 +56,7 @@ figcaption {
 .three-flex {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .four {
@@ -60,6 +67,7 @@ figcaption {
 .four-flex {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .five {
@@ -70,6 +78,7 @@ figcaption {
 .five-flex {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .six {
@@ -80,6 +89,7 @@ figcaption {
 .six-flex {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .cardThumb {
@@ -100,4 +110,10 @@ figcaption {
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
+}
+
+@media screen and (max-width: 1825px) {
+	.wrapper {
+		grid-template-columns: 245px auto;
+	}
 }
