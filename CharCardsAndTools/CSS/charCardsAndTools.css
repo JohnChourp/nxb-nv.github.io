@@ -221,7 +221,7 @@ a.equipBy:active {
 	}
 	
 	#toolMaterials {
-		width: 182px;
+		width: 200px;
 		font-size: 14px;
 	}
 	
@@ -263,6 +263,36 @@ a.equipBy:active {
 	
 	.statTypeImage {
 		width: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#ninjutsu, #ultimateJutsu {
+		width: 400px;
+		font-size: 12px;
+	}
+	
+	#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
+		width: 400px;
+		font-size: 12px;
+	}
+	
+	#tool {
+		width: 340px;
+		font-size: 12px;
+	}
+	
+	#toolMaterials {
+		width: 200px;
+		font-size: 12px;
+	}
+	
+	.cardImage {
+		height: 165px;
+	}
+	
+	.rankImage {
+		height: 10px;
 	}
 }
 
