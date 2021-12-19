@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	font: normal 16px Georgia, 'Times New Roman', Times, serif;
+	font: normal 16px "Oswald", sans-serif;
 	background: #0E191A;
 	color: white;
 }
@@ -24,7 +24,7 @@ td:hover, th:hover {
 	background-color: #A46A1F;
 }
 
-a:link {
+a.equipBy:link {
 	color: #00A5A8;
 	font-weight: bold;
 	transition: all .2s linear;
@@ -32,19 +32,19 @@ a:link {
 	text-decoration: none;
 }
 
-a:visited {
+a.equipBy:visited {
 	color: #00A5A8;
 	background-color: transparent;
 	text-decoration: none;
 }
 
-a:hover {
+a.equipBy:hover {
 	color: #0EFAFE;
 	background-color: transparent;
 	text-decoration: underline;
 }
 
-a:active {
+a.equipBy:active {
 	color: #0EFAFE;
 	background-color: transparent;
 	text-decoration: underline;
@@ -58,14 +58,40 @@ a:active {
 	align-items: flex-start;
 }
 
-#ninjutsu, #ultimateJutsu, #tool, #toolMaterials, #ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
-	width: 25%;
+#ninjutsu, #ultimateJutsu {
+	width: 700px;
 	border-radius: 4px;
 	border: 3px solid #333;
 	text-align: center;
 	vertical-align: center;
 	font-size: 20px;
-	margin-top: 30px;
+}
+
+#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
+	width: 700px;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+}
+
+#tool {
+	width: 340px;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
+}
+
+#toolMaterials {
+	width: 230px;
+	border-radius: 4px;
+	border: 3px solid #333;
+	text-align: center;
+	vertical-align: center;
+	font-size: 20px;
 }
 
 .type {
@@ -178,6 +204,67 @@ a:active {
 	/* Center the Image */
 }
 
+@media screen and (max-width: 950px) {
+	#ninjutsu, #ultimateJutsu {
+		width: 455px;
+		font-size: 14px;
+	}
+	
+	#ninjutsuCheckByLv, #ultimateJutsuCheckByLv {
+		width: 455px;
+		font-size: 14px;
+	}
+	
+	#tool {
+		width: 340px;
+		font-size: 14px;
+	}
+	
+	#toolMaterials {
+		width: 182px;
+		font-size: 14px;
+	}
+	
+	.typeImage {
+		width: 20px;
+	}
+	
+	#jutsuImage {
+		width: 45px;
+	}
+	
+	.natureImage {
+		width: 20px;
+	}
+	
+	.cardImage {
+		height: 190px;
+	}
+	
+	.rankImage {
+		height: 15px;
+	}
+	
+	.rtImage {
+		width: 20px;
+	}
+	
+	#toolImage {
+		height: 75px;
+	}
+	
+	.toolMaterialImage {
+		height: 50px;
+	}
+	
+	#productionCostRyoImage {
+		width: 20px;
+	}
+	
+	.statTypeImage {
+		width: 20px;
+	}
+}
 
 
 

@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	font: normal 16px Georgia, 'Times New Roman', Times, serif;
+	font: normal 16px "Oswald", sans-serif;
 	background: #0E191A;
 	color: white;
 }
@@ -112,8 +112,17 @@ figcaption {
 	/* Center the Image */
 }
 
-@media screen and (max-width: 1825px) {
+@media screen and (max-width: 950px) {
 	.wrapper {
-		grid-template-columns: 245px auto;
+		grid-template-columns: 230px auto;
+	}
+	
+	figcaption {
+		font-size: 12px;
+	}
+	
+	.cardThumb {
+		width: 170px;
+		height: 127px;
 	}
 }

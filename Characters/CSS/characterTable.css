@@ -90,13 +90,13 @@ td:hover, th:hover {
 	transition: transform .2s; /* Animation */
 }
 
-@media screen and (max-width: 1825px) {
+@media screen and (max-width: 950px) {
 	#charTable {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	
 	.char {
-		width: 230px;
+		width: 215px;
 	}
 	
 	.typeImage {
