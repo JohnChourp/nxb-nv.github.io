@@ -37,15 +37,14 @@
 	<a class="active" href="index.html">Characters</a>
 	<a href="ninjutsu-cards.html">Ninjutsu Cards</a>
 	<a class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"><img alt="" class="iconImage" referrerPolicy="no-referrer" src="https://lh3.googleusercontent.com/pw/AM-JKLXxLphNHFppC7GZe5NGZb4heYrL0LMfoYq7-luNiVkUC15OrsC9q9n5AQiyPNmWxqKpGRtqbpnGLfSnuB88f9oAUpkvov4izChR6YvcT9jPIfMxUtzODyoqVnJIyzHhpZLkvCTlZuv8VJeKOnvAVS3L=w50-h45-no?authuser=0"></i>
+		<i class="fa fa-bars"><img alt="" class="iconImage" referrerPolicy="no-referrer" loading="lazy"
+		                           src="https://lh3.googleusercontent.com/pw/AM-JKLXxLphNHFppC7GZe5NGZb4heYrL0LMfoYq7-luNiVkUC15OrsC9q9n5AQiyPNmWxqKpGRtqbpnGLfSnuB88f9oAUpkvov4izChR6YvcT9jPIfMxUtzODyoqVnJIyzHhpZLkvCTlZuv8VJeKOnvAVS3L=w50-h45-no?authuser=0"></i>
 	</a>
 </div>
-<div class="options">
+<div class="optionsTable">
 	<div id="filterType"></div>
 	<div id="entries"></div>
-	<div id="mode">
-		<button class="btnMode">Dark mode:OFF</button>
-	</div>
+	<div id="mode"></div>
 </div>
 <input id="myInput" onkeyup="searchIndex();" placeholder="Search for Name,Type,Abilities,Rank,Traits..."
        title="Type in a name" type="text">
@@ -56,21 +55,21 @@
 		<tr>
 			<th class="pointerCursor" onclick="sortImages(0); sortIndex(0)" style="width:1%;">ID <img
 					alt="SortDown" class="sortImage"
-					referrerPolicy="no-referrer"
+					referrerPolicy="no-referrer" loading="lazy"
 					src=""/></th>
 			<th class="pointerCursor" colspan="2" onclick="sortImages(1); sortIndex(2)" style="width:15%;">Name <img
 					alt="SortDown"
-					class="sortImage"
+					class="sortImage" loading="lazy"
 					src=""/></th>
 			<th class="pointerCursor" colspan="2" onclick="sortImages(2); sortIndex(4)" style="width:1%;">Type <img
 					alt="SortDown" class="sortImage"
-					referrerPolicy="no-referrer"
+					referrerPolicy="no-referrer" loading="lazy"
 					src=""/></th>
 			<th class="pointerCursor" onclick="sortImages(3); sortIndex(5)" style="width:1%;">Abilities <img
-					alt="SortDown" class="sortImage" id="getImageAbilities" src=""/></th>
+					alt="SortDown" class="sortImage" referrerPolicy="no-referrer" loading="lazy" src=""/></th>
 			<th class="pointerCursor" colspan="2" onclick="sortImages(4); sortIndex(7)" style="width:10%;">Rank <img
 					alt="SortDown" class="sortImage"
-					referrerPolicy="no-referrer"
+					referrerPolicy="no-referrer" loading="lazy"
 					src=""/></th>
 			<th>Trait1</th>
 			<th>Trait2</th>

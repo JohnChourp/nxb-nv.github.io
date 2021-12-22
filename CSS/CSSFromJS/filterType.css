@@ -14,8 +14,9 @@
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
-	background-color: #2980B9;
+	background-color: #246D9B;
 	cursor: pointer;
+	transition: all .2s linear;
 }
 
 .contentFilterType {
@@ -32,6 +33,7 @@
 	padding: 1.4vh 1vw;
 	text-decoration: none;
 	display: block;
+	transition: all .2s linear;
 }
 
 .showFilterType {

@@ -19,12 +19,14 @@
 	padding: 1vh 1vw 1vh 1vw;
 	text-decoration: none;
 	border: var(--border-a-paginator);
+	transition: all .2s linear;
 }
 
 #paginator a.active {
 	background-color: #4CAF50;
 	color: white;
 	border: 1px solid #4CAF50;
+
 }
 
 #paginator a:hover:not(.active) {
