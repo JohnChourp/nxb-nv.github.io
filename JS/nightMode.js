@@ -77,9 +77,21 @@ function setScrollBar(){
 	root.style.setProperty('--bg-webkit-scrollbar-thumb' , localStorage.getItem("bg-webkit-scrollbar-thumb"));
 	root.style.setProperty('--bg-webkit-scrollbar-thumb-hover' , localStorage.getItem("bg-webkit-scrollbar-thumb-hover"));
 }
-
 /*set mode*/
+
+/*create mode*/
+function createNightMode(){
+	const nightModeDiv = document.getElementById("mode");
+	const nightModeBtn = document.createElement("button");
+	nightModeBtn.className = "btnMode";
+	nightModeBtn.innerHTML = "Dark mode:OFF";
+	nightModeDiv.appendChild(nightModeBtn);
+}
+/*create mode*/
+
+/*use mode*/
 function changeDarkMode(){
+	createNightMode();
 	let btnMode = document.getElementsByClassName("btnMode").item(0);
 	let body = document.getElementsByTagName("BODY").item(0);
 	
@@ -119,3 +131,4 @@ function changeDarkMode(){
 	setPaginator();
 	setScrollBar();
 }
+/*use mode*/

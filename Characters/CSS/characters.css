@@ -114,7 +114,7 @@ figcaption {
 
 @media screen and (max-width: 950px) {
 	.wrapper {
-		grid-template-columns: 230px auto;
+		grid-template-columns: 205px auto;
 	}
 	
 	figcaption {

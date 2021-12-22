@@ -92,11 +92,11 @@ td:hover, th:hover {
 
 @media screen and (max-width: 950px) {
 	#charTable {
-		font-size: 14px;
+		font-size: 10px;
 	}
 	
 	.char {
-		width: 215px;
+		width: 190px;
 	}
 	
 	.typeImage {

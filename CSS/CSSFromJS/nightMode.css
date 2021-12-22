@@ -10,8 +10,9 @@
 }
 
 .btnMode:hover, .btnMode:focus {
-	background-color: #2980B9;
+	background-color: #246D9B;
 	cursor: pointer;
+	transition: all .2s linear;
 }
 
 .dark {
