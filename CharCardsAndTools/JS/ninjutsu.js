@@ -1,4 +1,14 @@
+function createNinjutsu(){
+	const table = document.getElementById("ninjutsu");
+	table.insertRow(0);
+	table.rows[0].insertCell(0);
+	table.rows[0].insertCell(1);
+	table.rows[0].cells[1].outerHTML = "<th colspan = 4 >Max Card Stats</th>";
+	table.rows[0].cells[0].outerHTML = "<th colspan = 4 >Ninjutsu</th>";
+}
+
 function ninjutsu(){
+	createNinjutsu();
 	let rows = [[]] , rowsNJByLvl = [[]] , rowsNinJutsu = [[]] , rowsLength;
 	
 	rowsLength = document.getElementById("ninjutsuCheckByLv").rows.length;
