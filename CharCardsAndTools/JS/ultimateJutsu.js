@@ -1,4 +1,15 @@
+function createUltimateJutsu(){
+	const table = document.getElementById("ultimateJutsu");
+	let header = table.createTHead();
+	let row0 = header.insertRow(0);
+	let row0Cell0 = row0.insertCell(0);
+	let row0Cell1 = row0.insertCell(1);
+	row0Cell0.outerHTML = "<th colspan = 4 >Ninjutsu</th>";
+	row0Cell1.outerHTML = "<th colspan = 4 >Max Card Stats</th>";
+}
+
 function ultimateJutsu(){
+	createUltimateJutsu();
 	let rows = [[]] , rowsUJByLvl = [[]] , rowsUltimateJutsu = [[]] , rowsLength;
 	
 	rowsLength = document.getElementById("ultimateJutsuCheckByLv").rows.length;
@@ -17,6 +28,7 @@ function ultimateJutsu(){
 	}
 	
 	rows[0] = document.getElementById("ultimateJutsu").rows[1].cells;
+	rows[0][0].style.fontWeight = "bold";
 	rows[1] = document.getElementById("ultimateJutsu").rows[2].cells;
 	rows[2] = document.getElementById("ultimateJutsu").rows[3].cells;
 	rows[3] = document.getElementById("ultimateJutsu").rows[5].cells;
@@ -27,7 +39,7 @@ function ultimateJutsu(){
 			rows[2][3].innerHTML = "1.30%";
 			rows[3][4].innerHTML = "8/8";
 			
-			switch(document.getElementsByClassName("type").item(0).innerHTML){
+			switch(rows[0][0].innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "1128";
 					rows[0][7].innerHTML = "143";
@@ -69,7 +81,7 @@ function ultimateJutsu(){
 			rows[2][3].innerHTML = "1.50%";
 			rows[3][4].innerHTML = "15/15";
 			
-			switch(document.getElementsByClassName("type").item(0).innerHTML){
+			switch(rows[0][0].innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "1730";
 					rows[0][7].innerHTML = "223";

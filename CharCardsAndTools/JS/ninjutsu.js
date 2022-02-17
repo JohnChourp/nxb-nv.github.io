@@ -1,10 +1,11 @@
 function createNinjutsu(){
 	const table = document.getElementById("ninjutsu");
-	table.insertRow(0);
-	table.rows[0].insertCell(0);
-	table.rows[0].insertCell(1);
-	table.rows[0].cells[1].outerHTML = "<th colspan = 4 >Max Card Stats</th>";
-	table.rows[0].cells[0].outerHTML = "<th colspan = 4 >Ninjutsu</th>";
+	let header = table.createTHead();
+	let row0 = header.insertRow(0);
+	let row0Cell0 = row0.insertCell(0);
+	let row0Cell1 = row0.insertCell(1);
+	row0Cell0.outerHTML = "<th colspan = 4 >Ninjutsu</th>";
+	row0Cell1.outerHTML = "<th colspan = 4 >Max Card Stats</th>";
 }
 
 function ninjutsu(){
@@ -27,6 +28,7 @@ function ninjutsu(){
 	}
 	
 	rows[0] = document.getElementById("ninjutsu").rows[1].cells;
+	rows[0][0].style.fontWeight = "bold";
 	rows[1] = document.getElementById("ninjutsu").rows[2].cells;
 	rows[2] = document.getElementById("ninjutsu").rows[3].cells;
 	rows[3] = document.getElementById("ninjutsu").rows[5].cells;
@@ -38,7 +40,7 @@ function ninjutsu(){
 			rows[2][3].innerHTML = "1.10%";
 			rows[3][4].innerHTML = "8/8";
 			
-			switch(document.getElementsByClassName("type").item(0).innerHTML){
+			switch(rows[0][0].innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "936";
 					rows[0][7].innerHTML = "119";
@@ -80,7 +82,7 @@ function ninjutsu(){
 			rows[2][3].innerHTML = "0.90%";
 			rows[3][4].innerHTML = "6/6";
 			
-			switch(document.getElementsByClassName("type").item(0).innerHTML){
+			switch(rows[0][0].innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "695";
 					rows[0][7].innerHTML = "87";
@@ -122,7 +124,7 @@ function ninjutsu(){
 			rows[2][3].innerHTML = "0.50%";
 			rows[3][4].innerHTML = "2/2";
 			
-			switch(document.getElementsByClassName("type").item(0).innerHTML){
+			switch(rows[0][0].innerHTML){
 				case "Assist":
 					rows[0][5].innerHTML = "408";
 					rows[0][7].innerHTML = "50";
