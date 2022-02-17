@@ -1,4 +1,5 @@
 function createUltimateJutsu(){
+	let rows2 = [[]];
 	const table = document.getElementById("ultimateJutsu");
 	let header = table.createTHead();
 	let row0 = header.insertRow(0);
@@ -6,6 +7,12 @@ function createUltimateJutsu(){
 	let row0Cell1 = row0.insertCell(1);
 	row0Cell0.outerHTML = "<th colspan = 4 >Ninjutsu</th>";
 	row0Cell1.outerHTML = "<th colspan = 4 >Max Card Stats</th>";
+
+	let img = document.createElement("img");
+	img.classList.add("typeImage");
+	img.referrerPolicy = "no-referrer";
+	rows2[1] = document.getElementById("ultimateJutsu").rows[1].cells;
+	rows2[1][1].appendChild(img);
 }
 
 function ultimateJutsu(){
@@ -29,6 +36,7 @@ function ultimateJutsu(){
 	
 	rows[0] = document.getElementById("ultimateJutsu").rows[1].cells;
 	rows[0][0].style.fontWeight = "bold";
+	document.getElementsByClassName("typeImage").item(0).alt = rows[0][0].innerHTML;
 	rows[1] = document.getElementById("ultimateJutsu").rows[2].cells;
 	rows[2] = document.getElementById("ultimateJutsu").rows[3].cells;
 	rows[3] = document.getElementById("ultimateJutsu").rows[5].cells;
