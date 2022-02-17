@@ -6,13 +6,22 @@ function createNinjutsu() {
     let row0Cell0 = row0.insertCell(0);
     let row0Cell1 = row0.insertCell(1);
     let row1Cell2 = row1.insertCell(1);
+    let row1Cell3 = document.getElementById("ninjutsu").rows[1].cells[3];
     row0Cell0.outerHTML = "<th colspan = 4 >Ninjutsu</th>";
     row0Cell1.outerHTML = "<th colspan = 4 >Max Card Stats</th>";
 
-    let img = document.createElement("img");
-    img.classList.add("typeImage");
-    img.referrerPolicy = "no-referrer";
-    row1Cell2.appendChild(img);
+    let imgType = document.createElement("img");
+    imgType.classList.add("typeImage");
+    imgType.referrerPolicy = "no-referrer";
+    row1Cell2.appendChild(imgType);
+
+    let imgRank = document.createElement("img");
+    imgRank.classList.add("rankImage");
+    imgRank.alt = row1Cell3.innerHTML;
+    row1Cell3.innerHTML = "";
+    imgRank.referrerPolicy = "no-referrer";
+    row1Cell3.appendChild(imgRank);
+
 }
 
 function ninjutsu() {

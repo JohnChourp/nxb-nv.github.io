@@ -1,77 +1,77 @@
 :root {
-	--bg-color-body: white;
-	--text-color-body: black;
+    --bg-color-body: white;
+    --text-color-body: black;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	overflow: auto;
-	font: normal 14px "Oswald", sans-serif;
-	background-color: var(--bg-color-body);
-	color: var(--text-color-body);
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font: normal 14px "Oswald", sans-serif;
+    background-color: var(--bg-color-body);
+    color: var(--text-color-body);
 }
 
 .id {
-	text-align: center;
+    text-align: center;
 }
 
 .category {
-	text-align: center;
-	font-weight: bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 .thumbCard {
-	width: 9vh;
-	height: 6.7vh;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
-	transition: transform .2s; /* Animation */
+    width: 9vh;
+    height: 6.7vh;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
+    transition: transform .2s; /* Animation */
 }
 
 .thumbCard:hover {
-	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .jutsuName {
-	text-align: center;
-	font-weight: bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 .jutsuImage {
-	height: 7vh;
-	width: 7vh;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
-	transition: transform .2s; /* Animation */
+    height: 7vh;
+    width: 7vh;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
+    transition: transform .2s; /* Animation */
 }
 
 .jutsuImage:hover {
-	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .jutsuLv {
-	text-align: center;
+    text-align: center;
 }
 
 .cpCost {
-	text-align: center;
+    text-align: center;
 }
 
 .cri {
-	text-align: center;
+    text-align: center;
 }
 
 .pow {
-	text-align: center;
+    text-align: center;
 }
 
 .rt {
-	text-align: center;
+    text-align: center;
 }

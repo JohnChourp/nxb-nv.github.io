@@ -1,85 +1,85 @@
 #entries {
-	display: inline-block;
+    display: inline-block;
 }
 
 #entries a:hover {
-	background-color: #DDD;
+    background-color: #DDD;
 }
 
 .btnEntries {
-	width: 10vw;
-	background-color: #3498DB;
-	color: white;
-	font-size: 16px;
+    width: 10vw;
+    background-color: #3498DB;
+    color: white;
+    font-size: 16px;
 }
 
 .btnEntries:hover, .btnEntries:focus {
-	background-color: #246D9B;
-	cursor: pointer;
-	transition: all .2s linear;
+    background-color: #246D9B;
+    cursor: pointer;
+    transition: all .2s linear;
 }
 
 .contentEntries {
-	display: none;
-	position: absolute;
-	width: 10vw;
-	background-color: #F1F1F1;
-	box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
-	text-align: center;
+    display: none;
+    position: absolute;
+    width: 10vw;
+    background-color: #F1F1F1;
+    box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .contentEntries a {
-	color: black;
-	padding: 1.4vh 1vw;
-	text-decoration: none;
-	display: block;
-	transition: all .2s linear;
+    color: black;
+    padding: 1.4vh 1vw;
+    text-decoration: none;
+    display: block;
+    transition: all .2s linear;
 }
 
 .showEntries {
-	display: block;
+    display: block;
 }
 
 .entriesActive {
-	background-color: #4BAF5C;
+    background-color: #4BAF5C;
 }
 
 @media screen and (max-width: 1275px) {
-	.btnEntries {
-		width: 15vw;
-	}
-	
-	.contentEntries {
-		width: 15vw;
-	}
+    .btnEntries {
+        width: 15vw;
+    }
+
+    .contentEntries {
+        width: 15vw;
+    }
 }
 
 @media screen and (max-width: 850px) {
-	.btnEntries {
-		width: 20vw;
-	}
-	
-	.contentEntries {
-		width: 20vw;
-	}
+    .btnEntries {
+        width: 20vw;
+    }
+
+    .contentEntries {
+        width: 20vw;
+    }
 }
 
 @media screen and (max-width: 640px) {
-	.btnEntries {
-		width: 25vw;
-	}
-	
-	.contentEntries {
-		width: 25vw;
-	}
+    .btnEntries {
+        width: 25vw;
+    }
+
+    .contentEntries {
+        width: 25vw;
+    }
 }
 
 @media screen and (max-width: 510px) {
-	.btnEntries {
-		width: 30vw;
-	}
-	
-	.contentEntries {
-		width: 30vw;
-	}
+    .btnEntries {
+        width: 30vw;
+    }
+
+    .contentEntries {
+        width: 30vw;
+    }
 }
