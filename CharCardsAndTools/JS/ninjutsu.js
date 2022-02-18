@@ -1,26 +1,53 @@
 function createNinjutsu() {
+    let rows = [[]];
     const table = document.getElementById("ninjutsu");
     let header = table.createTHead();
-    let row0 = header.insertRow(0);
-    let row1 = document.getElementById("ninjutsu").rows[1];
-    let row0Cell0 = row0.insertCell(0);
-    let row0Cell1 = row0.insertCell(1);
-    let row1Cell2 = row1.insertCell(1);
-    let row1Cell3 = document.getElementById("ninjutsu").rows[1].cells[3];
-    row0Cell0.outerHTML = "<th colspan = 4 >Ninjutsu</th>";
-    row0Cell1.outerHTML = "<th colspan = 4 >Max Card Stats</th>";
 
+    rows[0] = header.insertRow(0);
+    rows[1] = document.getElementById("ninjutsu").rows[1];
+    rows[2] = document.getElementById("ninjutsu").rows[2];
+
+    rows[0][0] = rows[0].insertCell(0);
+    rows[0][0].outerHTML = "<th colspan = 4 >Ninjutsu</th>";
+
+    rows[0][1] = rows[0].insertCell(1);
+    rows[0][1].outerHTML = "<th colspan = 4 >Max Card Stats</th>";
+
+    rows[1][1] = rows[1].insertCell(1);
     let imgType = document.createElement("img");
     imgType.classList.add("typeImage");
     imgType.referrerPolicy = "no-referrer";
-    row1Cell2.appendChild(imgType);
+    rows[1][1].appendChild(imgType);
 
+    rows[1][3] = document.getElementById("ninjutsu").rows[1].cells[3];
     let imgRank = document.createElement("img");
     imgRank.classList.add("rankImage");
-    imgRank.alt = row1Cell3.innerHTML;
-    row1Cell3.innerHTML = "";
+    imgRank.alt = rows[1][3].innerHTML;
+    rows[1][3].innerHTML = "";
     imgRank.referrerPolicy = "no-referrer";
-    row1Cell3.appendChild(imgRank);
+    rows[1][3].appendChild(imgRank);
+
+    rows[1][4] = rows[1].insertCell(4);
+    rows[1][4].innerHTML = "HP";
+
+    rows[1].insertCell(5);
+
+    rows[1][6] = rows[1].insertCell(6);
+    rows[1][6].innerHTML = "CP";
+
+    rows[1].insertCell(7);
+
+    rows[2][0] = document.getElementById("ninjutsu").rows[2].cells[0];
+    rows[2][0].colSpan = "4";
+    rows[2][0].rowSpan = "2";
+    rows[2][0].classList.add("cardImageTable");
+
+    let cardImage = document.createElement("img");
+    cardImage.classList.add("cardImage");
+    cardImage.referrerPolicy = "no-referrer";
+    cardImage.src = rows[2][0].innerHTML;
+    rows[2][0].innerHTML = "";
+    rows[2][0].appendChild(cardImage);
 
 }
 

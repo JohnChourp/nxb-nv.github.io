@@ -106,7 +106,7 @@ a.equipBy:active {
     font-weight: bold;
 }
 
-#cardImage {
+.cardImageTable {
     padding: 0;
 }
 
