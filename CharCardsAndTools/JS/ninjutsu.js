@@ -6,6 +6,7 @@ function createNinjutsu() {
     rows[0] = header.insertRow(0);
     rows[1] = document.getElementById("ninjutsu").rows[1];
     rows[2] = document.getElementById("ninjutsu").rows[2];
+    rows[3] = table.insertRow(3);
 
     rows[0][0] = rows[0].insertCell(0);
     rows[0][0].outerHTML = "<th colspan = 4 >Ninjutsu</th>";
@@ -49,6 +50,25 @@ function createNinjutsu() {
     rows[2][0].innerHTML = "";
     rows[2][0].appendChild(cardImage);
 
+    rows[2][1] = rows[2].insertCell(1);
+    rows[2][1].innerHTML = "ATK";
+
+    rows[2].insertCell(2);
+
+    rows[2][3] = rows[2].insertCell(3);
+    rows[2][3].innerHTML = "DEF";
+
+    rows[2].insertCell(4);
+
+    rows[3][0] = rows[3].insertCell(0);
+    rows[3][0].innerHTML = "CRI";
+
+    rows[3].insertCell(1);
+
+    rows[3][2] = rows[3].insertCell(2);
+    rows[3][2].innerHTML = "EVA";
+
+    rows[3].insertCell(3);
 }
 
 function ninjutsu() {
