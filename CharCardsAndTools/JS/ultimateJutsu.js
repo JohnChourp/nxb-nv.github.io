@@ -9,6 +9,7 @@ function createUltimateJutsu() {
     rows[3] = table.insertRow(3);
     rows[4] = table.insertRow(4);
     rows[5] = document.getElementById("ultimateJutsu").rows[5];
+    rows[6] = document.getElementById("ultimateJutsu").rows[6];
 
     rows[0][0] = rows[0].insertCell(0);
     rows[0][1] = rows[0].insertCell(1);
@@ -94,6 +95,16 @@ function createUltimateJutsu() {
     rows[5][2].style.fontWeight = "bold";
 
     rows[5][3].innerHTML = "LVL";
+
+    rows[6][0] = document.getElementById("ultimateJutsu").rows[6].cells[0];
+    rows[6][0].colSpan = "2";
+
+    let jutsuImage = document.createElement("img");
+    jutsuImage.classList.add("jutsuImage");
+    jutsuImage.referrerPolicy = "no-referrer";
+    jutsuImage.src = rows[6][0].innerHTML;
+    rows[6][0].innerHTML = "";
+    rows[6][0].appendChild(jutsuImage);
 }
 
 function ultimateJutsu() {

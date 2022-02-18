@@ -111,7 +111,7 @@ a.equipBy:active {
     /* Center the Image */
 }
 
-#jutsuImage {
+.jutsuImage {
     width: 90px;
     /* Center the Image */
     display: block;
@@ -217,7 +217,7 @@ a.equipBy:active {
         width: 20px;
     }
 
-    #jutsuImage {
+    .jutsuImage {
         width: 45px;
     }
 
