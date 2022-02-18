@@ -11,12 +11,28 @@ function createUltimateJutsu() {
     rows[5] = document.getElementById("ultimateJutsu").rows[5];
 
     rows[0][0] = rows[0].insertCell(0);
+    rows[0][1] = rows[0].insertCell(1);
+    rows[1][1] = rows[1].insertCell(1);
+    rows[1][4] = rows[1].insertCell(4);
+    rows[1].insertCell(5);
+    rows[1][6] = rows[1].insertCell(6);
+    rows[1].insertCell(7);
+    rows[2][1] = rows[2].insertCell(1);
+    rows[2].insertCell(2);
+    rows[2][3] = rows[2].insertCell(3);
+    rows[2].insertCell(4);
+    rows[3][0] = rows[3].insertCell(0);
+    rows[3].insertCell(1);
+    rows[3][2] = rows[3].insertCell(2);
+    rows[3].insertCell(3);
+    rows[4][0] = rows[4].insertCell(0);
+    rows[5][1] = rows[5].insertCell(1);
+    rows[5][3] = rows[5].insertCell(3);
+    rows[5].insertCell(4);
+
     rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
 
-    rows[0][1] = rows[0].insertCell(1);
     rows[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
-
-    rows[1][1] = rows[1].insertCell(1);
 
     rows[1][0] = document.getElementById("ultimateJutsu").rows[1].cells[0];
     rows[1][0].style.fontWeight = "bold";
@@ -35,15 +51,9 @@ function createUltimateJutsu() {
     imgRank.referrerPolicy = "no-referrer";
     rows[1][3].appendChild(imgRank);
 
-    rows[1][4] = rows[1].insertCell(4);
     rows[1][4].innerHTML = "HP";
 
-    rows[1].insertCell(5);
-
-    rows[1][6] = rows[1].insertCell(6);
     rows[1][6].innerHTML = "CP";
-
-    rows[1].insertCell(7);
 
     rows[2][0] = document.getElementById("ultimateJutsu").rows[2].cells[0];
     rows[2][0].colSpan = "4";
@@ -57,34 +67,22 @@ function createUltimateJutsu() {
     rows[2][0].innerHTML = "";
     rows[2][0].appendChild(cardImage);
 
-    rows[2][1] = rows[2].insertCell(1);
     rows[2][1].innerHTML = "ATK";
 
-    rows[2].insertCell(2);
-
-    rows[2][3] = rows[2].insertCell(3);
     rows[2][3].innerHTML = "DEF";
 
-    rows[2].insertCell(4);
-
-    rows[3][0] = rows[3].insertCell(0);
     rows[3][0].innerHTML = "CRI";
 
-    rows[3].insertCell(1);
-
-    rows[3][2] = rows[3].insertCell(2);
     rows[3][2].innerHTML = "EVA";
 
-    rows[3].insertCell(3);
 
     rows[4][0] = document.getElementById("ultimateJutsu").rows[4].cells[0];
-    rows[4][0] = rows[4].insertCell(0);
+
     rows[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
 
     rows[5][0] = document.getElementById("ultimateJutsu").rows[5].cells[0];
     rows[5][0].style.fontWeight = "bold";
 
-    rows[5][1] = rows[5].insertCell(1);
     let natureImage = document.createElement("img");
     natureImage.classList.add("natureImage");
     natureImage.alt = rows[5][0].innerHTML;
@@ -95,10 +93,7 @@ function createUltimateJutsu() {
     rows[5][2].colSpan = "4";
     rows[5][2].style.fontWeight = "bold";
 
-    rows[5][3] = rows[5].insertCell(3);
     rows[5][3].innerHTML = "LVL";
-
-    rows[5].insertCell(4);
 }
 
 function ultimateJutsu() {
