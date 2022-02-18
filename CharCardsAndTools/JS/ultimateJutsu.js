@@ -7,12 +7,13 @@ function createUltimateJutsu() {
     rows[1] = document.getElementById("ultimateJutsu").rows[1];
     rows[2] = document.getElementById("ultimateJutsu").rows[2];
     rows[3] = table.insertRow(3);
+    rows[4] = table.insertRow(4);
 
     rows[0][0] = rows[0].insertCell(0);
-    rows[0][0].outerHTML = "<th colspan = 4 >Ninjutsu</th>";
+    rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
 
     rows[0][1] = rows[0].insertCell(1);
-    rows[0][1].outerHTML = "<th colspan = 4 >Max Card Stats</th>";
+    rows[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
 
     rows[1][1] = rows[1].insertCell(1);
     let imgType = document.createElement("img");
@@ -69,6 +70,10 @@ function createUltimateJutsu() {
     rows[3][2].innerHTML = "EVA";
 
     rows[3].insertCell(3);
+
+    rows[4][0] = document.getElementById("ultimateJutsu").rows[4].cells[0];
+    rows[4][0] = rows[4].insertCell(0);
+    rows[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
 }
 
 function ultimateJutsu() {
