@@ -90,6 +90,15 @@ function createUltimateJutsu() {
     natureImage.alt = rows[5][0].innerHTML;
     natureImage.referrerPolicy = "no-referrer";
     rows[5][1].appendChild(natureImage);
+
+    rows[5][2] = document.getElementById("ultimateJutsu").rows[5].cells[2];
+    rows[5][2].colSpan = "4";
+    rows[5][2].style.fontWeight = "bold";
+
+    rows[5][3] = rows[5].insertCell(3);
+    rows[5][3].innerHTML = "LVL";
+
+    rows[5].insertCell(4);
 }
 
 function ultimateJutsu() {
