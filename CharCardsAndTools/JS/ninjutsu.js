@@ -10,26 +10,43 @@ function createNinjutsu() {
     rows[4] = table.insertRow(4);
     rows[5] = document.getElementById("ninjutsu").rows[5];
     rows[6] = document.getElementById("ninjutsu").rows[6];
+    rows[7] = document.getElementById("ninjutsu").rows[7];
 
     rows[0][0] = rows[0].insertCell(0);
     rows[0][1] = rows[0].insertCell(1);
+
     rows[1][1] = rows[1].insertCell(1);
     rows[1][4] = rows[1].insertCell(4);
     rows[1].insertCell(5);
     rows[1][6] = rows[1].insertCell(6);
     rows[1].insertCell(7);
+
     rows[2][1] = rows[2].insertCell(1);
     rows[2].insertCell(2);
     rows[2][3] = rows[2].insertCell(3);
     rows[2].insertCell(4);
+
     rows[3][0] = rows[3].insertCell(0);
     rows[3].insertCell(1);
     rows[3][2] = rows[3].insertCell(2);
     rows[3].insertCell(3);
+
     rows[4][0] = rows[4].insertCell(0);
+
     rows[5][1] = rows[5].insertCell(1);
     rows[5][3] = rows[5].insertCell(3);
     rows[5].insertCell(4);
+
+    rows[6][1] = rows[6].insertCell(1);
+    rows[6].insertCell(2);
+    rows[6][3] = rows[6].insertCell(3);
+    rows[6].insertCell(4);
+    rows[6][5] = rows[6].insertCell(5);
+    rows[6].insertCell(6);
+
+    rows[7].insertCell(0);
+    rows[7].insertCell(1);
+    rows[7][2] = rows[7].insertCell(2);
 
     rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
 
@@ -45,6 +62,7 @@ function createNinjutsu() {
     rows[1][1].appendChild(imgType);
 
     rows[1][3] = document.getElementById("ninjutsu").rows[1].cells[3];
+
     let imgRank = document.createElement("img");
     imgRank.classList.add("rankImage");
     imgRank.alt = rows[1][3].innerHTML;
@@ -104,6 +122,24 @@ function createNinjutsu() {
     jutsuImage.src = rows[6][0].innerHTML;
     rows[6][0].innerHTML = "";
     rows[6][0].appendChild(jutsuImage);
+
+    rows[6][1].innerHTML = "CP Cost";
+    rows[6][3].innerHTML = "CRI";
+    rows[6][5].innerHTML = "POW";
+
+    rows[7][0] = document.getElementById("ninjutsu").rows[7].cells[0];
+
+    let rtImage = document.createElement("img");
+    rtImage.classList.add("rtImage");
+    rtImage.referrerPolicy = "no-referrer";
+    rtImage.alt = "rt";
+    rows[7][0].appendChild(rtImage);
+
+    rows[7][2].colSpan = "3";
+    rows[7][2].innerHTML = "Equippable By";
+
+    rows[7][3] = document.getElementById("ninjutsu").rows[7].cells[3];
+    rows[7][3].colSpan = "3";
 }
 
 function ninjutsu() {
