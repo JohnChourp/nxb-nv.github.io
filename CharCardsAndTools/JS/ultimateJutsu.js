@@ -11,6 +11,7 @@ function createUltimateJutsu() {
     rows[5] = document.getElementById("ultimateJutsu").rows[5];
     rows[6] = document.getElementById("ultimateJutsu").rows[6];
     rows[7] = document.getElementById("ultimateJutsu").rows[7];
+    rows[8] = document.getElementById("ultimateJutsu").rows[8];
 
     rows[0][0] = rows[0].insertCell(0);
     rows[0][1] = rows[0].insertCell(1);
@@ -47,6 +48,8 @@ function createUltimateJutsu() {
     rows[7].insertCell(0);
     rows[7].insertCell(1);
     rows[7][2] = rows[7].insertCell(2);
+
+    rows[8].insertCell(0);
 
     rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
 
@@ -141,6 +144,13 @@ function createUltimateJutsu() {
 
     rows[7][3] = document.getElementById("ultimateJutsu").rows[7].cells[3];
     rows[7][3].colSpan = "3";
+
+    rows[8][0] = document.getElementById("ultimateJutsu").rows[8].cells[0];
+    rows[8][0].colSpan = "2";
+    rows[8][0].innerHTML = "Info";
+
+    rows[8][1] = document.getElementById("ultimateJutsu").rows[8].cells[1];
+    rows[8][1].colSpan = "6";
 }
 
 function ultimateJutsu() {
