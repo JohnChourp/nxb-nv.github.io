@@ -8,6 +8,7 @@ function createNinjutsu() {
     rows[2] = document.getElementById("ninjutsu").rows[2];
     rows[3] = table.insertRow(3);
     rows[4] = table.insertRow(4);
+    rows[5] = document.getElementById("ninjutsu").rows[5];
 
     rows[0][0] = rows[0].insertCell(0);
     rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
@@ -16,8 +17,13 @@ function createNinjutsu() {
     rows[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
 
     rows[1][1] = rows[1].insertCell(1);
+
+    rows[1][0] = document.getElementById("ninjutsu").rows[1].cells[0];
+    rows[1][0].style.fontWeight = "bold";
+
     let imgType = document.createElement("img");
     imgType.classList.add("typeImage");
+    imgType.alt = rows[1][0].innerHTML;
     imgType.referrerPolicy = "no-referrer";
     rows[1][1].appendChild(imgType);
 
@@ -74,6 +80,17 @@ function createNinjutsu() {
     rows[4][0] = document.getElementById("ninjutsu").rows[4].cells[0];
     rows[4][0] = rows[4].insertCell(0);
     rows[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
+
+    rows[5][0] = document.getElementById("ninjutsu").rows[5].cells[0];
+    rows[5][0].style.fontWeight = "bold";
+
+    rows[5][1] = rows[5].insertCell(1);
+    let natureImage = document.createElement("img");
+    natureImage.classList.add("natureImage");
+    natureImage.alt = rows[5][0].innerHTML;
+    natureImage.referrerPolicy = "no-referrer";
+    rows[5][1].appendChild(natureImage);
+
 }
 
 function ninjutsu() {
@@ -96,8 +113,6 @@ function ninjutsu() {
     }
 
     rows[0] = document.getElementById("ninjutsu").rows[1].cells;
-    rows[0][0].style.fontWeight = "bold";
-    document.getElementsByClassName("typeImage").item(0).alt = rows[0][0].innerHTML;
     rows[1] = document.getElementById("ninjutsu").rows[2].cells;
     rows[2] = document.getElementById("ninjutsu").rows[3].cells;
     rows[3] = document.getElementById("ninjutsu").rows[5].cells;
