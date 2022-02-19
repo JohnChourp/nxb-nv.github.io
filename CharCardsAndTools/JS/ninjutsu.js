@@ -147,173 +147,105 @@ function createNinjutsu() {
 }
 
 function createNinjutsuCheckByLvl() {
-    let rowsCheckByLvl = [[]], rowsNinjutsu = [[]];
+    let rowsCheckByLvl = [[]], rowsNinjutsu = [[]],header;
     const tableCheckByLvl = document.getElementById("ninjutsuCheckByLv");
     const tableNinjutsu = document.getElementById("ninjutsu");
+    let imgRankLvl = document.createElement("img");
+
+    header = tableCheckByLvl.createTHead();
+    //row0
+    rowsCheckByLvl[0] = header.insertRow(0);
+    rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
+    rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
+    //row0
+
+    //row1
+    rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
+    rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
+    rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
+    rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
+    rowsCheckByLvl[1][0].colSpan = "2";
+    rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
+    rowsCheckByLvl[1][1].colSpan = "3";
+    rowsCheckByLvl[1][1].innerHTML = "Card Rank";
+    rowsCheckByLvl[1][2].colSpan = "3";
+    //row1
+
+    //row2
+    rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
+    rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
+    rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
+    rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
+    rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
+    let rtImageLvl = document.createElement("img");
+    rtImageLvl.classList.add("rtImage");
+    rtImageLvl.referrerPolicy = "no-referrer";
+    rtImageLvl.alt = "rt";
+    rowsCheckByLvl[2][0].appendChild(rtImageLvl);
+    rowsCheckByLvl[2][2].innerHTML = "CP Cost";
+    rowsCheckByLvl[2][4].innerHTML = "CRI";
+    rowsCheckByLvl[2][6].innerHTML = "POW";
+    //row2
+
+    //row3
+    rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
+    rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
+    rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
+    rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
+    rowsCheckByLvl[3][0].colSpan = "2";
+    rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
+    rowsCheckByLvl[3][1].colSpan = "3";
+    rowsCheckByLvl[3][1].innerHTML = "Card Rank";
+    rowsCheckByLvl[3][2].colSpan = "3";
+    //row3
+
+    //row4
+    rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
+    rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
+    rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
+    rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
+    rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
+    rtImageLvl = document.createElement("img");
+    rtImageLvl.classList.add("rtImage");
+    rtImageLvl.referrerPolicy = "no-referrer";
+    rtImageLvl.alt = "rt";
+    rowsCheckByLvl[4][0].appendChild(rtImageLvl);
+    rowsCheckByLvl[4][2].innerHTML = "CP Cost";
+    rowsCheckByLvl[4][4].innerHTML = "CRI";
+    rowsCheckByLvl[4][6].innerHTML = "POW";
+    //row4
 
     rowsNinjutsu[1] = tableNinjutsu.rows[1].cells;
     switch (rowsNinjutsu[1][2].innerHTML) {
         case "Lv 40/40":
-            let header40 = tableCheckByLvl.createTHead();
+            rowsCheckByLvl[1] = tableCheckByLvl.rows[1];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "1 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl);
 
-            rowsCheckByLvl[0] = header40.insertRow(0);
-            rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
-            rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
-            rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
-            rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
-
-            rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
-
-            rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
-            rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
-            rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
-
-            rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
-            rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
-            rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
-            rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
-
-            rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
-            rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
-            rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
-
-            rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
-            rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
-            rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
-            rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
-
-            rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
-
-            rowsCheckByLvl[1][0].colSpan = "2";
-            rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
-
-            rowsCheckByLvl[1][1].colSpan = "3";
-            rowsCheckByLvl[1][1].innerHTML = "Card Rank";
-
-            rowsCheckByLvl[1][2].colSpan = "3";
-            let imgRankLvl16 = document.createElement("img");
-            imgRankLvl16.classList.add("rankImage");
-            imgRankLvl16.alt = "1 Star";
-            imgRankLvl16.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[1][2].appendChild(imgRankLvl16);
-
-            let rtImageLvl17 = document.createElement("img");
-            rtImageLvl17.classList.add("rtImage");
-            rtImageLvl17.referrerPolicy = "no-referrer";
-            rtImageLvl17.alt = "rt";
-            rowsCheckByLvl[2][0].appendChild(rtImageLvl17);
-
-            rowsCheckByLvl[2][2].innerHTML = "CP Cost";
-
-            rowsCheckByLvl[2][4].innerHTML = "CRI";
-
-            rowsCheckByLvl[2][6].innerHTML = "POW";
-
-            rowsCheckByLvl[3][0].colSpan = "2";
-            rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
-
-            rowsCheckByLvl[3][1].colSpan = "3";
-            rowsCheckByLvl[3][1].innerHTML = "Card Rank";
-
-            rowsCheckByLvl[3][2].colSpan = "3";
-            let imgRankLvl18 = document.createElement("img");
-            imgRankLvl18.classList.add("rankImage");
-            imgRankLvl18.alt = "3 Star";
-            imgRankLvl18.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[3][2].appendChild(imgRankLvl18);
-
-            let rtImageLvl19 = document.createElement("img");
-            rtImageLvl19.classList.add("rtImage");
-            rtImageLvl19.referrerPolicy = "no-referrer";
-            rtImageLvl19.alt = "rt";
-            rowsCheckByLvl[4][0].appendChild(rtImageLvl19);
-
-            rowsCheckByLvl[4][2].innerHTML = "CP Cost";
-
-            rowsCheckByLvl[4][4].innerHTML = "CRI";
-
-            rowsCheckByLvl[4][6].innerHTML = "POW";
+            rowsCheckByLvl[3] = tableCheckByLvl.rows[3];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "3 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl);
             break;
         case "Lv 60/60":
-            let header60 = tableCheckByLvl.createTHead();
+            rowsCheckByLvl[1] = tableCheckByLvl.rows[1];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "3 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl);
 
-            rowsCheckByLvl[0] = header60.insertRow(0);
-            rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
-            rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
-            rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
-            rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
-
-            rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
-
-            rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
-            rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
-            rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
-
-            rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
-            rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
-            rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
-            rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
-
-            rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
-            rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
-            rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
-
-            rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
-            rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
-            rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
-            rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
-
-            rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
-
-            rowsCheckByLvl[1][0].colSpan = "2";
-            rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
-
-            rowsCheckByLvl[1][1].colSpan = "3";
-            rowsCheckByLvl[1][1].innerHTML = "Card Rank";
-
-            rowsCheckByLvl[1][2].colSpan = "3";
-            let imgRankLvl20 = document.createElement("img");
-            imgRankLvl20.classList.add("rankImage");
-            imgRankLvl20.alt = "1 Star";
-            imgRankLvl20.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[1][2].appendChild(imgRankLvl20);
-
-            let rtImageLvl21 = document.createElement("img");
-            rtImageLvl21.classList.add("rtImage");
-            rtImageLvl21.referrerPolicy = "no-referrer";
-            rtImageLvl21.alt = "rt";
-            rowsCheckByLvl[2][0].appendChild(rtImageLvl21);
-
-            rowsCheckByLvl[2][2].innerHTML = "CP Cost";
-
-            rowsCheckByLvl[2][4].innerHTML = "CRI";
-
-            rowsCheckByLvl[2][6].innerHTML = "POW";
-
-            rowsCheckByLvl[3][0].colSpan = "2";
-            rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
-
-            rowsCheckByLvl[3][1].colSpan = "3";
-            rowsCheckByLvl[3][1].innerHTML = "Card Rank";
-
-            rowsCheckByLvl[3][2].colSpan = "3";
-            let imgRankLvl22 = document.createElement("img");
-            imgRankLvl22.classList.add("rankImage");
-            imgRankLvl22.alt = "3 Star";
-            imgRankLvl22.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[3][2].appendChild(imgRankLvl22);
-
-            let rtImageLvl23 = document.createElement("img");
-            rtImageLvl23.classList.add("rtImage");
-            rtImageLvl23.referrerPolicy = "no-referrer";
-            rtImageLvl23.alt = "rt";
-            rowsCheckByLvl[4][0].appendChild(rtImageLvl23);
-
-            rowsCheckByLvl[4][2].innerHTML = "CP Cost";
-
-            rowsCheckByLvl[4][4].innerHTML = "CRI";
-
-            rowsCheckByLvl[4][6].innerHTML = "POW";
+            rowsCheckByLvl[3] = tableCheckByLvl.rows[3];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "3 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[5] = tableCheckByLvl.insertRow(5);
 
@@ -484,85 +416,19 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[12][6].innerHTML = "POW";
             break;
         case "Lv 70/70":
-            let header = tableCheckByLvl.createTHead();
+            rowsCheckByLvl[1] = tableCheckByLvl.rows[1];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "4 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl);
 
-            rowsCheckByLvl[0] = header.insertRow(0);
-            rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
-            rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
-            rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
-            rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
-
-            rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
-
-            rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
-            rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
-            rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
-
-            rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
-            rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
-            rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
-            rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
-
-            rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
-            rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
-            rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
-
-            rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
-            rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
-            rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
-            rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
-
-            rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
-
-            rowsCheckByLvl[1][0].colSpan = "2";
-            rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
-
-            rowsCheckByLvl[1][1].colSpan = "3";
-            rowsCheckByLvl[1][1].innerHTML = "Card Rank";
-
-            rowsCheckByLvl[1][2].colSpan = "3";
-            let imgRankLvl1 = document.createElement("img");
-            imgRankLvl1.classList.add("rankImage");
-            imgRankLvl1.alt = "1 Star";
-            imgRankLvl1.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[1][2].appendChild(imgRankLvl1);
-
-            let rtImageLvl1 = document.createElement("img");
-            rtImageLvl1.classList.add("rtImage");
-            rtImageLvl1.referrerPolicy = "no-referrer";
-            rtImageLvl1.alt = "rt";
-            rowsCheckByLvl[2][0].appendChild(rtImageLvl1);
-
-            rowsCheckByLvl[2][2].innerHTML = "CP Cost";
-
-            rowsCheckByLvl[2][4].innerHTML = "CRI";
-
-            rowsCheckByLvl[2][6].innerHTML = "POW";
-
-            rowsCheckByLvl[3][0].colSpan = "2";
-            rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
-
-            rowsCheckByLvl[3][1].colSpan = "3";
-            rowsCheckByLvl[3][1].innerHTML = "Card Rank";
-
-            rowsCheckByLvl[3][2].colSpan = "3";
-            let imgRankLvl2 = document.createElement("img");
-            imgRankLvl2.classList.add("rankImage");
-            imgRankLvl2.alt = "3 Star";
-            imgRankLvl2.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[3][2].appendChild(imgRankLvl2);
-
-            let rtImageLvl2 = document.createElement("img");
-            rtImageLvl2.classList.add("rtImage");
-            rtImageLvl2.referrerPolicy = "no-referrer";
-            rtImageLvl2.alt = "rt";
-            rowsCheckByLvl[4][0].appendChild(rtImageLvl2);
-
-            rowsCheckByLvl[4][2].innerHTML = "CP Cost";
-
-            rowsCheckByLvl[4][4].innerHTML = "CRI";
-
-            rowsCheckByLvl[4][6].innerHTML = "POW";
+            rowsCheckByLvl[3] = tableCheckByLvl.rows[3];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "4 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[5] = tableCheckByLvl.insertRow(5);
 
