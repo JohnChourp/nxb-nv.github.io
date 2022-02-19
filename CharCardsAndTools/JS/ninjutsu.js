@@ -148,154 +148,157 @@ function createNinjutsu() {
 
 function ninjutsu() {
     createNinjutsu();
-    let rows = [[]], rowsNJByLvl = [[]], rowsNinJutsu = [[]], rowsLength;
+    let rowsNinJutsu = [[]], rowsCheckByLvl = [[]], rowsCheckByLvLength;
 
-    rowsLength = document.getElementById("ninjutsuCheckByLv").rows.length;
-    rowsNinJutsu[6] = document.getElementById("ninjutsu").rows[6].cells;
-    rowsNinJutsu[7] = document.getElementById("ninjutsu").rows[7].cells;
+    const tableNinjutsu = document.getElementById("ninjutsu");
+    const tableCheckByLv = document.getElementById("ninjutsuCheckByLv");
 
-    for (let i = 0, j = 0; i < (rowsLength - 1) / 2, j < (rowsLength - 1) / 2; i = i + 2, j++) {
-        rowsNJByLvl[j] = document.getElementById("ninjutsuCheckByLv").rows[2 + i].cells;
+    rowsCheckByLvLength = tableCheckByLv.rows.length;
+
+    for (let i = 0, j = 0; i < (rowsCheckByLvLength - 1) / 2, j < (rowsCheckByLvLength - 1) / 2; i = i + 2, j++) {
+        rowsCheckByLvl[j] = tableCheckByLv.rows[2 + i].cells;
     }
 
-    for (let i = 2, j = 1; i < (rowsLength - 1) / 2, j < ((rowsLength - 1) / 2) - 1; i++, j++) {
-        rowsNJByLvl[i][1].innerHTML = eval("parseInt(rowsNJByLvl[1][1].innerHTML) + ( parseInt(rowsNJByLvl[1][1].innerHTML) - parseInt(rowsNJByLvl[0][1].innerHTML) ) * j");
-        rowsNJByLvl[i][3].innerHTML = eval("parseInt(rowsNJByLvl[1][3].innerHTML) + ( parseInt(rowsNJByLvl[1][3].innerHTML) - parseInt(rowsNJByLvl[0][3].innerHTML) ) * j");
-        rowsNJByLvl[i][5].innerHTML = eval("parseInt(rowsNJByLvl[1][5].innerHTML) + ( parseInt(rowsNJByLvl[1][5].innerHTML) - parseInt(rowsNJByLvl[0][5].innerHTML) ) * j") + ".00%";
-        rowsNJByLvl[i][7].innerHTML = eval("parseInt(rowsNJByLvl[1][7].innerHTML) + ( parseInt(rowsNJByLvl[1][7].innerHTML) - parseInt(rowsNJByLvl[0][7].innerHTML) ) * j");
+    for (let i = 2, j = 1; i < (rowsCheckByLvLength - 1) / 2, j < ((rowsCheckByLvLength - 1) / 2) - 1; i++, j++) {
+        rowsCheckByLvl[i][1].innerHTML = eval("parseInt(rowsCheckByLvl[1][1].innerHTML) + ( parseInt(rowsCheckByLvl[1][1].innerHTML) - parseInt(rowsCheckByLvl[0][1].innerHTML) ) * j");
+        rowsCheckByLvl[i][3].innerHTML = eval("parseInt(rowsCheckByLvl[1][3].innerHTML) + ( parseInt(rowsCheckByLvl[1][3].innerHTML) - parseInt(rowsCheckByLvl[0][3].innerHTML) ) * j");
+        rowsCheckByLvl[i][5].innerHTML = eval("parseInt(rowsCheckByLvl[1][5].innerHTML) + ( parseInt(rowsCheckByLvl[1][5].innerHTML) - parseInt(rowsCheckByLvl[0][5].innerHTML) ) * j") + ".00%";
+        rowsCheckByLvl[i][7].innerHTML = eval("parseInt(rowsCheckByLvl[1][7].innerHTML) + ( parseInt(rowsCheckByLvl[1][7].innerHTML) - parseInt(rowsCheckByLvl[0][7].innerHTML) ) * j");
     }
 
-    rows[1] = document.getElementById("ninjutsu").rows[1].cells;
-    rows[2] = document.getElementById("ninjutsu").rows[2].cells;
-    rows[3] = document.getElementById("ninjutsu").rows[3].cells;
-    rows[5] = document.getElementById("ninjutsu").rows[5].cells;
+    rowsNinJutsu[1] = tableNinjutsu.rows[1].cells;
+    rowsNinJutsu[2] = tableNinjutsu.rows[2].cells;
+    rowsNinJutsu[3] = tableNinjutsu.rows[3].cells;
+    rowsNinJutsu[5] = tableNinjutsu.rows[5].cells;
+    rowsNinJutsu[6] = tableNinjutsu.rows[6].cells;
+    rowsNinJutsu[7] = tableNinjutsu.rows[7].cells;
 
-    switch (rows[1][2].innerHTML) {
+    switch (rowsNinJutsu[1][2].innerHTML) {
         case "Lv 70/70":
-            rows[3][1].innerHTML = "1.10%";
-            rows[3][3].innerHTML = "1.10%";
-            rows[5][4].innerHTML = "8/8";
+            rowsNinJutsu[3][1].innerHTML = "1.10%";
+            rowsNinJutsu[3][3].innerHTML = "1.10%";
+            rowsNinJutsu[5][4].innerHTML = "8/8";
 
-            switch (rows[1][0].innerHTML) {
+            switch (rowsNinJutsu[1][0].innerHTML) {
                 case "Assist":
-                    rows[1][5].innerHTML = "936";
-                    rows[1][7].innerHTML = "119";
-                    rows[2][2].innerHTML = "393";
-                    rows[2][4].innerHTML = "499";
+                    rowsNinJutsu[1][5].innerHTML = "936";
+                    rowsNinJutsu[1][7].innerHTML = "119";
+                    rowsNinJutsu[2][2].innerHTML = "393";
+                    rowsNinJutsu[2][4].innerHTML = "499";
                     break;
                 case "Attack":
-                    rows[1][5].innerHTML = "936";
-                    rows[1][7].innerHTML = "84";
-                    rows[2][2].innerHTML = "682";
-                    rows[2][4].innerHTML = "432";
+                    rowsNinJutsu[1][5].innerHTML = "936";
+                    rowsNinJutsu[1][7].innerHTML = "84";
+                    rowsNinJutsu[2][2].innerHTML = "682";
+                    rowsNinJutsu[2][4].innerHTML = "432";
                     break;
                 case "Defense":
-                    rows[1][5].innerHTML = "1083";
-                    rows[1][7].innerHTML = "64";
-                    rows[2][2].innerHTML = "472";
-                    rows[2][4].innerHTML = "622";
+                    rowsNinJutsu[1][5].innerHTML = "1083";
+                    rowsNinJutsu[1][7].innerHTML = "64";
+                    rowsNinJutsu[2][2].innerHTML = "472";
+                    rowsNinJutsu[2][4].innerHTML = "622";
                     break;
                 case "Skill":
-                    rows[1][5].innerHTML = "837";
-                    rows[1][7].innerHTML = "135";
-                    rows[2][2].innerHTML = "525";
-                    rows[2][4].innerHTML = "349";
+                    rowsNinJutsu[1][5].innerHTML = "837";
+                    rowsNinJutsu[1][7].innerHTML = "135";
+                    rowsNinJutsu[2][2].innerHTML = "525";
+                    rowsNinJutsu[2][4].innerHTML = "349";
                     break;
                 case "Utility":
-                    rows[1][5].innerHTML = "999";
-                    rows[1][7].innerHTML = "94";
-                    rows[2][2].innerHTML = "499";
-                    rows[2][4].innerHTML = "475";
+                    rowsNinJutsu[1][5].innerHTML = "999";
+                    rowsNinJutsu[1][7].innerHTML = "94";
+                    rowsNinJutsu[2][2].innerHTML = "499";
+                    rowsNinJutsu[2][4].innerHTML = "475";
                     break;
             }
-            rowsNinJutsu[6][2].innerHTML = rowsNJByLvl[7][3].innerHTML;
-            rowsNinJutsu[6][4].innerHTML = rowsNJByLvl[7][5].innerHTML;
-            rowsNinJutsu[6][6].innerHTML = rowsNJByLvl[7][7].innerHTML;
-            rowsNinJutsu[7][1].innerHTML = rowsNJByLvl[7][1].innerHTML;
+            rowsNinJutsu[6][2].innerHTML = rowsCheckByLvl[7][3].innerHTML;
+            rowsNinJutsu[6][4].innerHTML = rowsCheckByLvl[7][5].innerHTML;
+            rowsNinJutsu[6][6].innerHTML = rowsCheckByLvl[7][7].innerHTML;
+            rowsNinJutsu[7][1].innerHTML = rowsCheckByLvl[7][1].innerHTML;
             break;
         case "Lv 60/60":
-            rows[3][1].innerHTML = "0.90%";
-            rows[3][3].innerHTML = "0.90%";
-            rows[5][4].innerHTML = "6/6";
+            rowsNinJutsu[3][1].innerHTML = "0.90%";
+            rowsNinJutsu[3][3].innerHTML = "0.90%";
+            rowsNinJutsu[5][4].innerHTML = "6/6";
 
-            switch (rows[1][0].innerHTML) {
+            switch (rowsNinJutsu[1][0].innerHTML) {
                 case "Assist":
-                    rows[1][5].innerHTML = "695";
-                    rows[1][7].innerHTML = "87";
-                    rows[2][2].innerHTML = "290";
-                    rows[2][4].innerHTML = "367";
+                    rowsNinJutsu[1][5].innerHTML = "695";
+                    rowsNinJutsu[1][7].innerHTML = "87";
+                    rowsNinJutsu[2][2].innerHTML = "290";
+                    rowsNinJutsu[2][4].innerHTML = "367";
                     break;
                 case "Attack":
-                    rows[1][5].innerHTML = "695";
-                    rows[1][7].innerHTML = "61";
-                    rows[2][2].innerHTML = "504";
-                    rows[2][4].innerHTML = "313";
+                    rowsNinJutsu[1][5].innerHTML = "695";
+                    rowsNinJutsu[1][7].innerHTML = "61";
+                    rowsNinJutsu[2][2].innerHTML = "504";
+                    rowsNinJutsu[2][4].innerHTML = "313";
                     break;
                 case "Defense":
-                    rows[1][5].innerHTML = "809";
-                    rows[1][7].innerHTML = "44";
-                    rows[2][2].innerHTML = "350";
-                    rows[2][4].innerHTML = "466";
+                    rowsNinJutsu[1][5].innerHTML = "809";
+                    rowsNinJutsu[1][7].innerHTML = "44";
+                    rowsNinJutsu[2][2].innerHTML = "350";
+                    rowsNinJutsu[2][4].innerHTML = "466";
                     break;
                 case "Skill":
-                    rows[1][5].innerHTML = "611";
-                    rows[1][7].innerHTML = "98";
-                    rows[2][2].innerHTML = "394";
-                    rows[2][4].innerHTML = "251";
+                    rowsNinJutsu[1][5].innerHTML = "611";
+                    rowsNinJutsu[1][7].innerHTML = "98";
+                    rowsNinJutsu[2][2].innerHTML = "394";
+                    rowsNinJutsu[2][4].innerHTML = "251";
                     break;
                 case "Utility":
-                    rows[1][5].innerHTML = "735";
-                    rows[1][7].innerHTML = "69";
-                    rows[2][2].innerHTML = "367";
-                    rows[2][4].innerHTML = "352";
+                    rowsNinJutsu[1][5].innerHTML = "735";
+                    rowsNinJutsu[1][7].innerHTML = "69";
+                    rowsNinJutsu[2][2].innerHTML = "367";
+                    rowsNinJutsu[2][4].innerHTML = "352";
                     break;
             }
-            rowsNinJutsu[6][2].innerHTML = rowsNJByLvl[5][3].innerHTML;
-            rowsNinJutsu[6][4].innerHTML = rowsNJByLvl[5][5].innerHTML;
-            rowsNinJutsu[6][6].innerHTML = rowsNJByLvl[5][7].innerHTML;
-            rowsNinJutsu[7][1].innerHTML = rowsNJByLvl[5][1].innerHTML;
+            rowsNinJutsu[6][2].innerHTML = rowsCheckByLvl[5][3].innerHTML;
+            rowsNinJutsu[6][4].innerHTML = rowsCheckByLvl[5][5].innerHTML;
+            rowsNinJutsu[6][6].innerHTML = rowsCheckByLvl[5][7].innerHTML;
+            rowsNinJutsu[7][1].innerHTML = rowsCheckByLvl[5][1].innerHTML;
             break;
         case "Lv 40/40":
-            rows[3][1].innerHTML = "0.50%";
-            rows[3][3].innerHTML = "0.50%";
-            rows[5][4].innerHTML = "2/2";
+            rowsNinJutsu[3][1].innerHTML = "0.50%";
+            rowsNinJutsu[3][3].innerHTML = "0.50%";
+            rowsNinJutsu[5][4].innerHTML = "2/2";
 
-            switch (rows[1][0].innerHTML) {
+            switch (rowsNinJutsu[1][0].innerHTML) {
                 case "Assist":
-                    rows[1][5].innerHTML = "408";
-                    rows[1][7].innerHTML = "50";
-                    rows[2][2].innerHTML = "169";
-                    rows[2][4].innerHTML = "213";
+                    rowsNinJutsu[1][5].innerHTML = "408";
+                    rowsNinJutsu[1][7].innerHTML = "50";
+                    rowsNinJutsu[2][2].innerHTML = "169";
+                    rowsNinJutsu[2][4].innerHTML = "213";
                     break;
                 case "Attack":
-                    rows[1][5].innerHTML = "408";
-                    rows[1][7].innerHTML = "35";
-                    rows[2][2].innerHTML = "294";
-                    rows[2][4].innerHTML = "181";
+                    rowsNinJutsu[1][5].innerHTML = "408";
+                    rowsNinJutsu[1][7].innerHTML = "35";
+                    rowsNinJutsu[2][2].innerHTML = "294";
+                    rowsNinJutsu[2][4].innerHTML = "181";
                     break;
                 case "Defense":
-                    rows[1][5].innerHTML = "477";
-                    rows[1][7].innerHTML = "24";
-                    rows[2][2].innerHTML = "205";
-                    rows[2][4].innerHTML = "274";
+                    rowsNinJutsu[1][5].innerHTML = "477";
+                    rowsNinJutsu[1][7].innerHTML = "24";
+                    rowsNinJutsu[2][2].innerHTML = "205";
+                    rowsNinJutsu[2][4].innerHTML = "274";
                     break;
                 case "Skill":
-                    rows[1][5].innerHTML = "354";
-                    rows[1][7].innerHTML = "58";
-                    rows[2][2].innerHTML = "234";
-                    rows[2][4].innerHTML = "144";
+                    rowsNinJutsu[1][5].innerHTML = "354";
+                    rowsNinJutsu[1][7].innerHTML = "58";
+                    rowsNinJutsu[2][2].innerHTML = "234";
+                    rowsNinJutsu[2][4].innerHTML = "144";
                     break;
                 case "Utility":
-                    rows[1][5].innerHTML = "427";
-                    rows[1][7].innerHTML = "40";
-                    rows[2][2].innerHTML = "213";
-                    rows[2][4].innerHTML = "205";
+                    rowsNinJutsu[1][5].innerHTML = "427";
+                    rowsNinJutsu[1][7].innerHTML = "40";
+                    rowsNinJutsu[2][2].innerHTML = "213";
+                    rowsNinJutsu[2][4].innerHTML = "205";
                     break;
             }
-            rowsNinJutsu[6][2].innerHTML = rowsNJByLvl[1][3].innerHTML;
-            rowsNinJutsu[6][4].innerHTML = rowsNJByLvl[1][5].innerHTML;
-            rowsNinJutsu[6][6].innerHTML = rowsNJByLvl[1][7].innerHTML;
-            rowsNinJutsu[7][1].innerHTML = rowsNJByLvl[1][1].innerHTML;
+            rowsNinJutsu[6][2].innerHTML = rowsCheckByLvl[1][3].innerHTML;
+            rowsNinJutsu[6][4].innerHTML = rowsCheckByLvl[1][5].innerHTML;
+            rowsNinJutsu[6][6].innerHTML = rowsCheckByLvl[1][7].innerHTML;
+            rowsNinJutsu[7][1].innerHTML = rowsCheckByLvl[1][1].innerHTML;
             break;
     }
 }
