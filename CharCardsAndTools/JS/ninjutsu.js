@@ -151,6 +151,7 @@ function createNinjutsuCheckByLvl() {
     const tableCheckByLvl = document.getElementById("ninjutsuCheckByLv");
     const tableNinjutsu = document.getElementById("ninjutsu");
     let imgRankLvl = document.createElement("img");
+    let rtImageLvl = document.createElement("img");
 
     header = tableCheckByLvl.createTHead();
     //row0
@@ -177,7 +178,6 @@ function createNinjutsuCheckByLvl() {
     rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
     rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
     rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
-    let rtImageLvl = document.createElement("img");
     rtImageLvl.classList.add("rtImage");
     rtImageLvl.referrerPolicy = "no-referrer";
     rtImageLvl.alt = "rt";
@@ -260,11 +260,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[5][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[5][2].colSpan = "3";
-            let imgRankLvl24 = document.createElement("img");
-            imgRankLvl24.classList.add("rankImage");
-            imgRankLvl24.alt = "4 Star";
-            imgRankLvl24.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[5][2].appendChild(imgRankLvl24);
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "4 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[5][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[6] = tableCheckByLvl.insertRow(6);
 
@@ -277,11 +277,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[6][6] = rowsCheckByLvl[6].insertCell(6);
             rowsCheckByLvl[6].insertCell(7);
 
-            let rtImageLvl3 = document.createElement("img");
-            rtImageLvl3.classList.add("rtImage");
-            rtImageLvl3.referrerPolicy = "no-referrer";
-            rtImageLvl3.alt = "rt";
-            rowsCheckByLvl[6][0].appendChild(rtImageLvl3);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[6][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[6][2].innerHTML = "CP Cost";
 
@@ -302,11 +302,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[7][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[7][2].colSpan = "3";
-            let imgRankLvl4 = document.createElement("img");
-            imgRankLvl4.classList.add("rankImage");
-            imgRankLvl4.alt = "4 Star";
-            imgRankLvl4.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[7][2].appendChild(imgRankLvl4);
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "4 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[7][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[8] = tableCheckByLvl.insertRow(8);
 
@@ -319,11 +319,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[8][6] = rowsCheckByLvl[8].insertCell(6);
             rowsCheckByLvl[8].insertCell(7);
 
-            let rtImageLvl4 = document.createElement("img");
-            rtImageLvl4.classList.add("rtImage");
-            rtImageLvl4.referrerPolicy = "no-referrer";
-            rtImageLvl4.alt = "rt";
-            rowsCheckByLvl[8][0].appendChild(rtImageLvl4);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[8][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[8][2].innerHTML = "CP Cost";
 
@@ -344,11 +344,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[9][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[9][2].colSpan = "3";
-            let imgRankLvl5 = document.createElement("img");
-            imgRankLvl5.classList.add("rankImage");
-            imgRankLvl5.alt = "5 Star";
-            imgRankLvl5.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[9][2].appendChild(imgRankLvl5);
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "5 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[9][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[10] = tableCheckByLvl.insertRow(10);
 
@@ -361,11 +361,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[10][6] = rowsCheckByLvl[10].insertCell(6);
             rowsCheckByLvl[10].insertCell(7);
 
-            let rtImageLvl5 = document.createElement("img");
-            rtImageLvl5.classList.add("rtImage");
-            rtImageLvl5.referrerPolicy = "no-referrer";
-            rtImageLvl5.alt = "rt";
-            rowsCheckByLvl[10][0].appendChild(rtImageLvl5);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[10][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[10][2].innerHTML = "CP Cost";
 
@@ -386,11 +386,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[11][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[11][2].colSpan = "3";
-            let imgRankLvl6 = document.createElement("img");
-            imgRankLvl6.classList.add("rankImage");
-            imgRankLvl6.alt = "5 Star";
-            imgRankLvl6.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[11][2].appendChild(imgRankLvl6);
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "5 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[11][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[12] = tableCheckByLvl.insertRow(12);
 
@@ -403,11 +403,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[12][6] = rowsCheckByLvl[12].insertCell(6);
             rowsCheckByLvl[12].insertCell(7);
 
-            let rtImageLvl6 = document.createElement("img");
-            rtImageLvl6.classList.add("rtImage");
-            rtImageLvl6.referrerPolicy = "no-referrer";
-            rtImageLvl6.alt = "rt";
-            rowsCheckByLvl[12][0].appendChild(rtImageLvl6);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[12][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[12][2].innerHTML = "CP Cost";
 
@@ -443,11 +443,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[5][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[5][2].colSpan = "3";
-            let imgRankLvl7 = document.createElement("img");
-            imgRankLvl7.classList.add("rankImage");
-            imgRankLvl7.alt = "4 Star";
-            imgRankLvl7.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[5][2].appendChild(imgRankLvl7);
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "4 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[5][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[6] = tableCheckByLvl.insertRow(6);
 
@@ -460,11 +460,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[6][6] = rowsCheckByLvl[6].insertCell(6);
             rowsCheckByLvl[6].insertCell(7);
 
-            let rtImageLvl8 = document.createElement("img");
-            rtImageLvl8.classList.add("rtImage");
-            rtImageLvl8.referrerPolicy = "no-referrer";
-            rtImageLvl8.alt = "rt";
-            rowsCheckByLvl[6][0].appendChild(rtImageLvl8);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[6][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[6][2].innerHTML = "CP Cost";
 
@@ -485,11 +485,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[7][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[7][2].colSpan = "3";
-            let imgRankLvl9 = document.createElement("img");
-            imgRankLvl9.classList.add("rankImage");
-            imgRankLvl9.alt = "4 Star";
-            imgRankLvl9.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[7][2].appendChild(imgRankLvl9);
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "4 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[7][2].appendChild(imgRankLvl);
 
             rowsCheckByLvl[8] = tableCheckByLvl.insertRow(8);
 
@@ -502,11 +502,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[8][6] = rowsCheckByLvl[8].insertCell(6);
             rowsCheckByLvl[8].insertCell(7);
 
-            let rtImageLvl10 = document.createElement("img");
-            rtImageLvl10.classList.add("rtImage");
-            rtImageLvl10.referrerPolicy = "no-referrer";
-            rtImageLvl10.alt = "rt";
-            rowsCheckByLvl[8][0].appendChild(rtImageLvl10);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[8][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[8][2].innerHTML = "CP Cost";
 
@@ -527,11 +527,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[9][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[9][2].colSpan = "3";
-            let rtImageLvl11 = document.createElement("img");
-            rtImageLvl11.classList.add("rankImage");
-            rtImageLvl11.alt = "5 Star";
-            rtImageLvl11.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[9][2].appendChild(rtImageLvl11);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rankImage");
+            rtImageLvl.alt = "5 Star";
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[9][2].appendChild(rtImageLvl);
 
             rowsCheckByLvl[10] = tableCheckByLvl.insertRow(10);
 
@@ -544,11 +544,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[10][6] = rowsCheckByLvl[10].insertCell(6);
             rowsCheckByLvl[10].insertCell(7);
 
-            let rtImageLvl12 = document.createElement("img");
-            rtImageLvl12.classList.add("rtImage");
-            rtImageLvl12.referrerPolicy = "no-referrer";
-            rtImageLvl12.alt = "rt";
-            rowsCheckByLvl[10][0].appendChild(rtImageLvl12);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[10][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[10][2].innerHTML = "CP Cost";
 
@@ -569,11 +569,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[11][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[11][2].colSpan = "3";
-            let rtImageLvl13 = document.createElement("img");
-            rtImageLvl13.classList.add("rankImage");
-            rtImageLvl13.alt = "5 Star";
-            rtImageLvl13.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[11][2].appendChild(rtImageLvl13);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rankImage");
+            rtImageLvl.alt = "5 Star";
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[11][2].appendChild(rtImageLvl);
 
             rowsCheckByLvl[12] = tableCheckByLvl.insertRow(12);
 
@@ -586,11 +586,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[12][6] = rowsCheckByLvl[12].insertCell(6);
             rowsCheckByLvl[12].insertCell(7);
 
-            let rtImageLvl14 = document.createElement("img");
-            rtImageLvl14.classList.add("rtImage");
-            rtImageLvl14.referrerPolicy = "no-referrer";
-            rtImageLvl14.alt = "rt";
-            rowsCheckByLvl[12][0].appendChild(rtImageLvl14);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[12][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[12][2].innerHTML = "CP Cost";
 
@@ -611,11 +611,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[13][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[13][2].colSpan = "3";
-            let rtImageLvl15 = document.createElement("img");
-            rtImageLvl15.classList.add("rankImage");
-            rtImageLvl15.alt = "6 Star";
-            rtImageLvl15.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[13][2].appendChild(rtImageLvl15);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rankImage");
+            rtImageLvl.alt = "6 Star";
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[13][2].appendChild(rtImageLvl);
 
             rowsCheckByLvl[14] = tableCheckByLvl.insertRow(14);
 
@@ -628,11 +628,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[14][6] = rowsCheckByLvl[14].insertCell(6);
             rowsCheckByLvl[14].insertCell(7);
 
-            let rtImageLvl25 = document.createElement("img");
-            rtImageLvl25.classList.add("rtImage");
-            rtImageLvl25.referrerPolicy = "no-referrer";
-            rtImageLvl25.alt = "rt";
-            rowsCheckByLvl[14][0].appendChild(rtImageLvl25);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[14][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[14][2].innerHTML = "CP Cost";
 
@@ -653,11 +653,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[15][1].innerHTML = "Card Rank";
 
             rowsCheckByLvl[15][2].colSpan = "3";
-            let rtImageLvl26 = document.createElement("img");
-            rtImageLvl26.classList.add("rankImage");
-            rtImageLvl26.alt = "6 Star";
-            rtImageLvl26.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[15][2].appendChild(rtImageLvl26);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rankImage");
+            rtImageLvl.alt = "6 Star";
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[15][2].appendChild(rtImageLvl);
 
             rowsCheckByLvl[16] = tableCheckByLvl.insertRow(16);
 
@@ -670,11 +670,11 @@ function createNinjutsuCheckByLvl() {
             rowsCheckByLvl[16][6] = rowsCheckByLvl[16].insertCell(6);
             rowsCheckByLvl[16].insertCell(7);
 
-            let rtImageLvl27 = document.createElement("img");
-            rtImageLvl27.classList.add("rtImage");
-            rtImageLvl27.referrerPolicy = "no-referrer";
-            rtImageLvl27.alt = "rt";
-            rowsCheckByLvl[16][0].appendChild(rtImageLvl27);
+            rtImageLvl = document.createElement("img");
+            rtImageLvl.classList.add("rtImage");
+            rtImageLvl.referrerPolicy = "no-referrer";
+            rtImageLvl.alt = "rt";
+            rowsCheckByLvl[16][0].appendChild(rtImageLvl);
 
             rowsCheckByLvl[16][2].innerHTML = "CP Cost";
 
