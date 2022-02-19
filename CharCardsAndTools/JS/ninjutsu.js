@@ -1,154 +1,829 @@
 function createNinjutsu() {
-    let rows = [[]];
-    const table = document.getElementById("ninjutsu");
-    let header = table.createTHead();
+    let rowsNinjutsu = [[]];
+    const tableNinjutsu = document.getElementById("ninjutsu");
+    let header = tableNinjutsu.createTHead();
 
-    rows[0] = header.insertRow(0);
-    rows[1] = table.rows[1];
-    rows[2] = table.rows[2];
-    rows[3] = table.insertRow(3);
-    rows[4] = table.insertRow(4);
-    rows[5] = table.rows[5];
-    rows[6] = table.rows[6];
-    rows[7] = table.rows[7];
-    rows[8] = table.rows[8];
+    rowsNinjutsu[0] = header.insertRow(0);
+    rowsNinjutsu[1] = tableNinjutsu.rows[1];
+    rowsNinjutsu[2] = tableNinjutsu.rows[2];
+    rowsNinjutsu[3] = tableNinjutsu.insertRow(3);
+    rowsNinjutsu[4] = tableNinjutsu.insertRow(4);
+    rowsNinjutsu[5] = tableNinjutsu.rows[5];
+    rowsNinjutsu[6] = tableNinjutsu.rows[6];
+    rowsNinjutsu[7] = tableNinjutsu.rows[7];
+    rowsNinjutsu[8] = tableNinjutsu.rows[8];
 
-    rows[0][0] = rows[0].insertCell(0);
-    rows[0][1] = rows[0].insertCell(1);
+    rowsNinjutsu[0][0] = rowsNinjutsu[0].insertCell(0);
+    rowsNinjutsu[0][1] = rowsNinjutsu[0].insertCell(1);
 
-    rows[1][0] = table.rows[1].cells[0];
-    rows[1][1] = rows[1].insertCell(1);
-    rows[1][3] = table.rows[1].cells[3];
-    rows[1][4] = rows[1].insertCell(4);
-    rows[1].insertCell(5);
-    rows[1][6] = rows[1].insertCell(6);
-    rows[1].insertCell(7);
+    rowsNinjutsu[1][0] = tableNinjutsu.rows[1].cells[0];
+    rowsNinjutsu[1][1] = rowsNinjutsu[1].insertCell(1);
+    rowsNinjutsu[1][3] = tableNinjutsu.rows[1].cells[3];
+    rowsNinjutsu[1][4] = rowsNinjutsu[1].insertCell(4);
+    rowsNinjutsu[1].insertCell(5);
+    rowsNinjutsu[1][6] = rowsNinjutsu[1].insertCell(6);
+    rowsNinjutsu[1].insertCell(7);
 
-    rows[2][0] = table.rows[2].cells[0];
-    rows[2][1] = rows[2].insertCell(1);
-    rows[2].insertCell(2);
-    rows[2][3] = rows[2].insertCell(3);
-    rows[2].insertCell(4);
+    rowsNinjutsu[2][0] = tableNinjutsu.rows[2].cells[0];
+    rowsNinjutsu[2][1] = rowsNinjutsu[2].insertCell(1);
+    rowsNinjutsu[2].insertCell(2);
+    rowsNinjutsu[2][3] = rowsNinjutsu[2].insertCell(3);
+    rowsNinjutsu[2].insertCell(4);
 
-    rows[3][0] = rows[3].insertCell(0);
-    rows[3].insertCell(1);
-    rows[3][2] = rows[3].insertCell(2);
-    rows[3].insertCell(3);
+    rowsNinjutsu[3][0] = rowsNinjutsu[3].insertCell(0);
+    rowsNinjutsu[3].insertCell(1);
+    rowsNinjutsu[3][2] = rowsNinjutsu[3].insertCell(2);
+    rowsNinjutsu[3].insertCell(3);
 
-    rows[4][0] = rows[4].insertCell(0);
+    rowsNinjutsu[4][0] = rowsNinjutsu[4].insertCell(0);
 
-    rows[5][0] = table.rows[5].cells[0];
-    rows[5][1] = rows[5].insertCell(1);
-    rows[5][3] = rows[5].insertCell(3);
-    rows[5].insertCell(4);
+    rowsNinjutsu[5][0] = tableNinjutsu.rows[5].cells[0];
+    rowsNinjutsu[5][1] = rowsNinjutsu[5].insertCell(1);
+    rowsNinjutsu[5][3] = rowsNinjutsu[5].insertCell(3);
+    rowsNinjutsu[5].insertCell(4);
 
-    rows[6][0] = table.rows[6].cells[0];
-    rows[6][1] = rows[6].insertCell(1);
-    rows[6].insertCell(2);
-    rows[6][3] = rows[6].insertCell(3);
-    rows[6].insertCell(4);
-    rows[6][5] = rows[6].insertCell(5);
-    rows[6].insertCell(6);
+    rowsNinjutsu[6][0] = tableNinjutsu.rows[6].cells[0];
+    rowsNinjutsu[6][1] = rowsNinjutsu[6].insertCell(1);
+    rowsNinjutsu[6].insertCell(2);
+    rowsNinjutsu[6][3] = rowsNinjutsu[6].insertCell(3);
+    rowsNinjutsu[6].insertCell(4);
+    rowsNinjutsu[6][5] = rowsNinjutsu[6].insertCell(5);
+    rowsNinjutsu[6].insertCell(6);
 
-    rows[7][0] = rows[7].insertCell(0);
-    rows[7].insertCell(1);
-    rows[7][2] = rows[7].insertCell(2);
-    rows[7][3] = table.rows[7].cells[3];
+    rowsNinjutsu[7][0] = rowsNinjutsu[7].insertCell(0);
+    rowsNinjutsu[7].insertCell(1);
+    rowsNinjutsu[7][2] = rowsNinjutsu[7].insertCell(2);
+    rowsNinjutsu[7][3] = tableNinjutsu.rows[7].cells[3];
 
-    rows[8][0] = rows[8].insertCell(0);
-    rows[8][1] = table.rows[8].cells[1];
+    rowsNinjutsu[8][0] = rowsNinjutsu[8].insertCell(0);
+    rowsNinjutsu[8][1] = tableNinjutsu.rows[8].cells[1];
 
-    rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
+    rowsNinjutsu[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
 
-    rows[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
+    rowsNinjutsu[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
 
-    rows[1][0].style.fontWeight = "bold";
+    rowsNinjutsu[1][0].style.fontWeight = "bold";
 
     let imgType = document.createElement("img");
     imgType.classList.add("typeImage");
-    imgType.alt = rows[1][0].innerHTML;
+    imgType.alt = rowsNinjutsu[1][0].innerHTML;
     imgType.referrerPolicy = "no-referrer";
-    rows[1][1].appendChild(imgType);
+    rowsNinjutsu[1][1].appendChild(imgType);
 
     let imgRank = document.createElement("img");
     imgRank.classList.add("rankImage");
-    imgRank.alt = rows[1][3].innerHTML;
-    rows[1][3].innerHTML = "";
+    imgRank.alt = rowsNinjutsu[1][3].innerHTML;
+    rowsNinjutsu[1][3].innerHTML = "";
     imgRank.referrerPolicy = "no-referrer";
-    rows[1][3].appendChild(imgRank);
+    rowsNinjutsu[1][3].appendChild(imgRank);
 
-    rows[1][4].innerHTML = "HP";
+    rowsNinjutsu[1][4].innerHTML = "HP";
 
-    rows[1][6].innerHTML = "CP";
+    rowsNinjutsu[1][6].innerHTML = "CP";
 
-    rows[2][0].colSpan = "4";
-    rows[2][0].rowSpan = "2";
-    rows[2][0].classList.add("cardImageTable");
+    rowsNinjutsu[2][0].colSpan = "4";
+    rowsNinjutsu[2][0].rowSpan = "2";
+    rowsNinjutsu[2][0].classList.add("cardImageTable");
 
     let cardImage = document.createElement("img");
     cardImage.classList.add("cardImage");
     cardImage.referrerPolicy = "no-referrer";
-    cardImage.src = rows[2][0].innerHTML;
-    rows[2][0].innerHTML = "";
-    rows[2][0].appendChild(cardImage);
+    cardImage.src = rowsNinjutsu[2][0].innerHTML;
+    rowsNinjutsu[2][0].innerHTML = "";
+    rowsNinjutsu[2][0].appendChild(cardImage);
 
-    rows[2][1].innerHTML = "ATK";
+    rowsNinjutsu[2][1].innerHTML = "ATK";
 
-    rows[2][3].innerHTML = "DEF";
+    rowsNinjutsu[2][3].innerHTML = "DEF";
 
-    rows[3][0].innerHTML = "CRI";
+    rowsNinjutsu[3][0].innerHTML = "CRI";
 
-    rows[3][2].innerHTML = "EVA";
+    rowsNinjutsu[3][2].innerHTML = "EVA";
 
-    rows[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
+    rowsNinjutsu[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
 
-    rows[5][0].style.fontWeight = "bold";
+    rowsNinjutsu[5][0].style.fontWeight = "bold";
 
     let natureImage = document.createElement("img");
     natureImage.classList.add("natureImage");
-    natureImage.alt = rows[5][0].innerHTML;
+    natureImage.alt = rowsNinjutsu[5][0].innerHTML;
     natureImage.referrerPolicy = "no-referrer";
-    rows[5][1].appendChild(natureImage);
+    rowsNinjutsu[5][1].appendChild(natureImage);
 
-    rows[5][2] = table.rows[5].cells[2];
-    rows[5][2].colSpan = "4";
-    rows[5][2].style.fontWeight = "bold";
+    rowsNinjutsu[5][2] = tableNinjutsu.rows[5].cells[2];
+    rowsNinjutsu[5][2].colSpan = "4";
+    rowsNinjutsu[5][2].style.fontWeight = "bold";
 
-    rows[5][3].innerHTML = "LVL";
+    rowsNinjutsu[5][3].innerHTML = "LVL";
 
-    rows[6][0].colSpan = "2";
+    rowsNinjutsu[6][0].colSpan = "2";
 
     let jutsuImage = document.createElement("img");
     jutsuImage.classList.add("jutsuImage");
     jutsuImage.referrerPolicy = "no-referrer";
-    jutsuImage.src = rows[6][0].innerHTML;
-    rows[6][0].innerHTML = "";
-    rows[6][0].appendChild(jutsuImage);
+    jutsuImage.src = rowsNinjutsu[6][0].innerHTML;
+    rowsNinjutsu[6][0].innerHTML = "";
+    rowsNinjutsu[6][0].appendChild(jutsuImage);
 
-    rows[6][1].innerHTML = "CP Cost";
-    rows[6][3].innerHTML = "CRI";
-    rows[6][5].innerHTML = "POW";
+    rowsNinjutsu[6][1].innerHTML = "CP Cost";
+    rowsNinjutsu[6][3].innerHTML = "CRI";
+    rowsNinjutsu[6][5].innerHTML = "POW";
 
     let rtImage = document.createElement("img");
     rtImage.classList.add("rtImage");
     rtImage.referrerPolicy = "no-referrer";
     rtImage.alt = "rt";
-    rows[7][0].appendChild(rtImage);
+    rowsNinjutsu[7][0].appendChild(rtImage);
 
-    rows[7][2].colSpan = "3";
-    rows[7][2].innerHTML = "Equippable By";
+    rowsNinjutsu[7][2].colSpan = "3";
+    rowsNinjutsu[7][2].innerHTML = "Equippable By";
 
-    rows[7][3].colSpan = "3";
+    rowsNinjutsu[7][3].colSpan = "3";
 
-    rows[8][0].colSpan = "2";
-    rows[8][0].innerHTML = "Info";
+    rowsNinjutsu[8][0].colSpan = "2";
+    rowsNinjutsu[8][0].innerHTML = "Info";
 
-    rows[8][1].colSpan = "6";
+    rowsNinjutsu[8][1].colSpan = "6";
+}
+
+function createNinjutsuCheckByLvl() {
+    let rowsCheckByLvl = [[]], rowsNinjutsu = [[]];
+    const tableCheckByLvl = document.getElementById("ninjutsuCheckByLv");
+    const tableNinjutsu = document.getElementById("ninjutsu");
+
+    rowsNinjutsu[1] = tableNinjutsu.rows[1].cells;
+    switch (rowsNinjutsu[1][2].innerHTML) {
+        case "Lv 40/40":
+            let header40 = tableCheckByLvl.createTHead();
+
+            rowsCheckByLvl[0] = header40.insertRow(0);
+            rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
+            rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
+            rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
+            rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
+
+            rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
+
+            rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
+            rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
+            rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
+
+            rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
+            rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
+            rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
+            rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
+
+            rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
+            rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
+            rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
+
+            rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
+            rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
+            rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
+            rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
+
+            rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
+
+            rowsCheckByLvl[1][0].colSpan = "2";
+            rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
+
+            rowsCheckByLvl[1][1].colSpan = "3";
+            rowsCheckByLvl[1][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[1][2].colSpan = "3";
+            let imgRankLvl16 = document.createElement("img");
+            imgRankLvl16.classList.add("rankImage");
+            imgRankLvl16.alt = "1 Star";
+            imgRankLvl16.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl16);
+
+            let rtImageLvl17 = document.createElement("img");
+            rtImageLvl17.classList.add("rtImage");
+            rtImageLvl17.referrerPolicy = "no-referrer";
+            rtImageLvl17.alt = "rt";
+            rowsCheckByLvl[2][0].appendChild(rtImageLvl17);
+
+            rowsCheckByLvl[2][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[2][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[2][6].innerHTML = "POW";
+
+            rowsCheckByLvl[3][0].colSpan = "2";
+            rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
+
+            rowsCheckByLvl[3][1].colSpan = "3";
+            rowsCheckByLvl[3][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[3][2].colSpan = "3";
+            let imgRankLvl18 = document.createElement("img");
+            imgRankLvl18.classList.add("rankImage");
+            imgRankLvl18.alt = "3 Star";
+            imgRankLvl18.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl18);
+
+            let rtImageLvl19 = document.createElement("img");
+            rtImageLvl19.classList.add("rtImage");
+            rtImageLvl19.referrerPolicy = "no-referrer";
+            rtImageLvl19.alt = "rt";
+            rowsCheckByLvl[4][0].appendChild(rtImageLvl19);
+
+            rowsCheckByLvl[4][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[4][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[4][6].innerHTML = "POW";
+            break;
+        case "Lv 60/60":
+            let header60 = tableCheckByLvl.createTHead();
+
+            rowsCheckByLvl[0] = header60.insertRow(0);
+            rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
+            rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
+            rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
+            rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
+
+            rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
+
+            rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
+            rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
+            rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
+
+            rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
+            rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
+            rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
+            rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
+
+            rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
+            rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
+            rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
+
+            rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
+            rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
+            rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
+            rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
+
+            rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
+
+            rowsCheckByLvl[1][0].colSpan = "2";
+            rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
+
+            rowsCheckByLvl[1][1].colSpan = "3";
+            rowsCheckByLvl[1][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[1][2].colSpan = "3";
+            let imgRankLvl20 = document.createElement("img");
+            imgRankLvl20.classList.add("rankImage");
+            imgRankLvl20.alt = "1 Star";
+            imgRankLvl20.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl20);
+
+            let rtImageLvl21 = document.createElement("img");
+            rtImageLvl21.classList.add("rtImage");
+            rtImageLvl21.referrerPolicy = "no-referrer";
+            rtImageLvl21.alt = "rt";
+            rowsCheckByLvl[2][0].appendChild(rtImageLvl21);
+
+            rowsCheckByLvl[2][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[2][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[2][6].innerHTML = "POW";
+
+            rowsCheckByLvl[3][0].colSpan = "2";
+            rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
+
+            rowsCheckByLvl[3][1].colSpan = "3";
+            rowsCheckByLvl[3][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[3][2].colSpan = "3";
+            let imgRankLvl22 = document.createElement("img");
+            imgRankLvl22.classList.add("rankImage");
+            imgRankLvl22.alt = "3 Star";
+            imgRankLvl22.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl22);
+
+            let rtImageLvl23 = document.createElement("img");
+            rtImageLvl23.classList.add("rtImage");
+            rtImageLvl23.referrerPolicy = "no-referrer";
+            rtImageLvl23.alt = "rt";
+            rowsCheckByLvl[4][0].appendChild(rtImageLvl23);
+
+            rowsCheckByLvl[4][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[4][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[4][6].innerHTML = "POW";
+
+            rowsCheckByLvl[5] = tableCheckByLvl.insertRow(5);
+
+            rowsCheckByLvl[5][0] = rowsCheckByLvl[5].insertCell(0);
+            rowsCheckByLvl[5][1] = rowsCheckByLvl[5].insertCell(1);
+            rowsCheckByLvl[5][2] = rowsCheckByLvl[5].insertCell(2);
+
+            rowsCheckByLvl[5][0].colSpan = "2";
+            rowsCheckByLvl[5][0].innerHTML = "NJ Lv 3";
+
+            rowsCheckByLvl[5][1].colSpan = "3";
+            rowsCheckByLvl[5][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[5][2].colSpan = "3";
+            let imgRankLvl24 = document.createElement("img");
+            imgRankLvl24.classList.add("rankImage");
+            imgRankLvl24.alt = "4 Star";
+            imgRankLvl24.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[5][2].appendChild(imgRankLvl24);
+
+            rowsCheckByLvl[6] = tableCheckByLvl.insertRow(6);
+
+            rowsCheckByLvl[6][0] = rowsCheckByLvl[6].insertCell(0);
+            rowsCheckByLvl[6].insertCell(1);
+            rowsCheckByLvl[6][2] = rowsCheckByLvl[6].insertCell(2);
+            rowsCheckByLvl[6].insertCell(3);
+            rowsCheckByLvl[6][4] = rowsCheckByLvl[6].insertCell(4);
+            rowsCheckByLvl[6].insertCell(5);
+            rowsCheckByLvl[6][6] = rowsCheckByLvl[6].insertCell(6);
+            rowsCheckByLvl[6].insertCell(7);
+
+            let rtImageLvl3 = document.createElement("img");
+            rtImageLvl3.classList.add("rtImage");
+            rtImageLvl3.referrerPolicy = "no-referrer";
+            rtImageLvl3.alt = "rt";
+            rowsCheckByLvl[6][0].appendChild(rtImageLvl3);
+
+            rowsCheckByLvl[6][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[6][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[6][6].innerHTML = "POW";
+
+            rowsCheckByLvl[7] = tableCheckByLvl.insertRow(7);
+
+            rowsCheckByLvl[7][0] = rowsCheckByLvl[7].insertCell(0);
+            rowsCheckByLvl[7][1] = rowsCheckByLvl[7].insertCell(1);
+            rowsCheckByLvl[7][2] = rowsCheckByLvl[7].insertCell(2);
+
+            rowsCheckByLvl[7][0].colSpan = "2";
+            rowsCheckByLvl[7][0].innerHTML = "NJ Lv 4";
+
+            rowsCheckByLvl[7][1].colSpan = "3";
+            rowsCheckByLvl[7][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[7][2].colSpan = "3";
+            let imgRankLvl4 = document.createElement("img");
+            imgRankLvl4.classList.add("rankImage");
+            imgRankLvl4.alt = "4 Star";
+            imgRankLvl4.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[7][2].appendChild(imgRankLvl4);
+
+            rowsCheckByLvl[8] = tableCheckByLvl.insertRow(8);
+
+            rowsCheckByLvl[8][0] = rowsCheckByLvl[8].insertCell(0);
+            rowsCheckByLvl[8].insertCell(1);
+            rowsCheckByLvl[8][2] = rowsCheckByLvl[8].insertCell(2);
+            rowsCheckByLvl[8].insertCell(3);
+            rowsCheckByLvl[8][4] = rowsCheckByLvl[8].insertCell(4);
+            rowsCheckByLvl[8].insertCell(5);
+            rowsCheckByLvl[8][6] = rowsCheckByLvl[8].insertCell(6);
+            rowsCheckByLvl[8].insertCell(7);
+
+            let rtImageLvl4 = document.createElement("img");
+            rtImageLvl4.classList.add("rtImage");
+            rtImageLvl4.referrerPolicy = "no-referrer";
+            rtImageLvl4.alt = "rt";
+            rowsCheckByLvl[8][0].appendChild(rtImageLvl4);
+
+            rowsCheckByLvl[8][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[8][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[8][6].innerHTML = "POW";
+
+            rowsCheckByLvl[9] = tableCheckByLvl.insertRow(9);
+
+            rowsCheckByLvl[9][0] = rowsCheckByLvl[9].insertCell(0);
+            rowsCheckByLvl[9][1] = rowsCheckByLvl[9].insertCell(1);
+            rowsCheckByLvl[9][2] = rowsCheckByLvl[9].insertCell(2);
+
+            rowsCheckByLvl[9][0].colSpan = "2";
+            rowsCheckByLvl[9][0].innerHTML = "NJ Lv 5";
+
+            rowsCheckByLvl[9][1].colSpan = "3";
+            rowsCheckByLvl[9][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[9][2].colSpan = "3";
+            let imgRankLvl5 = document.createElement("img");
+            imgRankLvl5.classList.add("rankImage");
+            imgRankLvl5.alt = "5 Star";
+            imgRankLvl5.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[9][2].appendChild(imgRankLvl5);
+
+            rowsCheckByLvl[10] = tableCheckByLvl.insertRow(10);
+
+            rowsCheckByLvl[10][0] = rowsCheckByLvl[10].insertCell(0);
+            rowsCheckByLvl[10].insertCell(1);
+            rowsCheckByLvl[10][2] = rowsCheckByLvl[10].insertCell(2);
+            rowsCheckByLvl[10].insertCell(3);
+            rowsCheckByLvl[10][4] = rowsCheckByLvl[10].insertCell(4);
+            rowsCheckByLvl[10].insertCell(5);
+            rowsCheckByLvl[10][6] = rowsCheckByLvl[10].insertCell(6);
+            rowsCheckByLvl[10].insertCell(7);
+
+            let rtImageLvl5 = document.createElement("img");
+            rtImageLvl5.classList.add("rtImage");
+            rtImageLvl5.referrerPolicy = "no-referrer";
+            rtImageLvl5.alt = "rt";
+            rowsCheckByLvl[10][0].appendChild(rtImageLvl5);
+
+            rowsCheckByLvl[10][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[10][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[10][6].innerHTML = "POW";
+
+            rowsCheckByLvl[11] = tableCheckByLvl.insertRow(11);
+
+            rowsCheckByLvl[11][0] = rowsCheckByLvl[11].insertCell(0);
+            rowsCheckByLvl[11][1] = rowsCheckByLvl[11].insertCell(1);
+            rowsCheckByLvl[11][2] = rowsCheckByLvl[11].insertCell(2);
+
+            rowsCheckByLvl[11][0].colSpan = "2";
+            rowsCheckByLvl[11][0].innerHTML = "NJ Lv 6";
+
+            rowsCheckByLvl[11][1].colSpan = "3";
+            rowsCheckByLvl[11][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[11][2].colSpan = "3";
+            let imgRankLvl6 = document.createElement("img");
+            imgRankLvl6.classList.add("rankImage");
+            imgRankLvl6.alt = "5 Star";
+            imgRankLvl6.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[11][2].appendChild(imgRankLvl6);
+
+            rowsCheckByLvl[12] = tableCheckByLvl.insertRow(12);
+
+            rowsCheckByLvl[12][0] = rowsCheckByLvl[12].insertCell(0);
+            rowsCheckByLvl[12].insertCell(1);
+            rowsCheckByLvl[12][2] = rowsCheckByLvl[12].insertCell(2);
+            rowsCheckByLvl[12].insertCell(3);
+            rowsCheckByLvl[12][4] = rowsCheckByLvl[12].insertCell(4);
+            rowsCheckByLvl[12].insertCell(5);
+            rowsCheckByLvl[12][6] = rowsCheckByLvl[12].insertCell(6);
+            rowsCheckByLvl[12].insertCell(7);
+
+            let rtImageLvl6 = document.createElement("img");
+            rtImageLvl6.classList.add("rtImage");
+            rtImageLvl6.referrerPolicy = "no-referrer";
+            rtImageLvl6.alt = "rt";
+            rowsCheckByLvl[12][0].appendChild(rtImageLvl6);
+
+            rowsCheckByLvl[12][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[12][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[12][6].innerHTML = "POW";
+            break;
+        case "Lv 70/70":
+            let header = tableCheckByLvl.createTHead();
+
+            rowsCheckByLvl[0] = header.insertRow(0);
+            rowsCheckByLvl[1] = tableCheckByLvl.insertRow(1);
+            rowsCheckByLvl[2] = tableCheckByLvl.rows[2];
+            rowsCheckByLvl[3] = tableCheckByLvl.insertRow(3);
+            rowsCheckByLvl[4] = tableCheckByLvl.rows[4];
+
+            rowsCheckByLvl[0][0] = rowsCheckByLvl[0].insertCell(0);
+
+            rowsCheckByLvl[1][0] = rowsCheckByLvl[1].insertCell(0);
+            rowsCheckByLvl[1][1] = rowsCheckByLvl[1].insertCell(1);
+            rowsCheckByLvl[1][2] = rowsCheckByLvl[1].insertCell(2);
+
+            rowsCheckByLvl[2][0] = rowsCheckByLvl[2].insertCell(0);
+            rowsCheckByLvl[2][2] = rowsCheckByLvl[2].insertCell(2);
+            rowsCheckByLvl[2][4] = rowsCheckByLvl[2].insertCell(4);
+            rowsCheckByLvl[2][6] = rowsCheckByLvl[2].insertCell(6);
+
+            rowsCheckByLvl[3][0] = rowsCheckByLvl[3].insertCell(0);
+            rowsCheckByLvl[3][1] = rowsCheckByLvl[3].insertCell(1);
+            rowsCheckByLvl[3][2] = rowsCheckByLvl[3].insertCell(2);
+
+            rowsCheckByLvl[4][0] = rowsCheckByLvl[4].insertCell(0);
+            rowsCheckByLvl[4][2] = rowsCheckByLvl[4].insertCell(2);
+            rowsCheckByLvl[4][4] = rowsCheckByLvl[4].insertCell(4);
+            rowsCheckByLvl[4][6] = rowsCheckByLvl[4].insertCell(6);
+
+            rowsCheckByLvl[0][0].outerHTML = "<th colspan=8 >Check By Lv</th>";
+
+            rowsCheckByLvl[1][0].colSpan = "2";
+            rowsCheckByLvl[1][0].innerHTML = "NJ Lv 1";
+
+            rowsCheckByLvl[1][1].colSpan = "3";
+            rowsCheckByLvl[1][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[1][2].colSpan = "3";
+            let imgRankLvl1 = document.createElement("img");
+            imgRankLvl1.classList.add("rankImage");
+            imgRankLvl1.alt = "1 Star";
+            imgRankLvl1.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl1);
+
+            let rtImageLvl1 = document.createElement("img");
+            rtImageLvl1.classList.add("rtImage");
+            rtImageLvl1.referrerPolicy = "no-referrer";
+            rtImageLvl1.alt = "rt";
+            rowsCheckByLvl[2][0].appendChild(rtImageLvl1);
+
+            rowsCheckByLvl[2][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[2][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[2][6].innerHTML = "POW";
+
+            rowsCheckByLvl[3][0].colSpan = "2";
+            rowsCheckByLvl[3][0].innerHTML = "NJ Lv 2";
+
+            rowsCheckByLvl[3][1].colSpan = "3";
+            rowsCheckByLvl[3][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[3][2].colSpan = "3";
+            let imgRankLvl2 = document.createElement("img");
+            imgRankLvl2.classList.add("rankImage");
+            imgRankLvl2.alt = "3 Star";
+            imgRankLvl2.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl2);
+
+            let rtImageLvl2 = document.createElement("img");
+            rtImageLvl2.classList.add("rtImage");
+            rtImageLvl2.referrerPolicy = "no-referrer";
+            rtImageLvl2.alt = "rt";
+            rowsCheckByLvl[4][0].appendChild(rtImageLvl2);
+
+            rowsCheckByLvl[4][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[4][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[4][6].innerHTML = "POW";
+
+            rowsCheckByLvl[5] = tableCheckByLvl.insertRow(5);
+
+            rowsCheckByLvl[5][0] = rowsCheckByLvl[5].insertCell(0);
+            rowsCheckByLvl[5][1] = rowsCheckByLvl[5].insertCell(1);
+            rowsCheckByLvl[5][2] = rowsCheckByLvl[5].insertCell(2);
+
+            rowsCheckByLvl[5][0].colSpan = "2";
+            rowsCheckByLvl[5][0].innerHTML = "NJ Lv 3";
+
+            rowsCheckByLvl[5][1].colSpan = "3";
+            rowsCheckByLvl[5][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[5][2].colSpan = "3";
+            let imgRankLvl7 = document.createElement("img");
+            imgRankLvl7.classList.add("rankImage");
+            imgRankLvl7.alt = "4 Star";
+            imgRankLvl7.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[5][2].appendChild(imgRankLvl7);
+
+            rowsCheckByLvl[6] = tableCheckByLvl.insertRow(6);
+
+            rowsCheckByLvl[6][0] = rowsCheckByLvl[6].insertCell(0);
+            rowsCheckByLvl[6].insertCell(1);
+            rowsCheckByLvl[6][2] = rowsCheckByLvl[6].insertCell(2);
+            rowsCheckByLvl[6].insertCell(3);
+            rowsCheckByLvl[6][4] = rowsCheckByLvl[6].insertCell(4);
+            rowsCheckByLvl[6].insertCell(5);
+            rowsCheckByLvl[6][6] = rowsCheckByLvl[6].insertCell(6);
+            rowsCheckByLvl[6].insertCell(7);
+
+            let rtImageLvl8 = document.createElement("img");
+            rtImageLvl8.classList.add("rtImage");
+            rtImageLvl8.referrerPolicy = "no-referrer";
+            rtImageLvl8.alt = "rt";
+            rowsCheckByLvl[6][0].appendChild(rtImageLvl8);
+
+            rowsCheckByLvl[6][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[6][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[6][6].innerHTML = "POW";
+
+            rowsCheckByLvl[7] = tableCheckByLvl.insertRow(7);
+
+            rowsCheckByLvl[7][0] = rowsCheckByLvl[7].insertCell(0);
+            rowsCheckByLvl[7][1] = rowsCheckByLvl[7].insertCell(1);
+            rowsCheckByLvl[7][2] = rowsCheckByLvl[7].insertCell(2);
+
+            rowsCheckByLvl[7][0].colSpan = "2";
+            rowsCheckByLvl[7][0].innerHTML = "NJ Lv 4";
+
+            rowsCheckByLvl[7][1].colSpan = "3";
+            rowsCheckByLvl[7][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[7][2].colSpan = "3";
+            let imgRankLvl9 = document.createElement("img");
+            imgRankLvl9.classList.add("rankImage");
+            imgRankLvl9.alt = "4 Star";
+            imgRankLvl9.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[7][2].appendChild(imgRankLvl9);
+
+            rowsCheckByLvl[8] = tableCheckByLvl.insertRow(8);
+
+            rowsCheckByLvl[8][0] = rowsCheckByLvl[8].insertCell(0);
+            rowsCheckByLvl[8].insertCell(1);
+            rowsCheckByLvl[8][2] = rowsCheckByLvl[8].insertCell(2);
+            rowsCheckByLvl[8].insertCell(3);
+            rowsCheckByLvl[8][4] = rowsCheckByLvl[8].insertCell(4);
+            rowsCheckByLvl[8].insertCell(5);
+            rowsCheckByLvl[8][6] = rowsCheckByLvl[8].insertCell(6);
+            rowsCheckByLvl[8].insertCell(7);
+
+            let rtImageLvl10 = document.createElement("img");
+            rtImageLvl10.classList.add("rtImage");
+            rtImageLvl10.referrerPolicy = "no-referrer";
+            rtImageLvl10.alt = "rt";
+            rowsCheckByLvl[8][0].appendChild(rtImageLvl10);
+
+            rowsCheckByLvl[8][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[8][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[8][6].innerHTML = "POW";
+
+            rowsCheckByLvl[9] = tableCheckByLvl.insertRow(9);
+
+            rowsCheckByLvl[9][0] = rowsCheckByLvl[9].insertCell(0);
+            rowsCheckByLvl[9][1] = rowsCheckByLvl[9].insertCell(1);
+            rowsCheckByLvl[9][2] = rowsCheckByLvl[9].insertCell(2);
+
+            rowsCheckByLvl[9][0].colSpan = "2";
+            rowsCheckByLvl[9][0].innerHTML = "NJ Lv 5";
+
+            rowsCheckByLvl[9][1].colSpan = "3";
+            rowsCheckByLvl[9][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[9][2].colSpan = "3";
+            let rtImageLvl11 = document.createElement("img");
+            rtImageLvl11.classList.add("rankImage");
+            rtImageLvl11.alt = "5 Star";
+            rtImageLvl11.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[9][2].appendChild(rtImageLvl11);
+
+            rowsCheckByLvl[10] = tableCheckByLvl.insertRow(10);
+
+            rowsCheckByLvl[10][0] = rowsCheckByLvl[10].insertCell(0);
+            rowsCheckByLvl[10].insertCell(1);
+            rowsCheckByLvl[10][2] = rowsCheckByLvl[10].insertCell(2);
+            rowsCheckByLvl[10].insertCell(3);
+            rowsCheckByLvl[10][4] = rowsCheckByLvl[10].insertCell(4);
+            rowsCheckByLvl[10].insertCell(5);
+            rowsCheckByLvl[10][6] = rowsCheckByLvl[10].insertCell(6);
+            rowsCheckByLvl[10].insertCell(7);
+
+            let rtImageLvl12 = document.createElement("img");
+            rtImageLvl12.classList.add("rtImage");
+            rtImageLvl12.referrerPolicy = "no-referrer";
+            rtImageLvl12.alt = "rt";
+            rowsCheckByLvl[10][0].appendChild(rtImageLvl12);
+
+            rowsCheckByLvl[10][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[10][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[10][6].innerHTML = "POW";
+
+            rowsCheckByLvl[11] = tableCheckByLvl.insertRow(11);
+
+            rowsCheckByLvl[11][0] = rowsCheckByLvl[11].insertCell(0);
+            rowsCheckByLvl[11][1] = rowsCheckByLvl[11].insertCell(1);
+            rowsCheckByLvl[11][2] = rowsCheckByLvl[11].insertCell(2);
+
+            rowsCheckByLvl[11][0].colSpan = "2";
+            rowsCheckByLvl[11][0].innerHTML = "NJ Lv 6";
+
+            rowsCheckByLvl[11][1].colSpan = "3";
+            rowsCheckByLvl[11][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[11][2].colSpan = "3";
+            let rtImageLvl13 = document.createElement("img");
+            rtImageLvl13.classList.add("rankImage");
+            rtImageLvl13.alt = "5 Star";
+            rtImageLvl13.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[11][2].appendChild(rtImageLvl13);
+
+            rowsCheckByLvl[12] = tableCheckByLvl.insertRow(12);
+
+            rowsCheckByLvl[12][0] = rowsCheckByLvl[12].insertCell(0);
+            rowsCheckByLvl[12].insertCell(1);
+            rowsCheckByLvl[12][2] = rowsCheckByLvl[12].insertCell(2);
+            rowsCheckByLvl[12].insertCell(3);
+            rowsCheckByLvl[12][4] = rowsCheckByLvl[12].insertCell(4);
+            rowsCheckByLvl[12].insertCell(5);
+            rowsCheckByLvl[12][6] = rowsCheckByLvl[12].insertCell(6);
+            rowsCheckByLvl[12].insertCell(7);
+
+            let rtImageLvl14 = document.createElement("img");
+            rtImageLvl14.classList.add("rtImage");
+            rtImageLvl14.referrerPolicy = "no-referrer";
+            rtImageLvl14.alt = "rt";
+            rowsCheckByLvl[12][0].appendChild(rtImageLvl14);
+
+            rowsCheckByLvl[12][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[12][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[12][6].innerHTML = "POW";
+
+            rowsCheckByLvl[13] = tableCheckByLvl.insertRow(13);
+
+            rowsCheckByLvl[13][0] = rowsCheckByLvl[13].insertCell(0);
+            rowsCheckByLvl[13][1] = rowsCheckByLvl[13].insertCell(1);
+            rowsCheckByLvl[13][2] = rowsCheckByLvl[13].insertCell(2);
+
+            rowsCheckByLvl[13][0].colSpan = "2";
+            rowsCheckByLvl[13][0].innerHTML = "NJ Lv 7";
+
+            rowsCheckByLvl[13][1].colSpan = "3";
+            rowsCheckByLvl[13][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[13][2].colSpan = "3";
+            let rtImageLvl15 = document.createElement("img");
+            rtImageLvl15.classList.add("rankImage");
+            rtImageLvl15.alt = "6 Star";
+            rtImageLvl15.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[13][2].appendChild(rtImageLvl15);
+
+            rowsCheckByLvl[14] = tableCheckByLvl.insertRow(14);
+
+            rowsCheckByLvl[14][0] = rowsCheckByLvl[14].insertCell(0);
+            rowsCheckByLvl[14].insertCell(1);
+            rowsCheckByLvl[14][2] = rowsCheckByLvl[14].insertCell(2);
+            rowsCheckByLvl[14].insertCell(3);
+            rowsCheckByLvl[14][4] = rowsCheckByLvl[14].insertCell(4);
+            rowsCheckByLvl[14].insertCell(5);
+            rowsCheckByLvl[14][6] = rowsCheckByLvl[14].insertCell(6);
+            rowsCheckByLvl[14].insertCell(7);
+
+            let rtImageLvl25 = document.createElement("img");
+            rtImageLvl25.classList.add("rtImage");
+            rtImageLvl25.referrerPolicy = "no-referrer";
+            rtImageLvl25.alt = "rt";
+            rowsCheckByLvl[14][0].appendChild(rtImageLvl25);
+
+            rowsCheckByLvl[14][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[14][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[14][6].innerHTML = "POW";
+
+            rowsCheckByLvl[15] = tableCheckByLvl.insertRow(15);
+
+            rowsCheckByLvl[15][0] = rowsCheckByLvl[15].insertCell(0);
+            rowsCheckByLvl[15][1] = rowsCheckByLvl[15].insertCell(1);
+            rowsCheckByLvl[15][2] = rowsCheckByLvl[15].insertCell(2);
+
+            rowsCheckByLvl[15][0].colSpan = "2";
+            rowsCheckByLvl[15][0].innerHTML = "NJ Lv 8";
+
+            rowsCheckByLvl[15][1].colSpan = "3";
+            rowsCheckByLvl[15][1].innerHTML = "Card Rank";
+
+            rowsCheckByLvl[15][2].colSpan = "3";
+            let rtImageLvl26 = document.createElement("img");
+            rtImageLvl26.classList.add("rankImage");
+            rtImageLvl26.alt = "6 Star";
+            rtImageLvl26.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[15][2].appendChild(rtImageLvl26);
+
+            rowsCheckByLvl[16] = tableCheckByLvl.insertRow(16);
+
+            rowsCheckByLvl[16][0] = rowsCheckByLvl[16].insertCell(0);
+            rowsCheckByLvl[16].insertCell(1);
+            rowsCheckByLvl[16][2] = rowsCheckByLvl[16].insertCell(2);
+            rowsCheckByLvl[16].insertCell(3);
+            rowsCheckByLvl[16][4] = rowsCheckByLvl[16].insertCell(4);
+            rowsCheckByLvl[16].insertCell(5);
+            rowsCheckByLvl[16][6] = rowsCheckByLvl[16].insertCell(6);
+            rowsCheckByLvl[16].insertCell(7);
+
+            let rtImageLvl27 = document.createElement("img");
+            rtImageLvl27.classList.add("rtImage");
+            rtImageLvl27.referrerPolicy = "no-referrer";
+            rtImageLvl27.alt = "rt";
+            rowsCheckByLvl[16][0].appendChild(rtImageLvl27);
+
+            rowsCheckByLvl[16][2].innerHTML = "CP Cost";
+
+            rowsCheckByLvl[16][4].innerHTML = "CRI";
+
+            rowsCheckByLvl[16][6].innerHTML = "POW";
+            break;
+    }
 }
 
 function ninjutsu() {
     createNinjutsu();
-    let rowsNinJutsu = [[]], rowsCheckByLvl = [[]], rowsCheckByLvLength;
+    createNinjutsuCheckByLvl();
+
+    let rowsNinjutsu = [[]], rowsCheckByLvl = [[]], rowsCheckByLvLength;
 
     const tableNinjutsu = document.getElementById("ninjutsu");
     const tableCheckByLv = document.getElementById("ninjutsuCheckByLv");
@@ -166,139 +841,139 @@ function ninjutsu() {
         rowsCheckByLvl[i][7].innerHTML = eval("parseInt(rowsCheckByLvl[1][7].innerHTML) + ( parseInt(rowsCheckByLvl[1][7].innerHTML) - parseInt(rowsCheckByLvl[0][7].innerHTML) ) * j");
     }
 
-    rowsNinJutsu[1] = tableNinjutsu.rows[1].cells;
-    rowsNinJutsu[2] = tableNinjutsu.rows[2].cells;
-    rowsNinJutsu[3] = tableNinjutsu.rows[3].cells;
-    rowsNinJutsu[5] = tableNinjutsu.rows[5].cells;
-    rowsNinJutsu[6] = tableNinjutsu.rows[6].cells;
-    rowsNinJutsu[7] = tableNinjutsu.rows[7].cells;
+    rowsNinjutsu[1] = tableNinjutsu.rows[1].cells;
+    rowsNinjutsu[2] = tableNinjutsu.rows[2].cells;
+    rowsNinjutsu[3] = tableNinjutsu.rows[3].cells;
+    rowsNinjutsu[5] = tableNinjutsu.rows[5].cells;
+    rowsNinjutsu[6] = tableNinjutsu.rows[6].cells;
+    rowsNinjutsu[7] = tableNinjutsu.rows[7].cells;
 
-    switch (rowsNinJutsu[1][2].innerHTML) {
+    switch (rowsNinjutsu[1][2].innerHTML) {
         case "Lv 70/70":
-            rowsNinJutsu[3][1].innerHTML = "1.10%";
-            rowsNinJutsu[3][3].innerHTML = "1.10%";
-            rowsNinJutsu[5][4].innerHTML = "8/8";
+            rowsNinjutsu[3][1].innerHTML = "1.10%";
+            rowsNinjutsu[3][3].innerHTML = "1.10%";
+            rowsNinjutsu[5][4].innerHTML = "8/8";
 
-            switch (rowsNinJutsu[1][0].innerHTML) {
+            switch (rowsNinjutsu[1][0].innerHTML) {
                 case "Assist":
-                    rowsNinJutsu[1][5].innerHTML = "936";
-                    rowsNinJutsu[1][7].innerHTML = "119";
-                    rowsNinJutsu[2][2].innerHTML = "393";
-                    rowsNinJutsu[2][4].innerHTML = "499";
+                    rowsNinjutsu[1][5].innerHTML = "936";
+                    rowsNinjutsu[1][7].innerHTML = "119";
+                    rowsNinjutsu[2][2].innerHTML = "393";
+                    rowsNinjutsu[2][4].innerHTML = "499";
                     break;
                 case "Attack":
-                    rowsNinJutsu[1][5].innerHTML = "936";
-                    rowsNinJutsu[1][7].innerHTML = "84";
-                    rowsNinJutsu[2][2].innerHTML = "682";
-                    rowsNinJutsu[2][4].innerHTML = "432";
+                    rowsNinjutsu[1][5].innerHTML = "936";
+                    rowsNinjutsu[1][7].innerHTML = "84";
+                    rowsNinjutsu[2][2].innerHTML = "682";
+                    rowsNinjutsu[2][4].innerHTML = "432";
                     break;
                 case "Defense":
-                    rowsNinJutsu[1][5].innerHTML = "1083";
-                    rowsNinJutsu[1][7].innerHTML = "64";
-                    rowsNinJutsu[2][2].innerHTML = "472";
-                    rowsNinJutsu[2][4].innerHTML = "622";
+                    rowsNinjutsu[1][5].innerHTML = "1083";
+                    rowsNinjutsu[1][7].innerHTML = "64";
+                    rowsNinjutsu[2][2].innerHTML = "472";
+                    rowsNinjutsu[2][4].innerHTML = "622";
                     break;
                 case "Skill":
-                    rowsNinJutsu[1][5].innerHTML = "837";
-                    rowsNinJutsu[1][7].innerHTML = "135";
-                    rowsNinJutsu[2][2].innerHTML = "525";
-                    rowsNinJutsu[2][4].innerHTML = "349";
+                    rowsNinjutsu[1][5].innerHTML = "837";
+                    rowsNinjutsu[1][7].innerHTML = "135";
+                    rowsNinjutsu[2][2].innerHTML = "525";
+                    rowsNinjutsu[2][4].innerHTML = "349";
                     break;
                 case "Utility":
-                    rowsNinJutsu[1][5].innerHTML = "999";
-                    rowsNinJutsu[1][7].innerHTML = "94";
-                    rowsNinJutsu[2][2].innerHTML = "499";
-                    rowsNinJutsu[2][4].innerHTML = "475";
+                    rowsNinjutsu[1][5].innerHTML = "999";
+                    rowsNinjutsu[1][7].innerHTML = "94";
+                    rowsNinjutsu[2][2].innerHTML = "499";
+                    rowsNinjutsu[2][4].innerHTML = "475";
                     break;
             }
-            rowsNinJutsu[6][2].innerHTML = rowsCheckByLvl[7][3].innerHTML;
-            rowsNinJutsu[6][4].innerHTML = rowsCheckByLvl[7][5].innerHTML;
-            rowsNinJutsu[6][6].innerHTML = rowsCheckByLvl[7][7].innerHTML;
-            rowsNinJutsu[7][1].innerHTML = rowsCheckByLvl[7][1].innerHTML;
+            rowsNinjutsu[6][2].innerHTML = rowsCheckByLvl[7][3].innerHTML;
+            rowsNinjutsu[6][4].innerHTML = rowsCheckByLvl[7][5].innerHTML;
+            rowsNinjutsu[6][6].innerHTML = rowsCheckByLvl[7][7].innerHTML;
+            rowsNinjutsu[7][1].innerHTML = rowsCheckByLvl[7][1].innerHTML;
             break;
         case "Lv 60/60":
-            rowsNinJutsu[3][1].innerHTML = "0.90%";
-            rowsNinJutsu[3][3].innerHTML = "0.90%";
-            rowsNinJutsu[5][4].innerHTML = "6/6";
+            rowsNinjutsu[3][1].innerHTML = "0.90%";
+            rowsNinjutsu[3][3].innerHTML = "0.90%";
+            rowsNinjutsu[5][4].innerHTML = "6/6";
 
-            switch (rowsNinJutsu[1][0].innerHTML) {
+            switch (rowsNinjutsu[1][0].innerHTML) {
                 case "Assist":
-                    rowsNinJutsu[1][5].innerHTML = "695";
-                    rowsNinJutsu[1][7].innerHTML = "87";
-                    rowsNinJutsu[2][2].innerHTML = "290";
-                    rowsNinJutsu[2][4].innerHTML = "367";
+                    rowsNinjutsu[1][5].innerHTML = "695";
+                    rowsNinjutsu[1][7].innerHTML = "87";
+                    rowsNinjutsu[2][2].innerHTML = "290";
+                    rowsNinjutsu[2][4].innerHTML = "367";
                     break;
                 case "Attack":
-                    rowsNinJutsu[1][5].innerHTML = "695";
-                    rowsNinJutsu[1][7].innerHTML = "61";
-                    rowsNinJutsu[2][2].innerHTML = "504";
-                    rowsNinJutsu[2][4].innerHTML = "313";
+                    rowsNinjutsu[1][5].innerHTML = "695";
+                    rowsNinjutsu[1][7].innerHTML = "61";
+                    rowsNinjutsu[2][2].innerHTML = "504";
+                    rowsNinjutsu[2][4].innerHTML = "313";
                     break;
                 case "Defense":
-                    rowsNinJutsu[1][5].innerHTML = "809";
-                    rowsNinJutsu[1][7].innerHTML = "44";
-                    rowsNinJutsu[2][2].innerHTML = "350";
-                    rowsNinJutsu[2][4].innerHTML = "466";
+                    rowsNinjutsu[1][5].innerHTML = "809";
+                    rowsNinjutsu[1][7].innerHTML = "44";
+                    rowsNinjutsu[2][2].innerHTML = "350";
+                    rowsNinjutsu[2][4].innerHTML = "466";
                     break;
                 case "Skill":
-                    rowsNinJutsu[1][5].innerHTML = "611";
-                    rowsNinJutsu[1][7].innerHTML = "98";
-                    rowsNinJutsu[2][2].innerHTML = "394";
-                    rowsNinJutsu[2][4].innerHTML = "251";
+                    rowsNinjutsu[1][5].innerHTML = "611";
+                    rowsNinjutsu[1][7].innerHTML = "98";
+                    rowsNinjutsu[2][2].innerHTML = "394";
+                    rowsNinjutsu[2][4].innerHTML = "251";
                     break;
                 case "Utility":
-                    rowsNinJutsu[1][5].innerHTML = "735";
-                    rowsNinJutsu[1][7].innerHTML = "69";
-                    rowsNinJutsu[2][2].innerHTML = "367";
-                    rowsNinJutsu[2][4].innerHTML = "352";
+                    rowsNinjutsu[1][5].innerHTML = "735";
+                    rowsNinjutsu[1][7].innerHTML = "69";
+                    rowsNinjutsu[2][2].innerHTML = "367";
+                    rowsNinjutsu[2][4].innerHTML = "352";
                     break;
             }
-            rowsNinJutsu[6][2].innerHTML = rowsCheckByLvl[5][3].innerHTML;
-            rowsNinJutsu[6][4].innerHTML = rowsCheckByLvl[5][5].innerHTML;
-            rowsNinJutsu[6][6].innerHTML = rowsCheckByLvl[5][7].innerHTML;
-            rowsNinJutsu[7][1].innerHTML = rowsCheckByLvl[5][1].innerHTML;
+            rowsNinjutsu[6][2].innerHTML = rowsCheckByLvl[5][3].innerHTML;
+            rowsNinjutsu[6][4].innerHTML = rowsCheckByLvl[5][5].innerHTML;
+            rowsNinjutsu[6][6].innerHTML = rowsCheckByLvl[5][7].innerHTML;
+            rowsNinjutsu[7][1].innerHTML = rowsCheckByLvl[5][1].innerHTML;
             break;
         case "Lv 40/40":
-            rowsNinJutsu[3][1].innerHTML = "0.50%";
-            rowsNinJutsu[3][3].innerHTML = "0.50%";
-            rowsNinJutsu[5][4].innerHTML = "2/2";
+            rowsNinjutsu[3][1].innerHTML = "0.50%";
+            rowsNinjutsu[3][3].innerHTML = "0.50%";
+            rowsNinjutsu[5][4].innerHTML = "2/2";
 
-            switch (rowsNinJutsu[1][0].innerHTML) {
+            switch (rowsNinjutsu[1][0].innerHTML) {
                 case "Assist":
-                    rowsNinJutsu[1][5].innerHTML = "408";
-                    rowsNinJutsu[1][7].innerHTML = "50";
-                    rowsNinJutsu[2][2].innerHTML = "169";
-                    rowsNinJutsu[2][4].innerHTML = "213";
+                    rowsNinjutsu[1][5].innerHTML = "408";
+                    rowsNinjutsu[1][7].innerHTML = "50";
+                    rowsNinjutsu[2][2].innerHTML = "169";
+                    rowsNinjutsu[2][4].innerHTML = "213";
                     break;
                 case "Attack":
-                    rowsNinJutsu[1][5].innerHTML = "408";
-                    rowsNinJutsu[1][7].innerHTML = "35";
-                    rowsNinJutsu[2][2].innerHTML = "294";
-                    rowsNinJutsu[2][4].innerHTML = "181";
+                    rowsNinjutsu[1][5].innerHTML = "408";
+                    rowsNinjutsu[1][7].innerHTML = "35";
+                    rowsNinjutsu[2][2].innerHTML = "294";
+                    rowsNinjutsu[2][4].innerHTML = "181";
                     break;
                 case "Defense":
-                    rowsNinJutsu[1][5].innerHTML = "477";
-                    rowsNinJutsu[1][7].innerHTML = "24";
-                    rowsNinJutsu[2][2].innerHTML = "205";
-                    rowsNinJutsu[2][4].innerHTML = "274";
+                    rowsNinjutsu[1][5].innerHTML = "477";
+                    rowsNinjutsu[1][7].innerHTML = "24";
+                    rowsNinjutsu[2][2].innerHTML = "205";
+                    rowsNinjutsu[2][4].innerHTML = "274";
                     break;
                 case "Skill":
-                    rowsNinJutsu[1][5].innerHTML = "354";
-                    rowsNinJutsu[1][7].innerHTML = "58";
-                    rowsNinJutsu[2][2].innerHTML = "234";
-                    rowsNinJutsu[2][4].innerHTML = "144";
+                    rowsNinjutsu[1][5].innerHTML = "354";
+                    rowsNinjutsu[1][7].innerHTML = "58";
+                    rowsNinjutsu[2][2].innerHTML = "234";
+                    rowsNinjutsu[2][4].innerHTML = "144";
                     break;
                 case "Utility":
-                    rowsNinJutsu[1][5].innerHTML = "427";
-                    rowsNinJutsu[1][7].innerHTML = "40";
-                    rowsNinJutsu[2][2].innerHTML = "213";
-                    rowsNinJutsu[2][4].innerHTML = "205";
+                    rowsNinjutsu[1][5].innerHTML = "427";
+                    rowsNinjutsu[1][7].innerHTML = "40";
+                    rowsNinjutsu[2][2].innerHTML = "213";
+                    rowsNinjutsu[2][4].innerHTML = "205";
                     break;
             }
-            rowsNinJutsu[6][2].innerHTML = rowsCheckByLvl[1][3].innerHTML;
-            rowsNinJutsu[6][4].innerHTML = rowsCheckByLvl[1][5].innerHTML;
-            rowsNinJutsu[6][6].innerHTML = rowsCheckByLvl[1][7].innerHTML;
-            rowsNinJutsu[7][1].innerHTML = rowsCheckByLvl[1][1].innerHTML;
+            rowsNinjutsu[6][2].innerHTML = rowsCheckByLvl[1][3].innerHTML;
+            rowsNinjutsu[6][4].innerHTML = rowsCheckByLvl[1][5].innerHTML;
+            rowsNinjutsu[6][6].innerHTML = rowsCheckByLvl[1][7].innerHTML;
+            rowsNinjutsu[7][1].innerHTML = rowsCheckByLvl[1][1].innerHTML;
             break;
     }
 }
