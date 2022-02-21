@@ -27,16 +27,3 @@
     background-color: #04AA6D;
     color: white;
 }
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-.iconImage {
-    width: 14px;
-}
-
-.fa {
-    display: inline-block;
-}
