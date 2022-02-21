@@ -1,55 +1,55 @@
 :root {
-	--text-color-paginator: black;
-	--bg-color-paginator: white;
-	--border-a-paginator: 1px solid black;
-	--bg-color-a-hover-not-active-paginator: #DDD;
+    --text-color-paginator: black;
+    --bg-color-paginator: white;
+    --border-a-paginator: 1px solid black;
+    --bg-color-a-hover-not-active-paginator: #DDD;
 }
 
 #paginator {
-	margin-top: 0.1%;
-	margin-bottom: 0.1%;
-	display: inline-block;
-	background-color: var(--bg-color-paginator);
-	width: 100%;
+    margin-top: 0.1%;
+    margin-bottom: 0.1%;
+    display: inline-block;
+    background-color: var(--bg-color-paginator);
+    width: 100%;
 }
 
 #paginator a {
-	color: var(--text-color-paginator);
-	float: left;
-	padding: 1vh 1vw 1vh 1vw;
-	text-decoration: none;
-	border: var(--border-a-paginator);
-	transition: all .2s linear;
+    color: var(--text-color-paginator);
+    float: left;
+    padding: 1vh 1vw 1vh 1vw;
+    text-decoration: none;
+    border: var(--border-a-paginator);
+    transition: all .2s linear;
 }
 
 #paginator a.active {
-	background-color: #4CAF50;
-	color: white;
-	border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
 
 }
 
 #paginator a:hover:not(.active) {
-	background-color: var(--bg-color-a-hover-not-active-paginator);
+    background-color: var(--bg-color-a-hover-not-active-paginator);
 }
 
 @media screen and (max-width: 1600px) {
-	#paginator a {
-		padding-right: 1.5vw;
-		padding-left: 1.5vw;
-	}
+    #paginator a {
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-	#paginator a {
-		padding-right: 2vw;
-		padding-left: 2vw;
-	}
+    #paginator a {
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
-	#paginator a {
-		padding-right: 2.5vw;
-		padding-left: 2.5vw;
-	}
+    #paginator a {
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+    }
 }

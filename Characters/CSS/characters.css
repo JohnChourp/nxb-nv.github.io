@@ -1,128 +1,128 @@
 body {
-	margin: 0;
-	padding: 0;
-	overflow: auto;
-	font: normal 16px "Oswald", sans-serif;
-	background: #0E191A;
-	color: white;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font: normal 16px "Oswald", sans-serif;
+    background: #0E191A;
+    color: white;
 }
 
 .cardHover {
-	transition: transform .2s; /* Animation */
+    transition: transform .2s; /* Animation */
 }
 
 .cardHover:hover {
-	transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 figcaption {
-	font-family: 'Orienta', sans-serif;
-	font-size: 16px;
-	margin-top: 5px;
+    font-family: 'Orienta', sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 .wrapper {
-	display: grid;
-	grid-template-columns: 430px auto;
+    display: grid;
+    grid-template-columns: 430px auto;
 }
 
 .one {
-	grid-column: 1;
-	grid-row: 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .superFlex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .two {
-	grid-column: 2;
-	grid-row: 1;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .two-flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .three {
-	grid-column: 2;
-	grid-row: 3;
+    grid-column: 2;
+    grid-row: 3;
 }
 
 .three-flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .four {
-	grid-column: 2;
-	grid-row: 4;
+    grid-column: 2;
+    grid-row: 4;
 }
 
 .four-flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .five {
-	grid-column: 2;
-	grid-row: 5;
+    grid-column: 2;
+    grid-row: 5;
 }
 
 .five-flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .six {
-	grid-column: 2;
-	grid-row: 6;
+    grid-column: 2;
+    grid-row: 6;
 }
 
 .six-flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .cardThumb {
-	width: 200px;
-	height: 150px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 200px;
+    height: 150px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .toolThumb {
-	width: 150px;
-	height: 150px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 150px;
+    height: 150px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 @media screen and (max-width: 950px) {
-	.wrapper {
-		grid-template-columns: 205px auto;
-	}
-	
-	figcaption {
-		font-size: 12px;
-	}
-	
-	.cardThumb {
-		width: 170px;
-		height: 127px;
-	}
+    .wrapper {
+        grid-template-columns: 205px auto;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+
+    .cardThumb {
+        width: 170px;
+        height: 127px;
+    }
 }

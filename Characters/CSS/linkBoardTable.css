@@ -1,208 +1,208 @@
 #linkBoardTable {
-	width: 70%;
-	height: 100%;
-	border-radius: 4px;
-	border: 3px solid #333;
-	text-align: center;
-	vertical-align: center;
-	font-size: 20px;
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 70%;
+    height: 100%;
+    border-radius: 4px;
+    border: 3px solid #333;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th, td {
-	border: 1px solid #333;
-	padding: 5px;
+    border: 1px solid #333;
+    padding: 5px;
 }
 
 th {
-	background: #EE3E19;
+    background: #EE3E19;
 }
 
 td {
-	background: #F49907;
+    background: #F49907;
 }
 
 td:hover, th:hover {
-	background-color: #A46A1F;
+    background-color: #A46A1F;
 }
 
 .linkBoardAbilityPoints {
-	width: 30px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardPath {
-	width: 50px;
-	height: 50px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 50px;
+    height: 50px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardLocked {
-	width: 30px;
-	height: 35px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 35px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardFragment {
-	width: 30px;
-	height: 27px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 27px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardSuperFragment {
-	width: 30px;
-	height: 31px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 31px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardKeys {
-	width: 20px;
-	height: 40px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 20px;
+    height: 40px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardStat {
-	width: 30px;
-	height: 34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 34px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardStatType {
-	width: 30px;
-	height: 34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 34px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardRyo {
-	width: 30px;
-	height: 34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 34px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .reduceDamageReceive {
-	width: 30px;
-	height: 34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 34px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardTool {
-	width: 30px;
-	height: 33px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 33px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardUltimateJutsu {
-	width: 30px;
-	height: 34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 34px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .gainCharImmunity {
-	width: 30px;
-	height: 34px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 34px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .shinobiAmulet {
-	width: 30px;
-	height: 32px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 32px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .expansionScroll {
-	width: 21px;
-	height: 40px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 21px;
+    height: 40px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .trainingScroll {
-	width: 30px;
-	height: 32px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 32px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoardChakra {
-	width: 30px;
-	height: 33px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 33px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }
 
 .linkBoard5StarAttackGem {
-	width: 30px;
-	height: 30px;
-	/* Center the Image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* Center the Image */
+    width: 30px;
+    height: 30px;
+    /* Center the Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the Image */
 }

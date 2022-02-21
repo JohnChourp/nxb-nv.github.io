@@ -1,225 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<!-- Favicon Start -->
-	<link href="../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<!-- Favicon End -->
-	<!-- CSS Start -->
-	<link href="../../CSS/charCardsAndTools.css" rel="stylesheet" type="text/css"/>
-	
-	<link href="../../../CSS/CSSFromJS/topNav.css" rel="stylesheet" type="text/css"/>
-	<link href="../../../CSS/animation.css" rel="stylesheet" type="text/css"/>
-	<link href="../../../CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
-	<!-- CSS End -->
-	<!-- JS Start -->
-	<script src="../../../JS/Images/images.js" type="text/javascript"></script>
-	
-	<script src="../../JS/ninjutsu.js" type="text/javascript"></script>
-	
-	<script src="../../../JS/topNav.js" type="text/javascript"></script>
-	<!-- JS End -->
-	<title>A Thousand Years of Death!</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- Favicon Start -->
+    <link href="../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Favicon End -->
+    <!-- CSS Start -->
+    <link href="../../CSS/charCardsAndTools.css" rel="stylesheet" type="text/css"/>
+
+    <link href="../../../CSS/CSSFromJS/topNav.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../CSS/animation.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../CSS/customScrollbar.css" rel="stylesheet" type="text/css"/>
+    <!-- CSS End -->
+    <!-- JS Start -->
+    <script src="../../../JS/Images/images.js" type="text/javascript"></script>
+
+    <script src="../../JS/ninjutsu.js" type="text/javascript"></script>
+
+    <script src="../../../JS/topNav.js" type="text/javascript"></script>
+    <!-- JS End -->
+    <title>A Thousand Years of Death!</title>
 </head>
-<body onload="ninjutsu(); natureImages(); typeImages(); rankLvImages();">
+<body onload="ninjutsu(); natureImages(); typeImages(); rankLvImages(); rtImages();">
 <div class="topnav" id="myTopnav">
-	<a href="../../../index.html">Characters</a>
-	<a href="../../../ninjutsu-cards.html">Ninjutsu Cards</a>
-	<a class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"><img referrerPolicy="no-referrer" alt="" src="https://lh3.googleusercontent.com/pw/AM-JKLXxLphNHFppC7GZe5NGZb4heYrL0LMfoYq7-luNiVkUC15OrsC9q9n5AQiyPNmWxqKpGRtqbpnGLfSnuB88f9oAUpkvov4izChR6YvcT9jPIfMxUtzODyoqVnJIyzHhpZLkvCTlZuv8VJeKOnvAVS3L=w50-h45-no?authuser=0"></i>
-	</a>
+    <a href="../../../index.html">Characters</a>
+    <a href="../../../ninjutsu-cards.html">Ninjutsu Cards</a>
+    <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"><img alt="" referrerPolicy="no-referrer"
+                                   src="https://lh3.googleusercontent.com/pw/AM-JKLXxLphNHFppC7GZe5NGZb4heYrL0LMfoYq7-luNiVkUC15OrsC9q9n5AQiyPNmWxqKpGRtqbpnGLfSnuB88f9oAUpkvov4izChR6YvcT9jPIfMxUtzODyoqVnJIyzHhpZLkvCTlZuv8VJeKOnvAVS3L=w50-h45-no?authuser=0"></i>
+    </a>
 </div>
 <p><span class="headings">A Thousand Years of Death!</span></p>
 <div class="flex-container-cards-tools">
-	<table id="ninjutsu">
-		<thead>
-		<tr>
-			<th colspan="4">Ninjutsu</th>
-			<th colspan="4">Max Card Stats</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td class="type">Attack</td>
-			<td><img referrerPolicy="no-referrer" alt="Attack" class="typeImage" src=""/></td>
-			<td class="cardLevel">Lv 60/60</td>
-			<td><img referrerPolicy="no-referrer" alt="5 Star" class="rankImage" src=""/></td>
-			<td>HP</td>
-			<td></td>
-			<td>CP</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="4" id="cardImage" rowspan="2"><img referrerPolicy="no-referrer" alt=""
-			                                                class="cardImage"
-			                                                src="https://lh3.googleusercontent.com/pw/AM-JKLWuZ_KUr50tkJrKoauGc0tkdu5y-HihyLmVevdy3TKFt2ADzSafhpChzYtxUcleKY4dhNu1737bOTV0UxpeeeR2BTWXWrJkS5fborK-iQmjiUOVEGymHbOjfYJJ_iA-RLS3o55-leRzRhIX5S1Kr5S6=w708-h527-no?authuser=0"/>
-			</td>
-			<td>ATK</td>
-			<td></td>
-			<td>DEF</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CRI</td>
-			<td></td>
-			<td>EVA</td>
-			<td></td>
-		</tr>
-		<tr>
-			<th colspan="8">Max Jutsu Stats</th>
-		</tr>
-		<tr>
-			<td class="jutsuNature">Manipulate</td>
-			<td><img referrerPolicy="no-referrer" alt="Manipulate" class="natureImage" src=""/></td>
-			<td colspan="4" id="jutsuName">Clone Arrow</td>
-			<td>LVL</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="2"><img referrerPolicy="no-referrer" alt=""
-			                     id="jutsuImage"
-			                     src="https://lh3.googleusercontent.com/pw/AM-JKLU7U0xCFvUlP9_UN3TeMkw0BTiDVB7uda9hwFujuIUlRy2qItBmZGm6ygjH1tgQbZWYBgI5MJVd4VrpdfyXTKRUvSfTQO1zHnAUpKM7a6AgzjCtmJ0uzn2bKfzEYZ-bllprVTAhV25dx8zlqAG4BGe5=w124-h121-no?authuser=0"/>
-			</td>
-			<td>CP Cost</td>
-			<td></td>
-			<td>CRI</td>
-			<td></td>
-			<td>POW</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td></td>
-			<td colspan="3">Equippable By</td>
-			<td colspan="3"><a class="equipBy" href="../../../Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto Uzumaki</a></td>
-		</tr>
-		<tr>
-			<td colspan="2">Info</td>
-			<td colspan="6">Forms a shadow clone ahead that performs an uppercut, causing damage.</td>
-		</tr>
-		</tbody>
-	</table>
-	
-	<table id="ninjutsuCheckByLv">
-		<thead>
-		<tr>
-			<th colspan="8">Check By Lv</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td colspan="2">NJ Lv 1</td>
-			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img referrerPolicy="no-referrer" alt="3 Star" class="rankImage" src=""/></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td>7</td>
-			<td>CP Cost</td>
-			<td>100</td>
-			<td>CRI</td>
-			<td>1.00%</td>
-			<td>POW</td>
-			<td>1600</td>
-		</tr>
-		<tr>
-			<td colspan="2">NJ Lv 2</td>
-			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img referrerPolicy="no-referrer" alt="3 Star" class="rankImage" src=""/></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td>7</td>
-			<td>CP Cost</td>
-			<td>100</td>
-			<td>CRI</td>
-			<td>6.00%</td>
-			<td>POW</td>
-			<td>2360</td>
-		</tr>
-		<tr>
-			<td colspan="2">NJ Lv 3</td>
-			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img referrerPolicy="no-referrer" alt="4 Star" class="rankImage" src=""/></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td></td>
-			<td>CP Cost</td>
-			<td></td>
-			<td>CRI</td>
-			<td></td>
-			<td>POW</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="2">NJ Lv 4</td>
-			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img referrerPolicy="no-referrer" alt="4 Star" class="rankImage" src=""/></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td></td>
-			<td>CP Cost</td>
-			<td></td>
-			<td>CRI</td>
-			<td></td>
-			<td>POW</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="2">NJ Lv 5</td>
-			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img referrerPolicy="no-referrer" alt="5 Star" class="rankImage" src=""/></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td></td>
-			<td>CP Cost</td>
-			<td></td>
-			<td>CRI</td>
-			<td></td>
-			<td>POW</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="2">NJ Lv 6</td>
-			<td colspan="3">Card Rank</td>
-			<td colspan="3"><img referrerPolicy="no-referrer" alt="5 Star" class="rankImage" src=""/></td>
-		</tr>
-		<tr>
-			<td><img referrerPolicy="no-referrer" alt=""
-			         class="rtImage"
-			         src="https://lh3.googleusercontent.com/cjQ1P5FBg0cx_N6ihIsjwxsIUT3KVMT1PimtoWVlY0WV4yXhZYaT37BIOM-0NPSClAuQYDdJ0bUHD-QN0ZpfTovp41ulwuFEcVGxhdiUt8wYHpayX-1LEFnSel7x29qJr7Et3IWDvA=w1920-h1080"/>
-			</td>
-			<td></td>
-			<td>CP Cost</td>
-			<td></td>
-			<td>CRI</td>
-			<td></td>
-			<td>POW</td>
-			<td></td>
-		</tr>
-		</tbody>
-	</table>
+    <table id="ninjutsu">
+        <tbody>
+        <tr>
+            <td>Attack</td>
+            <td>Lv 60/60</td>
+            <td>5 Star</td>
+        </tr>
+        <tr>
+            <td>
+                https://lh3.googleusercontent.com/pw/AM-JKLWuZ_KUr50tkJrKoauGc0tkdu5y-HihyLmVevdy3TKFt2ADzSafhpChzYtxUcleKY4dhNu1737bOTV0UxpeeeR2BTWXWrJkS5fborK-iQmjiUOVEGymHbOjfYJJ_iA-RLS3o55-leRzRhIX5S1Kr5S6=w708-h527-no?authuser=0
+            </td>
+        </tr>
+        <tr>
+            <td>Manipulate</td>
+            <td>Clone Arrow</td>
+        </tr>
+        <tr>
+            <td>
+                https://lh3.googleusercontent.com/pw/AM-JKLU7U0xCFvUlP9_UN3TeMkw0BTiDVB7uda9hwFujuIUlRy2qItBmZGm6ygjH1tgQbZWYBgI5MJVd4VrpdfyXTKRUvSfTQO1zHnAUpKM7a6AgzjCtmJ0uzn2bKfzEYZ-bllprVTAhV25dx8zlqAG4BGe5=w124-h121-no?authuser=0
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><a class="equipBy" href="../../../Characters/NarutoUzumaki/naruto-uzumaki.html">Naruto
+                Uzumaki</a></td>
+        </tr>
+        <tr>
+            <td>Forms a shadow clone ahead that performs an uppercut, causing damage.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table id="ninjutsuCheckByLv">
+        <tbody>
+        <tr>
+            <td>7</td>
+            <td>100</td>
+            <td>1.00%</td>
+            <td>1600</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>100</td>
+            <td>6.00%</td>
+            <td>2360</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
