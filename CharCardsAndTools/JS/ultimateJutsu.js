@@ -218,20 +218,6 @@ function createUltimateNinjutsuCheckByLvl() {
     rowsUltimateNinjutsu[1] = tableUltimateNinjutsu.rows[1].cells;
     switch (rowsUltimateNinjutsu[1][2].innerHTML) {
         case "Lv 70/70":
-            rowsCheckByLvl[1] = tableCheckByLvl.rows[1];
-            imgRankLvl = document.createElement("img");
-            imgRankLvl.classList.add("rankImage");
-            imgRankLvl.alt = "5 Star";
-            imgRankLvl.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[1][2].appendChild(imgRankLvl);
-
-            rowsCheckByLvl[3] = tableCheckByLvl.rows[3];
-            imgRankLvl = document.createElement("img");
-            imgRankLvl.classList.add("rankImage");
-            imgRankLvl.alt = "5 Star";
-            imgRankLvl.referrerPolicy = "no-referrer";
-            rowsCheckByLvl[3][2].appendChild(imgRankLvl);
-
             for (let i = 5; i < 17; i++) {
                 rowsCheckByLvl[i] = tableCheckByLvl.insertRow(i);
             }
@@ -263,6 +249,20 @@ function createUltimateNinjutsuCheckByLvl() {
                 rtImageLvl.alt = "rt";
                 rowsCheckByLvl[i + 1][0].appendChild(rtImageLvl);
             }
+
+            rowsCheckByLvl[1] = tableCheckByLvl.rows[1];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "5 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[1][2].appendChild(imgRankLvl);
+
+            rowsCheckByLvl[3] = tableCheckByLvl.rows[3];
+            imgRankLvl = document.createElement("img");
+            imgRankLvl.classList.add("rankImage");
+            imgRankLvl.alt = "5 Star";
+            imgRankLvl.referrerPolicy = "no-referrer";
+            rowsCheckByLvl[3][2].appendChild(imgRankLvl);
 
             imgRankLvl = document.createElement("img");
             imgRankLvl.classList.add("rankImage");
