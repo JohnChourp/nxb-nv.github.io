@@ -1,18 +1,19 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function createTopNav() {
-    let pathToHost = window.location.host;
+    let hostName = window.location.host;
 
     let topNavDiv = document.createElement("div");
     topNavDiv.classList.add("topnav");
     document.body.insertAdjacentElement('afterbegin', topNavDiv);
 
     let charactersLink = document.createElement("a");
-    charactersLink.href = "http://" + pathToHost + "/nxb-nv.github.io/index.html";
+    charactersLink.href = "http://" + hostName + "/nxb-nv.github.io/index.html";
     charactersLink.innerHTML = "Characters";
     topNavDiv.appendChild(charactersLink);
 
     let ninjutsuCardsLink = document.createElement("a");
-    ninjutsuCardsLink.href = "http://" + pathToHost + "/nxb-nv.github.io/ninjutsu-cards.html";
+    ninjutsuCardsLink.href = "http://" + hostName + "/nxb-nv.github.io/ninjutsu-cards.html";
     ninjutsuCardsLink.innerHTML = "Ninjutsu Cards";
     topNavDiv.appendChild(ninjutsuCardsLink);
 }
+createTopNav();

@@ -547,3 +547,4 @@ function ninjutsu() {
             break;
     }
 }
+ninjutsu();
