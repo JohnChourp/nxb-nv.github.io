@@ -419,3 +419,4 @@ function ultimateJutsu() {
             break;
     }
 }
+ultimateJutsu();
