@@ -1,4 +1,3 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function createTopNav() {
     let hostName = window.location.host;
 
@@ -16,4 +15,3 @@ function createTopNav() {
     ninjutsuCardsLink.innerHTML = "Ninjutsu Cards";
     topNavDiv.appendChild(ninjutsuCardsLink);
 }
-createTopNav();
