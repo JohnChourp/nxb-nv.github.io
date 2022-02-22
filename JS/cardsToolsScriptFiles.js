@@ -2,7 +2,6 @@ function cardsToolsScriptFiles() {
     let hostName = window.location.host;
 
     const folderNinjutsus = window.location.pathname.search("Ninjutsus");
-    alert(window.location.pathname);
     const folderTools = window.location.pathname.search("Tools");
     const folderUltimateJutsus = window.location.pathname.search("UltimateJutsus");
 
@@ -46,7 +45,7 @@ function cardsToolsScriptFiles() {
         ninjutsu.type = "text/javascript";
         document.head.appendChild(ninjutsu);
     }
-    if (folderTools === 23) {
+    if (folderTools === 43) {
         const toolFactory = document.createElement("script");
         toolFactory.src = "https://" + hostName + "/nxb-nv.github.io/CardsTools/JS/toolFactory.js";
         toolFactory.type = "text/javascript";
