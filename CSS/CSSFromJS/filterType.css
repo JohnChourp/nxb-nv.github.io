@@ -1,65 +1,65 @@
 #filterType {
-    display: inline-block;
+	display: inline-block;
 }
 
 #filterType a:hover {
-    background-color: #DDD;
+	background-color: #DDD;
 }
 
 .btnFilterType {
-    width: 7vw;
-    background-color: #3498DB;
-    color: white;
-    font-size: 16px;
+	width: 7vw;
+	background-color: #3498DB;
+	color: white;
+	font-size: 16px;
 }
 
 .btnFilterType:hover, .btnFilterType:focus {
-    background-color: #246D9B;
-    cursor: pointer;
-    transition: all .2s linear;
+	background-color: #246D9B;
+	cursor: pointer;
+	transition: all .2s linear;
 }
 
 .contentFilterType {
-    display: none;
-    position: absolute;
-    width: 7vw;
-    background-color: #F1F1F1;
-    box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
+	display: none;
+	position: absolute;
+	width: 7vw;
+	background-color: #F1F1F1;
+	box-shadow: 0 0.5vw 2.8vh 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
 }
 
 .contentFilterType a {
-    color: black;
-    padding: 1.4vh 1vw;
-    text-decoration: none;
-    display: block;
-    transition: all .2s linear;
+	color: black;
+	padding: 1.4vh 1vw;
+	text-decoration: none;
+	display: block;
+	transition: all .2s linear;
 }
 
 .showFilterType {
-    display: block;
+	display: block;
 }
 
 .filterTypeActive {
-    background-color: #4BAF5C;
+	background-color: #4BAF5C;
 }
 
 @media screen and (max-width: 1250px) {
-    .btnFilterType {
-        width: 14vw;
-    }
-
-    .contentFilterType {
-        width: 14vw;
-    }
+	.btnFilterType {
+		width: 14vw;
+	}
+	
+	.contentFilterType {
+		width: 14vw;
+	}
 }
 
 @media screen and (max-width: 600px) {
-    .btnFilterType {
-        width: 21vw;
-    }
-
-    .contentFilterType {
-        width: 21vw;
-    }
+	.btnFilterType {
+		width: 21vw;
+	}
+	
+	.contentFilterType {
+		width: 21vw;
+	}
 }

@@ -1,5 +1,5 @@
 p {
-    text-align: center;
+	text-align: center;
 }
 
 .headings {
@@ -37,19 +37,19 @@ p {
 /* Animate Background Image */
 
 @media screen and (max-width: 1600px) {
-    .headings {
-        font: 40px "Oswald", sans-serif;
-    }
+	.headings {
+		font: 40px "Oswald", sans-serif;
+	}
 }
 
 @media screen and (max-width: 1300px) {
-    .headings {
-        font: 32px "Oswald", sans-serif;
-    }
+	.headings {
+		font: 32px "Oswald", sans-serif;
+	}
 }
 
 @media screen and (max-width: 1000px) {
-    .headings {
-        font: 26px "Oswald", sans-serif;
-    }
+	.headings {
+		font: 26px "Oswald", sans-serif;
+	}
 }

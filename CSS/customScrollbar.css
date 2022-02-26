@@ -1,71 +1,71 @@
 :root {
-    --bg-color-webkit-scrollbar-track: #F0F0F0;
-    --bg-webkit-scrollbar-thumb: #CECECE;
-    --bg-webkit-scrollbar-thumb-hover: #A7A7A7;
+	--bg-color-webkit-scrollbar-track: #F0F0F0;
+	--bg-webkit-scrollbar-thumb: #CECECE;
+	--bg-webkit-scrollbar-thumb-hover: #A7A7A7;
 }
 
 /*  the scrollbar. */
 ::-webkit-scrollbar {
-    width: 0.7vw;
-    height: 2vh;
+	width: 0.7vw;
+	height: 2vh;
 }
 
 /* the track (progress bar) of the scrollbar. */
 ::-webkit-scrollbar-track {
-    background-color: var(--bg-color-webkit-scrollbar-track);
+	background-color: var(--bg-color-webkit-scrollbar-track);
 }
 
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb {
-    background: var(--bg-webkit-scrollbar-thumb);
-    height: 135px;
+	background: var(--bg-webkit-scrollbar-thumb);
+	height: 135px;
 }
 
 /* the draggable scrolling handle. */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--bg-webkit-scrollbar-thumb-hover);
+	background: var(--bg-webkit-scrollbar-thumb-hover);
 }
 
 /* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
 ::-webkit-scrollbar-corner {
-    background: var(--bg-color-webkit-scrollbar-track);
+	background: var(--bg-color-webkit-scrollbar-track);
 }
 
 .indexTable {
-    height: 72vh;
-    overflow: auto;
+	height: 72vh;
+	overflow: auto;
 }
 
 .ninjutsuCardsTable {
-    height: 72vh;
-    overflow: auto;
+	height: 72vh;
+	overflow: auto;
 }
 
 @media screen and (max-width: 1600px) {
-    ::-webkit-scrollbar {
-        width: 1.05vw;
-        height: 2vh;
-    }
+	::-webkit-scrollbar {
+		width: 1.05vw;
+		height: 2vh;
+	}
 }
 
 @media screen and (max-width: 1200px) {
-    ::-webkit-scrollbar {
-        width: 1.4vw;
-        height: 2vh;
-    }
+	::-webkit-scrollbar {
+		width: 1.4vw;
+		height: 2vh;
+	}
 }
 
 @media screen and (max-width: 800px) {
-    ::-webkit-scrollbar {
-        width: 1.75vw;
-        height: 2vh;
-    }
+	::-webkit-scrollbar {
+		width: 1.75vw;
+		height: 2vh;
+	}
 }
 
 @media screen and (max-width: 400px) {
-    ::-webkit-scrollbar {
-        width: 2.1vw;
-        height: 2vh;
-    }
+	::-webkit-scrollbar {
+		width: 2.1vw;
+		height: 2vh;
+	}
 }
 
