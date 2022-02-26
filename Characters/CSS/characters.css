@@ -9,6 +9,7 @@ body {
 
 .cardHover {
     transition: transform .2s; /* Animation */
+    word-wrap: break-word;
 }
 
 .cardHover:hover {
@@ -19,6 +20,7 @@ figcaption {
     font-family: 'Orienta', sans-serif;
     font-size: 16px;
     margin-top: 5px;
+    text-align: left;
 }
 
 .wrapper {
@@ -31,65 +33,8 @@ figcaption {
     grid-row: 1;
 }
 
-.superFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.two-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.three {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.three-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.four {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.four-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.five {
-    grid-column: 2;
-    grid-row: 5;
-}
-
-.five-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.six {
-    grid-column: 2;
-    grid-row: 6;
-}
-
-.six-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.cardsTypes {
+    text-align: left;
 }
 
 .cardThumb {
@@ -110,6 +55,12 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
     /* Center the Image */
+}
+
+.cardsTypesFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1600px) {
