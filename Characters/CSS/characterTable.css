@@ -42,7 +42,7 @@ td:hover, th:hover {
 }
 
 .char {
-    width: 410px;
+    width: 420px;
     /* Center the Image */
     display: block;
     margin-left: auto;
@@ -69,8 +69,8 @@ td:hover, th:hover {
 }
 
 .abilitiesListBtn {
-    width: 120px;
-    height: 50px;
+    width: 150px;
+    height: 62px;
     /* Center the Image */
     display: block;
     margin-left: auto;
@@ -80,8 +80,8 @@ td:hover, th:hover {
 }
 
 .linkBoardBtn {
-    width: 160px;
-    height: 41px;
+    width: 190px;
+    height: 47px;
     /* Center the Image */
     display: block;
     margin-left: auto;
@@ -90,30 +90,86 @@ td:hover, th:hover {
     transition: transform .2s; /* Animation */
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1600px) {
     #charTable {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .char {
-        width: 190px;
+        width: 370px;
     }
 
     .typeImage {
-        width: 20px;
+        width: 30px;
     }
 
     .rankImage {
-        height: 15px;
+        height: 20px;
     }
 
     .abilitiesListBtn {
-        width: 60px;
-        height: 25px;
+        width: 150px;
+        height: 62px;
     }
 
     .linkBoardBtn {
-        width: 80px;
+        width: 190px;
+        height: 47px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #charTable {
+        font-size: 16px;
+    }
+
+    .char {
+        width: 320px;
+    }
+
+    .typeImage {
+        width: 30px;
+    }
+
+    .rankImage {
         height: 20px;
+    }
+
+    .abilitiesListBtn {
+        width: 120px;
+        height: 48px;
+    }
+
+    .linkBoardBtn {
+        width: 160px;
+        height: 39px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #charTable {
+        font-size: 16px;
+    }
+
+    .char {
+        width: 270px;
+    }
+
+    .typeImage {
+        width: 30px;
+    }
+
+    .rankImage {
+        height: 20px;
+    }
+
+    .abilitiesListBtn {
+        width: 90px;
+        height: 36px;
+    }
+
+    .linkBoardBtn {
+        width: 130px;
+        height: 31px;
     }
 }

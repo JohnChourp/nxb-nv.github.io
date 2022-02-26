@@ -112,17 +112,47 @@ figcaption {
     /* Center the Image */
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1600px) {
     .wrapper {
-        grid-template-columns: 205px auto;
+        grid-template-columns: 380px auto;
     }
 
     figcaption {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .cardThumb {
         width: 170px;
-        height: 127px;
+        height: 126px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        grid-template-columns: 330px auto;
+    }
+
+    figcaption {
+        font-size: 16px;
+    }
+
+    .cardThumb {
+        width: 140px;
+        height: 103px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-columns: 280px auto;
+    }
+
+    figcaption {
+        font-size: 16px;
+    }
+
+    .cardThumb {
+        width: 110px;
+        height: 80px;
     }
 }
