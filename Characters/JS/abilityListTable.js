@@ -1,4 +1,69 @@
+function createAbilityListTable(){
+	let rows = [[]];
+	const abilityListTable = document.getElementById("abilityListTable");
+	let header = abilityListTable.createTHead();
+	
+	rows[0] = header.insertRow(0);
+	
+	rows[0][0] = rows[0].insertCell(0);
+	rows[0][0].outerHTML = "<th colspan=7 >Ability List</th>";
+	
+	rows[1] = header.insertRow(1);
+	
+	rows[1][0] = rows[1].insertCell(0);
+	rows[1][0].colSpan = "4";
+	rows[1][0].innerHTML = "Number of Abilities";
+	
+	rows[1][1] = rows[1].insertCell(1);
+	rows[1][1].colSpan = "3";
+	rows[1][1].innerHTML = "69";
+	
+	rows[2] = abilityListTable.insertRow(2);
+	
+	rows[2][0] = rows[2].insertCell(0);
+	rows[2][0].outerHTML = "<th>Number</th>";
+	
+	rows[2][1] = rows[2].insertCell(1);
+	rows[2][1].outerHTML = "<th>Rank</th>";
+	
+	rows[2][2] = rows[2].insertCell(2);
+	rows[2][2].outerHTML = "<th colspan=3 >Benefit</th>";
+	
+	rows[2][3] = rows[2].insertCell(3);
+	rows[2][3].outerHTML = "<th colspan=2 >Cost</th>";
+	
+	for(let i = 3; i < 42; i ++){
+		if(i !== 22 && !(i > 26 && i < 30) && !(i > 33 && i < 39)){
+			rows[i] = abilityListTable.insertRow(i);
+			
+			rows[i][0] = rows[i].insertCell(0);
+			
+			rows[i][1] = rows[i].insertCell(1);
+			
+			rows[i][2] = rows[i].insertCell(2);
+			rows[i][2].colSpan = "2";
+			
+			rows[i][3] = rows[i].insertCell(3);
+			let increasePower = document.createElement("img");
+			increasePower.classList.add("abilityListImages");
+			increasePower.alt = "increasePower";
+			increasePower.referrerPolicy = "no-referrer";
+			rows[i][3].appendChild(increasePower);
+			
+			rows[i][4] = rows[i].insertCell(4);
+			
+			rows[i][5] = rows[i].insertCell(5);
+			let abilityPoints = document.createElement("img");
+			abilityPoints.classList.add("abilityListImages");
+			abilityPoints.alt = "abilityPoints";
+			abilityPoints.referrerPolicy = "no-referrer";
+			rows[i][5].appendChild(abilityPoints);
+		}
+	}
+}
+
 function abilityListTable(){
+	createAbilityListTable();
 	let rows = [[]] , i , rowsLength;
 	
 	rowsLength = document.getElementById("abilityListTable").rows.length;
