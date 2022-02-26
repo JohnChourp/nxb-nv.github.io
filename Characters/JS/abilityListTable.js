@@ -32,8 +32,8 @@ function createAbilityListTable(){
 	rows[2][3] = rows[2].insertCell(3);
 	rows[2][3].outerHTML = "<th colspan=2 >Cost</th>";
 	
-	for(let i = 3; i < 42; i ++){
-		if(i !== 22 && !(i > 26 && i < 30) && !(i > 33 && i < 39)){
+	for(let i = 3; i < 72; i ++){
+		if(i !== 22 && !(i > 26 && i < 30) && !(i > 33 && i < 39) && i < 42){
 			rows[i] = abilityListTable.insertRow(i);
 			
 			rows[i][0] = rows[i].insertCell(0);
@@ -58,6 +58,37 @@ function createAbilityListTable(){
 			abilityPoints.alt = "abilityPoints";
 			abilityPoints.referrerPolicy = "no-referrer";
 			rows[i][5].appendChild(abilityPoints);
+		}else{
+			rows[i] = abilityListTable.insertRow(i);
+			
+			rows[i][0] = rows[i].insertCell(0);
+			
+			rows[i][1] = rows[i].insertCell(1);
+			
+			rows[i][2] = rows[i].insertCell(2);
+			
+			rows[i][3] = rows[i].insertCell(3);
+			let equipBy = document.createElement("a");
+			equipBy.classList.add("equipBy");
+			equipBy.href = "../../CardsTools/NarutoUzumaki/UltimateJutsus/naruto-vs-pain.html";
+			equipBy.innerHTML = "Naruto vs Pain";
+			rows[i][3].appendChild(equipBy);
+			
+			rows[i][4] = rows[i].insertCell(4);
+			let increaseUltimatePower = document.createElement("img");
+			increaseUltimatePower.classList.add("abilityListImages");
+			increaseUltimatePower.alt = "increaseUltimatePower";
+			increaseUltimatePower.referrerPolicy = "no-referrer";
+			rows[i][4].appendChild(increaseUltimatePower);
+			
+			rows[i][5] = rows[i].insertCell(5);
+			
+			rows[i][6] = rows[i].insertCell(6);
+			let abilityPoints = document.createElement("img");
+			abilityPoints.classList.add("abilityListImages");
+			abilityPoints.alt = "abilityPoints";
+			abilityPoints.referrerPolicy = "no-referrer";
+			rows[i][6].appendChild(abilityPoints);
 		}
 	}
 }
