@@ -28,7 +28,7 @@ td:hover, th:hover {
     background-color: #A46A1F;
 }
 
-a:link {
+a.equipBy:link {
     color: #00A5A8;
     font-weight: bold;
     transition: all .2s linear;
@@ -36,19 +36,19 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
+a.equipBy:visited {
     color: #00A5A8;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover {
+a.equipBy:hover {
     color: #0EFAFE;
     background-color: transparent;
     text-decoration: underline;
 }
 
-a:active {
+a.equipBy:active {
     color: #0EFAFE;
     background-color: transparent;
     text-decoration: underline;

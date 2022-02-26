@@ -64,12 +64,12 @@ figcaption {
 }
 
 @media screen and (max-width: 1600px) {
+    figcaption {
+        font-size: 15px;
+    }
+    
     .wrapper {
         grid-template-columns: 380px auto;
-    }
-
-    figcaption {
-        font-size: 16px;
     }
 
     .cardThumb {
@@ -79,12 +79,12 @@ figcaption {
 }
 
 @media screen and (max-width: 1300px) {
+    figcaption {
+        font-size: 14px;
+    }
+    
     .wrapper {
         grid-template-columns: 330px auto;
-    }
-
-    figcaption {
-        font-size: 16px;
     }
 
     .cardThumb {
@@ -94,12 +94,12 @@ figcaption {
 }
 
 @media screen and (max-width: 1000px) {
+    figcaption {
+        font-size: 13px;
+    }
+    
     .wrapper {
         grid-template-columns: 280px auto;
-    }
-
-    figcaption {
-        font-size: 16px;
     }
 
     .cardThumb {
