@@ -1,29 +1,29 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+	background-color: #333;
+	overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #F2F2F2;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 14px;
+	float: left;
+	display: block;
+	color: #F2F2F2;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 14px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #DDD;
-    color: black;
-    transition: all .2s linear;
+	background-color: #DDD;
+	color: black;
+	transition: all .2s linear;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+	background-color: #04AA6D;
+	color: white;
 }

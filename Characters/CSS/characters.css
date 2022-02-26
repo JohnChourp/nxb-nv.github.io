@@ -1,128 +1,109 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    font: normal 16px "Oswald", sans-serif;
-    background: #0E191A;
-    color: white;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	font: normal 16px "Oswald", sans-serif;
+	background: #0E191A;
+	color: white;
 }
 
 .cardHover {
-    transition: transform .2s; /* Animation */
+	transition: transform .2s; /* Animation */
+	word-wrap: break-word;
 }
 
 .cardHover:hover {
-    transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 figcaption {
-    font-family: 'Orienta', sans-serif;
-    font-size: 16px;
-    margin-top: 5px;
+	font-family: 'Orienta', sans-serif;
+	font-size: 16px;
+	margin-top: 5px;
+	text-align: left;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: 430px auto;
+	display: grid;
+	grid-template-columns: 430px auto;
 }
 
 .one {
-    grid-column: 1;
-    grid-row: 1;
+	grid-column: 1;
+	grid-row: 1;
 }
 
-.superFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.two-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.three {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.three-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.four {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.four-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.five {
-    grid-column: 2;
-    grid-row: 5;
-}
-
-.five-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.six {
-    grid-column: 2;
-    grid-row: 6;
-}
-
-.six-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.cardsTypes {
+	text-align: left;
 }
 
 .cardThumb {
-    width: 200px;
-    height: 150px;
-    /* Center the Image */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* Center the Image */
+	width: 200px;
+	height: 150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
 .toolThumb {
-    width: 150px;
-    height: 150px;
-    /* Center the Image */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* Center the Image */
+	width: 150px;
+	height: 150px;
+	/* Center the Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the Image */
 }
 
-@media screen and (max-width: 950px) {
-    .wrapper {
-        grid-template-columns: 205px auto;
-    }
+.cardsTypesFlex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 
-    figcaption {
-        font-size: 12px;
-    }
+@media screen and (max-width: 1600px) {
+	figcaption {
+		font-size: 15px;
+	}
+	
+	.wrapper {
+		grid-template-columns: 380px auto;
+	}
+	
+	.cardThumb {
+		width: 170px;
+		height: 126px;
+	}
+}
 
-    .cardThumb {
-        width: 170px;
-        height: 127px;
-    }
+@media screen and (max-width: 1300px) {
+	figcaption {
+		font-size: 14px;
+	}
+	
+	.wrapper {
+		grid-template-columns: 330px auto;
+	}
+	
+	.cardThumb {
+		width: 140px;
+		height: 103px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	figcaption {
+		font-size: 13px;
+	}
+	
+	.wrapper {
+		grid-template-columns: 280px auto;
+	}
+	
+	.cardThumb {
+		width: 110px;
+		height: 80px;
+	}
 }

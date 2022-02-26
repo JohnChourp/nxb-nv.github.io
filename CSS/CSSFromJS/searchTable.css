@@ -1,41 +1,41 @@
 :root {
-    --bg-color-myInput: white;
-    --text-color-myInput: black;
+	--bg-color-myInput: white;
+	--text-color-myInput: black;
 }
 
 #myInput {
-    width: 98vw;
-    font-size: 16px;
-    border: 1px solid #DDD;
-    background-color: var(--bg-color-myInput);
-    color: var(--text-color-myInput);
-    margin-bottom: 1vh;
+	width: 98vw;
+	font-size: 16px;
+	border: 1px solid #DDD;
+	background-color: var(--bg-color-myInput);
+	color: var(--text-color-myInput);
+	margin-bottom: 1vh;
 }
 
 .sortImage {
-    width: 20px;
-    vertical-align: middle;
+	width: 20px;
+	vertical-align: middle;
 }
 
 #sortTable {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #DDD;
-    font-size: 16px;
-    margin-bottom: 4.2vh;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #DDD;
+	font-size: 16px;
+	margin-bottom: 4.2vh;
 }
 
 #sortTable tr {
-    border-bottom: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
 }
 
 #sortTable th, td {
-    text-align: left;
-    padding: 0.7vh 0.25vw 0.7vh 0.25vw;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+	text-align: left;
+	padding: 0.7vh 0.25vw 0.7vh 0.25vw;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
 }
 
 #sortTable th {
-    text-align: center;
+	text-align: center;
 }
