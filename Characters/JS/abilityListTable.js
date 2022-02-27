@@ -661,17 +661,19 @@ function abilityListTable(n){
 			
 			HP = Math.floor(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
 			rows[48][0].innerHTML = "+" + HP;
-			rowsMaximumStats[5][1].innerHTML = 7830 + HP;
+			rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
 			
 			ATK = Math.floor(eval("4780 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 26) / 100)"));
 			rows[48][2].innerHTML = "+" + ATK;
-			rowsMaximumStats[6][1].innerHTML = 2680 + ATK;
+			rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
 			
 			rows[48][4].innerHTML = "+975";
+			rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + 975)");
 			
 			rows[49][0].innerHTML = "+8.00%";
 			rows[49][2].innerHTML = "+26.00%";
 			rows[49][4].innerHTML = "+235";
+			rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML)+ 235)");
 			
 			rows[50][0].innerHTML = "+57.00%";
 			rows[50][2].innerHTML = "+22.00%";
