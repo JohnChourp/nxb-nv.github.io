@@ -200,6 +200,15 @@ function createAbilityListTable(){
 }
 
 function abilityListTable1(rows){
+	let rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
+	const maximumStats = document.getElementById("maximumStats");
+	
+	rowsMaximumStats[1] = maximumStats.rows[1].cells;
+	rowsMaximumStats[2] = maximumStats.rows[2].cells;
+	rowsMaximumStats[5] = maximumStats.rows[5].cells;
+	rowsMaximumStats[6] = maximumStats.rows[6].cells;
+	rowsMaximumStats[7] = maximumStats.rows[7].cells;
+	
 	rows[3][1].innerHTML = "1";
 	rows[3][2].innerHTML = "+10 HP";
 	rows[3][4].innerHTML = 30;
@@ -334,9 +343,45 @@ function abilityListTable1(rows){
 	
 	rows[45][2].innerHTML = "POW +90/+4% DEF/+80 CP";
 	rows[45][5].innerHTML = 10000;
+	
+	HP = Math.floor(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
+	rows[74][0].innerHTML = "+" + HP;
+	rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
+	rows[75][0].innerHTML = "+8.00%";
+	
+	ATK = Math.floor(eval("4780 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 26) / 100)"));
+	rows[74][2].innerHTML = "+" + ATK;
+	rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
+	rows[75][2].innerHTML = "+26.00%";
+	
+	DEF = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + 975)");
+	rows[74][4].innerHTML = "+975";
+	rowsMaximumStats[6][3].innerHTML = DEF;
+	rows[75][4].innerHTML = "+0.00%";
+	
+	CP = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + 235)");
+	rowsMaximumStats[5][3].innerHTML = CP;
+	rows[76][4].innerHTML = "+235";
+	
+	CRI = eval("5 + (5 * 57) / 100") + "%";
+	rowsMaximumStats[7][1].innerHTML = CRI;
+	rows[76][0].innerHTML = "+57.00%";
+	
+	EVA = eval("5 + (5 * 22) / 100") + "%";
+	rowsMaximumStats[7][3].innerHTML = EVA;
+	rows[76][2].innerHTML = "+22.00%";
 }
 
 function abilityListTable2(rows){
+	let rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
+	const maximumStats = document.getElementById("maximumStats");
+	
+	rowsMaximumStats[1] = maximumStats.rows[1].cells;
+	rowsMaximumStats[2] = maximumStats.rows[2].cells;
+	rowsMaximumStats[5] = maximumStats.rows[5].cells;
+	rowsMaximumStats[6] = maximumStats.rows[6].cells;
+	rowsMaximumStats[7] = maximumStats.rows[7].cells;
+	
 	rows[3][1].innerHTML = "1";
 	rows[3][2].innerHTML = "+10 HP";
 	rows[3][4].innerHTML = 30;
@@ -471,9 +516,45 @@ function abilityListTable2(rows){
 	
 	rows[45][2].innerHTML = "POW +90/+6% CP";
 	rows[45][5].innerHTML = 10000;
+	
+	HP = 430;
+	rows[74][0].innerHTML = "+" + HP;
+	rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
+	rows[75][0].innerHTML = "+0.00%";
+	
+	ATK = Math.floor(eval("3220 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 6) / 100)"));
+	rows[74][2].innerHTML = "+" + ATK;
+	rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
+	rows[75][2].innerHTML = "+6.00%";
+	
+	DEF = Math.floor(eval("3610 + ((parseInt(rowsMaximumStats[2][3].innerHTML) * 11) / 100)"));
+	rows[74][4].innerHTML = "+" + DEF;
+	rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
+	rows[75][4].innerHTML = "+11.00%";
+	
+	CP = Math.floor(eval("1135 + ((parseInt(rowsMaximumStats[1][3].innerHTML) * 9) / 100)"));
+	rows[76][4].innerHTML = "+" + CP;
+	rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
+	
+	CRI = eval("5 + (5 * 57) / 100") + "%";
+	rowsMaximumStats[7][1].innerHTML = CRI;
+	rows[76][0].innerHTML = "+57.00%";
+	
+	EVA = eval("5 + (5 * 22) / 100") + "%";
+	rowsMaximumStats[7][3].innerHTML = EVA;
+	rows[76][2].innerHTML = "+22.00%";
 }
 
 function abilityListTable3(rows){
+	let rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
+	const maximumStats = document.getElementById("maximumStats");
+	
+	rowsMaximumStats[1] = maximumStats.rows[1].cells;
+	rowsMaximumStats[2] = maximumStats.rows[2].cells;
+	rowsMaximumStats[5] = maximumStats.rows[5].cells;
+	rowsMaximumStats[6] = maximumStats.rows[6].cells;
+	rowsMaximumStats[7] = maximumStats.rows[7].cells;
+	
 	rows[3][1].innerHTML = "1";
 	rows[3][2].innerHTML = "+10 HP";
 	rows[3][4].innerHTML = 30;
@@ -608,23 +689,41 @@ function abilityListTable3(rows){
 	
 	rows[45][2].innerHTML = "POW +90/+6% ATK";
 	rows[45][5].innerHTML = 10000;
+	
+	HP = Math.floor(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
+	rows[74][0].innerHTML = "+" + HP;
+	rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
+	rows[75][0].innerHTML = "+8.00%";
+	
+	ATK = Math.floor(eval("4780 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 26) / 100)"));
+	rows[74][2].innerHTML = "+" + ATK;
+	rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
+	rows[75][2].innerHTML = "+26.00%";
+	
+	DEF = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + 975)");
+	rows[74][4].innerHTML = "+975";
+	rowsMaximumStats[6][3].innerHTML = DEF;
+	rows[75][4].innerHTML = "+0.00%";
+	
+	CP = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + 235)");
+	rowsMaximumStats[5][3].innerHTML = CP;
+	rows[76][4].innerHTML = "+235";
+	
+	CRI = eval("5 + (5 * 57) / 100") + "%";
+	rowsMaximumStats[7][1].innerHTML = CRI;
+	rows[76][0].innerHTML = "+57.00%";
+	
+	EVA = eval("5 + (5 * 22) / 100") + "%";
+	rowsMaximumStats[7][3].innerHTML = EVA;
+	rows[76][2].innerHTML = "+22.00%";
 }
 
 function abilityListTable(n){
 	createAbilityListTable();
-	let rows = [[]] , rowsLength , rowsMaximumStats = [[]] , HP , ATK;
+	let rows = [[]] , rowsLength;
+	
 	const abilityListTable = document.getElementById("abilityListTable");
-	const maximumStats = document.getElementById("maximumStats");
-	
 	rowsLength = abilityListTable.rows.length;
-	
-	rowsMaximumStats[1] = maximumStats.rows[1].cells;
-	rowsMaximumStats[2] = maximumStats.rows[2].cells;
-	rowsMaximumStats[3] = maximumStats.rows[3].cells;
-	rowsMaximumStats[5] = maximumStats.rows[5].cells;
-	rowsMaximumStats[6] = maximumStats.rows[6].cells;
-	rowsMaximumStats[7] = maximumStats.rows[7].cells;
-	
 	rows[0] = abilityListTable.rows[0].cells;
 	rows[1] = abilityListTable.rows[1].cells;
 	
@@ -658,26 +757,6 @@ function abilityListTable(n){
 					rows[46][1].innerHTML = eval("parseInt(rows[46][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
 				}
 			}
-			
-			HP = Math.floor(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
-			rows[48][0].innerHTML = "+" + HP;
-			rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
-			
-			ATK = Math.floor(eval("4780 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 26) / 100)"));
-			rows[48][2].innerHTML = "+" + ATK;
-			rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
-			
-			rows[48][4].innerHTML = "+975";
-			rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + 975)");
-			
-			rows[49][0].innerHTML = "+8.00%";
-			rows[49][2].innerHTML = "+26.00%";
-			rows[49][4].innerHTML = "+235";
-			rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML)+ 235)");
-			
-			rows[50][0].innerHTML = "+57.00%";
-			rows[50][2].innerHTML = "+22.00%";
-			
 			break;
 		case 56:
 			rows[46][2].innerHTML = "POW +50";
@@ -740,7 +819,6 @@ function abilityListTable(n){
 			
 			rows[63][0].innerHTML = "+57.00%";
 			rows[63][2].innerHTML = "+22.00%";
-			
 			break;
 		case 69:
 			rows[46][2].innerHTML = "POW +50";
@@ -831,18 +909,6 @@ function abilityListTable(n){
 					rows[72][1].innerHTML = eval("parseInt(rows[72][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
 				}
 			}
-			
-			rows[74][0].innerHTML = "+1660";
-			rows[74][2].innerHTML = "+4780";
-			rows[74][4].innerHTML = "+975";
-			
-			rows[75][0].innerHTML = "+8.00%";
-			rows[75][2].innerHTML = "+26.00%";
-			rows[75][4].innerHTML = "+235";
-			
-			rows[76][0].innerHTML = "+57.00%";
-			rows[76][2].innerHTML = "+22.00%";
-			
 			break;
 		case 82:
 			rows[46][2].innerHTML = "POW +50";
@@ -983,7 +1049,6 @@ function abilityListTable(n){
 			
 			rows[89][0].innerHTML = "+57.00%";
 			rows[89][2].innerHTML = "+22.00%";
-			
 			break;
 	}
 }
