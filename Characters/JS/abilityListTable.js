@@ -492,13 +492,13 @@ function abilityListTable2(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI ,
 	rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
 	rows[77][3].innerHTML = "+9.00%";
 	
-	CRI = eval("5 + (5 * 57) / 100") + "%";
+	CRI = eval("5 + (5 * 37) / 100") + "%";
 	rowsMaximumStats[7][1].innerHTML = CRI;
-	rows[76][4].innerHTML = "+57.00%";
+	rows[76][4].innerHTML = "+37.00%";
 	
-	EVA = eval("5 + (5 * 22) / 100") + "%";
+	EVA = eval("5 + (5 * 10) / 100") + "%";
 	rowsMaximumStats[7][3].innerHTML = EVA;
-	rows[76][5].innerHTML = "+22.00%";
+	rows[76][5].innerHTML = "+10.00%";
 }
 
 function abilityListTable3(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA){
