@@ -66,3 +66,13 @@ a.equipBy:active {
 	margin-right: auto;
 	/* Center the Image */
 }
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 0 auto;
+}
+
+.one {
+	grid-column: 1;
+	grid-row: 1;
+}

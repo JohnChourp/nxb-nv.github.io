@@ -50,7 +50,7 @@ function abilityListScriptFiles(){
 	document.head.appendChild(images);
 	
 	const abilityListTableJS = document.createElement("script");
-	abilityListTableJS.src = httpLink + hostName + "/nxb-nv.github.io/Characters/JS/abilityListTable3.js";
+	abilityListTableJS.src = httpLink + hostName + "/nxb-nv.github.io/Characters/JS/abilityListTable.js";
 	abilityListTableJS.type = "text/javascript";
 	document.head.appendChild(abilityListTableJS);
 	
