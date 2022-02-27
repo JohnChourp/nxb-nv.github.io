@@ -199,7 +199,7 @@ function createAbilityListTable(){
 	}
 }
 
-function abilityListTable1(rows){
+function abilityListTable1(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA){
 	rows[3][1].innerHTML = "1";
 	rows[3][2].innerHTML = "+10 HP";
 	rows[3][4].innerHTML = 30;
@@ -336,16 +336,7 @@ function abilityListTable1(rows){
 	rows[45][5].innerHTML = 10000;
 }
 
-function abilityListTable2(rows){
-	let rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
-	const maximumStats = document.getElementById("maximumStats");
-	
-	rowsMaximumStats[1] = maximumStats.rows[1].cells;
-	rowsMaximumStats[2] = maximumStats.rows[2].cells;
-	rowsMaximumStats[5] = maximumStats.rows[5].cells;
-	rowsMaximumStats[6] = maximumStats.rows[6].cells;
-	rowsMaximumStats[7] = maximumStats.rows[7].cells;
-	
+function abilityListTable2(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA){
 	rows[3][1].innerHTML = "1";
 	rows[3][2].innerHTML = "+10 HP";
 	rows[3][4].innerHTML = 30;
@@ -485,17 +476,17 @@ function abilityListTable2(rows){
 	rows[75][0].innerHTML = "+" + HP;
 	rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
 	rows[77][0].innerHTML = "+0.00%";
-
+	
 	ATK = Math.floor(eval("3220 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 6) / 100)"));
 	rows[75][1].innerHTML = "+" + ATK;
 	rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
 	rows[77][1].innerHTML = "+6.00%";
-
+	
 	DEF = Math.floor(eval("3610 + ((parseInt(rowsMaximumStats[2][3].innerHTML) * 11) / 100)"));
 	rows[75][2].innerHTML = "+" + DEF;
 	rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
 	rows[77][2].innerHTML = "+11.00%";
-
+	
 	CP = Math.floor(eval("1135 + ((parseInt(rowsMaximumStats[1][3].innerHTML) * 9) / 100)"));
 	rows[75][3].innerHTML = "+" + CP;
 	rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
@@ -504,22 +495,13 @@ function abilityListTable2(rows){
 	CRI = eval("5 + (5 * 57) / 100") + "%";
 	rowsMaximumStats[7][1].innerHTML = CRI;
 	rows[76][4].innerHTML = "+57.00%";
-
+	
 	EVA = eval("5 + (5 * 22) / 100") + "%";
 	rowsMaximumStats[7][3].innerHTML = EVA;
 	rows[76][5].innerHTML = "+22.00%";
 }
 
-function abilityListTable3(rows){
-	let rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
-	const maximumStats = document.getElementById("maximumStats");
-	
-	rowsMaximumStats[1] = maximumStats.rows[1].cells;
-	rowsMaximumStats[2] = maximumStats.rows[2].cells;
-	rowsMaximumStats[5] = maximumStats.rows[5].cells;
-	rowsMaximumStats[6] = maximumStats.rows[6].cells;
-	rowsMaximumStats[7] = maximumStats.rows[7].cells;
-	
+function abilityListTable3(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA){
 	rows[3][1].innerHTML = "1";
 	rows[3][2].innerHTML = "+10 HP";
 	rows[3][4].innerHTML = 30;
@@ -672,7 +654,7 @@ function abilityListTable3(rows){
 	
 	CP = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + 235)");
 	rows[75][3].innerHTML = "+235";
-	rowsMaximumStats[5][3].innerHTML =  CP;
+	rowsMaximumStats[5][3].innerHTML = CP;
 	rows[77][3].innerHTML = "+0.00%";
 	
 	CRI = eval("5 + (5 * 57) / 100") + "%";
@@ -686,9 +668,16 @@ function abilityListTable3(rows){
 
 function abilityListTable(n){
 	createAbilityListTable();
-	let rows = [[]] , rowsLength;
-	
+	let rows = [[]] , rowsLength , rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
 	const abilityListTable = document.getElementById("abilityListTable");
+	const maximumStats = document.getElementById("maximumStats");
+	
+	rowsMaximumStats[1] = maximumStats.rows[1].cells;
+	rowsMaximumStats[2] = maximumStats.rows[2].cells;
+	rowsMaximumStats[5] = maximumStats.rows[5].cells;
+	rowsMaximumStats[6] = maximumStats.rows[6].cells;
+	rowsMaximumStats[7] = maximumStats.rows[7].cells;
+	
 	rowsLength = abilityListTable.rows.length;
 	rows[0] = abilityListTable.rows[0].cells;
 	rows[1] = abilityListTable.rows[1].cells;
@@ -701,13 +690,13 @@ function abilityListTable(n){
 	}
 	
 	if(n === 1){
-		abilityListTable1(rows);
+		abilityListTable1(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA);
 	}
 	if(n === 2){
-		abilityListTable2(rows);
+		abilityListTable2(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA);
 	}
 	if(n === 3){
-		abilityListTable3(rows);
+		abilityListTable3(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI , EVA);
 	}
 	
 	switch((rowsLength - 12)){
