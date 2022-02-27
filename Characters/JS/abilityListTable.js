@@ -634,6 +634,7 @@ function abilityListTable(n){
 		rows[i][0].innerHTML = i - 2;
 	}
 	
+	let rowNumber = rowsLength - 4;
 	if(n === 1){
 		HP = Math.floor(eval("1730 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 13) / 100)"));
 		ATK = 760;
@@ -642,12 +643,12 @@ function abilityListTable(n){
 		CRI = eval("5 + (5 * 10) / 100").toFixed(2) + "%";
 		EVA = eval("5 + (5 * 10) / 100").toFixed(2) + "%";
 		
-		rows[77][0].innerHTML = "+13.00%";
-		rows[77][1].innerHTML = "+0.00%";
-		rows[77][2].innerHTML = "+23.00%";
-		rows[77][3].innerHTML = "+0.00%";
-		rows[76][4].innerHTML = "+10.00%";
-		rows[76][5].innerHTML = "+10.00%";
+		rows[rowNumber][0].innerHTML = "+13.00%";
+		rows[rowNumber][1].innerHTML = "+0.00%";
+		rows[rowNumber][2].innerHTML = "+23.00%";
+		rows[rowNumber][3].innerHTML = "+0.00%";
+		rows[rowNumber - 1][4].innerHTML = "+10.00%";
+		rows[rowNumber - 1][5].innerHTML = "+10.00%";
 		abilityListTable1(rows);
 	}
 	if(n === 2){
@@ -658,12 +659,12 @@ function abilityListTable(n){
 		CRI = eval("5 + (5 * 37) / 100").toFixed(2) + "%";
 		EVA = eval("5 + (5 * 10) / 100").toFixed(2) + "%";
 		
-		rows[77][0].innerHTML = "+0.00%";
-		rows[77][1].innerHTML = "+6.00%";
-		rows[77][2].innerHTML = "+11.00%";
-		rows[77][3].innerHTML = "+9.00%";
-		rows[76][4].innerHTML = "+37.00%";
-		rows[76][5].innerHTML = "+10.00%";
+		rows[rowNumber][0].innerHTML = "+0.00%";
+		rows[rowNumber][1].innerHTML = "+6.00%";
+		rows[rowNumber][2].innerHTML = "+11.00%";
+		rows[rowNumber][3].innerHTML = "+9.00%";
+		rows[rowNumber - 1][4].innerHTML = "+37.00%";
+		rows[rowNumber - 1][5].innerHTML = "+10.00%";
 		abilityListTable2(rows);
 	}
 	if(n === 3){
@@ -674,24 +675,24 @@ function abilityListTable(n){
 		CRI = eval("5 + (5 * 57) / 100").toFixed(2) + "%";
 		EVA = eval("5 + (5 * 22) / 100").toFixed(2) + "%";
 		
-		rows[77][0].innerHTML = "+8.00%";
-		rows[77][1].innerHTML = "+26.00%";
-		rows[77][2].innerHTML = "+0.00%";
-		rows[77][3].innerHTML = "+0.00%";
-		rows[76][4].innerHTML = "+57.00%";
-		rows[76][5].innerHTML = "+22.00%";
+		rows[rowNumber][0].innerHTML = "+8.00%";
+		rows[rowNumber][1].innerHTML = "+26.00%";
+		rows[rowNumber][2].innerHTML = "+0.00%";
+		rows[rowNumber][3].innerHTML = "+0.00%";
+		rows[rowNumber - 1][4].innerHTML = "+57.00%";
+		rows[rowNumber - 1][5].innerHTML = "+22.00%";
 		abilityListTable3(rows);
 	}
-	rows[75][0].innerHTML = "+" + HP;
+	rows[rowNumber - 2][0].innerHTML = "+" + HP;
 	rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
 	
-	rows[75][1].innerHTML = "+" + ATK;
+	rows[rowNumber - 2][1].innerHTML = "+" + ATK;
 	rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
 	
-	rows[75][2].innerHTML = "+" + DEF;
+	rows[rowNumber - 2][2].innerHTML = "+" + DEF;
 	rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
 	
-	rows[75][3].innerHTML = "+" + CP;
+	rows[rowNumber - 2][3].innerHTML = "+" + CP;
 	rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
 	
 	rowsMaximumStats[7][1].innerHTML = CRI;
@@ -699,18 +700,6 @@ function abilityListTable(n){
 	rowsMaximumStats[7][3].innerHTML = EVA;
 	
 	switch((rowsLength - 12)){
-		case 43:
-			rows[46][1].innerHTML = 0;
-			
-			for(let i = 3; i < rowsLength - 9; i ++){
-				if(i < 22 || (i > 22 && i < 27) || (i > 29 && i < 34) || (i > 38 && i < 42)){
-					rows[46][1].innerHTML = eval("parseInt(rows[46][1].innerHTML) + parseInt(rows[i][4].innerHTML)");
-				}
-				if(i === 22 || (i > 26 && i < 30) || (i > 33 && i < 39) || (i > 41)){
-					rows[46][1].innerHTML = eval("parseInt(rows[46][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
-				}
-			}
-			break;
 		case 56:
 			rows[46][2].innerHTML = "POW +50";
 			rows[46][5].innerHTML = 3000;
@@ -750,28 +739,6 @@ function abilityListTable(n){
 			
 			rows[58][2].innerHTML = "POW +90";
 			rows[58][5].innerHTML = 8500;
-			
-			rows[59][1].innerHTML = 0;
-			
-			for(let i = 3; i < rowsLength - 9; i ++){
-				if(i < 22 || (i > 22 && i < 27) || (i > 29 && i < 34) || (i > 38 && i < 42)){
-					rows[59][1].innerHTML = eval("parseInt(rows[59][1].innerHTML) + parseInt(rows[i][4].innerHTML)");
-				}
-				if(i === 22 || (i > 26 && i < 30) || (i > 33 && i < 39) || (i > 41)){
-					rows[59][1].innerHTML = eval("parseInt(rows[59][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
-				}
-			}
-			
-			rows[61][0].innerHTML = "+1660";
-			rows[61][2].innerHTML = "+4780";
-			rows[61][4].innerHTML = "+975";
-			
-			rows[62][0].innerHTML = "+8.00%";
-			rows[62][2].innerHTML = "+26.00%";
-			rows[62][4].innerHTML = "+235";
-			
-			rows[63][0].innerHTML = "+57.00%";
-			rows[63][2].innerHTML = "+22.00%";
 			break;
 		case 69:
 			rows[46][2].innerHTML = "POW +50";
@@ -851,17 +818,6 @@ function abilityListTable(n){
 			
 			rows[71][2].innerHTML = "POW +90";
 			rows[71][5].innerHTML = 8500;
-			
-			rows[72][1].innerHTML = 0;
-			
-			for(let i = 3; i < rowsLength - 9; i ++){
-				if(i < 22 || (i > 22 && i < 27) || (i > 29 && i < 34) || (i > 38 && i < 42)){
-					rows[72][1].innerHTML = eval("parseInt(rows[72][1].innerHTML) + parseInt(rows[i][4].innerHTML)");
-				}
-				if(i === 22 || (i > 26 && i < 30) || (i > 33 && i < 39) || (i > 41)){
-					rows[72][1].innerHTML = eval("parseInt(rows[72][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
-				}
-			}
 			break;
 		case 82:
 			rows[46][2].innerHTML = "POW +50";
@@ -980,28 +936,16 @@ function abilityListTable(n){
 			
 			rows[84][2].innerHTML = "POW +90";
 			rows[84][5].innerHTML = 8500;
-			
-			rows[85][1].innerHTML = 0;
-			
-			for(let i = 3; i < rowsLength - 9; i ++){
-				if(i < 22 || (i > 22 && i < 27) || (i > 29 && i < 34) || (i > 38 && i < 42)){
-					rows[85][1].innerHTML = eval("parseInt(rows[85][1].innerHTML) + parseInt(rows[i][4].innerHTML)");
-				}
-				if(i === 22 || (i > 26 && i < 30) || (i > 33 && i < 39) || (i > 41)){
-					rows[85][1].innerHTML = eval("parseInt(rows[85][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
-				}
-			}
-			
-			rows[87][0].innerHTML = "+1660";
-			rows[87][2].innerHTML = "+4780";
-			rows[87][4].innerHTML = "+975";
-			
-			rows[88][0].innerHTML = "+8.00%";
-			rows[88][2].innerHTML = "+26.00%";
-			rows[88][4].innerHTML = "+235";
-			
-			rows[89][0].innerHTML = "+57.00%";
-			rows[89][2].innerHTML = "+22.00%";
 			break;
+	}
+	rows[rowsLength - 9][1].innerHTML = 0;
+	
+	for(let i = 3; i < rowsLength - 9; i ++){
+		if(i < 22 || (i > 22 && i < 27) || (i > 29 && i < 34) || (i > 38 && i < 42)){
+			rows[rowsLength - 9][1].innerHTML = eval("parseInt(rows[rowsLength - 9][1].innerHTML) + parseInt(rows[i][4].innerHTML)");
+		}
+		if(i === 22 || (i > 26 && i < 30) || (i > 33 && i < 39) || (i > 41)){
+			rows[rowsLength - 9][1].innerHTML = eval("parseInt(rows[rowsLength - 9][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
+		}
 	}
 }
