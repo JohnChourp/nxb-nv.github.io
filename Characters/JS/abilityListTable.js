@@ -642,26 +642,11 @@ function abilityListTable(n){
 		CRI = eval("5 + (5 * 10) / 100").toFixed(2) + "%";
 		EVA = eval("5 + (5 * 10) / 100").toFixed(2) + "%";
 		
-		rows[75][0].innerHTML = "+" + HP;
-		rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
 		rows[77][0].innerHTML = "+13.00%";
-		
-		rows[75][1].innerHTML = "+" + ATK;
-		rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
 		rows[77][1].innerHTML = "+0.00%";
-		
-		rows[75][2].innerHTML = "+" + DEF;
-		rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
 		rows[77][2].innerHTML = "+23.00%";
-		
-		rows[75][3].innerHTML = "+" + CP;
-		rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
 		rows[77][3].innerHTML = "+0.00%";
-		
-		rowsMaximumStats[7][1].innerHTML = CRI;
 		rows[76][4].innerHTML = "+10.00%";
-		
-		rowsMaximumStats[7][3].innerHTML = EVA;
 		rows[76][5].innerHTML = "+10.00%";
 		abilityListTable1(rows);
 	}
@@ -673,26 +658,11 @@ function abilityListTable(n){
 		CRI = eval("5 + (5 * 37) / 100").toFixed(2) + "%";
 		EVA = eval("5 + (5 * 10) / 100").toFixed(2) + "%";
 		
-		rows[75][0].innerHTML = "+" + HP;
-		rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
 		rows[77][0].innerHTML = "+0.00%";
-		
-		rows[75][1].innerHTML = "+" + ATK;
-		rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
 		rows[77][1].innerHTML = "+6.00%";
-		
-		rows[75][2].innerHTML = "+" + DEF;
-		rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
 		rows[77][2].innerHTML = "+11.00%";
-		
-		rows[75][3].innerHTML = "+" + CP;
-		rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
 		rows[77][3].innerHTML = "+9.00%";
-		
-		rowsMaximumStats[7][1].innerHTML = CRI;
 		rows[76][4].innerHTML = "+37.00%";
-		
-		rowsMaximumStats[7][3].innerHTML = EVA;
 		rows[76][5].innerHTML = "+10.00%";
 		abilityListTable2(rows);
 	}
@@ -704,29 +674,29 @@ function abilityListTable(n){
 		CRI = eval("5 + (5 * 57) / 100").toFixed(2) + "%";
 		EVA = eval("5 + (5 * 22) / 100").toFixed(2) + "%";
 		
-		rows[75][0].innerHTML = "+" + HP;
-		rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
 		rows[77][0].innerHTML = "+8.00%";
-		
-		rows[75][1].innerHTML = "+" + ATK;
-		rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
 		rows[77][1].innerHTML = "+26.00%";
-		
-		rows[75][2].innerHTML = "+" + DEF;
-		rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
 		rows[77][2].innerHTML = "+0.00%";
-		
-		rows[75][3].innerHTML = "+" + CP;
-		rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
 		rows[77][3].innerHTML = "+0.00%";
-		
-		rowsMaximumStats[7][1].innerHTML = CRI;
 		rows[76][4].innerHTML = "+57.00%";
-		
-		rowsMaximumStats[7][3].innerHTML = EVA;
 		rows[76][5].innerHTML = "+22.00%";
 		abilityListTable3(rows);
 	}
+	rows[75][0].innerHTML = "+" + HP;
+	rowsMaximumStats[5][1].innerHTML = eval("(parseInt(rowsMaximumStats[1][1].innerHTML) + HP)");
+	
+	rows[75][1].innerHTML = "+" + ATK;
+	rowsMaximumStats[6][1].innerHTML = eval("(parseInt(rowsMaximumStats[2][1].innerHTML) + ATK)");
+	
+	rows[75][2].innerHTML = "+" + DEF;
+	rowsMaximumStats[6][3].innerHTML = eval("(parseInt(rowsMaximumStats[2][3].innerHTML) + DEF)");
+	
+	rows[75][3].innerHTML = "+" + CP;
+	rowsMaximumStats[5][3].innerHTML = eval("(parseInt(rowsMaximumStats[1][3].innerHTML) + CP)");
+	
+	rowsMaximumStats[7][1].innerHTML = CRI;
+	
+	rowsMaximumStats[7][3].innerHTML = EVA;
 	
 	switch((rowsLength - 12)){
 		case 43:
