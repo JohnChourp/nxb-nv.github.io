@@ -612,7 +612,7 @@ function abilityListTable3(rows){
 
 function abilityListTable(n){
 	createAbilityListTable();
-	let rows = [[]] , rowsLength , rowsMaximumStats = [[]] , HP;
+	let rows = [[]] , rowsLength , rowsMaximumStats = [[]] , HP , ATK;
 	const abilityListTable = document.getElementById("abilityListTable");
 	const maximumStats = document.getElementById("maximumStats");
 	
@@ -658,11 +658,15 @@ function abilityListTable(n){
 					rows[46][1].innerHTML = eval("parseInt(rows[46][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
 				}
 			}
-			HP = Math.round(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
+			
+			HP = Math.floor(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
 			rows[48][0].innerHTML = "+" + HP;
 			rowsMaximumStats[5][1].innerHTML = 7830 + HP;
 			
-			rows[48][2].innerHTML = "+4780";
+			ATK = Math.floor(eval("4780 + ((parseInt(rowsMaximumStats[2][1].innerHTML) * 26) / 100)"));
+			rows[48][2].innerHTML = "+" + ATK;
+			rowsMaximumStats[6][1].innerHTML = 2680 + ATK;
+			
 			rows[48][4].innerHTML = "+975";
 			
 			rows[49][0].innerHTML = "+8.00%";
