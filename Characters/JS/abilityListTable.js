@@ -197,6 +197,83 @@ function createAbilityListTable(){
 			rows[i][6].appendChild(abilityPoints);
 		}
 	}
+	rows[72] = abilityListTable.insertRow(72);
+	
+	rows[72][0] = rows[72].insertCell(0);
+	rows[72][0].outerHTML = "<th colspan=3 >Total Ability Points</th>";
+	
+	rows[72][1] = rows[72].insertCell(1);
+	rows[72][1].colSpan = "2";
+	
+	rows[72][2] = rows[72].insertCell(2);
+	rows[72][2].colSpan = "2";
+	let abilityPoints = document.createElement("img");
+	abilityPoints.classList.add("abilityListImages");
+	abilityPoints.alt = "abilityPoints";
+	abilityPoints.referrerPolicy = "no-referrer";
+	rows[72][2].appendChild(abilityPoints);
+	
+	rows[73] = abilityListTable.insertRow(73);
+	
+	rows[73][0] = rows[73].insertCell(0);
+	rows[73][0].outerHTML = "<th colspan=7 >Total Benefits</th>";
+	
+	rows[74] = abilityListTable.insertRow(74);
+	
+	rows[74][0] = rows[74].insertCell(0);
+	rows[74][0].outerHTML = "<th>HP</th>";
+	
+	rows[74][1] = rows[74].insertCell(1);
+	rows[74][1].outerHTML = "<th>ATK</th>";
+	
+	rows[74][2] = rows[74].insertCell(2);
+	rows[74][2].outerHTML = "<th>DEF</th>";
+	
+	rows[74][3] = rows[74].insertCell(3);
+	rows[74][3].outerHTML = "<th>CP</th>";
+	
+	rows[74][4] = rows[74].insertCell(4);
+	rows[74][4].outerHTML = "<th rowspan=2 >CRI</th>";
+	
+	rows[74][5] = rows[74].insertCell(5);
+	rows[74][5].outerHTML = "<th colspan=2 rowspan=2 >EVA</th>";
+	
+	rows[75] = abilityListTable.insertRow(75);
+	rows[75][0] = rows[75].insertCell(0);
+	rows[75][1] = rows[75].insertCell(1);
+	rows[75][2] = rows[75].insertCell(2);
+	rows[75][3] = rows[75].insertCell(3);
+	
+	rows[76] = abilityListTable.insertRow(76);
+	
+	rows[76][0] = rows[76].insertCell(0);
+	rows[76][0].outerHTML = "<th>HP</th>";
+	
+	rows[76][1] = rows[76].insertCell(1);
+	rows[76][1].outerHTML = "<th>ATK</th>";
+	
+	rows[76][2] = rows[76].insertCell(2);
+	rows[76][2].outerHTML = "<th>DEF</th>";
+	
+	rows[76][3] = rows[76].insertCell(3);
+	rows[76][3].outerHTML = "<th>CP</th>";
+	
+	rows[76][4] = rows[76].insertCell(4);
+	rows[76][4].outerHTML = "<td rowspan=2 ></td>";
+	
+	rows[76][5] = rows[76].insertCell(5);
+	rows[76][5].outerHTML = "<td colspan=2 rowspan=2 ></td>";
+	
+	rows[77] = abilityListTable.insertRow(77);
+	rows[77][0] = rows[77].insertCell(0);
+	rows[77][1] = rows[77].insertCell(1);
+	rows[77][2] = rows[77].insertCell(2);
+	rows[77][3] = rows[77].insertCell(3);
+	
+	rows[78] = abilityListTable.insertRow(78);
+	rows[78][0] = rows[78].insertCell(0);
+	rows[78][0].outerHTML = "<th colspan=7 >Total Benefits For Each Ultimate Jutsu</th>";
+	
 }
 
 function abilityListTable1(rows){
