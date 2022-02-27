@@ -432,10 +432,10 @@ function abilityListTable2(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI ,
 	rows[32][2].innerHTML = "+20 HP/+200 ATK/+200 DEF/+100 CP";
 	rows[32][4].innerHTML = 8000;
 	
-	rows[33][2].innerHTML = "+3% ATK/+3% DEF/+3% CRI";
+	rows[33][2].innerHTML = "+3% ATK/+3% DEF/+3% CP";
 	rows[33][4].innerHTML = 10000;
 	
-	rows[34][2].innerHTML = "POW +3%/+100 ATK/+90 DEF";
+	rows[34][2].innerHTML = "CP -3%/+100 ATK/+90 DEF";
 	rows[34][5].innerHTML = 7000;
 	
 	rows[35][2].innerHTML = "CP -3%/+3% DEF";
@@ -444,10 +444,10 @@ function abilityListTable2(rows , rowsMaximumStats , HP , ATK , DEF , CP , CRI ,
 	rows[36][2].innerHTML = "CD - 1.2/+100 ATK/+1% DEF/+50 CP";
 	rows[36][5].innerHTML = 7000;
 	
-	rows[37][2].innerHTML = "POW +80/CP -12/+100 ATK";
+	rows[37][2].innerHTML = "CP -3%/CP -12/+100 ATK";
 	rows[37][5].innerHTML = 7000;
 	
-	rows[38][2].innerHTML = "POW +90/CP -12/CD -1.2";
+	rows[38][2].innerHTML = "CP -4%/CD -1.5";
 	rows[38][5].innerHTML = 7000;
 	
 	rows[39][1].innerHTML = "6";
