@@ -1,3 +1,68 @@
+function createMaximumStatsTable(){
+	let rows = [[]];
+	const maximumStatsTable = document.getElementById("maximumStats");
+	
+	rows[0] = maximumStatsTable.insertRow(0);
+	
+	rows[0][0] = rows[0].insertCell(0);
+	rows[0][0].outerHTML = "<th colspan=4 >Maximum Rarity Stats</th>";
+	
+	rows[3] = maximumStatsTable.insertRow(3);
+	
+	rows[3][0] = rows[3].insertCell(0);
+	rows[3][0].outerHTML = "<th>CRI</th>";
+	
+	rows[3][1] = rows[3].insertCell(1);
+	rows[3][1].outerHTML = "<td>5.00%</td>";
+	
+	rows[3][2] = rows[3].insertCell(2);
+	rows[3][2].outerHTML = "<th>EVA</th>";
+	
+	rows[3][3] = rows[3].insertCell(3);
+	rows[3][3].outerHTML = "<td>5.00%</td>";
+	
+	rows[4] = maximumStatsTable.insertRow(4);
+	
+	rows[4][0] = rows[4].insertCell(0);
+	rows[4][0].outerHTML = "<th colspan=4 >Maximum Rarity + Ability Stats</th>";
+	
+	rows[5] = maximumStatsTable.insertRow(5);
+	
+	rows[5][0] = rows[5].insertCell(0);
+	rows[5][0].outerHTML = "<th>HP</th>";
+	
+	rows[5][1] = rows[5].insertCell(1);
+	
+	rows[5][2] = rows[5].insertCell(2);
+	rows[5][2].outerHTML = "<th>CP</th>";
+	
+	rows[5][3] = rows[5].insertCell(3);
+	
+	rows[6] = maximumStatsTable.insertRow(6);
+	
+	rows[6][0] = rows[6].insertCell(0);
+	rows[6][0].outerHTML = "<th>ATK</th>";
+	
+	rows[6][1] = rows[6].insertCell(1);
+	
+	rows[6][2] = rows[6].insertCell(2);
+	rows[6][2].outerHTML = "<th>DEF</th>";
+	
+	rows[6][3] = rows[6].insertCell(3);
+	
+	rows[7] = maximumStatsTable.insertRow(7);
+	
+	rows[7][0] = rows[7].insertCell(0);
+	rows[7][0].outerHTML = "<th>CRI</th>";
+	
+	rows[7][1] = rows[7].insertCell(1);
+	
+	rows[7][2] = rows[7].insertCell(2);
+	rows[7][2].outerHTML = "<th>EVA</th>";
+	
+	rows[7][3] = rows[7].insertCell(3);
+}
+
 function createAbilityListTable(){
 	let rows = [[]] , rowsUltimateJutsus = [[]] , numberOfRows , numberOfAbilities;
 	const UltimateJutsusTable = document.getElementById("UltimateJutsus");
@@ -13,15 +78,19 @@ function createAbilityListTable(){
 		numberOfRows = numberOfAbilities + 3;
 	}
 	
-	const abilityListTable = document.getElementById("abilityListTable");
-	let header = abilityListTable.createTHead();
+	const abilityListTable = document.createElement("table");
+	abilityListTable.id = "abilityListTable";
+	document.body.appendChild(abilityListTable);
 	
-	rows[0] = header.insertRow(0);
+	let tHeader = abilityListTable.createTHead();
+	let tBody = abilityListTable.createTBody();
+	
+	rows[0] = tHeader.insertRow(0);
 	
 	rows[0][0] = rows[0].insertCell(0);
 	rows[0][0].outerHTML = "<th colspan=7 >Ability List</th>";
 	
-	rows[1] = header.insertRow(1);
+	rows[1] = tHeader.insertRow(1);
 	
 	rows[1][0] = rows[1].insertCell(0);
 	rows[1][0].colSpan = "4";
@@ -31,7 +100,7 @@ function createAbilityListTable(){
 	rows[1][1].colSpan = "3";
 	rows[1][1].innerHTML = numberOfAbilities;
 	
-	rows[2] = abilityListTable.insertRow(2);
+	rows[2] = tBody.insertRow(0);
 	
 	rows[2][0] = rows[2].insertCell(0);
 	rows[2][0].outerHTML = "<th>Number</th>";
@@ -44,7 +113,7 @@ function createAbilityListTable(){
 	
 	rows[2][3] = rows[2].insertCell(3);
 	rows[2][3].outerHTML = "<th colspan=2 >Cost</th>";
-	
+
 	for(let i = 3; i < numberOfRows; i ++){
 		if(i !== 22 && !(i > 26 && i < 30) && !(i > 33 && i < 39) && i < 42){
 			rows[i] = abilityListTable.insertRow(i);
@@ -197,82 +266,119 @@ function createAbilityListTable(){
 			rows[i][6].appendChild(abilityPoints);
 		}
 	}
-	rows[72] = abilityListTable.insertRow(72);
+	rows[numberOfRows] = abilityListTable.insertRow(numberOfRows);
 	
-	rows[72][0] = rows[72].insertCell(0);
-	rows[72][0].outerHTML = "<th colspan=3 >Total Ability Points</th>";
+	rows[numberOfRows][0] = rows[numberOfRows].insertCell(0);
+	rows[numberOfRows][0].outerHTML = "<th colspan=3 >Total Ability Points</th>";
 	
-	rows[72][1] = rows[72].insertCell(1);
-	rows[72][1].colSpan = "2";
+	rows[numberOfRows][1] = rows[numberOfRows].insertCell(1);
+	rows[numberOfRows][1].colSpan = "2";
 	
-	rows[72][2] = rows[72].insertCell(2);
-	rows[72][2].colSpan = "2";
+	rows[numberOfRows][2] = rows[numberOfRows].insertCell(2);
+	rows[numberOfRows][2].colSpan = "2";
 	let abilityPoints = document.createElement("img");
 	abilityPoints.classList.add("abilityListImages");
 	abilityPoints.alt = "abilityPoints";
 	abilityPoints.referrerPolicy = "no-referrer";
-	rows[72][2].appendChild(abilityPoints);
+	rows[numberOfRows][2].appendChild(abilityPoints);
 	
-	rows[73] = abilityListTable.insertRow(73);
+	rows[numberOfRows+1] = abilityListTable.insertRow(numberOfRows+1);
 	
-	rows[73][0] = rows[73].insertCell(0);
-	rows[73][0].outerHTML = "<th colspan=7 >Total Benefits</th>";
+	rows[numberOfRows+1][0] = rows[numberOfRows+1].insertCell(0);
+	rows[numberOfRows+1][0].outerHTML = "<th colspan=7 >Total Benefits</th>";
 	
-	rows[74] = abilityListTable.insertRow(74);
+	rows[numberOfRows+2] = abilityListTable.insertRow(numberOfRows+2);
 	
-	rows[74][0] = rows[74].insertCell(0);
-	rows[74][0].outerHTML = "<th>HP</th>";
+	rows[numberOfRows+2][0] = rows[numberOfRows+2].insertCell(0);
+	rows[numberOfRows+2][0].outerHTML = "<th>HP</th>";
 	
-	rows[74][1] = rows[74].insertCell(1);
-	rows[74][1].outerHTML = "<th>ATK</th>";
+	rows[numberOfRows+2][1] = rows[numberOfRows+2].insertCell(1);
+	rows[numberOfRows+2][1].outerHTML = "<th>ATK</th>";
 	
-	rows[74][2] = rows[74].insertCell(2);
-	rows[74][2].outerHTML = "<th>DEF</th>";
+	rows[numberOfRows+2][2] = rows[numberOfRows+2].insertCell(2);
+	rows[numberOfRows+2][2].outerHTML = "<th>DEF</th>";
 	
-	rows[74][3] = rows[74].insertCell(3);
-	rows[74][3].outerHTML = "<th>CP</th>";
+	rows[numberOfRows+2][3] = rows[numberOfRows+2].insertCell(3);
+	rows[numberOfRows+2][3].outerHTML = "<th>CP</th>";
 	
-	rows[74][4] = rows[74].insertCell(4);
-	rows[74][4].outerHTML = "<th rowspan=2 >CRI</th>";
+	rows[numberOfRows+2][4] = rows[numberOfRows+2].insertCell(4);
+	rows[numberOfRows+2][4].outerHTML = "<th rowspan=2 >CRI</th>";
 	
-	rows[74][5] = rows[74].insertCell(5);
-	rows[74][5].outerHTML = "<th colspan=2 rowspan=2 >EVA</th>";
+	rows[numberOfRows+2][5] = rows[numberOfRows+2].insertCell(5);
+	rows[numberOfRows+2][5].outerHTML = "<th colspan=2 rowspan=2 >EVA</th>";
 	
-	rows[75] = abilityListTable.insertRow(75);
-	rows[75][0] = rows[75].insertCell(0);
-	rows[75][1] = rows[75].insertCell(1);
-	rows[75][2] = rows[75].insertCell(2);
-	rows[75][3] = rows[75].insertCell(3);
+	rows[numberOfRows+3] = abilityListTable.insertRow(numberOfRows+3);
 	
-	rows[76] = abilityListTable.insertRow(76);
+	rows[numberOfRows+3][0] = rows[numberOfRows+3].insertCell(0);
+	rows[numberOfRows+3][1] = rows[numberOfRows+3].insertCell(1);
+	rows[numberOfRows+3][2] = rows[numberOfRows+3].insertCell(2);
+	rows[numberOfRows+3][3] = rows[numberOfRows+3].insertCell(3);
 	
-	rows[76][0] = rows[76].insertCell(0);
-	rows[76][0].outerHTML = "<th>HP</th>";
+	rows[numberOfRows+4] = abilityListTable.insertRow(numberOfRows+4);
 	
-	rows[76][1] = rows[76].insertCell(1);
-	rows[76][1].outerHTML = "<th>ATK</th>";
+	rows[numberOfRows+4][0] = rows[numberOfRows+4].insertCell(0);
+	rows[numberOfRows+4][0].outerHTML = "<th>HP</th>";
 	
-	rows[76][2] = rows[76].insertCell(2);
-	rows[76][2].outerHTML = "<th>DEF</th>";
+	rows[numberOfRows+4][1] = rows[numberOfRows+4].insertCell(1);
+	rows[numberOfRows+4][1].outerHTML = "<th>ATK</th>";
 	
-	rows[76][3] = rows[76].insertCell(3);
-	rows[76][3].outerHTML = "<th>CP</th>";
+	rows[numberOfRows+4][2] = rows[numberOfRows+4].insertCell(2);
+	rows[numberOfRows+4][2].outerHTML = "<th>DEF</th>";
 	
-	rows[76][4] = rows[76].insertCell(4);
-	rows[76][4].outerHTML = "<td rowspan=2 ></td>";
+	rows[numberOfRows+4][3] = rows[numberOfRows+4].insertCell(3);
+	rows[numberOfRows+4][3].outerHTML = "<th>CP</th>";
 	
-	rows[76][5] = rows[76].insertCell(5);
-	rows[76][5].outerHTML = "<td colspan=2 rowspan=2 ></td>";
+	rows[numberOfRows+4][4] = rows[numberOfRows+4].insertCell(4);
+	rows[numberOfRows+4][4].outerHTML = "<td rowspan=2 ></td>";
 	
-	rows[77] = abilityListTable.insertRow(77);
-	rows[77][0] = rows[77].insertCell(0);
-	rows[77][1] = rows[77].insertCell(1);
-	rows[77][2] = rows[77].insertCell(2);
-	rows[77][3] = rows[77].insertCell(3);
+	rows[numberOfRows+4][5] = rows[numberOfRows+4].insertCell(5);
+	rows[numberOfRows+4][5].outerHTML = "<td colspan=2 rowspan=2 ></td>";
 	
-	rows[78] = abilityListTable.insertRow(78);
-	rows[78][0] = rows[78].insertCell(0);
-	rows[78][0].outerHTML = "<th colspan=7 >Total Benefits For Each Ultimate Jutsu</th>";
+	rows[numberOfRows+5] = abilityListTable.insertRow(numberOfRows+5);
+	
+	rows[numberOfRows+5][0] = rows[numberOfRows+5].insertCell(0);
+	rows[numberOfRows+5][1] = rows[numberOfRows+5].insertCell(1);
+	rows[numberOfRows+5][2] = rows[numberOfRows+5].insertCell(2);
+	rows[numberOfRows+5][3] = rows[numberOfRows+5].insertCell(3);
+	
+	rows[numberOfRows+6] = abilityListTable.insertRow(numberOfRows+6);
+	
+	rows[numberOfRows+6][0] = rows[numberOfRows+6].insertCell(0);
+	rows[numberOfRows+6][0].outerHTML = "<th colspan=7 >Total Benefits For Each Ultimate Jutsu</th>";
+	
+	rows[numberOfRows+7] = abilityListTable.insertRow(numberOfRows+7);
+	
+	rows[numberOfRows+7][0] = rows[numberOfRows+7].insertCell(0);
+	rows[numberOfRows+7][0].outerHTML = "<td colspan=2 >+440</td>";
+	
+	rows[numberOfRows+7][1] = rows[numberOfRows+7].insertCell(1);
+	rows[numberOfRows+7][1].outerHTML = "<th>POW</th>";
+	
+	rows[numberOfRows+7][2] = rows[numberOfRows+7].insertCell(2);
+	rows[numberOfRows+7][2].outerHTML = "<td>-36</td>";
+	
+	rows[numberOfRows+7][3] = rows[numberOfRows+7].insertCell(3);
+	rows[numberOfRows+7][3].outerHTML = "<th>CPC</th>";
+	
+	rows[numberOfRows+7][4] = rows[numberOfRows+7].insertCell(4);
+	rows[numberOfRows+7][4].outerHTML = "<td rowspan=2 >-5.9</td>";
+	
+	rows[numberOfRows+7][5] = rows[numberOfRows+7].insertCell(5);
+	rows[numberOfRows+7][5].outerHTML = "<th rowspan=2 >CD</th>";
+	
+	rows[numberOfRows+8] = abilityListTable.insertRow(numberOfRows+8);
+	
+	rows[numberOfRows+8][0] = rows[numberOfRows+8].insertCell(0);
+	rows[numberOfRows+8][0].outerHTML = "<td colspan=2 >+9.00%</td>";
+	
+	rows[numberOfRows+8][1] = rows[numberOfRows+8].insertCell(1);
+	rows[numberOfRows+8][1].outerHTML = "<th>POW</th>";
+	
+	rows[numberOfRows+8][2] = rows[numberOfRows+8].insertCell(2);
+	rows[numberOfRows+8][2].outerHTML = "<td>-9.00%</td>";
+	
+	rows[numberOfRows+8][3] = rows[numberOfRows+8].insertCell(3);
+	rows[numberOfRows+8][3].outerHTML = "<th>CP</th>";
 	
 }
 
@@ -689,7 +795,8 @@ function abilityListTable3(rows){
 
 function abilityListTable(n){
 	createAbilityListTable();
-	let rows = [[]] , rowsLength , rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
+	createMaximumStatsTable();
+	let rows = [[]] , rowsMaximumStats = [[]] , HP , ATK , DEF , CP , CRI , EVA;
 	const abilityListTable = document.getElementById("abilityListTable");
 	const maximumStats = document.getElementById("maximumStats");
 	
@@ -699,7 +806,7 @@ function abilityListTable(n){
 	rowsMaximumStats[6] = maximumStats.rows[6].cells;
 	rowsMaximumStats[7] = maximumStats.rows[7].cells;
 	
-	rowsLength = abilityListTable.rows.length;
+	let rowsLength = abilityListTable.rows.length;
 	rows[0] = abilityListTable.rows[0].cells;
 	rows[1] = abilityListTable.rows[1].cells;
 	
