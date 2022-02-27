@@ -612,9 +612,18 @@ function abilityListTable3(rows){
 
 function abilityListTable(n){
 	createAbilityListTable();
-	let rows = [[]] , rowsLength;
+	let rows = [[]] , rowsLength , rowsMaximumStats = [[]] , HP;
 	const abilityListTable = document.getElementById("abilityListTable");
+	const maximumStats = document.getElementById("maximumStats");
+	
 	rowsLength = abilityListTable.rows.length;
+	
+	rowsMaximumStats[1] = maximumStats.rows[1].cells;
+	rowsMaximumStats[2] = maximumStats.rows[2].cells;
+	rowsMaximumStats[3] = maximumStats.rows[3].cells;
+	rowsMaximumStats[5] = maximumStats.rows[5].cells;
+	rowsMaximumStats[6] = maximumStats.rows[6].cells;
+	rowsMaximumStats[7] = maximumStats.rows[7].cells;
 	
 	rows[0] = abilityListTable.rows[0].cells;
 	rows[1] = abilityListTable.rows[1].cells;
@@ -649,9 +658,10 @@ function abilityListTable(n){
 					rows[46][1].innerHTML = eval("parseInt(rows[46][1].innerHTML) + parseInt(rows[i][5].innerHTML)");
 				}
 			}
+			HP = Math.round(eval("1660 + ((parseInt(rowsMaximumStats[1][1].innerHTML) * 8) / 100)"));
+			rows[48][0].innerHTML = "+" + HP;
+			rowsMaximumStats[5][1].innerHTML = 7830 + HP;
 			
-			rows[48][0].innerHTML = "+1660";
-
 			rows[48][2].innerHTML = "+4780";
 			rows[48][4].innerHTML = "+975";
 			
