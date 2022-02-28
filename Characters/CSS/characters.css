@@ -7,6 +7,10 @@ body {
 	color: white;
 }
 
+#UltimateJutsus5Star {
+	display: none;
+}
+
 .cardHover {
 	transition: transform .2s; /* Animation */
 	word-wrap: break-word;
