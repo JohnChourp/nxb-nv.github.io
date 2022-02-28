@@ -23,6 +23,11 @@ figcaption {
 	text-align: left;
 }
 
+.cardsTypes {
+	font-size: 16px;
+	text-align: left;
+}
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 430px auto;
@@ -31,10 +36,6 @@ figcaption {
 .one {
 	grid-column: 1;
 	grid-row: 1;
-}
-
-.cardsTypes {
-	text-align: left;
 }
 
 .cardThumb {
@@ -64,12 +65,16 @@ figcaption {
 }
 
 @media screen and (max-width: 1600px) {
+	.cardsTypes {
+		font-size: 15px;
+	}
+	
 	figcaption {
 		font-size: 15px;
 	}
 	
 	.wrapper {
-		grid-template-columns: 380px auto;
+		grid-template-columns: 356px auto;
 	}
 	
 	.cardThumb {
@@ -79,12 +84,16 @@ figcaption {
 }
 
 @media screen and (max-width: 1300px) {
+	.cardsTypes {
+		font-size: 14px;
+	}
+	
 	figcaption {
 		font-size: 14px;
 	}
 	
 	.wrapper {
-		grid-template-columns: 330px auto;
+		grid-template-columns: 281px auto;
 	}
 	
 	.cardThumb {
@@ -94,12 +103,16 @@ figcaption {
 }
 
 @media screen and (max-width: 1000px) {
+	.cardsTypes {
+		font-size: 13px;
+	}
+	
 	figcaption {
 		font-size: 13px;
 	}
 	
 	.wrapper {
-		grid-template-columns: 280px auto;
+		grid-template-columns: 205px auto;
 	}
 	
 	.cardThumb {
