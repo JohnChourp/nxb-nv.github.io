@@ -7,7 +7,7 @@ body {
 	color: white;
 }
 
-#UltimateJutsus5Star {
+#UltimateJutsus5Star,#Jutsus4Star {
 	display: none;
 }
 
@@ -85,6 +85,11 @@ figcaption {
 		width: 170px;
 		height: 126px;
 	}
+	
+	.toolThumb {
+		width: 130px;
+		height: 130px;
+	}
 }
 
 @media screen and (max-width: 1300px) {
@@ -104,6 +109,11 @@ figcaption {
 		width: 140px;
 		height: 103px;
 	}
+	
+	.toolThumb {
+		width: 110px;
+		height: 110px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -122,5 +132,10 @@ figcaption {
 	.cardThumb {
 		width: 110px;
 		height: 80px;
+	}
+	
+	.toolThumb {
+		width: 90px;
+		height: 90px;
 	}
 }
