@@ -57,20 +57,24 @@ function createCharactersTable(){
 	abilityListLink.appendChild(abilityListImage);
 	rows[3][0].appendChild(abilityListLink);
 	
-	rows[3][1] = charactersTable.rows[3].insertCell(1);
-	rows[3][1].outerHTML = "<th></th>";
-	rows[3][1].colSpan = "2";
-	let linkBoardImage = document.createElement("img");
-	linkBoardImage.classList.add("linkBoardBtn");
-	linkBoardImage.referrerPolicy = "no-referrer";
-	linkBoardImage.src = "https://lh3.googleusercontent.com/pw/AM-JKLVO8FT6yX4NPoztbEgRIIfNUGOJSFnORJoi6czUTAcx6P1QpVI8tN8GwpAvBf0A85y72pbdB2BFKbiVTsgL-5AmUtIVRfVdSNsq_wvAT8tDYBAyhc_cvL0whJhBt6dbtGCAQs2JWLEiPrYst4zLlwMd=w259-h67-no?authuser=0";
-	
-	let linkBoardLink = document.createElement("a");
-	currentPageFileName = window.location.pathname.split("/").pop();
-	removeHtml = currentPageFileName.slice(0 , currentPageFileName.length - 5);
-	linkBoardLink.href = removeHtml + "-link-board.html";
-	linkBoardLink.appendChild(linkBoardImage);
-	rows[3][1].appendChild(linkBoardLink);
+	if(rankImage.alt === "7 Star"){
+		rows[3][1] = charactersTable.rows[3].insertCell(1);
+		rows[3][1].outerHTML = "<th></th>";
+		rows[3][1].colSpan = "2";
+		let linkBoardImage = document.createElement("img");
+		linkBoardImage.classList.add("linkBoardBtn");
+		linkBoardImage.referrerPolicy = "no-referrer";
+		linkBoardImage.src = "https://lh3.googleusercontent.com/pw/AM-JKLVO8FT6yX4NPoztbEgRIIfNUGOJSFnORJoi6czUTAcx6P1QpVI8tN8GwpAvBf0A85y72pbdB2BFKbiVTsgL-5AmUtIVRfVdSNsq_wvAT8tDYBAyhc_cvL0whJhBt6dbtGCAQs2JWLEiPrYst4zLlwMd=w259-h67-no?authuser=0";
+		
+		let linkBoardLink = document.createElement("a");
+		currentPageFileName = window.location.pathname.split("/").pop();
+		removeHtml = currentPageFileName.slice(0 , currentPageFileName.length - 5);
+		linkBoardLink.href = removeHtml + "-link-board.html";
+		linkBoardLink.appendChild(linkBoardImage);
+		rows[3][1].appendChild(linkBoardLink);
+	}else{
+		rows[3][0].colSpan ="4";
+	}
 }
 
 function cardsAndToolsTable(){
