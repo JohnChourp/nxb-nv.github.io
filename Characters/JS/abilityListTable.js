@@ -113,7 +113,7 @@ function createAbilityListTable(){
 	
 	rows[2][3] = rows[2].insertCell(3);
 	rows[2][3].outerHTML = "<th colspan=2 >Cost</th>";
-
+	
 	for(let i = 3; i < numberOfRows; i ++){
 		if(i !== 22 && !(i > 26 && i < 30) && !(i > 33 && i < 39) && i < 42){
 			rows[i] = abilityListTable.insertRow(i);
@@ -282,103 +282,103 @@ function createAbilityListTable(){
 	abilityPoints.referrerPolicy = "no-referrer";
 	rows[numberOfRows][2].appendChild(abilityPoints);
 	
-	rows[numberOfRows+1] = abilityListTable.insertRow(numberOfRows+1);
+	rows[numberOfRows + 1] = abilityListTable.insertRow(numberOfRows + 1);
 	
-	rows[numberOfRows+1][0] = rows[numberOfRows+1].insertCell(0);
-	rows[numberOfRows+1][0].outerHTML = "<th colspan=7 >Total Benefits</th>";
+	rows[numberOfRows + 1][0] = rows[numberOfRows + 1].insertCell(0);
+	rows[numberOfRows + 1][0].outerHTML = "<th colspan=7 >Total Benefits</th>";
 	
-	rows[numberOfRows+2] = abilityListTable.insertRow(numberOfRows+2);
+	rows[numberOfRows + 2] = abilityListTable.insertRow(numberOfRows + 2);
 	
-	rows[numberOfRows+2][0] = rows[numberOfRows+2].insertCell(0);
-	rows[numberOfRows+2][0].outerHTML = "<th>HP</th>";
+	rows[numberOfRows + 2][0] = rows[numberOfRows + 2].insertCell(0);
+	rows[numberOfRows + 2][0].outerHTML = "<th>HP</th>";
 	
-	rows[numberOfRows+2][1] = rows[numberOfRows+2].insertCell(1);
-	rows[numberOfRows+2][1].outerHTML = "<th>ATK</th>";
+	rows[numberOfRows + 2][1] = rows[numberOfRows + 2].insertCell(1);
+	rows[numberOfRows + 2][1].outerHTML = "<th>ATK</th>";
 	
-	rows[numberOfRows+2][2] = rows[numberOfRows+2].insertCell(2);
-	rows[numberOfRows+2][2].outerHTML = "<th>DEF</th>";
+	rows[numberOfRows + 2][2] = rows[numberOfRows + 2].insertCell(2);
+	rows[numberOfRows + 2][2].outerHTML = "<th>DEF</th>";
 	
-	rows[numberOfRows+2][3] = rows[numberOfRows+2].insertCell(3);
-	rows[numberOfRows+2][3].outerHTML = "<th>CP</th>";
+	rows[numberOfRows + 2][3] = rows[numberOfRows + 2].insertCell(3);
+	rows[numberOfRows + 2][3].outerHTML = "<th>CP</th>";
 	
-	rows[numberOfRows+2][4] = rows[numberOfRows+2].insertCell(4);
-	rows[numberOfRows+2][4].outerHTML = "<th rowspan=2 >CRI</th>";
+	rows[numberOfRows + 2][4] = rows[numberOfRows + 2].insertCell(4);
+	rows[numberOfRows + 2][4].outerHTML = "<th rowspan=2 >CRI</th>";
 	
-	rows[numberOfRows+2][5] = rows[numberOfRows+2].insertCell(5);
-	rows[numberOfRows+2][5].outerHTML = "<th colspan=2 rowspan=2 >EVA</th>";
+	rows[numberOfRows + 2][5] = rows[numberOfRows + 2].insertCell(5);
+	rows[numberOfRows + 2][5].outerHTML = "<th colspan=2 rowspan=2 >EVA</th>";
 	
-	rows[numberOfRows+3] = abilityListTable.insertRow(numberOfRows+3);
+	rows[numberOfRows + 3] = abilityListTable.insertRow(numberOfRows + 3);
 	
-	rows[numberOfRows+3][0] = rows[numberOfRows+3].insertCell(0);
-	rows[numberOfRows+3][1] = rows[numberOfRows+3].insertCell(1);
-	rows[numberOfRows+3][2] = rows[numberOfRows+3].insertCell(2);
-	rows[numberOfRows+3][3] = rows[numberOfRows+3].insertCell(3);
+	rows[numberOfRows + 3][0] = rows[numberOfRows + 3].insertCell(0);
+	rows[numberOfRows + 3][1] = rows[numberOfRows + 3].insertCell(1);
+	rows[numberOfRows + 3][2] = rows[numberOfRows + 3].insertCell(2);
+	rows[numberOfRows + 3][3] = rows[numberOfRows + 3].insertCell(3);
 	
-	rows[numberOfRows+4] = abilityListTable.insertRow(numberOfRows+4);
+	rows[numberOfRows + 4] = abilityListTable.insertRow(numberOfRows + 4);
 	
-	rows[numberOfRows+4][0] = rows[numberOfRows+4].insertCell(0);
-	rows[numberOfRows+4][0].outerHTML = "<th>HP</th>";
+	rows[numberOfRows + 4][0] = rows[numberOfRows + 4].insertCell(0);
+	rows[numberOfRows + 4][0].outerHTML = "<th>HP</th>";
 	
-	rows[numberOfRows+4][1] = rows[numberOfRows+4].insertCell(1);
-	rows[numberOfRows+4][1].outerHTML = "<th>ATK</th>";
+	rows[numberOfRows + 4][1] = rows[numberOfRows + 4].insertCell(1);
+	rows[numberOfRows + 4][1].outerHTML = "<th>ATK</th>";
 	
-	rows[numberOfRows+4][2] = rows[numberOfRows+4].insertCell(2);
-	rows[numberOfRows+4][2].outerHTML = "<th>DEF</th>";
+	rows[numberOfRows + 4][2] = rows[numberOfRows + 4].insertCell(2);
+	rows[numberOfRows + 4][2].outerHTML = "<th>DEF</th>";
 	
-	rows[numberOfRows+4][3] = rows[numberOfRows+4].insertCell(3);
-	rows[numberOfRows+4][3].outerHTML = "<th>CP</th>";
+	rows[numberOfRows + 4][3] = rows[numberOfRows + 4].insertCell(3);
+	rows[numberOfRows + 4][3].outerHTML = "<th>CP</th>";
 	
-	rows[numberOfRows+4][4] = rows[numberOfRows+4].insertCell(4);
-	rows[numberOfRows+4][4].outerHTML = "<td rowspan=2 ></td>";
+	rows[numberOfRows + 4][4] = rows[numberOfRows + 4].insertCell(4);
+	rows[numberOfRows + 4][4].outerHTML = "<td rowspan=2 ></td>";
 	
-	rows[numberOfRows+4][5] = rows[numberOfRows+4].insertCell(5);
-	rows[numberOfRows+4][5].outerHTML = "<td colspan=2 rowspan=2 ></td>";
+	rows[numberOfRows + 4][5] = rows[numberOfRows + 4].insertCell(5);
+	rows[numberOfRows + 4][5].outerHTML = "<td colspan=2 rowspan=2 ></td>";
 	
-	rows[numberOfRows+5] = abilityListTable.insertRow(numberOfRows+5);
+	rows[numberOfRows + 5] = abilityListTable.insertRow(numberOfRows + 5);
 	
-	rows[numberOfRows+5][0] = rows[numberOfRows+5].insertCell(0);
-	rows[numberOfRows+5][1] = rows[numberOfRows+5].insertCell(1);
-	rows[numberOfRows+5][2] = rows[numberOfRows+5].insertCell(2);
-	rows[numberOfRows+5][3] = rows[numberOfRows+5].insertCell(3);
+	rows[numberOfRows + 5][0] = rows[numberOfRows + 5].insertCell(0);
+	rows[numberOfRows + 5][1] = rows[numberOfRows + 5].insertCell(1);
+	rows[numberOfRows + 5][2] = rows[numberOfRows + 5].insertCell(2);
+	rows[numberOfRows + 5][3] = rows[numberOfRows + 5].insertCell(3);
 	
-	rows[numberOfRows+6] = abilityListTable.insertRow(numberOfRows+6);
+	rows[numberOfRows + 6] = abilityListTable.insertRow(numberOfRows + 6);
 	
-	rows[numberOfRows+6][0] = rows[numberOfRows+6].insertCell(0);
-	rows[numberOfRows+6][0].outerHTML = "<th colspan=7 >Total Benefits For Each Ultimate Jutsu</th>";
+	rows[numberOfRows + 6][0] = rows[numberOfRows + 6].insertCell(0);
+	rows[numberOfRows + 6][0].outerHTML = "<th colspan=7 >Total Benefits For Each Ultimate Jutsu</th>";
 	
-	rows[numberOfRows+7] = abilityListTable.insertRow(numberOfRows+7);
+	rows[numberOfRows + 7] = abilityListTable.insertRow(numberOfRows + 7);
 	
-	rows[numberOfRows+7][0] = rows[numberOfRows+7].insertCell(0);
-	rows[numberOfRows+7][0].outerHTML = "<td colspan=2 >+440</td>";
+	rows[numberOfRows + 7][0] = rows[numberOfRows + 7].insertCell(0);
+	rows[numberOfRows + 7][0].outerHTML = "<td colspan=2 >+440</td>";
 	
-	rows[numberOfRows+7][1] = rows[numberOfRows+7].insertCell(1);
-	rows[numberOfRows+7][1].outerHTML = "<th>POW</th>";
+	rows[numberOfRows + 7][1] = rows[numberOfRows + 7].insertCell(1);
+	rows[numberOfRows + 7][1].outerHTML = "<th>POW</th>";
 	
-	rows[numberOfRows+7][2] = rows[numberOfRows+7].insertCell(2);
-	rows[numberOfRows+7][2].outerHTML = "<td>-36</td>";
+	rows[numberOfRows + 7][2] = rows[numberOfRows + 7].insertCell(2);
+	rows[numberOfRows + 7][2].outerHTML = "<td>-36</td>";
 	
-	rows[numberOfRows+7][3] = rows[numberOfRows+7].insertCell(3);
-	rows[numberOfRows+7][3].outerHTML = "<th>CPC</th>";
+	rows[numberOfRows + 7][3] = rows[numberOfRows + 7].insertCell(3);
+	rows[numberOfRows + 7][3].outerHTML = "<th>CPC</th>";
 	
-	rows[numberOfRows+7][4] = rows[numberOfRows+7].insertCell(4);
-	rows[numberOfRows+7][4].outerHTML = "<td rowspan=2 >-5.9</td>";
+	rows[numberOfRows + 7][4] = rows[numberOfRows + 7].insertCell(4);
+	rows[numberOfRows + 7][4].outerHTML = "<td rowspan=2 >-5.9</td>";
 	
-	rows[numberOfRows+7][5] = rows[numberOfRows+7].insertCell(5);
-	rows[numberOfRows+7][5].outerHTML = "<th rowspan=2 >CD</th>";
+	rows[numberOfRows + 7][5] = rows[numberOfRows + 7].insertCell(5);
+	rows[numberOfRows + 7][5].outerHTML = "<th rowspan=2 >CD</th>";
 	
-	rows[numberOfRows+8] = abilityListTable.insertRow(numberOfRows+8);
+	rows[numberOfRows + 8] = abilityListTable.insertRow(numberOfRows + 8);
 	
-	rows[numberOfRows+8][0] = rows[numberOfRows+8].insertCell(0);
-	rows[numberOfRows+8][0].outerHTML = "<td colspan=2 >+9.00%</td>";
+	rows[numberOfRows + 8][0] = rows[numberOfRows + 8].insertCell(0);
+	rows[numberOfRows + 8][0].outerHTML = "<td colspan=2 >+9.00%</td>";
 	
-	rows[numberOfRows+8][1] = rows[numberOfRows+8].insertCell(1);
-	rows[numberOfRows+8][1].outerHTML = "<th>POW</th>";
+	rows[numberOfRows + 8][1] = rows[numberOfRows + 8].insertCell(1);
+	rows[numberOfRows + 8][1].outerHTML = "<th>POW</th>";
 	
-	rows[numberOfRows+8][2] = rows[numberOfRows+8].insertCell(2);
-	rows[numberOfRows+8][2].outerHTML = "<td>-9.00%</td>";
+	rows[numberOfRows + 8][2] = rows[numberOfRows + 8].insertCell(2);
+	rows[numberOfRows + 8][2].outerHTML = "<td>-9.00%</td>";
 	
-	rows[numberOfRows+8][3] = rows[numberOfRows+8].insertCell(3);
-	rows[numberOfRows+8][3].outerHTML = "<th>CP</th>";
+	rows[numberOfRows + 8][3] = rows[numberOfRows + 8].insertCell(3);
+	rows[numberOfRows + 8][3].outerHTML = "<th>CP</th>";
 	
 }
 
