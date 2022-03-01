@@ -93,7 +93,7 @@ td:hover, th:hover {
 
 @media screen and (max-width: 1600px) {
 	#charTable {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	
 	td {
@@ -125,7 +125,7 @@ td:hover, th:hover {
 
 @media screen and (max-width: 1300px) {
 	#charTable {
-		font-size: 14px;
+		font-size: 13px;
 	}
 	
 	td {

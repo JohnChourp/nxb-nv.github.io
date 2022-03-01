@@ -77,14 +77,12 @@ function cardsAndToolsTable(){
 	createCharactersTable();
 	let rows = [[]];
 	const cardsAndToolsTable = document.getElementById("cardsAndToolsTable");
-	const UltimateJutsus5Star = document.getElementById("UltimateJutsus5Star");
-	const Jutsus4Star = document.getElementById("Jutsus4Star");
-	
-	rows[0] = cardsAndToolsTable.rows[0].cells;
-	rows[1] = cardsAndToolsTable.rows[1].cells;
-	rows[2] = cardsAndToolsTable.rows[2].cells;
-	rows[3] = cardsAndToolsTable.rows[3].cells;
 
+	for(let i = 0; i < cardsAndToolsTable.rows.length; i ++){
+		rows[i] = cardsAndToolsTable.rows[i].cells;
+	}
+	
+	const UltimateJutsus5Star = document.getElementById("UltimateJutsus5Star");
 	if(UltimateJutsus5Star){
 		let rowsUltimateJutsus5Star = [[]];
 		let UltimateJutsus5StarLength = UltimateJutsus5Star.rows.length;
@@ -118,6 +116,7 @@ function cardsAndToolsTable(){
 		}
 	}
 	
+	const Jutsus4Star = document.getElementById("Jutsus4Star");
 	if(Jutsus4Star){
 		let rowsJutsus4Star = [[]];
 		let Jutsus4StarLength = Jutsus4Star.rows.length;
@@ -179,6 +178,40 @@ function cardsAndToolsTable(){
 				
 				rows[1][i].appendChild(cardHoverFigure);
 			}
+		}
+	}
+	
+	const Jutsus3Star = document.getElementById("Jutsus3Star");
+	if(Jutsus3Star){
+		let rowsJutsus3Star = [[]];
+		let Jutsus3StarLength = Jutsus3Star.rows.length;
+		
+		cardsAndToolsTable.rows[4].insertCell(0);
+		rows[4][0].outerHTML = "<th>Jutsus 3 Star</th>";
+		rows[4][0].classList.add("cardsTypes");
+		
+		for(let i = 0; i < Jutsus3StarLength; i ++){
+			cardsAndToolsTable.rows[5].insertCell(i);
+			rowsJutsus3Star[i] = Jutsus3Star.rows[i].cells;
+			
+			let cardThumbImage = document.createElement("img");
+			cardThumbImage.classList.add("cardThumb");
+			cardThumbImage.referrerPolicy = "no-referrer";
+			cardThumbImage.src = rowsJutsus3Star[i][0].innerHTML;
+			
+			let cardThumbLink = document.createElement("a");
+			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Ninjutsus3Star/" + rowsJutsus3Star[i][1].innerHTML;
+			cardThumbLink.appendChild(cardThumbImage);
+			
+			let figcaption = document.createElement("figcaption");
+			figcaption.innerHTML = rowsJutsus3Star[i][2].innerHTML;
+			
+			let cardHoverFigure = document.createElement("figure");
+			cardHoverFigure.classList.add("cardHover");
+			cardHoverFigure.appendChild(cardThumbLink);
+			cardHoverFigure.appendChild(figcaption);
+			
+			rows[5][i].appendChild(cardHoverFigure);
 		}
 	}
 }
