@@ -7,6 +7,10 @@ body {
 	color: white;
 }
 
+#UltimateJutsus6Star, #UltimateJutsus5Star, #Jutsus5Star, #Jutsus4Star, #Jutsus3Star, #Jutsus1Star, #Tools5Star, #Tools4Star {
+	display: none;
+}
+
 .cardHover {
 	transition: transform .2s; /* Animation */
 	word-wrap: break-word;
@@ -23,18 +27,14 @@ figcaption {
 	text-align: left;
 }
 
+.cardsTypes {
+	font-size: 16px;
+	text-align: left;
+}
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 430px auto;
-}
-
-.one {
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.cardsTypes {
-	text-align: left;
 }
 
 .cardThumb {
@@ -64,46 +64,73 @@ figcaption {
 }
 
 @media screen and (max-width: 1600px) {
+	.cardsTypes {
+		font-size: 15px;
+	}
+	
 	figcaption {
 		font-size: 15px;
 	}
 	
 	.wrapper {
-		grid-template-columns: 380px auto;
+		grid-template-columns: 356px auto;
 	}
 	
 	.cardThumb {
 		width: 170px;
 		height: 126px;
 	}
+	
+	.toolThumb {
+		width: 130px;
+		height: 130px;
+	}
 }
 
 @media screen and (max-width: 1300px) {
+	.cardsTypes {
+		font-size: 14px;
+	}
+	
 	figcaption {
 		font-size: 14px;
 	}
 	
 	.wrapper {
-		grid-template-columns: 330px auto;
+		grid-template-columns: 281px auto;
 	}
 	
 	.cardThumb {
 		width: 140px;
 		height: 103px;
 	}
+	
+	.toolThumb {
+		width: 110px;
+		height: 110px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
+	.cardsTypes {
+		font-size: 13px;
+	}
+	
 	figcaption {
 		font-size: 13px;
 	}
 	
 	.wrapper {
-		grid-template-columns: 280px auto;
+		grid-template-columns: 205px auto;
 	}
 	
 	.cardThumb {
 		width: 110px;
 		height: 80px;
+	}
+	
+	.toolThumb {
+		width: 90px;
+		height: 90px;
 	}
 }

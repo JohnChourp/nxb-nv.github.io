@@ -44,6 +44,11 @@ function charactersScriptFiles(){
 	pointerCursor.type = "text/css";
 	document.head.appendChild(pointerCursor);
 	
+	const charactersTableJS = document.createElement("script");
+	charactersTableJS.src = httpLink + hostName + "/nxb-nv.github.io/Characters/JS/charactersTable.js";
+	charactersTableJS.type = "text/javascript";
+	document.head.appendChild(charactersTableJS);
+	
 	const images = document.createElement("script");
 	images.src = httpLink + hostName + "/nxb-nv.github.io/JS/Images/images.js";
 	images.type = "text/javascript";

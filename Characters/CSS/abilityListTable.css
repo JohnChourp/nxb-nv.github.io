@@ -1,9 +1,9 @@
 #UltimateJutsus {
-	display:none;
+	display: none;
 }
 
-#maximumStats{
-	float:left;
+#maximumStats {
+	float: left;
 	width: 20%;
 	height: 1%;
 	border-radius: 4px;
@@ -80,7 +80,7 @@ a.equipBy:active {
 }
 
 @media screen and (max-width: 1600px) {
-	#maximumStats{
+	#maximumStats {
 		width: 15%;
 		font-size: 18px;
 	}
@@ -96,7 +96,7 @@ a.equipBy:active {
 }
 
 @media screen and (max-width: 1300px) {
-	#maximumStats{
+	#maximumStats {
 		width: 10%;
 		font-size: 16px;
 	}
@@ -112,7 +112,7 @@ a.equipBy:active {
 }
 
 @media screen and (max-width: 1000px) {
-	#maximumStats{
+	#maximumStats {
 		width: 5%;
 		font-size: 14px;
 	}

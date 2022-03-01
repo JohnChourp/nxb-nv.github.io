@@ -34,14 +34,6 @@ td:hover, th:hover {
 	padding: 0;
 }
 
-.abilitiesListBtn:hover {
-	transform: scale(1.2);
-}
-
-.linkBoardBtn:hover {
-	transform: scale(1.2);
-}
-
 .char {
 	width: 420px;
 	/* Center the Image */
@@ -49,6 +41,14 @@ td:hover, th:hover {
 	margin-left: auto;
 	margin-right: auto;
 	/* Center the Image */
+}
+
+.abilitiesListBtn:hover {
+	transform: scale(1.2);
+}
+
+.linkBoardBtn:hover {
+	transform: scale(1.2);
 }
 
 .typeImage {
@@ -93,7 +93,7 @@ td:hover, th:hover {
 
 @media screen and (max-width: 1600px) {
 	#charTable {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	
 	td {
@@ -101,7 +101,7 @@ td:hover, th:hover {
 	}
 	
 	.char {
-		width: 370px;
+		width: 346px;
 	}
 	
 	.typeImage {
@@ -113,55 +113,23 @@ td:hover, th:hover {
 	}
 	
 	.abilitiesListBtn {
-		width: 150px;
-		height: 62px;
+		width: 130px;
+		height: 52px;
 	}
 	
 	.linkBoardBtn {
-		width: 190px;
-		height: 47px;
+		width: 170px;
+		height: 40px;
 	}
 }
 
 @media screen and (max-width: 1300px) {
 	#charTable {
-		font-size: 16px;
+		font-size: 13px;
 	}
 	
 	td {
 		width: 210px;
-	}
-	
-	.char {
-		width: 320px;
-	}
-	
-	.typeImage {
-		width: 30px;
-	}
-	
-	.rankImage {
-		height: 20px;
-	}
-	
-	.abilitiesListBtn {
-		width: 120px;
-		height: 48px;
-	}
-	
-	.linkBoardBtn {
-		width: 160px;
-		height: 39px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	#charTable {
-		font-size: 16px;
-	}
-	
-	td {
-		width: 180px;
 	}
 	
 	.char {
@@ -183,6 +151,38 @@ td:hover, th:hover {
 	
 	.linkBoardBtn {
 		width: 130px;
-		height: 31px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#charTable {
+		font-size: 12px;
+	}
+	
+	td {
+		width: 180px;
+	}
+	
+	.char {
+		width: 195px;
+	}
+	
+	.typeImage {
+		width: 20px;
+	}
+	
+	.rankImage {
+		height: 15px;
+	}
+	
+	.abilitiesListBtn {
+		width: 60px;
+		height: 24px;
+	}
+	
+	.linkBoardBtn {
+		width: 100px;
+		height: 22px;
 	}
 }
