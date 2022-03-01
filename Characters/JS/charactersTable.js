@@ -77,11 +77,6 @@ function cardsAndToolsTable(){
 	createCharactersTable();
 	let rows = [[]] , sumOfRows = 0;
 	const table = document.getElementById("cardsAndToolsTable");
-	let tableLength = table.rows.length;
-	
-	for(let i = 0; i < tableLength; i ++){
-		rows[i] = table.rows[i].cells;
-	}
 	
 	const Ult6 = document.getElementById("UltimateJutsus6Star");
 	const Ult5 = document.getElementById("UltimateJutsus5Star");
@@ -92,6 +87,12 @@ function cardsAndToolsTable(){
 	const T4 = document.getElementById("Tools4Star");
 	
 	if(Ult6){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsUlt6 = [[]];
 		let Ult6Length = Ult6.rows.length;
 		
@@ -101,7 +102,6 @@ function cardsAndToolsTable(){
 		
 		for(let i = 0; i < Ult6Length; i ++){
 			table.rows[sumOfRows + 1].insertCell(i);
-			
 			rowsUlt6[i] = Ult6.rows[i].cells;
 			
 			let cardThumbImage = document.createElement("img");
@@ -127,6 +127,12 @@ function cardsAndToolsTable(){
 	}
 	
 	if(Ult5){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsUlt5 = [[]];
 		let Ult5Length = Ult5.rows.length;
 		
@@ -136,7 +142,6 @@ function cardsAndToolsTable(){
 		
 		for(let i = 0; i < Ult5Length; i ++){
 			table.rows[sumOfRows + 1].insertCell(i);
-			
 			rowsUlt5[i] = Ult5.rows[i].cells;
 			
 			let cardThumbImage = document.createElement("img");
@@ -162,6 +167,12 @@ function cardsAndToolsTable(){
 	}
 	
 	if(J4){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsJ4 = [[]];
 		let J4Length = J4.rows.length;
 		
@@ -196,6 +207,12 @@ function cardsAndToolsTable(){
 	}
 	
 	if(J3){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsJ3 = [[]];
 		let J3Length = J3.rows.length;
 		
@@ -230,6 +247,12 @@ function cardsAndToolsTable(){
 	}
 	
 	if(J1){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsJ1 = [[]];
 		let J1Length = J1.rows.length;
 		
@@ -264,6 +287,12 @@ function cardsAndToolsTable(){
 	}
 	
 	if(T5){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsT5 = [[]];
 		let T5Length = T5.rows.length;
 		
@@ -298,6 +327,12 @@ function cardsAndToolsTable(){
 	}
 	
 	if(T4){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows+1);
+		table.rows[sumOfRows+1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows+1] = table.rows[sumOfRows+1].cells;
+		
 		let rowsT4 = [[]];
 		let T4Length = T4.rows.length;
 		
