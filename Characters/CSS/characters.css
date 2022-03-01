@@ -37,11 +37,6 @@ figcaption {
 	grid-template-columns: 430px auto;
 }
 
-.one {
-	grid-column: 1;
-	grid-row: 1;
-}
-
 .cardThumb {
 	width: 200px;
 	height: 150px;
