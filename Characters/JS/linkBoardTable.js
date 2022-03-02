@@ -224,5 +224,5 @@ function linkBoardTable(){
 	linkBoardTableRows[134][4].innerHTML = "+1500 ATK";
 	linkBoardTableRows[135][4].innerHTML = "+1250 ATK";
 	linkBoardTableRows[136][4].innerHTML = "+10% Ultimate Jutsu Resistance";
-	linkBoardTableRows[137][10].innerHTML = "Gain immunity to seal when the user is" + " inflicted with seal";
+	linkBoardTableRows[137][10].innerHTML = "Gain immunity to " + linkBoardTableRows[137][10].innerHTML + " when the user is" + " inflicted with " + linkBoardTableRows[137][10].innerHTML +". Ends after 30 seconds";
 }
