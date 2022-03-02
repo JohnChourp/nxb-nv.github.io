@@ -8,10 +8,6 @@ function cardsToolsScriptFiles(){
 		httpLink = "http://";
 	}
 	
-	const folderNinjutsus = window.location.pathname.search("Ninjutsus");
-	const folderTools = window.location.pathname.search("Tools");
-	const folderUltimateJutsus = window.location.pathname.search("UltimateJutsus");
-	
 	const scriptCardsTools = document.createElement("link");
 	scriptCardsTools.href = httpLink + hostName + "/nxb-nv.github.io/CardsTools/CSS/CardsTools.css";
 	scriptCardsTools.rel = "stylesheet";
@@ -46,19 +42,30 @@ function cardsToolsScriptFiles(){
 	topNavJS.type = "text/javascript";
 	document.head.appendChild(topNavJS);
 	
-	if(folderNinjutsus === 43){
+	const folderNinjutsus1Star = window.location.pathname.match("/Ninjutsus1Star/");
+	const folderNinjutsus3Star = window.location.pathname.match("/Ninjutsus3Star/");
+	const folderNinjutsus4Star = window.location.pathname.match("/Ninjutsus4Star/");
+	const folderNinjutsus5Star = window.location.pathname.match("/Ninjutsus5Star/");
+	const folderTools5Star = window.location.pathname.match("/Tools5Star/");
+	const folderTools4Star = window.location.pathname.match("/Tools4Star/");
+	const folderUltimateJutsus5Star = window.location.pathname.match("/UltimateJutsus5Star/");
+	const folderUltimateJutsus6Star = window.location.pathname.match("/UltimateJutsus6Star/");
+	
+	if((folderNinjutsus1Star !== null) || (folderNinjutsus3Star !== null) || (folderNinjutsus4Star !== null) || (folderNinjutsus5Star !== null)){
 		const ninjutsu = document.createElement("script");
 		ninjutsu.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/ninjutsu.js";
 		ninjutsu.type = "text/javascript";
 		document.head.appendChild(ninjutsu);
 	}
-	if(folderTools === 43){
+
+	if((folderTools5Star !== null) || (folderTools4Star !== null)){
 		const toolFactory = document.createElement("script");
 		toolFactory.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/toolFactory.js";
 		toolFactory.type = "text/javascript";
 		document.head.appendChild(toolFactory);
 	}
-	if(folderUltimateJutsus === 43){
+	
+	if((folderUltimateJutsus5Star !== null) || (folderUltimateJutsus6Star !== null)){
 		const UltimateJutsu = document.createElement("script");
 		UltimateJutsu.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/ultimateJutsu.js";
 		UltimateJutsu.type = "text/javascript";

@@ -81,6 +81,7 @@ function cardsAndToolsTable(){
 	createCharactersTable();
 	let rows = [[]] , sumOfRows = 0;
 	const table = document.getElementById("cardsAndToolsTable");
+	let characterFolder = window.location.pathname.split('/')[3];
 	
 	const Ult6 = document.getElementById("UltimateJutsus6Star");
 	const Ult5 = document.getElementById("UltimateJutsus5Star");
@@ -115,7 +116,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsUlt6[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/UltimateJutsus6Star/" + rowsUlt6[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/UltimateJutsus6Star/" + rowsUlt6[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -155,7 +156,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsUlt5[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/UltimateJutsus5Star/" + rowsUlt5[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/UltimateJutsus5Star/" + rowsUlt5[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -195,7 +196,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ5[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Ninjutsus5Star/" + rowsJ5[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus5Star/" + rowsJ5[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -235,7 +236,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ4[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Ninjutsus4Star/" + rowsJ4[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus4Star/" + rowsJ4[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -275,7 +276,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ3[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Ninjutsus3Star/" + rowsJ3[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus3Star/" + rowsJ3[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -315,7 +316,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ1[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Ninjutsus1Star/" + rowsJ1[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus1Star/" + rowsJ1[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -355,7 +356,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsT5[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Tools5Star/" + rowsT5[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Tools5Star/" + rowsT5[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -395,7 +396,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsT4[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/NarutoUzumaki/Tools4Star/" + rowsT4[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Tools4Star/" + rowsT4[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
