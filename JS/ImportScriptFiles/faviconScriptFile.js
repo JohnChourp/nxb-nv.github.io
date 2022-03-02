@@ -16,3 +16,11 @@ function faviconScriptFile(){
 }
 
 faviconScriptFile();
+
+function loadingScriptFile(){
+	window.addEventListener('load',function(){
+		let container = document.getElementsByClassName("container").item(0);
+		container.style.display = "block";
+	});
+}
+loadingScriptFile();
