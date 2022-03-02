@@ -94,8 +94,8 @@ function linkBoardTable(){
 	linkBoardTableRows[25][4].innerHTML = "+500 ATK";
 	linkBoardTableRows[26][4].innerHTML = "+600 ATK";
 	
-	linkBoardTableRows[27][4].innerHTML = "+100 ATK";
-	linkBoardTableRows[28][4].innerHTML = "+40 HP";
+	linkBoardTableRows[27][4].innerHTML = "+100 HP";
+	linkBoardTableRows[28][4].innerHTML = "+40 CP";
 	linkBoardTableRows[29][4].innerHTML = "+60 DEF";
 	linkBoardTableRows[30][4].innerHTML = "+120 DEF";
 	linkBoardTableRows[31][4].innerHTML = "+200 HP";
@@ -139,7 +139,7 @@ function linkBoardTable(){
 	linkBoardTableRows[64][4].innerHTML = "+600 HP";
 	linkBoardTableRows[65][4].innerHTML = "+800 HP";
 	
-	linkBoardTableRows[66][4].innerHTML = "+400 ATK";
+	linkBoardTableRows[66][4].innerHTML = "+600 ATK";
 	linkBoardTableRows[67][4].innerHTML = "+40 CP";
 	linkBoardTableRows[68][4].innerHTML = "+80 CP";
 	linkBoardTableRows[69][4].innerHTML = "+160 CP";
