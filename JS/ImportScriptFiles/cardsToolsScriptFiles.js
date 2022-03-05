@@ -68,7 +68,12 @@ function cardsToolsScriptFiles(){
 	}
 	
 	if((folderToolsFactory5Star !== null) || (folderToolsFactory4Star !== null)){
-		const toolFactory = document.createElement("script");
+		let toolFactory = document.createElement("script");
+		toolFactory.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/tool.js";
+		toolFactory.type = "text/javascript";
+		document.head.appendChild(toolFactory);
+		
+		toolFactory = document.createElement("script");
 		toolFactory.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/toolFactory.js";
 		toolFactory.type = "text/javascript";
 		document.head.appendChild(toolFactory);
