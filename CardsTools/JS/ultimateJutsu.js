@@ -18,6 +18,7 @@ function createUltimateJutsu(){
 	
 	rows[1][0] = table.rows[1].cells[0];
 	rows[1][1] = rows[1].insertCell(1);
+	rows[1][2] = rows[1].insertCell(2);
 	rows[1][3] = table.rows[1].cells[3];
 	rows[1][4] = rows[1].insertCell(4);
 	rows[1].insertCell(5);
@@ -74,6 +75,12 @@ function createUltimateJutsu(){
 	let imgRank = document.createElement("img");
 	imgRank.classList.add("rankImage");
 	imgRank.alt = rows[1][3].innerHTML;
+	if(rows[1][3].innerHTML === "6 Star"){
+		rows[1][2].innerHTML = "Lv 70/70";
+	}
+	if(rows[1][3].innerHTML === "7 Star"){
+		rows[1][2].innerHTML = "Lv 100/70";
+	}
 	rows[1][3].innerHTML = "";
 	imgRank.referrerPolicy = "no-referrer";
 	rows[1][3].appendChild(imgRank);
