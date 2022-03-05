@@ -1,149 +1,171 @@
 function createNinjutsu(){
-	let rowsNinjutsu = [[]];
-	const tableNinjutsu = document.getElementById("ninjutsu");
-	let header = tableNinjutsu.createTHead();
+	let rows = [[]];
+	const table = document.getElementById("ninjutsu");
+	let header = table.createTHead();
 	
-	rowsNinjutsu[0] = header.insertRow(0);
-	rowsNinjutsu[1] = tableNinjutsu.rows[1];
-	rowsNinjutsu[2] = tableNinjutsu.rows[2];
-	rowsNinjutsu[3] = tableNinjutsu.insertRow(3);
-	rowsNinjutsu[4] = tableNinjutsu.insertRow(4);
-	rowsNinjutsu[5] = tableNinjutsu.rows[5];
-	rowsNinjutsu[6] = tableNinjutsu.rows[6];
-	rowsNinjutsu[7] = tableNinjutsu.rows[7];
-	rowsNinjutsu[8] = tableNinjutsu.rows[8];
+	rows[0] = header.insertRow(0);
 	
-	rowsNinjutsu[0][0] = rowsNinjutsu[0].insertCell(0);
-	rowsNinjutsu[0][1] = rowsNinjutsu[0].insertCell(1);
+	rows[0][0] = rows[0].insertCell(0);
+	rows[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
 	
-	rowsNinjutsu[1][0] = tableNinjutsu.rows[1].cells[0];
-	rowsNinjutsu[1][1] = rowsNinjutsu[1].insertCell(1);
-	rowsNinjutsu[1][3] = tableNinjutsu.rows[1].cells[3];
-	rowsNinjutsu[1][4] = rowsNinjutsu[1].insertCell(4);
-	rowsNinjutsu[1].insertCell(5);
-	rowsNinjutsu[1][6] = rowsNinjutsu[1].insertCell(6);
-	rowsNinjutsu[1].insertCell(7);
+	rows[0][1] = rows[0].insertCell(1);
+	rows[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
 	
-	rowsNinjutsu[2][0] = tableNinjutsu.rows[2].cells[0];
-	rowsNinjutsu[2][1] = rowsNinjutsu[2].insertCell(1);
-	rowsNinjutsu[2].insertCell(2);
-	rowsNinjutsu[2][3] = rowsNinjutsu[2].insertCell(3);
-	rowsNinjutsu[2].insertCell(4);
+	rows[1] = table.rows[1];
 	
-	rowsNinjutsu[3][0] = rowsNinjutsu[3].insertCell(0);
-	rowsNinjutsu[3].insertCell(1);
-	rowsNinjutsu[3][2] = rowsNinjutsu[3].insertCell(2);
-	rowsNinjutsu[3].insertCell(3);
+	rows[1][0] = table.rows[1].cells[0];
+	rows[1][0].style.fontWeight = "bold";
 	
-	rowsNinjutsu[4][0] = rowsNinjutsu[4].insertCell(0);
-	
-	rowsNinjutsu[5][0] = tableNinjutsu.rows[5].cells[0];
-	rowsNinjutsu[5][1] = rowsNinjutsu[5].insertCell(1);
-	rowsNinjutsu[5][3] = rowsNinjutsu[5].insertCell(3);
-	rowsNinjutsu[5].insertCell(4);
-	
-	rowsNinjutsu[6][0] = tableNinjutsu.rows[6].cells[0];
-	rowsNinjutsu[6][1] = rowsNinjutsu[6].insertCell(1);
-	rowsNinjutsu[6].insertCell(2);
-	rowsNinjutsu[6][3] = rowsNinjutsu[6].insertCell(3);
-	rowsNinjutsu[6].insertCell(4);
-	rowsNinjutsu[6][5] = rowsNinjutsu[6].insertCell(5);
-	rowsNinjutsu[6].insertCell(6);
-	
-	rowsNinjutsu[7][0] = rowsNinjutsu[7].insertCell(0);
-	rowsNinjutsu[7].insertCell(1);
-	rowsNinjutsu[7][2] = rowsNinjutsu[7].insertCell(2);
-	rowsNinjutsu[7][3] = tableNinjutsu.rows[7].cells[3];
-	
-	rowsNinjutsu[8][0] = rowsNinjutsu[8].insertCell(0);
-	rowsNinjutsu[8][1] = tableNinjutsu.rows[8].cells[1];
-	
-	rowsNinjutsu[0][0].outerHTML = "<th colspan=4 >Ninjutsu</th>";
-	
-	rowsNinjutsu[0][1].outerHTML = "<th colspan=4 >Max Card Stats</th>";
-	
-	rowsNinjutsu[1][0].style.fontWeight = "bold";
+	rows[1][1] = rows[1].insertCell(1);
 	
 	let imgType = document.createElement("img");
 	imgType.classList.add("typeImage");
-	imgType.alt = rowsNinjutsu[1][0].innerHTML;
+	imgType.alt = rows[1][0].innerHTML;
 	imgType.referrerPolicy = "no-referrer";
-	rowsNinjutsu[1][1].appendChild(imgType);
+	rows[1][1].appendChild(imgType);
 	
+	rows[1][2] = rows[1].insertCell(2);
+	
+	rows[1][3] = table.rows[1].cells[3];
 	let imgRank = document.createElement("img");
 	imgRank.classList.add("rankImage");
-	imgRank.alt = rowsNinjutsu[1][3].innerHTML;
-	rowsNinjutsu[1][3].innerHTML = "";
+	imgRank.alt = rows[1][3].innerHTML;
+	if(rows[1][3].innerHTML === "3 Star"){
+		rows[1][2].innerHTML = "Lv 40/40";
+	}
+	if(rows[1][3].innerHTML === "5 Star"){
+		rows[1][2].innerHTML = "Lv 60/60";
+	}
+	if(rows[1][3].innerHTML === "6 Star"){
+		rows[1][2].innerHTML = "Lv 70/70";
+	}
+	rows[1][3].innerHTML = "";
 	imgRank.referrerPolicy = "no-referrer";
-	rowsNinjutsu[1][3].appendChild(imgRank);
+	rows[1][3].appendChild(imgRank);
 	
-	rowsNinjutsu[1][4].innerHTML = "HP";
+	rows[1][4] = rows[1].insertCell(4);
+	rows[1][4].innerHTML = "HP";
 	
-	rowsNinjutsu[1][6].innerHTML = "CP";
+	rows[1].insertCell(5);
+	rows[1][6] = rows[1].insertCell(6);
+	rows[1][6].innerHTML = "CP";
 	
-	rowsNinjutsu[2][0].colSpan = "4";
-	rowsNinjutsu[2][0].rowSpan = "2";
-	rowsNinjutsu[2][0].classList.add("cardImageTable");
+	rows[1].insertCell(7);
 	
+	rows[2] = table.rows[2];
+	
+	rows[2][0] = table.rows[2].cells[0];
 	let cardImage = document.createElement("img");
 	cardImage.classList.add("cardImage");
 	cardImage.referrerPolicy = "no-referrer";
-	cardImage.src = rowsNinjutsu[2][0].innerHTML;
-	rowsNinjutsu[2][0].innerHTML = "";
-	rowsNinjutsu[2][0].appendChild(cardImage);
+	cardImage.src = rows[2][0].innerHTML;
+	rows[2][0].innerHTML = "";
+	rows[2][0].appendChild(cardImage);
+	rows[2][0].colSpan = "4";
+	rows[2][0].rowSpan = "2";
+	rows[2][0].classList.add("cardImageTable");
 	
-	rowsNinjutsu[2][1].innerHTML = "ATK";
+	rows[2][1] = rows[2].insertCell(1);
+	rows[2][1].innerHTML = "ATK";
 	
-	rowsNinjutsu[2][3].innerHTML = "DEF";
+	rows[2].insertCell(2);
 	
-	rowsNinjutsu[3][0].innerHTML = "CRI";
+	rows[2][3] = rows[2].insertCell(3);
+	rows[2][3].innerHTML = "DEF";
 	
-	rowsNinjutsu[3][2].innerHTML = "EVA";
+	rows[2].insertCell(4);
 	
-	rowsNinjutsu[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
+	rows[3] = table.insertRow(3);
 	
-	rowsNinjutsu[5][0].style.fontWeight = "bold";
+	rows[3][0] = rows[3].insertCell(0);
+	rows[3][0].innerHTML = "CRI";
 	
+	rows[3].insertCell(1);
+	
+	rows[3][2] = rows[3].insertCell(2);
+	rows[3][2].innerHTML = "EVA";
+	
+	rows[3].insertCell(3);
+	
+	rows[4] = table.insertRow(4);
+	
+	rows[4][0] = rows[4].insertCell(0);
+	rows[4][0].outerHTML = "<th colspan=8 >Max Jutsu Stats</th>";
+	
+	rows[5] = table.rows[5];
+	
+	rows[5][0] = table.rows[5].cells[0];
+	
+	rows[5][0].style.fontWeight = "bold";
+	
+	rows[5][1] = rows[5].insertCell(1);
 	let natureImage = document.createElement("img");
 	natureImage.classList.add("natureImage");
-	natureImage.alt = rowsNinjutsu[5][0].innerHTML;
+	natureImage.alt = rows[5][0].innerHTML;
 	natureImage.referrerPolicy = "no-referrer";
-	rowsNinjutsu[5][1].appendChild(natureImage);
+	rows[5][1].appendChild(natureImage);
 	
-	rowsNinjutsu[5][2] = tableNinjutsu.rows[5].cells[2];
-	rowsNinjutsu[5][2].colSpan = "4";
-	rowsNinjutsu[5][2].style.fontWeight = "bold";
+	rows[5][2] = table.rows[5].cells[2];
+	rows[5][2].colSpan = "4";
+	rows[5][2].style.fontWeight = "bold";
 	
-	rowsNinjutsu[5][3].innerHTML = "LVL";
+	rows[5][3] = rows[5].insertCell(3);
+	rows[5][3].innerHTML = "LVL";
+	rows[5].insertCell(4);
 	
-	rowsNinjutsu[6][0].colSpan = "2";
+	rows[6] = table.rows[6];
+	
+	rows[6][0] = table.rows[6].cells[0];
+	rows[6][0].colSpan = "2";
 	
 	let jutsuImage = document.createElement("img");
 	jutsuImage.classList.add("jutsuImage");
 	jutsuImage.referrerPolicy = "no-referrer";
-	jutsuImage.src = rowsNinjutsu[6][0].innerHTML;
-	rowsNinjutsu[6][0].innerHTML = "";
-	rowsNinjutsu[6][0].appendChild(jutsuImage);
+	jutsuImage.src = rows[6][0].innerHTML;
+	rows[6][0].innerHTML = "";
+	rows[6][0].appendChild(jutsuImage);
 	
-	rowsNinjutsu[6][1].innerHTML = "CP Cost";
-	rowsNinjutsu[6][3].innerHTML = "CRI";
-	rowsNinjutsu[6][5].innerHTML = "POW";
+	rows[6][1] = rows[6].insertCell(1);
+	rows[6][1].innerHTML = "CP Cost";
 	
+	rows[6].insertCell(2);
+	
+	rows[6][3] = rows[6].insertCell(3);
+	rows[6][3].innerHTML = "CRI";
+	
+	rows[6].insertCell(4);
+	
+	rows[6][5] = rows[6].insertCell(5);
+	rows[6][5].innerHTML = "POW";
+	
+	rows[6].insertCell(6);
+	
+	rows[7] = table.rows[7];
+	
+	rows[7][0] = rows[7].insertCell(0);
 	let rtImage = document.createElement("img");
 	rtImage.classList.add("rtImage");
 	rtImage.referrerPolicy = "no-referrer";
 	rtImage.alt = "rt";
-	rowsNinjutsu[7][0].appendChild(rtImage);
+	rows[7][0].appendChild(rtImage);
 	
-	rowsNinjutsu[7][2].colSpan = "3";
-	rowsNinjutsu[7][2].innerHTML = "Equippable By";
+	rows[7].insertCell(1);
 	
-	rowsNinjutsu[7][3].colSpan = "3";
+	rows[7][2] = rows[7].insertCell(2);
+	rows[7][2].colSpan = "3";
+	rows[7][2].innerHTML = "Equippable By";
 	
-	rowsNinjutsu[8][0].colSpan = "2";
-	rowsNinjutsu[8][0].innerHTML = "Info";
+	rows[7][3] = table.rows[7].cells[3];
+	rows[7][3].colSpan = "3";
 	
-	rowsNinjutsu[8][1].colSpan = "6";
+	rows[8] = table.rows[8];
+	
+	rows[8][0] = rows[8].insertCell(0);
+	rows[8][0].colSpan = "2";
+	rows[8][0].innerHTML = "Info";
+	
+	rows[8][1] = table.rows[8].cells[1];
+	rows[8][1].colSpan = "6";
 }
 
 function createNinjutsuCheckByLvl(){
@@ -418,8 +440,8 @@ function ninjutsu(){
 	rowsNinjutsu[6] = tableNinjutsu.rows[6].cells;
 	rowsNinjutsu[7] = tableNinjutsu.rows[7].cells;
 	
-	switch(rowsNinjutsu[1][2].innerHTML){
-		case "Lv 70/70":
+	switch(rowsNinjutsu[1][3].getElementsByClassName("rankImage").item(0).alt){
+		case "6 Star":
 			rowsNinjutsu[3][1].innerHTML = "1.10%";
 			rowsNinjutsu[3][3].innerHTML = "1.10%";
 			rowsNinjutsu[5][4].innerHTML = "8/8";
@@ -461,7 +483,7 @@ function ninjutsu(){
 			rowsNinjutsu[6][6].innerHTML = rowsCheckByLvl[7][7].innerHTML;
 			rowsNinjutsu[7][1].innerHTML = rowsCheckByLvl[7][1].innerHTML;
 			break;
-		case "Lv 60/60":
+		case "5 Star":
 			rowsNinjutsu[3][1].innerHTML = "0.90%";
 			rowsNinjutsu[3][3].innerHTML = "0.90%";
 			rowsNinjutsu[5][4].innerHTML = "6/6";
@@ -503,7 +525,7 @@ function ninjutsu(){
 			rowsNinjutsu[6][6].innerHTML = rowsCheckByLvl[5][7].innerHTML;
 			rowsNinjutsu[7][1].innerHTML = rowsCheckByLvl[5][1].innerHTML;
 			break;
-		case "Lv 40/40":
+		case "3 Star":
 			rowsNinjutsu[3][1].innerHTML = "0.50%";
 			rowsNinjutsu[3][3].innerHTML = "0.50%";
 			rowsNinjutsu[5][4].innerHTML = "2/2";
