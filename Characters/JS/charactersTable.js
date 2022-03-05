@@ -73,7 +73,7 @@ function createCharactersTable(){
 		linkBoardLink.appendChild(linkBoardImage);
 		rows[3][1].appendChild(linkBoardLink);
 	}else{
-		rows[3][0].colSpan ="4";
+		rows[3][0].colSpan = "4";
 	}
 }
 
@@ -91,6 +91,8 @@ function cardsAndToolsTable(){
 	const J1 = document.getElementById("Jutsus1Star");
 	const T5 = document.getElementById("Tools5Star");
 	const T4 = document.getElementById("Tools4Star");
+	const TF5 = document.getElementById("ToolsFactory5Star");
+	const TF4 = document.getElementById("ToolsFactory4Star");
 	
 	if(Ult6){
 		table.insertRow(sumOfRows);
@@ -116,7 +118,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsUlt6[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/UltimateJutsus6Star/" + rowsUlt6[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/UltimateJutsus6Star/" + rowsUlt6[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -156,7 +158,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsUlt5[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/UltimateJutsus5Star/" + rowsUlt5[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/UltimateJutsus5Star/" + rowsUlt5[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -196,7 +198,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ5[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus5Star/" + rowsJ5[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/Ninjutsus5Star/" + rowsJ5[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -236,7 +238,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ4[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus4Star/" + rowsJ4[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/Ninjutsus4Star/" + rowsJ4[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -276,7 +278,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ3[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus3Star/" + rowsJ3[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/Ninjutsus3Star/" + rowsJ3[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -316,7 +318,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsJ1[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Ninjutsus1Star/" + rowsJ1[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/Ninjutsus1Star/" + rowsJ1[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -356,7 +358,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsT5[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Tools5Star/" + rowsT5[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/Tools5Star/" + rowsT5[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -396,7 +398,7 @@ function cardsAndToolsTable(){
 			cardThumbImage.src = rowsT4[i][0].innerHTML;
 			
 			let cardThumbLink = document.createElement("a");
-			cardThumbLink.href = "../../CardsTools/"+characterFolder+"/Tools4Star/" + rowsT4[i][1].innerHTML;
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/Tools4Star/" + rowsT4[i][1].innerHTML;
 			cardThumbLink.appendChild(cardThumbImage);
 			
 			let figcaption = document.createElement("figcaption");
@@ -409,6 +411,86 @@ function cardsAndToolsTable(){
 			
 			rows[sumOfRows + 1][i].appendChild(cardHoverFigure);
 		}
-		// sumOfRows = sumOfRows + 2;
+		sumOfRows = sumOfRows + 2;
+	}
+	
+	if(TF5){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows + 1);
+		table.rows[sumOfRows + 1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows + 1] = table.rows[sumOfRows + 1].cells;
+		
+		let rowsTF5 = [[]];
+		let TF5Length = TF5.rows.length;
+		
+		table.rows[sumOfRows].insertCell(0);
+		rows[sumOfRows][0].outerHTML = "<th>Tools Factory 5 Star</th>";
+		rows[sumOfRows][0].classList.add("cardsTypes");
+		
+		for(let i = 0; i < TF5Length; i ++){
+			table.rows[sumOfRows + 1].insertCell(i);
+			rowsTF5[i] = TF5.rows[i].cells;
+			
+			let cardThumbImage = document.createElement("img");
+			cardThumbImage.classList.add("toolThumb");
+			cardThumbImage.referrerPolicy = "no-referrer";
+			cardThumbImage.src = rowsTF5[i][0].innerHTML;
+			
+			let cardThumbLink = document.createElement("a");
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/ToolsFactory5Star/" + rowsTF5[i][1].innerHTML;
+			cardThumbLink.appendChild(cardThumbImage);
+			
+			let figcaption = document.createElement("figcaption");
+			figcaption.innerHTML = rowsTF5[i][2].innerHTML;
+			
+			let cardHoverFigure = document.createElement("figure");
+			cardHoverFigure.classList.add("cardHover");
+			cardHoverFigure.appendChild(cardThumbLink);
+			cardHoverFigure.appendChild(figcaption);
+			
+			rows[sumOfRows + 1][i].appendChild(cardHoverFigure);
+		}
+		sumOfRows = sumOfRows + 2;
+	}
+	
+	if(TF4){
+		table.insertRow(sumOfRows);
+		table.insertRow(sumOfRows + 1);
+		table.rows[sumOfRows + 1].classList.add("cardsTypesFlex");
+		rows[sumOfRows] = table.rows[sumOfRows].cells;
+		rows[sumOfRows + 1] = table.rows[sumOfRows + 1].cells;
+		
+		let rowsTF4 = [[]];
+		let TF4Length = TF4.rows.length;
+		
+		table.rows[sumOfRows].insertCell(0);
+		rows[sumOfRows][0].outerHTML = "<th>Tools Factory 4 Star</th>";
+		rows[sumOfRows][0].classList.add("cardsTypes");
+		
+		for(let i = 0; i < TF4Length; i ++){
+			table.rows[sumOfRows + 1].insertCell(i);
+			rowsTF4[i] = TF4.rows[i].cells;
+			
+			let cardThumbImage = document.createElement("img");
+			cardThumbImage.classList.add("toolThumb");
+			cardThumbImage.referrerPolicy = "no-referrer";
+			cardThumbImage.src = rowsTF4[i][0].innerHTML;
+			
+			let cardThumbLink = document.createElement("a");
+			cardThumbLink.href = "../../CardsTools/" + characterFolder + "/ToolsFactory4Star/" + rowsTF4[i][1].innerHTML;
+			cardThumbLink.appendChild(cardThumbImage);
+			
+			let figcaption = document.createElement("figcaption");
+			figcaption.innerHTML = rowsTF4[i][2].innerHTML;
+			
+			let cardHoverFigure = document.createElement("figure");
+			cardHoverFigure.classList.add("cardHover");
+			cardHoverFigure.appendChild(cardThumbLink);
+			cardHoverFigure.appendChild(figcaption);
+			
+			rows[sumOfRows + 1][i].appendChild(cardHoverFigure);
+		}
+		//sumOfRows = sumOfRows + 2;
 	}
 }
