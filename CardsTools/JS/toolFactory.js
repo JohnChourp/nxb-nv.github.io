@@ -21,3 +21,5 @@ function toolFactory(){
 		}
 	}
 }
+
+toolFactory();
