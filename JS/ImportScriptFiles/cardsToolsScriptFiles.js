@@ -48,6 +48,8 @@ function cardsToolsScriptFiles(){
 	const folderNinjutsus5Star = window.location.pathname.match("/Ninjutsus5Star/");
 	const folderTools5Star = window.location.pathname.match("/Tools5Star/");
 	const folderTools4Star = window.location.pathname.match("/Tools4Star/");
+	const folderToolsFactory5Star = window.location.pathname.match("/ToolsFactory5Star/");
+	const folderToolsFactory4Star = window.location.pathname.match("/ToolsFactory4Star/");
 	const folderUltimateJutsus5Star = window.location.pathname.match("/UltimateJutsus5Star/");
 	const folderUltimateJutsus6Star = window.location.pathname.match("/UltimateJutsus6Star/");
 	
@@ -59,6 +61,13 @@ function cardsToolsScriptFiles(){
 	}
 
 	if((folderTools5Star !== null) || (folderTools4Star !== null)){
+		const toolFactory = document.createElement("script");
+		toolFactory.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/tool.js";
+		toolFactory.type = "text/javascript";
+		document.head.appendChild(toolFactory);
+	}
+	
+	if((folderToolsFactory5Star !== null) || (folderToolsFactory4Star !== null)){
 		const toolFactory = document.createElement("script");
 		toolFactory.src = httpLink + hostName + "/nxb-nv.github.io/CardsTools/JS/toolFactory.js";
 		toolFactory.type = "text/javascript";
